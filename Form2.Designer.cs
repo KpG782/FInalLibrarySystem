@@ -35,9 +35,9 @@
             // 
             // btnTeacher
             // 
-            this.btnTeacher.Location = new System.Drawing.Point(220, 242);
+            this.btnTeacher.Location = new System.Drawing.Point(132, 178);
             this.btnTeacher.Name = "btnTeacher";
-            this.btnTeacher.Size = new System.Drawing.Size(75, 23);
+            this.btnTeacher.Size = new System.Drawing.Size(103, 50);
             this.btnTeacher.TabIndex = 0;
             this.btnTeacher.Text = "Teacher";
             this.btnTeacher.UseVisualStyleBackColor = true;
@@ -45,9 +45,9 @@
             // 
             // btnStudent
             // 
-            this.btnStudent.Location = new System.Drawing.Point(428, 242);
+            this.btnStudent.Location = new System.Drawing.Point(306, 178);
             this.btnStudent.Name = "btnStudent";
-            this.btnStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnStudent.Size = new System.Drawing.Size(109, 50);
             this.btnStudent.TabIndex = 1;
             this.btnStudent.Text = "Student";
             this.btnStudent.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(291, 140);
+            this.label1.Location = new System.Drawing.Point(180, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 47);
+            this.label1.Size = new System.Drawing.Size(194, 72);
             this.label1.TabIndex = 2;
             this.label1.Text = "Are you a teacher or student?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(556, 288);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnTeacher);

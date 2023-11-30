@@ -24,6 +24,7 @@ namespace FInalLibrarySystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
             frmTeacher f4 = new frmTeacher();
             f4.Show();
         }
@@ -35,6 +36,7 @@ namespace FInalLibrarySystem
 
         private void btnStudent_Click(object sender, EventArgs e)
         {
+            this.Close();
             frmStudent f3 = new frmStudent();
             f3.Show();
         }

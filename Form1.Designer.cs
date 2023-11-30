@@ -31,12 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.picUser = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.txtbxEmail = new System.Windows.Forms.TextBox();
-            this.txtBoxPass = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lnkLblSign = new System.Windows.Forms.LinkLabel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.chkShow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,20 +64,20 @@
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtbxEmail
+            // txtEmail
             // 
-            this.txtbxEmail.Location = new System.Drawing.Point(338, 264);
-            this.txtbxEmail.Name = "txtbxEmail";
-            this.txtbxEmail.Size = new System.Drawing.Size(211, 22);
-            this.txtbxEmail.TabIndex = 3;
-            this.txtbxEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtEmail.Location = new System.Drawing.Point(338, 264);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(211, 22);
+            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // txtBoxPass
+            // txtPass
             // 
-            this.txtBoxPass.Location = new System.Drawing.Point(338, 339);
-            this.txtBoxPass.Name = "txtBoxPass";
-            this.txtBoxPass.Size = new System.Drawing.Size(211, 22);
-            this.txtBoxPass.TabIndex = 4;
+            this.txtPass.Location = new System.Drawing.Point(338, 339);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(211, 22);
+            this.txtPass.TabIndex = 4;
             // 
             // lblEmail
             // 
@@ -98,7 +101,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(404, 380);
+            this.btnSubmit.Location = new System.Drawing.Point(308, 380);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(91, 31);
             this.btnSubmit.TabIndex = 7;
@@ -109,7 +112,7 @@
             // lnkLblSign
             // 
             this.lnkLblSign.AutoSize = true;
-            this.lnkLblSign.Location = new System.Drawing.Point(421, 414);
+            this.lnkLblSign.Location = new System.Drawing.Point(421, 424);
             this.lnkLblSign.Name = "lnkLblSign";
             this.lnkLblSign.Size = new System.Drawing.Size(55, 16);
             this.lnkLblSign.TabIndex = 9;
@@ -117,17 +120,51 @@
             this.lnkLblSign.Text = "Sign Up";
             this.lnkLblSign.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(405, 380);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(91, 31);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(502, 380);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(91, 31);
+            this.btnExit.TabIndex = 11;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // chkShow
+            // 
+            this.chkShow.AutoSize = true;
+            this.chkShow.Location = new System.Drawing.Point(405, 309);
+            this.chkShow.Name = "chkShow";
+            this.chkShow.Size = new System.Drawing.Size(62, 20);
+            this.chkShow.TabIndex = 12;
+            this.chkShow.Text = "Show";
+            this.chkShow.UseVisualStyleBackColor = true;
+            this.chkShow.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 495);
+            this.Controls.Add(this.chkShow);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lnkLblSign);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtBoxPass);
-            this.Controls.Add(this.txtbxEmail);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picUser);
             this.Name = "frmLogin";
@@ -143,12 +180,15 @@
 
         private System.Windows.Forms.PictureBox picUser;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.TextBox txtbxEmail;
-        private System.Windows.Forms.TextBox txtBoxPass;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.LinkLabel lnkLblSign;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.CheckBox chkShow;
     }
 }
 
