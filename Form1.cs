@@ -53,7 +53,7 @@ namespace FInalLibrarySystem
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             
-            frmPrompt f2 = new frmPrompt();
+            frmSignUp f2 = new frmSignUp();
             f2.Show();
         }
 
