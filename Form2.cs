@@ -43,7 +43,10 @@ namespace FInalLibrarySystem
             if (rdbtnTeacher.Checked)
             {
                 // If checked, set the visibility of the group box and its components to true
-                grpTeacher.Visible = true;
+                lblDept.Visible = true;
+                cbDepartment.Visible = true;
+                lblEID.Visible = true;
+                txtEmployee.Visible = true;
                 // Add more components as needed
 
                 // You may also want to reset the visibility of other group boxes if needed
@@ -52,8 +55,12 @@ namespace FInalLibrarySystem
             }
             else
             {
+
                 // If unchecked, set the visibility of the group box and its components to false
-                grpTeacher.Visible = false;
+                lblDept.Visible = false;
+                cbDepartment.Visible = false;
+                lblEID.Visible = false;
+                txtEmployee.Visible = false;
                 // Hide other components as needed
             }
         }
@@ -149,6 +156,33 @@ namespace FInalLibrarySystem
         }
 
         private void btnStudent_CheckedChanged(object sender, EventArgs e)
+        {
+            // Check if the "Teacher" radio button is checked
+            if (rdbtnStudent.Checked)
+            {
+                // If checked, set the visibility of the group box and its components to true
+                lblYearLvl.Visible = true;
+                cbYear.Visible = true;
+                lblSection.Visible = true;
+                cbSection.Visible = true;
+                // Add more components as needed
+
+                // You may also want to reset the visibility of other group boxes if needed
+                // For example, if you have a group box for students, you can hide it when the "Teacher" is selected
+                // groupBoxStudent.Visible = false;
+            }
+            else
+            {
+                // If unchecked, set the visibility of the group box and its components to false
+                lblYearLvl.Visible = false;
+                cbYear.Visible = false;
+                lblSection.Visible = false;
+                cbSection.Visible = false;
+                // Hide other components as needed
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
