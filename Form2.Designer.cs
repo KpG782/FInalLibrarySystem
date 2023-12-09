@@ -122,7 +122,7 @@
             // cbSection
             // 
             this.cbSection.FormattingEnabled = true;
-            this.cbSection.Location = new System.Drawing.Point(359, 191);
+            this.cbSection.Location = new System.Drawing.Point(448, 191);
             this.cbSection.Margin = new System.Windows.Forms.Padding(4);
             this.cbSection.Name = "cbSection";
             this.cbSection.Size = new System.Drawing.Size(123, 24);
@@ -132,7 +132,7 @@
             // lblSection
             // 
             this.lblSection.AutoSize = true;
-            this.lblSection.Location = new System.Drawing.Point(356, 171);
+            this.lblSection.Location = new System.Drawing.Point(449, 171);
             this.lblSection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSection.Name = "lblSection";
             this.lblSection.Size = new System.Drawing.Size(52, 16);
@@ -270,7 +270,7 @@
             // 
             // txtEmployee
             // 
-            this.txtEmployee.Location = new System.Drawing.Point(453, 191);
+            this.txtEmployee.Location = new System.Drawing.Point(448, 193);
             this.txtEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployee.Name = "txtEmployee";
             this.txtEmployee.Size = new System.Drawing.Size(160, 22);
@@ -280,10 +280,10 @@
             // cbDepartment
             // 
             this.cbDepartment.FormattingEnabled = true;
-            this.cbDepartment.Location = new System.Drawing.Point(276, 191);
+            this.cbDepartment.Location = new System.Drawing.Point(274, 191);
             this.cbDepartment.Margin = new System.Windows.Forms.Padding(4);
             this.cbDepartment.Name = "cbDepartment";
-            this.cbDepartment.Size = new System.Drawing.Size(160, 24);
+            this.cbDepartment.Size = new System.Drawing.Size(166, 24);
             this.cbDepartment.TabIndex = 9;
             this.cbDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
