@@ -13,11 +13,17 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+        //set global
+        MainPage mainPage = new MainPage();
+
+
         // Define a simple class to represent a user
         public class User
         {
             public string Username { get; set; }
             public string Password { get; set; }
+
+            public string Email { get; set; }
 
             public string FirstName { get; set; }
             public string LastName { get; set; }
@@ -95,8 +101,10 @@ namespace FInalLibrarySystem
                     MessageBox.Show("Login successful! Mr. " + user.FirstName);
 
                     //opens book list form
+                    
                     Form3 f3 = new Form3();
-                    f3.Show();
+
+                    mainPage.Show();
                     return;
                 }
             }

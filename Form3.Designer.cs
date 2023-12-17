@@ -38,13 +38,13 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.grpBook = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -141,6 +141,14 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Status";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 151);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
             // label2
             // 
             this.label2.Location = new System.Drawing.Point(143, 168);
@@ -149,6 +157,14 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Publisher";
             // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(143, 53);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Title";
+            // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(143, 145);
@@ -156,6 +172,14 @@
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 14;
             this.label3.Text = "Copyright";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(143, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "ISBN";
             // 
             // label4
             // 
@@ -172,30 +196,6 @@
             this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "Category";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(143, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "ISBN";
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(143, 53);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 23);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Title";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // Form3
             // 
