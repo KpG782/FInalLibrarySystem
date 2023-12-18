@@ -13,7 +13,7 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
-        //set global
+        //set global object
         MainPage mainPage = new MainPage();
 
 
@@ -30,6 +30,12 @@ namespace FInalLibrarySystem
 
             public string Role { get; set; }
             public string Department { get; set; }
+
+            public string StudentID { get; set; }
+
+            public string EmployeeID { get; set; }
+
+            public string Section { get; set; }
         }
 
         // Array to store user information
@@ -89,6 +95,7 @@ namespace FInalLibrarySystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             // Retrieve entered username and password
             string enteredUsername = txtEmail.Text;
             string enteredPassword = txtPass.Text;
@@ -98,21 +105,23 @@ namespace FInalLibrarySystem
             {
                 if (user.Username == enteredUsername && user.Password == enteredPassword)
                 {
-                    MessageBox.Show("Login successful! Mr. " + user.FirstName);
+                    MessageBox.Show("Login successful! Welcome " + user.FirstName + "!!");
 
-                    //opens book list form
-                    
-                    Form3 f3 = new Form3();
-
+                    //opens main page form
                     mainPage.Show();
+                    
                     return;
+                    
                 }
+                
             }
 
+           
             // If no match is found, display an error message
             MessageBox.Show("Invalid username or password. Please try again.");
 
 
+            
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
