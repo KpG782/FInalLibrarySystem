@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static FInalLibrarySystem.frmLogin;
 
 namespace FInalLibrarySystem
 {
     public partial class frmSignUp : Form
     {
+
+
+
         public frmSignUp()
         {
             InitializeComponent();
+            
         }
 
         private void frmPrompt_Load(object sender, EventArgs e)
@@ -189,7 +194,30 @@ namespace FInalLibrarySystem
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+
+            string enteredLastName = txtLNT.Text;
+            string enteredFirstName = txtFNT.Text;
+            string enteredMI = txtMIT.Text;
+            string enteredDepartment = cbDepartment.Text;
+            string enteredYear = cbSection.Text;
+            string enteredSection = cbSection.Text;
+            string enteredEmployeeID = txtEmployee.Text;
+            string enteredStudentID = txtStudID.Text;
+            string enteredEmailAdd = txtEmailAdd.Text;
+            string enteredPassword = txtPassword.Text;
+            string enteredCPassword = txtCPassword.Text;
+
+
+            if (enteredPassword == enteredCPassword)
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("The Entered Password Does not Match!");
+            }
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
