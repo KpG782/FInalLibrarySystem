@@ -53,6 +53,8 @@
             this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.lblEID = new System.Windows.Forms.Label();
             this.lblDept = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // rdbtnTeacher
@@ -336,11 +338,31 @@
             this.lblDept.Text = "Department";
             this.lblDept.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(453, 290);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(70, 16);
+            this.lblUsername.TabIndex = 37;
+            this.lblUsername.Text = "Username";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(452, 315);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(160, 22);
+            this.txtUsername.TabIndex = 38;
+            // 
             // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 527);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblDept);
             this.Controls.Add(this.lblEID);
             this.Controls.Add(this.cbDepartment);
@@ -402,5 +424,7 @@
         private System.Windows.Forms.ComboBox cbDepartment;
         private System.Windows.Forms.Label lblEID;
         private System.Windows.Forms.Label lblDept;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }

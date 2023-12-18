@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FInalLibrarySystem
 {
-    public partial class BookBorrowing : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public BookBorrowing()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

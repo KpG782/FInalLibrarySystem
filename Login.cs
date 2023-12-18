@@ -41,7 +41,7 @@ namespace FInalLibrarySystem
         }
 
         // Array to store user information
-        private User[] users = new User[20];
+        public User[] users = new User[20];
 
 
         public frmLogin()
@@ -73,6 +73,10 @@ namespace FInalLibrarySystem
         {
             //to hide automatically
             txtPass.UseSystemPasswordChar = true;
+
+            //delete this
+            //try to show input from signup
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -160,6 +164,11 @@ namespace FInalLibrarySystem
             {
                 txtPass.UseSystemPasswordChar = true;
             }
+        }
+
+        private void label1_Click_3(object sender, EventArgs e)
+        {
+            
         }
     }
 }

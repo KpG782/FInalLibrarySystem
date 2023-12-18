@@ -13,7 +13,9 @@ namespace FInalLibrarySystem
 {
     public partial class frmSignUp : Form
     {
-
+        //global login  
+        frmLogin login1 = new frmLogin();
+         
 
 
         public frmSignUp()
@@ -206,8 +208,9 @@ namespace FInalLibrarySystem
             string enteredEmailAdd = txtEmailAdd.Text;
             string enteredPassword = txtPassword.Text;
             string enteredCPassword = txtCPassword.Text;
+            string enteredUsername = txtUsername.Text;
 
-
+            //password checker
             if (enteredPassword == enteredCPassword)
             {
                 this.Close();
@@ -217,7 +220,50 @@ namespace FInalLibrarySystem
                 MessageBox.Show("The Entered Password Does not Match!");
             }
 
+            //checks if username already taken
 
+            // Create a new User object
+            User newUser = new User
+            {
+                Username = enteredUsername,
+                Password = enteredPassword,
+                Email = enteredEmailAdd,
+                FirstName = enteredFirstName,
+                LastName = enteredLastName,
+                MiddleInitial = enteredMI,
+                Department = enteredDepartment,
+                Year = enteredYear,
+                Section = enteredSection,
+                EmployeeID = enteredEmployeeID,
+                StudentID = enteredStudentID,
+
+
+                // Set other details
+            };
+
+
+
+
+            // Add the new user to the existing array
+            AddUser(newUser);
+        }
+
+        //adds new user
+        public void AddUser(User newUser)
+        {
+            // Find the first empty slot in the array or resize the array if needed
+            for (int i = 0; i < login1.users.Length; i++)
+            {
+                if (login1.users[i] == null)
+                {
+                    login1.users[i] = newUser;
+                    return;
+                }
+            }
+
+            // If no empty slot is found, resize the array and add the new user
+            Array.Resize(ref login1.users, login1.users.Length + 1);
+            login1.users[login1.users.Length - 1] = newUser;
         }
 
         private void button3_Click(object sender, EventArgs e)

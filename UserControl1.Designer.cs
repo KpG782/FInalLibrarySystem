@@ -1,6 +1,6 @@
 ﻿namespace FInalLibrarySystem
 {
-    partial class BookBorrowing
+    partial class UserControl1
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblTitle
+            // button1
             // 
-            this.lblTitle.Location = new System.Drawing.Point(27, 29);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(151, 39);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Book Borrowing";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
+            this.button1.Location = new System.Drawing.Point(214, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(481, 165);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // BookBorrowing
+            // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblTitle);
-            this.Name = "BookBorrowing";
-            this.Size = new System.Drawing.Size(1014, 583);
+            this.Controls.Add(this.button1);
+            this.Name = "UserControl1";
+            this.Size = new System.Drawing.Size(978, 539);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button button1;
     }
 }
