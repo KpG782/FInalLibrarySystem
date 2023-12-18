@@ -28,6 +28,7 @@ namespace FInalLibrarySystem
             public string FirstName { get; set; }
             public string LastName { get; set; }
 
+            public string MiddleInitial { get; set; }
             public string Role { get; set; }
             public string Department { get; set; }
 
@@ -36,6 +37,7 @@ namespace FInalLibrarySystem
             public string EmployeeID { get; set; }
 
             public string Section { get; set; }
+            public string Year { get; set; }
         }
 
         // Array to store user information
@@ -52,7 +54,7 @@ namespace FInalLibrarySystem
         private void InitializeUsers()
         {
             // Initialize the array with sample username and password pairs
-            users[0] = new User { Username = "stud1", Password = "pass1", FirstName = "Ken Patrick", LastName = "Garcia" };
+            users[0] = new User { Username = "stud1", Password = "pass1", FirstName = "Ken Patrick", LastName = "Garcia", MiddleInitial = "A", Role = "Student", StudentID = "A62240916", Section = "ACSAD", Year = "2"};
             users[1] = new User { Username = "stud2", Password = "pass2" };
             users[2] = new User { Username = "stud3", Password = "pass3" };
             users[3] = new User { Username = "stud4", Password = "pass4" };

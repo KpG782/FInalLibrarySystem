@@ -19,7 +19,7 @@ namespace FInalLibrarySystem
 
         private void frmPrompt_Load(object sender, EventArgs e)
         {
-
+           lblSection.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -193,6 +193,11 @@ namespace FInalLibrarySystem
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
