@@ -44,9 +44,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.Controls.Add(this.lblTitle);
             this.Name = "Profile";
-            this.Size = new System.Drawing.Size(942, 542);
+            this.Size = new System.Drawing.Size(1248, 1059);
             this.ResumeLayout(false);
 
         }

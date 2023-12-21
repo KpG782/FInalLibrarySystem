@@ -16,5 +16,20 @@ namespace FInalLibrarySystem
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReturnButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

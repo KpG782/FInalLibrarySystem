@@ -28,161 +28,240 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBookList = new System.Windows.Forms.Button();
-            this.btnBorList = new System.Windows.Forms.Button();
-            this.btnBookBor = new System.Windows.Forms.Button();
-            this.btnBookReturn = new System.Windows.Forms.Button();
-            this.bookReserv = new System.Windows.Forms.Button();
-            this.btnBookPenalty = new System.Windows.Forms.Button();
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.penalty1 = new FInalLibrarySystem.Penalty();
-            this.bookReservation1 = new FInalLibrarySystem.BookReservation();
-            this.bookReturning1 = new FInalLibrarySystem.BookReturning();
-            this.bookBorrowing1 = new FInalLibrarySystem.BookBorrowing();
-            this.borrowerList1 = new FInalLibrarySystem.BorrowerList();
-            this.bookList1 = new FInalLibrarySystem.BookList();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.UProfileLinkList = new System.Windows.Forms.LinkLabel();
+            this.SettingsLink = new System.Windows.Forms.LinkLabel();
+            this.BookReservationLink = new System.Windows.Forms.LinkLabel();
+            this.BookReturningLink = new System.Windows.Forms.LinkLabel();
+            this.BookBorrowingLink = new System.Windows.Forms.LinkLabel();
+            this.BorrowerListLink = new System.Windows.Forms.LinkLabel();
+            this.BookListLink = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.profile1 = new FInalLibrarySystem.Profile();
+            this.bookList1 = new FInalLibrarySystem.BookList();
+            this.borrowerList1 = new FInalLibrarySystem.BorrowerList();
+            this.bookBorrowing1 = new FInalLibrarySystem.BookBorrowing();
+            this.bookReturning1 = new FInalLibrarySystem.BookReturning();
+            this.bookReservation1 = new FInalLibrarySystem.BookReservation();
+            this.penalty1 = new FInalLibrarySystem.Penalty();
             this.SuspendLayout();
             // 
-            // btnBookList
+            // linkLabel3
             // 
-            this.btnBookList.Location = new System.Drawing.Point(19, 94);
-            this.btnBookList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBookList.Name = "btnBookList";
-            this.btnBookList.Size = new System.Drawing.Size(137, 44);
-            this.btnBookList.TabIndex = 0;
-            this.btnBookList.Text = "Book List";
-            this.btnBookList.UseVisualStyleBackColor = true;
-            this.btnBookList.Click += new System.EventHandler(this.btnBookList_Click);
+            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.Image = ((System.Drawing.Image)(resources.GetObject("linkLabel3.Image")));
+            this.linkLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel3.LinkColor = System.Drawing.Color.White;
+            this.linkLabel3.Location = new System.Drawing.Point(12, 501);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(120, 64);
+            this.linkLabel3.TabIndex = 25;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Penalty";
+            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // btnBorList
+            // UProfileLinkList
             // 
-            this.btnBorList.Location = new System.Drawing.Point(19, 153);
-            this.btnBorList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBorList.Name = "btnBorList";
-            this.btnBorList.Size = new System.Drawing.Size(137, 44);
-            this.btnBorList.TabIndex = 1;
-            this.btnBorList.Text = "Borrower List";
-            this.btnBorList.UseVisualStyleBackColor = true;
-            this.btnBorList.Click += new System.EventHandler(this.btnBorList_Click);
+            this.UProfileLinkList.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.UProfileLinkList.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UProfileLinkList.Image = ((System.Drawing.Image)(resources.GetObject("UProfileLinkList.Image")));
+            this.UProfileLinkList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UProfileLinkList.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.UProfileLinkList.LinkColor = System.Drawing.Color.White;
+            this.UProfileLinkList.Location = new System.Drawing.Point(12, 80);
+            this.UProfileLinkList.Name = "UProfileLinkList";
+            this.UProfileLinkList.Size = new System.Drawing.Size(155, 64);
+            this.UProfileLinkList.TabIndex = 24;
+            this.UProfileLinkList.TabStop = true;
+            this.UProfileLinkList.Text = "User Profile";
+            this.UProfileLinkList.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.UProfileLinkList.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.UProfileLinkList_LinkClicked);
             // 
-            // btnBookBor
+            // SettingsLink
             // 
-            this.btnBookBor.Location = new System.Drawing.Point(19, 214);
-            this.btnBookBor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBookBor.Name = "btnBookBor";
-            this.btnBookBor.Size = new System.Drawing.Size(137, 44);
-            this.btnBookBor.TabIndex = 2;
-            this.btnBookBor.Text = "Book Borrowing";
-            this.btnBookBor.UseVisualStyleBackColor = true;
-            this.btnBookBor.Click += new System.EventHandler(this.btnBookBor_Click);
+            this.SettingsLink.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.SettingsLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsLink.Image = ((System.Drawing.Image)(resources.GetObject("SettingsLink.Image")));
+            this.SettingsLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingsLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.SettingsLink.LinkColor = System.Drawing.Color.White;
+            this.SettingsLink.Location = new System.Drawing.Point(12, 591);
+            this.SettingsLink.Name = "SettingsLink";
+            this.SettingsLink.Size = new System.Drawing.Size(133, 64);
+            this.SettingsLink.TabIndex = 23;
+            this.SettingsLink.TabStop = true;
+            this.SettingsLink.Text = "Settings";
+            this.SettingsLink.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnBookReturn
+            // BookReservationLink
             // 
-            this.btnBookReturn.Location = new System.Drawing.Point(19, 274);
-            this.btnBookReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBookReturn.Name = "btnBookReturn";
-            this.btnBookReturn.Size = new System.Drawing.Size(137, 44);
-            this.btnBookReturn.TabIndex = 3;
-            this.btnBookReturn.Text = "Book Returning";
-            this.btnBookReturn.UseVisualStyleBackColor = true;
-            this.btnBookReturn.Click += new System.EventHandler(this.btnBookReturn_Click);
+            this.BookReservationLink.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.BookReservationLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookReservationLink.Image = ((System.Drawing.Image)(resources.GetObject("BookReservationLink.Image")));
+            this.BookReservationLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BookReservationLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.BookReservationLink.LinkColor = System.Drawing.Color.White;
+            this.BookReservationLink.Location = new System.Drawing.Point(12, 437);
+            this.BookReservationLink.Name = "BookReservationLink";
+            this.BookReservationLink.Size = new System.Drawing.Size(201, 64);
+            this.BookReservationLink.TabIndex = 22;
+            this.BookReservationLink.TabStop = true;
+            this.BookReservationLink.Text = "Book Reservation";
+            this.BookReservationLink.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BookReservationLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BookReservationLink_LinkClicked);
             // 
-            // bookReserv
+            // BookReturningLink
             // 
-            this.bookReserv.Location = new System.Drawing.Point(19, 334);
-            this.bookReserv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bookReserv.Name = "bookReserv";
-            this.bookReserv.Size = new System.Drawing.Size(137, 44);
-            this.bookReserv.TabIndex = 4;
-            this.bookReserv.Text = "Book Reservation";
-            this.bookReserv.UseVisualStyleBackColor = true;
-            this.bookReserv.Click += new System.EventHandler(this.bookReserv_Click);
+            this.BookReturningLink.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.BookReturningLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookReturningLink.Image = ((System.Drawing.Image)(resources.GetObject("BookReturningLink.Image")));
+            this.BookReturningLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BookReturningLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.BookReturningLink.LinkColor = System.Drawing.Color.White;
+            this.BookReturningLink.Location = new System.Drawing.Point(12, 364);
+            this.BookReturningLink.Name = "BookReturningLink";
+            this.BookReturningLink.Size = new System.Drawing.Size(189, 64);
+            this.BookReturningLink.TabIndex = 21;
+            this.BookReturningLink.TabStop = true;
+            this.BookReturningLink.Text = "Book Returning";
+            this.BookReturningLink.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BookReturningLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BookReturningLink_LinkClicked);
             // 
-            // btnBookPenalty
+            // BookBorrowingLink
             // 
-            this.btnBookPenalty.Location = new System.Drawing.Point(19, 395);
-            this.btnBookPenalty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBookPenalty.Name = "btnBookPenalty";
-            this.btnBookPenalty.Size = new System.Drawing.Size(137, 44);
-            this.btnBookPenalty.TabIndex = 5;
-            this.btnBookPenalty.Text = "Book Penalty";
-            this.btnBookPenalty.UseVisualStyleBackColor = true;
-            this.btnBookPenalty.Click += new System.EventHandler(this.btnBookPenalty_Click);
+            this.BookBorrowingLink.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.BookBorrowingLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookBorrowingLink.Image = ((System.Drawing.Image)(resources.GetObject("BookBorrowingLink.Image")));
+            this.BookBorrowingLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BookBorrowingLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.BookBorrowingLink.LinkColor = System.Drawing.Color.White;
+            this.BookBorrowingLink.Location = new System.Drawing.Point(12, 290);
+            this.BookBorrowingLink.Name = "BookBorrowingLink";
+            this.BookBorrowingLink.Size = new System.Drawing.Size(189, 64);
+            this.BookBorrowingLink.TabIndex = 20;
+            this.BookBorrowingLink.TabStop = true;
+            this.BookBorrowingLink.Text = "Book Borrowing";
+            this.BookBorrowingLink.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BookBorrowingLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BookBorrowingLink_LinkClicked);
             // 
-            // btnProfile
+            // BorrowerListLink
             // 
-            this.btnProfile.Location = new System.Drawing.Point(19, 33);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(137, 44);
-            this.btnProfile.TabIndex = 6;
-            this.btnProfile.Text = "User Profile";
-            this.btnProfile.UseVisualStyleBackColor = true;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            this.BorrowerListLink.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.BorrowerListLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorrowerListLink.Image = ((System.Drawing.Image)(resources.GetObject("BorrowerListLink.Image")));
+            this.BorrowerListLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BorrowerListLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.BorrowerListLink.LinkColor = System.Drawing.Color.White;
+            this.BorrowerListLink.Location = new System.Drawing.Point(12, 217);
+            this.BorrowerListLink.Name = "BorrowerListLink";
+            this.BorrowerListLink.Size = new System.Drawing.Size(163, 64);
+            this.BorrowerListLink.TabIndex = 19;
+            this.BorrowerListLink.TabStop = true;
+            this.BorrowerListLink.Text = "Borrower List";
+            this.BorrowerListLink.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BorrowerListLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BorrowerListLink_LinkClicked);
             // 
-            // penalty1
+            // BookListLink
             // 
-            this.penalty1.Location = new System.Drawing.Point(177, 1);
-            this.penalty1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.penalty1.Name = "penalty1";
-            this.penalty1.Size = new System.Drawing.Size(891, 559);
-            this.penalty1.TabIndex = 13;
-            this.penalty1.Load += new System.EventHandler(this.penalty1_Load_1);
+            this.BookListLink.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.BookListLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookListLink.Image = ((System.Drawing.Image)(resources.GetObject("BookListLink.Image")));
+            this.BookListLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BookListLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.BookListLink.LinkColor = System.Drawing.Color.White;
+            this.BookListLink.Location = new System.Drawing.Point(12, 144);
+            this.BookListLink.Name = "BookListLink";
+            this.BookListLink.Size = new System.Drawing.Size(133, 64);
+            this.BookListLink.TabIndex = 18;
+            this.BookListLink.TabStop = true;
+            this.BookListLink.Text = "Book List";
+            this.BookListLink.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BookListLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BookListLink_LinkClicked);
             // 
-            // bookReservation1
+            // linkLabel1
             // 
-            this.bookReservation1.Location = new System.Drawing.Point(168, 11);
-            this.bookReservation1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bookReservation1.Name = "bookReservation1";
-            this.bookReservation1.Size = new System.Drawing.Size(943, 569);
-            this.bookReservation1.TabIndex = 12;
-            // 
-            // bookReturning1
-            // 
-            this.bookReturning1.Location = new System.Drawing.Point(168, 1);
-            this.bookReturning1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bookReturning1.Name = "bookReturning1";
-            this.bookReturning1.Size = new System.Drawing.Size(873, 542);
-            this.bookReturning1.TabIndex = 11;
-            // 
-            // bookBorrowing1
-            // 
-            this.bookBorrowing1.Location = new System.Drawing.Point(161, -4);
-            this.bookBorrowing1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bookBorrowing1.Name = "bookBorrowing1";
-            this.bookBorrowing1.Size = new System.Drawing.Size(1013, 583);
-            this.bookBorrowing1.TabIndex = 10;
-            // 
-            // borrowerList1
-            // 
-            this.borrowerList1.Location = new System.Drawing.Point(161, 5);
-            this.borrowerList1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.borrowerList1.Name = "borrowerList1";
-            this.borrowerList1.Size = new System.Drawing.Size(851, 555);
-            this.borrowerList1.TabIndex = 9;
-            // 
-            // bookList1
-            // 
-            this.bookList1.Location = new System.Drawing.Point(161, -6);
-            this.bookList1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bookList1.Name = "bookList1";
-            this.bookList1.Size = new System.Drawing.Size(907, 566);
-            this.bookList1.TabIndex = 8;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Image = ((System.Drawing.Image)(resources.GetObject("linkLabel1.Image")));
+            this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(21, 10);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(180, 64);
+            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "LMS";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // profile1
             // 
-            this.profile1.Location = new System.Drawing.Point(161, -6);
-            this.profile1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.profile1.BackColor = System.Drawing.Color.RosyBrown;
+            this.profile1.Location = new System.Drawing.Point(222, -2);
             this.profile1.Name = "profile1";
-            this.profile1.Size = new System.Drawing.Size(941, 542);
-            this.profile1.TabIndex = 7;
+            this.profile1.Size = new System.Drawing.Size(1248, 1059);
+            this.profile1.TabIndex = 26;
+            // 
+            // bookList1
+            // 
+            this.bookList1.BackColor = System.Drawing.Color.Gray;
+            this.bookList1.Location = new System.Drawing.Point(223, 1);
+            this.bookList1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bookList1.Name = "bookList1";
+            this.bookList1.Size = new System.Drawing.Size(1248, 1059);
+            this.bookList1.TabIndex = 27;
+            // 
+            // borrowerList1
+            // 
+            this.borrowerList1.BackColor = System.Drawing.Color.LightGray;
+            this.borrowerList1.Location = new System.Drawing.Point(223, -2);
+            this.borrowerList1.Name = "borrowerList1";
+            this.borrowerList1.Size = new System.Drawing.Size(1248, 1059);
+            this.borrowerList1.TabIndex = 28;
+            // 
+            // bookBorrowing1
+            // 
+            this.bookBorrowing1.BackColor = System.Drawing.Color.DimGray;
+            this.bookBorrowing1.Location = new System.Drawing.Point(219, -2);
+            this.bookBorrowing1.Name = "bookBorrowing1";
+            this.bookBorrowing1.Size = new System.Drawing.Size(1248, 1059);
+            this.bookBorrowing1.TabIndex = 29;
+            // 
+            // bookReturning1
+            // 
+            this.bookReturning1.BackColor = System.Drawing.Color.Silver;
+            this.bookReturning1.Location = new System.Drawing.Point(219, 1);
+            this.bookReturning1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bookReturning1.Name = "bookReturning1";
+            this.bookReturning1.Size = new System.Drawing.Size(1248, 1059);
+            this.bookReturning1.TabIndex = 30;
+            // 
+            // bookReservation1
+            // 
+            this.bookReservation1.BackColor = System.Drawing.Color.DarkGray;
+            this.bookReservation1.Location = new System.Drawing.Point(222, 2);
+            this.bookReservation1.Name = "bookReservation1";
+            this.bookReservation1.Size = new System.Drawing.Size(1248, 1059);
+            this.bookReservation1.TabIndex = 31;
+            // 
+            // penalty1
+            // 
+            this.penalty1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.penalty1.Location = new System.Drawing.Point(219, -2);
+            this.penalty1.Name = "penalty1";
+            this.penalty1.Size = new System.Drawing.Size(1248, 1059);
+            this.penalty1.TabIndex = 32;
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 593);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(44)))), ((int)(((byte)(92)))));
+            this.ClientSize = new System.Drawing.Size(1482, 1055);
             this.Controls.Add(this.penalty1);
             this.Controls.Add(this.bookReservation1);
             this.Controls.Add(this.bookReturning1);
@@ -190,13 +269,15 @@
             this.Controls.Add(this.borrowerList1);
             this.Controls.Add(this.bookList1);
             this.Controls.Add(this.profile1);
-            this.Controls.Add(this.btnProfile);
-            this.Controls.Add(this.btnBookPenalty);
-            this.Controls.Add(this.bookReserv);
-            this.Controls.Add(this.btnBookReturn);
-            this.Controls.Add(this.btnBookBor);
-            this.Controls.Add(this.btnBorList);
-            this.Controls.Add(this.btnBookList);
+            this.Controls.Add(this.linkLabel3);
+            this.Controls.Add(this.UProfileLinkList);
+            this.Controls.Add(this.SettingsLink);
+            this.Controls.Add(this.BookReservationLink);
+            this.Controls.Add(this.BookReturningLink);
+            this.Controls.Add(this.BookBorrowingLink);
+            this.Controls.Add(this.BorrowerListLink);
+            this.Controls.Add(this.BookListLink);
+            this.Controls.Add(this.linkLabel1);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainPage";
@@ -208,13 +289,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnBookList;
-        private System.Windows.Forms.Button btnBorList;
-        private System.Windows.Forms.Button btnBookBor;
-        private System.Windows.Forms.Button btnBookReturn;
-        private System.Windows.Forms.Button bookReserv;
-        private System.Windows.Forms.Button btnBookPenalty;
-        private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel UProfileLinkList;
+        private System.Windows.Forms.LinkLabel SettingsLink;
+        private System.Windows.Forms.LinkLabel BookReservationLink;
+        private System.Windows.Forms.LinkLabel BookReturningLink;
+        private System.Windows.Forms.LinkLabel BookBorrowingLink;
+        private System.Windows.Forms.LinkLabel BorrowerListLink;
+        private System.Windows.Forms.LinkLabel BookListLink;
+        private System.Windows.Forms.LinkLabel linkLabel1;
         private Profile profile1;
         private BookList bookList1;
         private BorrowerList borrowerList1;

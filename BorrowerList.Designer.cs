@@ -44,9 +44,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.Controls.Add(this.lblTitle);
             this.Name = "BorrowerList";
-            this.Size = new System.Drawing.Size(851, 555);
+            this.Size = new System.Drawing.Size(1248, 1059);
             this.ResumeLayout(false);
 
         }

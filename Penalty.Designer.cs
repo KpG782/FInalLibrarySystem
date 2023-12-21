@@ -44,9 +44,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.lblTitle);
             this.Name = "Penalty";
-            this.Size = new System.Drawing.Size(793, 520);
+            this.Size = new System.Drawing.Size(1248, 1059);
             this.ResumeLayout(false);
 
         }

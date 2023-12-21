@@ -31,5 +31,10 @@ namespace FInalLibrarySystem
         {
 
         }
+
+        private void BookList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
