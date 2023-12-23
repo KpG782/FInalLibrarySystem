@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Academic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Academic.Designer.cs">
+      <DependentUpon>Academic.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookBorrowing.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Academic.resx">
+      <DependentUpon>Academic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookBorrowing.resx">
       <DependentUpon>BookBorrowing.cs</DependentUpon>
     </EmbeddedResource>

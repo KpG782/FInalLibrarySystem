@@ -28,125 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Non_Fictional));
+            this.grpBook9 = new System.Windows.Forms.GroupBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pb9 = new System.Windows.Forms.PictureBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.grpBook6 = new System.Windows.Forms.GroupBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pb6 = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.grpBook8 = new System.Windows.Forms.GroupBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pb8 = new System.Windows.Forms.PictureBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.grpBook7 = new System.Windows.Forms.GroupBox();
             this.label57 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pb7 = new System.Windows.Forms.PictureBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.grpBook3 = new System.Windows.Forms.GroupBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pb3 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grpBook5 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pb5 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpBook4 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pb4 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpBook2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.grpBook = new System.Windows.Forms.GroupBox();
+            this.grpBook1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.grpBook.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.grpBook9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb9)).BeginInit();
+            this.grpBook6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
+            this.grpBook8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
+            this.grpBook7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
+            this.grpBook3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
+            this.grpBook5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
+            this.grpBook4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
+            this.grpBook2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
+            this.grpBook1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox6
+            // grpBook9
             // 
-            this.groupBox6.Controls.Add(this.label43);
-            this.groupBox6.Controls.Add(this.pictureBox7);
-            this.groupBox6.Controls.Add(this.label44);
-            this.groupBox6.Controls.Add(this.label45);
-            this.groupBox6.Controls.Add(this.label46);
-            this.groupBox6.Controls.Add(this.label47);
-            this.groupBox6.Controls.Add(this.label48);
-            this.groupBox6.Controls.Add(this.label49);
-            this.groupBox6.Location = new System.Drawing.Point(780, 512);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(333, 226);
-            this.groupBox6.TabIndex = 33;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Book 9";
+            this.grpBook9.Controls.Add(this.label43);
+            this.grpBook9.Controls.Add(this.pb9);
+            this.grpBook9.Controls.Add(this.label44);
+            this.grpBook9.Controls.Add(this.label45);
+            this.grpBook9.Controls.Add(this.label46);
+            this.grpBook9.Controls.Add(this.label47);
+            this.grpBook9.Controls.Add(this.label48);
+            this.grpBook9.Controls.Add(this.label49);
+            this.grpBook9.Location = new System.Drawing.Point(766, 520);
+            this.grpBook9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook9.Name = "grpBook9";
+            this.grpBook9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook9.Size = new System.Drawing.Size(333, 226);
+            this.grpBook9.TabIndex = 42;
+            this.grpBook9.TabStop = false;
+            this.grpBook9.Text = "Book 9";
             // 
             // label43
             // 
@@ -156,14 +157,16 @@
             this.label43.TabIndex = 16;
             this.label43.Text = "Status";
             // 
-            // pictureBox7
+            // pb9
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
+            this.pb9.Image = ((System.Drawing.Image)(resources.GetObject("pb9.Image")));
+            this.pb9.Location = new System.Drawing.Point(17, 53);
+            this.pb9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb9.Name = "pb9";
+            this.pb9.Size = new System.Drawing.Size(105, 151);
+            this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb9.TabIndex = 9;
+            this.pb9.TabStop = false;
             // 
             // label44
             // 
@@ -213,24 +216,24 @@
             this.label49.TabIndex = 12;
             this.label49.Text = "Category";
             // 
-            // groupBox4
+            // grpBook6
             // 
-            this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Controls.Add(this.pictureBox5);
-            this.groupBox4.Controls.Add(this.label30);
-            this.groupBox4.Controls.Add(this.label31);
-            this.groupBox4.Controls.Add(this.label32);
-            this.groupBox4.Controls.Add(this.label33);
-            this.groupBox4.Controls.Add(this.label34);
-            this.groupBox4.Controls.Add(this.label35);
-            this.groupBox4.Location = new System.Drawing.Point(780, 264);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(333, 226);
-            this.groupBox4.TabIndex = 30;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Book 6";
+            this.grpBook6.Controls.Add(this.label29);
+            this.grpBook6.Controls.Add(this.pb6);
+            this.grpBook6.Controls.Add(this.label30);
+            this.grpBook6.Controls.Add(this.label31);
+            this.grpBook6.Controls.Add(this.label32);
+            this.grpBook6.Controls.Add(this.label33);
+            this.grpBook6.Controls.Add(this.label34);
+            this.grpBook6.Controls.Add(this.label35);
+            this.grpBook6.Location = new System.Drawing.Point(766, 260);
+            this.grpBook6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook6.Name = "grpBook6";
+            this.grpBook6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook6.Size = new System.Drawing.Size(333, 226);
+            this.grpBook6.TabIndex = 39;
+            this.grpBook6.TabStop = false;
+            this.grpBook6.Text = "Book 6";
             // 
             // label29
             // 
@@ -240,14 +243,16 @@
             this.label29.TabIndex = 16;
             this.label29.Text = "Status";
             // 
-            // pictureBox5
+            // pb6
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
+            this.pb6.Image = ((System.Drawing.Image)(resources.GetObject("pb6.Image")));
+            this.pb6.Location = new System.Drawing.Point(17, 53);
+            this.pb6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb6.Name = "pb6";
+            this.pb6.Size = new System.Drawing.Size(105, 151);
+            this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb6.TabIndex = 9;
+            this.pb6.TabStop = false;
             // 
             // label30
             // 
@@ -297,24 +302,24 @@
             this.label35.TabIndex = 12;
             this.label35.Text = "Category";
             // 
-            // groupBox7
+            // grpBook8
             // 
-            this.groupBox7.Controls.Add(this.label50);
-            this.groupBox7.Controls.Add(this.pictureBox8);
-            this.groupBox7.Controls.Add(this.label51);
-            this.groupBox7.Controls.Add(this.label52);
-            this.groupBox7.Controls.Add(this.label53);
-            this.groupBox7.Controls.Add(this.label54);
-            this.groupBox7.Controls.Add(this.label55);
-            this.groupBox7.Controls.Add(this.label56);
-            this.groupBox7.Location = new System.Drawing.Point(399, 512);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Size = new System.Drawing.Size(333, 226);
-            this.groupBox7.TabIndex = 32;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Book 8";
+            this.grpBook8.Controls.Add(this.label50);
+            this.grpBook8.Controls.Add(this.pb8);
+            this.grpBook8.Controls.Add(this.label51);
+            this.grpBook8.Controls.Add(this.label52);
+            this.grpBook8.Controls.Add(this.label53);
+            this.grpBook8.Controls.Add(this.label54);
+            this.grpBook8.Controls.Add(this.label55);
+            this.grpBook8.Controls.Add(this.label56);
+            this.grpBook8.Location = new System.Drawing.Point(385, 520);
+            this.grpBook8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook8.Name = "grpBook8";
+            this.grpBook8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook8.Size = new System.Drawing.Size(333, 226);
+            this.grpBook8.TabIndex = 41;
+            this.grpBook8.TabStop = false;
+            this.grpBook8.Text = "Book 8";
             // 
             // label50
             // 
@@ -324,14 +329,17 @@
             this.label50.TabIndex = 16;
             this.label50.Text = "Status";
             // 
-            // pictureBox8
+            // pb8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
+            this.pb8.ErrorImage = null;
+            this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
+            this.pb8.Location = new System.Drawing.Point(17, 53);
+            this.pb8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb8.Name = "pb8";
+            this.pb8.Size = new System.Drawing.Size(105, 151);
+            this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb8.TabIndex = 9;
+            this.pb8.TabStop = false;
             // 
             // label51
             // 
@@ -381,24 +389,24 @@
             this.label56.TabIndex = 12;
             this.label56.Text = "Category";
             // 
-            // groupBox8
+            // grpBook7
             // 
-            this.groupBox8.Controls.Add(this.label57);
-            this.groupBox8.Controls.Add(this.pictureBox9);
-            this.groupBox8.Controls.Add(this.label58);
-            this.groupBox8.Controls.Add(this.label59);
-            this.groupBox8.Controls.Add(this.label60);
-            this.groupBox8.Controls.Add(this.label61);
-            this.groupBox8.Controls.Add(this.label62);
-            this.groupBox8.Controls.Add(this.label63);
-            this.groupBox8.Location = new System.Drawing.Point(17, 512);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Size = new System.Drawing.Size(333, 226);
-            this.groupBox8.TabIndex = 31;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Book 7";
+            this.grpBook7.Controls.Add(this.label57);
+            this.grpBook7.Controls.Add(this.pb7);
+            this.grpBook7.Controls.Add(this.label58);
+            this.grpBook7.Controls.Add(this.label59);
+            this.grpBook7.Controls.Add(this.label60);
+            this.grpBook7.Controls.Add(this.label61);
+            this.grpBook7.Controls.Add(this.label62);
+            this.grpBook7.Controls.Add(this.label63);
+            this.grpBook7.Location = new System.Drawing.Point(3, 520);
+            this.grpBook7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook7.Name = "grpBook7";
+            this.grpBook7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook7.Size = new System.Drawing.Size(333, 226);
+            this.grpBook7.TabIndex = 40;
+            this.grpBook7.TabStop = false;
+            this.grpBook7.Text = "Book 7";
             // 
             // label57
             // 
@@ -408,14 +416,16 @@
             this.label57.TabIndex = 16;
             this.label57.Text = "Status";
             // 
-            // pictureBox9
+            // pb7
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
+            this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
+            this.pb7.Location = new System.Drawing.Point(17, 53);
+            this.pb7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb7.Name = "pb7";
+            this.pb7.Size = new System.Drawing.Size(105, 151);
+            this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb7.TabIndex = 9;
+            this.pb7.TabStop = false;
             // 
             // label58
             // 
@@ -465,24 +475,24 @@
             this.label63.TabIndex = 12;
             this.label63.Text = "Category";
             // 
-            // groupBox5
+            // grpBook3
             // 
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.pictureBox6);
-            this.groupBox5.Controls.Add(this.label37);
-            this.groupBox5.Controls.Add(this.label38);
-            this.groupBox5.Controls.Add(this.label39);
-            this.groupBox5.Controls.Add(this.label40);
-            this.groupBox5.Controls.Add(this.label41);
-            this.groupBox5.Controls.Add(this.label42);
-            this.groupBox5.Location = new System.Drawing.Point(780, 22);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(333, 226);
-            this.groupBox5.TabIndex = 29;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Book 3";
+            this.grpBook3.Controls.Add(this.label36);
+            this.grpBook3.Controls.Add(this.pb3);
+            this.grpBook3.Controls.Add(this.label37);
+            this.grpBook3.Controls.Add(this.label38);
+            this.grpBook3.Controls.Add(this.label39);
+            this.grpBook3.Controls.Add(this.label40);
+            this.grpBook3.Controls.Add(this.label41);
+            this.grpBook3.Controls.Add(this.label42);
+            this.grpBook3.Location = new System.Drawing.Point(766, 18);
+            this.grpBook3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook3.Name = "grpBook3";
+            this.grpBook3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook3.Size = new System.Drawing.Size(333, 226);
+            this.grpBook3.TabIndex = 38;
+            this.grpBook3.TabStop = false;
+            this.grpBook3.Text = "Book 3";
             // 
             // label36
             // 
@@ -492,14 +502,16 @@
             this.label36.TabIndex = 16;
             this.label36.Text = "Status";
             // 
-            // pictureBox6
+            // pb3
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
+            this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
+            this.pb3.Location = new System.Drawing.Point(17, 53);
+            this.pb3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(105, 151);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb3.TabIndex = 9;
+            this.pb3.TabStop = false;
             // 
             // label37
             // 
@@ -549,24 +561,24 @@
             this.label42.TabIndex = 12;
             this.label42.Text = "Category";
             // 
-            // groupBox3
+            // grpBook5
             // 
-            this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.pictureBox4);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Controls.Add(this.label25);
-            this.groupBox3.Controls.Add(this.label26);
-            this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Controls.Add(this.label28);
-            this.groupBox3.Location = new System.Drawing.Point(399, 264);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(333, 226);
-            this.groupBox3.TabIndex = 28;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Book 5";
+            this.grpBook5.Controls.Add(this.label22);
+            this.grpBook5.Controls.Add(this.pb5);
+            this.grpBook5.Controls.Add(this.label23);
+            this.grpBook5.Controls.Add(this.label24);
+            this.grpBook5.Controls.Add(this.label25);
+            this.grpBook5.Controls.Add(this.label26);
+            this.grpBook5.Controls.Add(this.label27);
+            this.grpBook5.Controls.Add(this.label28);
+            this.grpBook5.Location = new System.Drawing.Point(385, 260);
+            this.grpBook5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook5.Name = "grpBook5";
+            this.grpBook5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook5.Size = new System.Drawing.Size(333, 226);
+            this.grpBook5.TabIndex = 37;
+            this.grpBook5.TabStop = false;
+            this.grpBook5.Text = "Book 5";
             // 
             // label22
             // 
@@ -576,14 +588,16 @@
             this.label22.TabIndex = 16;
             this.label22.Text = "Status";
             // 
-            // pictureBox4
+            // pb5
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.pb5.Image = ((System.Drawing.Image)(resources.GetObject("pb5.Image")));
+            this.pb5.Location = new System.Drawing.Point(17, 53);
+            this.pb5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb5.Name = "pb5";
+            this.pb5.Size = new System.Drawing.Size(105, 151);
+            this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb5.TabIndex = 9;
+            this.pb5.TabStop = false;
             // 
             // label23
             // 
@@ -633,24 +647,24 @@
             this.label28.TabIndex = 12;
             this.label28.Text = "Category";
             // 
-            // groupBox2
+            // grpBook4
             // 
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Location = new System.Drawing.Point(17, 264);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(333, 226);
-            this.groupBox2.TabIndex = 27;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Book 4";
+            this.grpBook4.Controls.Add(this.label15);
+            this.grpBook4.Controls.Add(this.pb4);
+            this.grpBook4.Controls.Add(this.label16);
+            this.grpBook4.Controls.Add(this.label17);
+            this.grpBook4.Controls.Add(this.label18);
+            this.grpBook4.Controls.Add(this.label19);
+            this.grpBook4.Controls.Add(this.label20);
+            this.grpBook4.Controls.Add(this.label21);
+            this.grpBook4.Location = new System.Drawing.Point(3, 260);
+            this.grpBook4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook4.Name = "grpBook4";
+            this.grpBook4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook4.Size = new System.Drawing.Size(333, 226);
+            this.grpBook4.TabIndex = 36;
+            this.grpBook4.TabStop = false;
+            this.grpBook4.Text = "Book 4";
             // 
             // label15
             // 
@@ -660,14 +674,16 @@
             this.label15.TabIndex = 16;
             this.label15.Text = "Status";
             // 
-            // pictureBox3
+            // pb4
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
+            this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
+            this.pb4.Location = new System.Drawing.Point(17, 53);
+            this.pb4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb4.Name = "pb4";
+            this.pb4.Size = new System.Drawing.Size(105, 151);
+            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb4.TabIndex = 9;
+            this.pb4.TabStop = false;
             // 
             // label16
             // 
@@ -717,24 +733,24 @@
             this.label21.TabIndex = 12;
             this.label21.Text = "Category";
             // 
-            // groupBox1
+            // grpBook2
             // 
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Location = new System.Drawing.Point(399, 22);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(333, 226);
-            this.groupBox1.TabIndex = 26;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Book 2";
+            this.grpBook2.Controls.Add(this.label8);
+            this.grpBook2.Controls.Add(this.pb2);
+            this.grpBook2.Controls.Add(this.label9);
+            this.grpBook2.Controls.Add(this.label10);
+            this.grpBook2.Controls.Add(this.label11);
+            this.grpBook2.Controls.Add(this.label12);
+            this.grpBook2.Controls.Add(this.label13);
+            this.grpBook2.Controls.Add(this.label14);
+            this.grpBook2.Location = new System.Drawing.Point(385, 18);
+            this.grpBook2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook2.Name = "grpBook2";
+            this.grpBook2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook2.Size = new System.Drawing.Size(333, 226);
+            this.grpBook2.TabIndex = 35;
+            this.grpBook2.TabStop = false;
+            this.grpBook2.Text = "Book 2";
             // 
             // label8
             // 
@@ -744,14 +760,16 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Status";
             // 
-            // pictureBox1
+            // pb2
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
+            this.pb2.Location = new System.Drawing.Point(17, 53);
+            this.pb2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(105, 151);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb2.TabIndex = 9;
+            this.pb2.TabStop = false;
             // 
             // label9
             // 
@@ -801,24 +819,25 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Category";
             // 
-            // grpBook
+            // grpBook1
             // 
-            this.grpBook.Controls.Add(this.label1);
-            this.grpBook.Controls.Add(this.pictureBox2);
-            this.grpBook.Controls.Add(this.label2);
-            this.grpBook.Controls.Add(this.label7);
-            this.grpBook.Controls.Add(this.label3);
-            this.grpBook.Controls.Add(this.label6);
-            this.grpBook.Controls.Add(this.label4);
-            this.grpBook.Controls.Add(this.label5);
-            this.grpBook.Location = new System.Drawing.Point(17, 22);
-            this.grpBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpBook.Name = "grpBook";
-            this.grpBook.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpBook.Size = new System.Drawing.Size(333, 226);
-            this.grpBook.TabIndex = 25;
-            this.grpBook.TabStop = false;
-            this.grpBook.Text = "Book 1";
+            this.grpBook1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpBook1.Controls.Add(this.label1);
+            this.grpBook1.Controls.Add(this.pb1);
+            this.grpBook1.Controls.Add(this.label2);
+            this.grpBook1.Controls.Add(this.label7);
+            this.grpBook1.Controls.Add(this.label3);
+            this.grpBook1.Controls.Add(this.label6);
+            this.grpBook1.Controls.Add(this.label4);
+            this.grpBook1.Controls.Add(this.label5);
+            this.grpBook1.Location = new System.Drawing.Point(3, 18);
+            this.grpBook1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook1.Name = "grpBook1";
+            this.grpBook1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook1.Size = new System.Drawing.Size(333, 226);
+            this.grpBook1.TabIndex = 34;
+            this.grpBook1.TabStop = false;
+            this.grpBook1.Text = "Book 1";
             // 
             // label1
             // 
@@ -828,14 +847,17 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Status";
             // 
-            // pictureBox2
+            // pb1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 151);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            this.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
+            this.pb1.Location = new System.Drawing.Point(17, 62);
+            this.pb1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(105, 142);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb1.TabIndex = 9;
+            this.pb1.TabStop = false;
             // 
             // label2
             // 
@@ -890,116 +912,116 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.grpBook);
+            this.Controls.Add(this.grpBook9);
+            this.Controls.Add(this.grpBook6);
+            this.Controls.Add(this.grpBook8);
+            this.Controls.Add(this.grpBook7);
+            this.Controls.Add(this.grpBook3);
+            this.Controls.Add(this.grpBook5);
+            this.Controls.Add(this.grpBook4);
+            this.Controls.Add(this.grpBook2);
+            this.Controls.Add(this.grpBook1);
             this.Name = "Non_Fictional";
             this.Size = new System.Drawing.Size(1248, 910);
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.grpBook.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.grpBook9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb9)).EndInit();
+            this.grpBook6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb6)).EndInit();
+            this.grpBook8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
+            this.grpBook7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
+            this.grpBook3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
+            this.grpBook5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
+            this.grpBook4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
+            this.grpBook2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
+            this.grpBook1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox grpBook9;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pb9;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox grpBook6;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pb6;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox grpBook8;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pb8;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox grpBook7;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pb7;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox grpBook3;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pb3;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox grpBook5;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pb5;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grpBook4;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pb4;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpBook2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.GroupBox grpBook;
+        private System.Windows.Forms.GroupBox grpBook1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pb1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
