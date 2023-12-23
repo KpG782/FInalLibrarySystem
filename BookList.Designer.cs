@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookList));
             this.grpBook = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -65,6 +65,56 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.lblFBooks = new System.Windows.Forms.LinkLabel();
+            this.lblNFBooks = new System.Windows.Forms.LinkLabel();
+            this.lblAcadBooks = new System.Windows.Forms.LinkLabel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.fictional1 = new FInalLibrarySystem.Fictional();
+            this.nonFictional1 = new FInalLibrarySystem.Non_Fictional();
             this.grpBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -73,17 +123,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Location = new System.Drawing.Point(16, 14);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(100, 23);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Book List";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // grpBook
             // 
@@ -102,7 +152,7 @@
             this.grpBook.Size = new System.Drawing.Size(333, 226);
             this.grpBook.TabIndex = 9;
             this.grpBook.TabStop = false;
-            this.grpBook.Text = "Book1";
+            this.grpBook.Text = "Book 1";
             // 
             // label1
             // 
@@ -186,7 +236,7 @@
             this.groupBox1.Size = new System.Drawing.Size(333, 226);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Book2";
+            this.groupBox1.Text = "Book 2";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label8
@@ -272,7 +322,7 @@
             this.groupBox2.Size = new System.Drawing.Size(333, 226);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Book3";
+            this.groupBox2.Text = "Book 4";
             // 
             // label15
             // 
@@ -356,7 +406,7 @@
             this.groupBox3.Size = new System.Drawing.Size(333, 226);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Book4";
+            this.groupBox3.Text = "Book 5";
             // 
             // label22
             // 
@@ -423,16 +473,512 @@
             this.label28.TabIndex = 12;
             this.label28.Text = "Category";
             // 
+            // lblFBooks
+            // 
+            this.lblFBooks.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.lblFBooks.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFBooks.Image = ((System.Drawing.Image)(resources.GetObject("lblFBooks.Image")));
+            this.lblFBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFBooks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lblFBooks.LinkColor = System.Drawing.Color.White;
+            this.lblFBooks.Location = new System.Drawing.Point(239, 0);
+            this.lblFBooks.Name = "lblFBooks";
+            this.lblFBooks.Size = new System.Drawing.Size(155, 64);
+            this.lblFBooks.TabIndex = 26;
+            this.lblFBooks.TabStop = true;
+            this.lblFBooks.Text = "Fictional Books";
+            this.lblFBooks.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblFBooks.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblFBooks_LinkClicked);
+            // 
+            // lblNFBooks
+            // 
+            this.lblNFBooks.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.lblNFBooks.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNFBooks.Image = ((System.Drawing.Image)(resources.GetObject("lblNFBooks.Image")));
+            this.lblNFBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNFBooks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lblNFBooks.LinkColor = System.Drawing.Color.White;
+            this.lblNFBooks.Location = new System.Drawing.Point(414, 0);
+            this.lblNFBooks.Name = "lblNFBooks";
+            this.lblNFBooks.Size = new System.Drawing.Size(206, 64);
+            this.lblNFBooks.TabIndex = 28;
+            this.lblNFBooks.TabStop = true;
+            this.lblNFBooks.Text = "Non-Fictional Books";
+            this.lblNFBooks.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblNFBooks.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // lblAcadBooks
+            // 
+            this.lblAcadBooks.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.lblAcadBooks.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAcadBooks.Image = ((System.Drawing.Image)(resources.GetObject("lblAcadBooks.Image")));
+            this.lblAcadBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblAcadBooks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lblAcadBooks.LinkColor = System.Drawing.Color.White;
+            this.lblAcadBooks.Location = new System.Drawing.Point(45, 0);
+            this.lblAcadBooks.Name = "lblAcadBooks";
+            this.lblAcadBooks.Size = new System.Drawing.Size(177, 64);
+            this.lblAcadBooks.TabIndex = 29;
+            this.lblAcadBooks.TabStop = true;
+            this.lblAcadBooks.Text = "Academic Books";
+            this.lblAcadBooks.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblAcadBooks.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.pictureBox5);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.label33);
+            this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.label35);
+            this.groupBox4.Location = new System.Drawing.Point(812, 311);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(333, 226);
+            this.groupBox4.TabIndex = 21;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Book 6";
+            // 
+            // label29
+            // 
+            this.label29.Location = new System.Drawing.Point(143, 191);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(100, 23);
+            this.label29.TabIndex = 16;
+            this.label29.Text = "Status";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(105, 151);
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label30
+            // 
+            this.label30.Location = new System.Drawing.Point(143, 167);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(100, 23);
+            this.label30.TabIndex = 15;
+            this.label30.Text = "Publisher";
+            // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(143, 53);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(100, 23);
+            this.label31.TabIndex = 10;
+            this.label31.Text = "Title";
+            // 
+            // label32
+            // 
+            this.label32.Location = new System.Drawing.Point(143, 145);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(100, 23);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "Copyright";
+            // 
+            // label33
+            // 
+            this.label33.Location = new System.Drawing.Point(143, 76);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(100, 23);
+            this.label33.TabIndex = 11;
+            this.label33.Text = "ISBN";
+            // 
+            // label34
+            // 
+            this.label34.Location = new System.Drawing.Point(143, 122);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(100, 23);
+            this.label34.TabIndex = 13;
+            this.label34.Text = "Author";
+            // 
+            // label35
+            // 
+            this.label35.Location = new System.Drawing.Point(143, 98);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(100, 23);
+            this.label35.TabIndex = 12;
+            this.label35.Text = "Category";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.pictureBox6);
+            this.groupBox5.Controls.Add(this.label37);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.label39);
+            this.groupBox5.Controls.Add(this.label40);
+            this.groupBox5.Controls.Add(this.label41);
+            this.groupBox5.Controls.Add(this.label42);
+            this.groupBox5.Location = new System.Drawing.Point(812, 69);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Size = new System.Drawing.Size(333, 226);
+            this.groupBox5.TabIndex = 20;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Book 3";
+            // 
+            // label36
+            // 
+            this.label36.Location = new System.Drawing.Point(143, 191);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(100, 23);
+            this.label36.TabIndex = 16;
+            this.label36.Text = "Status";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(105, 151);
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label37
+            // 
+            this.label37.Location = new System.Drawing.Point(143, 167);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(100, 23);
+            this.label37.TabIndex = 15;
+            this.label37.Text = "Publisher";
+            // 
+            // label38
+            // 
+            this.label38.Location = new System.Drawing.Point(143, 53);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(100, 23);
+            this.label38.TabIndex = 10;
+            this.label38.Text = "Title";
+            // 
+            // label39
+            // 
+            this.label39.Location = new System.Drawing.Point(143, 145);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(100, 23);
+            this.label39.TabIndex = 14;
+            this.label39.Text = "Copyright";
+            // 
+            // label40
+            // 
+            this.label40.Location = new System.Drawing.Point(143, 76);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(100, 23);
+            this.label40.TabIndex = 11;
+            this.label40.Text = "ISBN";
+            // 
+            // label41
+            // 
+            this.label41.Location = new System.Drawing.Point(143, 122);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(100, 23);
+            this.label41.TabIndex = 13;
+            this.label41.Text = "Author";
+            // 
+            // label42
+            // 
+            this.label42.Location = new System.Drawing.Point(143, 98);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 23);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "Category";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label43);
+            this.groupBox6.Controls.Add(this.pictureBox7);
+            this.groupBox6.Controls.Add(this.label44);
+            this.groupBox6.Controls.Add(this.label45);
+            this.groupBox6.Controls.Add(this.label46);
+            this.groupBox6.Controls.Add(this.label47);
+            this.groupBox6.Controls.Add(this.label48);
+            this.groupBox6.Controls.Add(this.label49);
+            this.groupBox6.Location = new System.Drawing.Point(812, 571);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Size = new System.Drawing.Size(333, 226);
+            this.groupBox6.TabIndex = 24;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Book 9";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // label43
+            // 
+            this.label43.Location = new System.Drawing.Point(143, 191);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(100, 23);
+            this.label43.TabIndex = 16;
+            this.label43.Text = "Status";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(105, 151);
+            this.pictureBox7.TabIndex = 9;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label44
+            // 
+            this.label44.Location = new System.Drawing.Point(143, 167);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(100, 23);
+            this.label44.TabIndex = 15;
+            this.label44.Text = "Publisher";
+            // 
+            // label45
+            // 
+            this.label45.Location = new System.Drawing.Point(143, 53);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(100, 23);
+            this.label45.TabIndex = 10;
+            this.label45.Text = "Title";
+            // 
+            // label46
+            // 
+            this.label46.Location = new System.Drawing.Point(143, 145);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(100, 23);
+            this.label46.TabIndex = 14;
+            this.label46.Text = "Copyright";
+            // 
+            // label47
+            // 
+            this.label47.Location = new System.Drawing.Point(143, 76);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(100, 23);
+            this.label47.TabIndex = 11;
+            this.label47.Text = "ISBN";
+            // 
+            // label48
+            // 
+            this.label48.Location = new System.Drawing.Point(143, 122);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(100, 23);
+            this.label48.TabIndex = 13;
+            this.label48.Text = "Author";
+            // 
+            // label49
+            // 
+            this.label49.Location = new System.Drawing.Point(143, 98);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(100, 23);
+            this.label49.TabIndex = 12;
+            this.label49.Text = "Category";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label50);
+            this.groupBox7.Controls.Add(this.pictureBox8);
+            this.groupBox7.Controls.Add(this.label51);
+            this.groupBox7.Controls.Add(this.label52);
+            this.groupBox7.Controls.Add(this.label53);
+            this.groupBox7.Controls.Add(this.label54);
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.label56);
+            this.groupBox7.Location = new System.Drawing.Point(431, 571);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Size = new System.Drawing.Size(333, 226);
+            this.groupBox7.TabIndex = 23;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Book 8";
+            // 
+            // label50
+            // 
+            this.label50.Location = new System.Drawing.Point(143, 191);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(100, 23);
+            this.label50.TabIndex = 16;
+            this.label50.Text = "Status";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(105, 151);
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label51
+            // 
+            this.label51.Location = new System.Drawing.Point(143, 167);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(100, 23);
+            this.label51.TabIndex = 15;
+            this.label51.Text = "Publisher";
+            // 
+            // label52
+            // 
+            this.label52.Location = new System.Drawing.Point(143, 53);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(100, 23);
+            this.label52.TabIndex = 10;
+            this.label52.Text = "Title";
+            // 
+            // label53
+            // 
+            this.label53.Location = new System.Drawing.Point(143, 145);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(100, 23);
+            this.label53.TabIndex = 14;
+            this.label53.Text = "Copyright";
+            // 
+            // label54
+            // 
+            this.label54.Location = new System.Drawing.Point(143, 76);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(100, 23);
+            this.label54.TabIndex = 11;
+            this.label54.Text = "ISBN";
+            // 
+            // label55
+            // 
+            this.label55.Location = new System.Drawing.Point(143, 122);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(100, 23);
+            this.label55.TabIndex = 13;
+            this.label55.Text = "Author";
+            // 
+            // label56
+            // 
+            this.label56.Location = new System.Drawing.Point(143, 98);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(100, 23);
+            this.label56.TabIndex = 12;
+            this.label56.Text = "Category";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label57);
+            this.groupBox8.Controls.Add(this.pictureBox9);
+            this.groupBox8.Controls.Add(this.label58);
+            this.groupBox8.Controls.Add(this.label59);
+            this.groupBox8.Controls.Add(this.label60);
+            this.groupBox8.Controls.Add(this.label61);
+            this.groupBox8.Controls.Add(this.label62);
+            this.groupBox8.Controls.Add(this.label63);
+            this.groupBox8.Location = new System.Drawing.Point(49, 571);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox8.Size = new System.Drawing.Size(333, 226);
+            this.groupBox8.TabIndex = 22;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Book 7";
+            // 
+            // label57
+            // 
+            this.label57.Location = new System.Drawing.Point(143, 191);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(100, 23);
+            this.label57.TabIndex = 16;
+            this.label57.Text = "Status";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(105, 151);
+            this.pictureBox9.TabIndex = 9;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label58
+            // 
+            this.label58.Location = new System.Drawing.Point(143, 167);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(100, 23);
+            this.label58.TabIndex = 15;
+            this.label58.Text = "Publisher";
+            // 
+            // label59
+            // 
+            this.label59.Location = new System.Drawing.Point(143, 53);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(100, 23);
+            this.label59.TabIndex = 10;
+            this.label59.Text = "Title";
+            // 
+            // label60
+            // 
+            this.label60.Location = new System.Drawing.Point(143, 145);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(100, 23);
+            this.label60.TabIndex = 14;
+            this.label60.Text = "Copyright";
+            // 
+            // label61
+            // 
+            this.label61.Location = new System.Drawing.Point(143, 76);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(100, 23);
+            this.label61.TabIndex = 11;
+            this.label61.Text = "ISBN";
+            // 
+            // label62
+            // 
+            this.label62.Location = new System.Drawing.Point(143, 122);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(100, 23);
+            this.label62.TabIndex = 13;
+            this.label62.Text = "Author";
+            // 
+            // label63
+            // 
+            this.label63.Location = new System.Drawing.Point(143, 98);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(100, 23);
+            this.label63.TabIndex = 12;
+            this.label63.Text = "Category";
+            // 
+            // fictional1
+            // 
+            this.fictional1.Location = new System.Drawing.Point(31, 52);
+            this.fictional1.Name = "fictional1";
+            this.fictional1.Size = new System.Drawing.Size(1248, 1004);
+            this.fictional1.TabIndex = 30;
+            // 
+            // nonFictional1
+            // 
+            this.nonFictional1.BackColor = System.Drawing.Color.RosyBrown;
+            this.nonFictional1.Location = new System.Drawing.Point(0, 52);
+            this.nonFictional1.Name = "nonFictional1";
+            this.nonFictional1.Size = new System.Drawing.Size(1279, 910);
+            this.nonFictional1.TabIndex = 31;
+            // 
             // BookList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.nonFictional1);
+            this.Controls.Add(this.fictional1);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.lblAcadBooks);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.lblNFBooks);
+            this.Controls.Add(this.lblFBooks);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpBook);
-            this.Controls.Add(this.lblTitle);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BookList";
             this.Size = new System.Drawing.Size(1248, 1059);
@@ -445,13 +991,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.GroupBox grpBook;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -488,5 +1042,55 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.LinkLabel lblFBooks;
+        private System.Windows.Forms.LinkLabel lblNFBooks;
+        private System.Windows.Forms.LinkLabel lblAcadBooks;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private Fictional fictional1;
+        private Non_Fictional nonFictional1;
     }
 }

@@ -174,5 +174,10 @@ namespace FInalLibrarySystem
             bookReservation1.Visible = false;
             penalty1.Visible = true;
         }
+
+        private void penalty1_Load_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

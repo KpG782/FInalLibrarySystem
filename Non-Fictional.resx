@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblFBooks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAANVJREFUWEftlm0KwjAQRPtDvJPeT9RzinqMODGvRWhivimUPFhKtrPDUJa202Dg
-        wxhzVN1VL1UWWNQhn5uzyweLOuTzdHbmRCsK+mYBvnBMgpH+AdQ+qC6qh9XkgEUc9MsAx2qwi4M+FqDf
-        fqD3DnAr3UwwstMAHL0g2XmAFBgZAfIDiDfXFUiTYKQoQBCkSTBSFGD1tqPfPcD8OT7TWqDfPcDVjfwl
-        uB8hsI8jrf0lsyHmJ9EE7OvAy7LZ31JwP0KgbxYgZT+8YFGHfIr3A4vB4Idp+gAPUgdv+L2YTgAAAABJ
-        RU5ErkJggg==
-</value>
-  </data>
-  <data name="lblNFBooks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAANVJREFUWEftlm0KwjAQRPtDvJPeT9RzinqMODGvRWhivimUPFhKtrPDUJa202Dg
-        wxhzVN1VL1UWWNQhn5uzyweLOuTzdHbmRCsK+mYBvnBMgpH+AdQ+qC6qh9XkgEUc9MsAx2qwi4M+FqDf
-        fqD3DnAr3UwwstMAHL0g2XmAFBgZAfIDiDfXFUiTYKQoQBCkSTBSFGD1tqPfPcD8OT7TWqDfPcDVjfwl
-        uB8hsI8jrf0lsyHmJ9EE7OvAy7LZ31JwP0KgbxYgZT+8YFGHfIr3A4vB4Idp+gAPUgdv+L2YTgAAAABJ
-        RU5ErkJggg==
-</value>
-  </data>
-  <data name="lblAcadBooks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAANVJREFUWEftlm0KwjAQRPtDvJPeT9RzinqMODGvRWhivimUPFhKtrPDUJa202Dg
-        wxhzVN1VL1UWWNQhn5uzyweLOuTzdHbmRCsK+mYBvnBMgpH+AdQ+qC6qh9XkgEUc9MsAx2qwi4M+FqDf
-        fqD3DnAr3UwwstMAHL0g2XmAFBgZAfIDiDfXFUiTYKQoQBCkSTBSFGD1tqPfPcD8OT7TWqDfPcDVjfwl
-        uB8hsI8jrf0lsyHmJ9EE7OvAy7LZ31JwP0KgbxYgZT+8YFGHfIr3A4vB4Idp+gAPUgdv+L2YTgAAAABJ
-        RU5ErkJggg==
-</value>
-  </data>
 </root>

@@ -76,11 +76,23 @@
     <Compile Include="BorrowerList.Designer.cs">
       <DependentUpon>BorrowerList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fictional.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fictional.Designer.cs">
+      <DependentUpon>Fictional.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non-Fictional.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Non-Fictional.Designer.cs">
+      <DependentUpon>Non-Fictional.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -123,8 +135,14 @@
     <EmbeddedResource Include="BorrowerList.resx">
       <DependentUpon>BorrowerList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fictional.resx">
+      <DependentUpon>Fictional.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non-Fictional.resx">
+      <DependentUpon>Non-Fictional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
