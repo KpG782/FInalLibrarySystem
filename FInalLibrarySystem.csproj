@@ -174,6 +174,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Images\Non-Fictional Books\8.jpeg.crdownload" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -188,8 +189,42 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Folder Include="Images\Login\" />
+    <Folder Include="Images\SignUp\" />
     <Folder Include="The-Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Academic Books\1.jpg" />
+    <Content Include="Images\Academic Books\10.jpg" />
+    <Content Include="Images\Academic Books\2.jpg" />
+    <Content Include="Images\Academic Books\3.jpg" />
+    <Content Include="Images\Academic Books\4.jpg" />
+    <Content Include="Images\Academic Books\5.jpg" />
+    <Content Include="Images\Academic Books\6.jpg" />
+    <Content Include="Images\Academic Books\7.jpg" />
+    <Content Include="Images\Academic Books\8.png" />
+    <Content Include="Images\Academic Books\9.jpg" />
+    <Content Include="Images\Fictional Books\1..jpg" />
+    <Content Include="Images\Fictional Books\10.jpg" />
+    <Content Include="Images\Fictional Books\2.jpg" />
+    <Content Include="Images\Fictional Books\3.jpg" />
+    <Content Include="Images\Fictional Books\4.jpg" />
+    <Content Include="Images\Fictional Books\5.jpg" />
+    <Content Include="Images\Fictional Books\6.jpg" />
+    <Content Include="Images\Fictional Books\7.jpg" />
+    <Content Include="Images\Fictional Books\8.jpg" />
+    <Content Include="Images\Fictional Books\9.jpg" />
+    <Content Include="Images\Non-Fictional Books\1.jpg" />
+    <Content Include="Images\Non-Fictional Books\10.jpg" />
+    <Content Include="Images\Non-Fictional Books\2.jpg" />
+    <Content Include="Images\Non-Fictional Books\3.jpg" />
+    <Content Include="Images\Non-Fictional Books\4.jpg" />
+    <Content Include="Images\Non-Fictional Books\5.jpg" />
+    <Content Include="Images\Non-Fictional Books\6.jfif" />
+    <Content Include="Images\Non-Fictional Books\6.jpg" />
+    <Content Include="Images\Non-Fictional Books\7.jpg" />
+    <Content Include="Images\Non-Fictional Books\8.jpg" />
+    <Content Include="Images\Non-Fictional Books\9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

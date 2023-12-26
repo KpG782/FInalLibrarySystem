@@ -15,6 +15,7 @@ namespace FInalLibrarySystem
     {
         //set global object
         MainPage mainPage = new MainPage();
+        
 
 
         // Define a simple class to represent a user
@@ -42,6 +43,17 @@ namespace FInalLibrarySystem
 
         // Array to store user information
         public User[] users = new User[20];
+
+        //draggable window
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool ReleaseCapture();
+
 
 
         public frmLogin()
@@ -74,9 +86,21 @@ namespace FInalLibrarySystem
             //to hide automatically
             txtPass.UseSystemPasswordChar = true;
 
-            //delete this
-            //try to show input from signup
-            
+            // rounded corner
+            System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+            int radius = 20; // adjust the value to change the roundness of corners
+
+            // create a rounded rectangle path using the form's size and radius
+            path.AddArc(0, 0, radius * 2, radius * 2, 180, 90); // top left corner
+            path.AddArc(this.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90); // top-right corner
+            path.AddArc(this.Width - radius * 2, this.Height - radius * 2, radius * 2, radius * 2, 0, 90); // bottom right corner
+            path.AddArc(0, this.Height - radius * 2, radius * 2, radius * 2, 90, 90); // bottom-left corner
+
+            // create a region with the rounded rectangle path and apply it to the form
+            this.Region = new Region(path);
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -169,6 +193,59 @@ namespace FInalLibrarySystem
         private void label1_Click_3(object sender, EventArgs e)
         {
             
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_Click_4(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                //check if the click was on the title bar
+                if (e.Clicks == 1 && e.Y <= this.Height && e.Y >= 0)
+                {
+                    ReleaseCapture();
+                    SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                }
+            }
         }
     }
 }
