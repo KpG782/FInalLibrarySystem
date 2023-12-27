@@ -33,7 +33,7 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Location = new System.Drawing.Point(75, 36);
+            this.lblTitle.Location = new System.Drawing.Point(35, 24);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(122, 41);
             this.lblTitle.TabIndex = 1;
