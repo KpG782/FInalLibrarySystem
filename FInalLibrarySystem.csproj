@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\MyDB.cs" />
     <Compile Include="Forms\Booklist Panels\Academic.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,7 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\SignUp\" />
-    <Folder Include="The-Database\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Academic Books\1.jpg" />

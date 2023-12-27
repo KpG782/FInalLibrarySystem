@@ -185,7 +185,7 @@
             this.panel2.Controls.Add(this.lblPass);
             this.panel2.Controls.Add(this.lnkLblSign);
             this.panel2.Controls.Add(this.btnSubmit);
-            this.panel2.Location = new System.Drawing.Point(384, 257);
+            this.panel2.Location = new System.Drawing.Point(60, 218);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(458, 393);
             this.panel2.TabIndex = 14;
