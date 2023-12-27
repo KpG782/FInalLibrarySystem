@@ -83,7 +83,7 @@ namespace FInalLibrarySystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //to hide automatically
+            //to hide automatically the password
             txtPass.UseSystemPasswordChar = true;
 
             // rounded corner
@@ -138,6 +138,7 @@ namespace FInalLibrarySystem
                     MessageBox.Show("Login successful! Welcome " + user.FirstName + "!!");
 
                     //opens main page form
+                    
                     mainPage.Show();
                     
                     return;
