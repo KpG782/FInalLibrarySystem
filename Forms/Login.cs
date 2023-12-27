@@ -17,34 +17,6 @@ namespace FInalLibrarySystem
     {
         //set global object
         MainPage mainPage = new MainPage();
-        
-
-
-        // Define a simple class to represent a user
-        public class User
-        {
-            public string Username { get; set; }
-            public string Password { get; set; }
-
-            public string Email { get; set; }
-
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-
-            public string MiddleInitial { get; set; }
-            public string Role { get; set; }
-            public string Department { get; set; }
-
-            public string StudentID { get; set; }
-
-            public string EmployeeID { get; set; }
-
-            public string Section { get; set; }
-            public string Year { get; set; }
-        }
-
-        // Array to store user information
-        public User[] users = new User[20];
 
         //draggable window
         private const int WM_NCLBUTTONDOWN = 0xA1;
@@ -56,11 +28,14 @@ namespace FInalLibrarySystem
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool ReleaseCapture();
 
+        //manipulate the dashboard
+        private MainPage mainPage1 = null;
 
-
-        public frmLogin()
+        public frmLogin(MainPage SourceForm)
         {
             InitializeComponent();
+            mainPage1 = SourceForm as MainPage;
+            
         }
 
 
@@ -108,6 +83,10 @@ namespace FInalLibrarySystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            mainPage1.Enabled = true;
+
+
             //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             //creation of connection of database
             Database.MyDB db = new Database.MyDB();
@@ -129,8 +108,9 @@ namespace FInalLibrarySystem
             //check if this user exists or not 
             if(table.Rows.Count > 0) //if exists
             {
-                mainPage.Show();
+                
                 mainPage.Enabled = true;
+                this.Close(); 
                 
             }
             else //if not

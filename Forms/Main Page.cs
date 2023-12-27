@@ -33,6 +33,10 @@ namespace FInalLibrarySystem
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
             penalty1.Visible = false;
+
+
+
+
         }
 
         private void profile1_Load(object sender, EventArgs e)
@@ -178,6 +182,13 @@ namespace FInalLibrarySystem
         private void penalty1_Load_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainPage_Shown(object sender, EventArgs e)
+        {
+            //show login form
+            frmLogin lgf = new frmLogin(this);
+            lgf.Show();
         }
     }
 }
