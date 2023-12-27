@@ -83,7 +83,7 @@ namespace FInalLibrarySystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //to hide automatically
+            //to hide automatically the password
             txtPass.UseSystemPasswordChar = true;
 
             // rounded corner
@@ -125,7 +125,20 @@ namespace FInalLibrarySystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //creation of connection of database
+            Database.MyDB db = new Database.MyDB();
+
             
+
+
+
+
+
+
+
+
+            //old non-database way`````````````````````````````````````````
             // Retrieve entered username and password
             string enteredUsername = txtEmail.Text;
             string enteredPassword = txtPass.Text;
@@ -138,6 +151,7 @@ namespace FInalLibrarySystem
                     MessageBox.Show("Login successful! Welcome " + user.FirstName + "!!");
 
                     //opens main page form
+                    
                     mainPage.Show();
                     
                     return;
