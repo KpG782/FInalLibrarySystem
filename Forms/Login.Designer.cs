@@ -65,7 +65,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(62, 132);
+            this.txtEmail.Location = new System.Drawing.Point(62, 136);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(315, 23);
@@ -84,7 +84,7 @@
             // lblEmail
             // 
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(62, 112);
+            this.lblEmail.Location = new System.Drawing.Point(62, 116);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(196, 16);
             this.lblEmail.TabIndex = 5;
@@ -204,7 +204,7 @@
             // pbUser
             // 
             this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
-            this.pbUser.Location = new System.Drawing.Point(26, 125);
+            this.pbUser.Location = new System.Drawing.Point(26, 129);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(30, 30);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
