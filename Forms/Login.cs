@@ -125,7 +125,20 @@ namespace FInalLibrarySystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //creation of connection of database
+            Database.MyDB db = new Database.MyDB();
+
             
+
+
+
+
+
+
+
+
+            //old non-database way`````````````````````````````````````````
             // Retrieve entered username and password
             string enteredUsername = txtEmail.Text;
             string enteredPassword = txtPass.Text;
