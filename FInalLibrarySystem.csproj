@@ -189,7 +189,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\Login\" />
     <Folder Include="Images\SignUp\" />
     <Folder Include="The-Database\" />
   </ItemGroup>
@@ -214,6 +213,8 @@
     <Content Include="Images\Fictional Books\7.jpg" />
     <Content Include="Images\Fictional Books\8.jpg" />
     <Content Include="Images\Fictional Books\9.jpg" />
+    <Content Include="Images\Login\2hmidtry-smaller.gif" />
+    <Content Include="Images\Login\bgtransparent.PNG" />
     <Content Include="Images\Non-Fictional Books\1.jpg" />
     <Content Include="Images\Non-Fictional Books\10.jpg" />
     <Content Include="Images\Non-Fictional Books\2.jpg" />
