@@ -45,6 +45,7 @@
             this.borrowerList1 = new FInalLibrarySystem.BorrowerList();
             this.bookList1 = new FInalLibrarySystem.BookList();
             this.profile1 = new FInalLibrarySystem.Profile();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel3
@@ -257,12 +258,29 @@
             this.profile1.Size = new System.Drawing.Size(1248, 1059);
             this.profile1.TabIndex = 26;
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Image = ((System.Drawing.Image)(resources.GetObject("linkLabel2.Image")));
+            this.linkLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(27, 113);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(133, 64);
+            this.linkLabel2.TabIndex = 33;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Book List";
+            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(44)))), ((int)(((byte)(92)))));
             this.ClientSize = new System.Drawing.Size(1482, 1055);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.penalty1);
             this.Controls.Add(this.bookReservation1);
             this.Controls.Add(this.bookReturning1);
@@ -306,5 +324,6 @@
         private BookReturning bookReturning1;
         private BookReservation bookReservation1;
         private Penalty penalty1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
