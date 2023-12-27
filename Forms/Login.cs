@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using MySql.Data; // don't forget this
+using MySql.Data.MySqlClient; //don't forget this
 
 namespace FInalLibrarySystem
 {
@@ -59,27 +61,8 @@ namespace FInalLibrarySystem
         public frmLogin()
         {
             InitializeComponent();
-            InitializeUsers();
-
         }
 
-        private void InitializeUsers()
-        {
-            // Initialize the array with sample username and password pairs
-            users[0] = new User { Username = "stud1", Password = "pass1", FirstName = "Ken Patrick", LastName = "Garcia", MiddleInitial = "A", Role = "Student", StudentID = "A62240916", Section = "ACSAD", Year = "2"};
-            users[1] = new User { Username = "stud2", Password = "pass2" };
-            users[2] = new User { Username = "stud3", Password = "pass3" };
-            users[3] = new User { Username = "stud4", Password = "pass4" };
-            users[4] = new User { Username = "stud5", Password = "pass5" };
-            users[5] = new User { Username = "stud6", Password = "pass6" };
-            users[6] = new User { Username = "stud7", Password = "pass7" };
-            users[7] = new User { Username = "stud8", Password = "pass8" };
-            users[8] = new User { Username = "stud9", Password = "pass9" };
-            users[9] = new User { Username = "stud10", Password = "pass10" };
-            users[10] = new User { Username = "teach1", Password = "pass11" };
-            users[11] = new User { Username = "teach2", Password = "pass12" };
-            users[12] = new User { Username = "teach3", Password = "pass13" };
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -129,43 +112,47 @@ namespace FInalLibrarySystem
             //creation of connection of database
             Database.MyDB db = new Database.MyDB();
 
-            
+            string username = txtEmail.Text;
+            string password = txtPass.Text;
+
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `app_users` WHERE `username` = @usn AND `password` = @pass", db.getConnection());
 
 
+            command.Parameters.Add("@usn",MySqlDbType.VarChar).Value = username;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
 
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
 
-
-
-
-
-            //old non-database way`````````````````````````````````````````
-            // Retrieve entered username and password
-            string enteredUsername = txtEmail.Text;
-            string enteredPassword = txtPass.Text;
-
-            // Check if the entered credentials match any user in the array
-            foreach (var user in users)
+            //check if this user exists or not 
+            if(table.Rows.Count > 0) //if exists
             {
-                if (user.Username == enteredUsername && user.Password == enteredPassword)
-                {
-                    MessageBox.Show("Login successful! Welcome " + user.FirstName + "!!");
-
-                    //opens main page form
-                    
-                    mainPage.Show();
-                    
-                    return;
-                    
-                }
+                mainPage.Show();
+                mainPage.Enabled = true;
                 
             }
+            else //if not
+            {
+                //check if username is empty
+                if (username.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter Your Username To Login" , "Empty Username", MessageBoxButtons.OK,MessageBoxIcon.Error );
+                }
 
-           
-            // If no match is found, display an error message
-            MessageBox.Show("Invalid username or password. Please try again.");
+                //check if password is empty
+                else if (password.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-
-            
+                //check if data is exists
+                else 
+                {
+                    MessageBox.Show("Wrong Username or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
