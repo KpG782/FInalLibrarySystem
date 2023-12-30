@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MySql.Data; // don't forget this
 using MySql.Data.MySqlClient; //don't forget this
+using FInalLibrarySystem.Database; //don't forget this
 
 namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+        private int loggedInUserId; // Add a variable to store the logged-in user ID
         public Point mouseLocation;
         //set global object
         MainPage mainPage = new MainPage();
@@ -29,19 +31,16 @@ namespace FInalLibrarySystem
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool ReleaseCapture();
 
-        //manipulate the dashboard
-        private MainPage mainPage1 = null;
 
-        public frmLogin(MainPage SourceForm)
-        {
-            InitializeComponent();
-            mainPage1 = SourceForm as MainPage;
-            
-        }
 
         public frmLogin()
         {
+            InitializeComponent();
+           
+            
         }
+
+  
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -82,8 +81,10 @@ namespace FInalLibrarySystem
         {
             
             frmSignUp f2 = new frmSignUp();
+            this.Visible = false;
             f2.Show();
-            this.Close();
+
+            
             
         }
 
@@ -217,7 +218,7 @@ namespace FInalLibrarySystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            mainPage1.Enabled = true;
+           
 
 
             //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -242,8 +243,31 @@ namespace FInalLibrarySystem
             if (table.Rows.Count > 0) //if exists
             {
 
+                loggedInUserId = Convert.ToInt32(table.Rows[0]["id"]);
+
+
+                // Create an instance of the Users class
+                Users usersManager = new Users();
+
+                // Get the user data by ID
+                Users.User userProfile = usersManager.GetUserById(loggedInUserId);
+
                 mainPage.Enabled = true;
-                this.Close();
+                mainPage.Show();
+
+                //hides the frmlogin
+                this.Visible = false;
+
+
+                if (loggedInUserId == 2)
+                {
+                    // Display the UserId in a MessageBox
+
+                    MessageBox.Show("Gumana yung no.2");
+
+                    this.Refresh();
+
+                }
 
             }
             else //if not
@@ -281,6 +305,16 @@ namespace FInalLibrarySystem
         private void mouse_move(object sender, MouseEventArgs e)
         {
          
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

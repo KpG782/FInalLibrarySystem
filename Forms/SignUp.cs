@@ -204,5 +204,12 @@ namespace FInalLibrarySystem
         {
             this.Close();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmLogin f2 = new frmLogin();
+            f2.Show();
+        }
     }
 }

@@ -186,13 +186,24 @@ namespace FInalLibrarySystem
 
         private void MainPage_Shown(object sender, EventArgs e)
         {
-            //show login form
-            frmLogin lgf = new frmLogin(this);
-            lgf.Show();
+
         }
 
         private void bookList1_Load(object sender, EventArgs e)
         {
+
+        }
+
+
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
 
         }
     }
