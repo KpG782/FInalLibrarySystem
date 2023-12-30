@@ -15,6 +15,7 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+        public Point mouseLocation;
         //set global object
         MainPage mainPage = new MainPage();
 
@@ -38,26 +39,16 @@ namespace FInalLibrarySystem
             
         }
 
+        public frmLogin()
+        {
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //to hide automatically the password
             txtPass.UseSystemPasswordChar = true;
 
-            // rounded corner
-            System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-            int radius = 20; // adjust the value to change the roundness of corners
-
-            // create a rounded rectangle path using the form's size and radius
-            path.AddArc(0, 0, radius * 2, radius * 2, 180, 90); // top left corner
-            path.AddArc(this.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90); // top-right corner
-            path.AddArc(this.Width - radius * 2, this.Height - radius * 2, radius * 2, radius * 2, 0, 90); // bottom right corner
-            path.AddArc(0, this.Height - radius * 2, radius * 2, radius * 2, 90, 90); // bottom-left corner
-
-            // create a region with the rounded rectangle path and apply it to the form
-            this.Region = new Region(path);
-
-
+            
 
         }
 
@@ -84,55 +75,7 @@ namespace FInalLibrarySystem
         private void button1_Click(object sender, EventArgs e)
         {
 
-            mainPage1.Enabled = true;
-
-
-            //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            //creation of connection of database
-            Database.MyDB db = new Database.MyDB();
-
-            string username = txtEmail.Text;
-            string password = txtPass.Text;
-
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `app_users` WHERE `username` = @usn AND `password` = @pass", db.getConnection());
-
-
-            command.Parameters.Add("@usn",MySqlDbType.VarChar).Value = username;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            //check if this user exists or not 
-            if(table.Rows.Count > 0) //if exists
-            {
-                
-                mainPage.Enabled = true;
-                this.Close(); 
-                
-            }
-            else //if not
-            {
-                //check if username is empty
-                if (username.Trim().Equals(""))
-                {
-                    MessageBox.Show("Enter Your Username To Login" , "Empty Username", MessageBoxButtons.OK,MessageBoxIcon.Error );
-                }
-
-                //check if password is empty
-                else if (password.Trim().Equals(""))
-                {
-                    MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                //check if data is exists
-                else 
-                {
-                    MessageBox.Show("Wrong Username or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+           
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -140,12 +83,15 @@ namespace FInalLibrarySystem
             
             frmSignUp f2 = new frmSignUp();
             f2.Show();
+            this.Close();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             txtEmail.Text = "";
             txtPass.Text = "";
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -198,12 +144,12 @@ namespace FInalLibrarySystem
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+   
         }
 
         private void label1_MouseDown(object sender, MouseEventArgs e)
@@ -227,6 +173,114 @@ namespace FInalLibrarySystem
                     SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_5(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            mainPage1.Enabled = true;
+
+
+            //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //creation of connection of database
+            Database.MyDB db = new Database.MyDB();
+
+            string username = txtEmail.Text;
+            string password = txtPass.Text;
+
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `app_users` WHERE `username` = @usn AND `password` = @pass", db.getConnection());
+
+
+            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            //check if this user exists or not 
+            if (table.Rows.Count > 0) //if exists
+            {
+
+                mainPage.Enabled = true;
+                this.Close();
+
+            }
+            else //if not
+            {
+                //check if username is empty
+                if (username.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter Your Username To Login", "Empty Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                //check if password is empty
+                else if (password.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                //check if data is exists
+                else
+                {
+                    MessageBox.Show("Wrong Username or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mouse_move(object sender, MouseEventArgs e)
+        {
+         
         }
     }
 }

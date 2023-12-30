@@ -911,7 +911,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RosyBrown;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.grpBook9);
             this.Controls.Add(this.grpBook6);
             this.Controls.Add(this.grpBook8);

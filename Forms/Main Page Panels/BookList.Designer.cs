@@ -44,11 +44,10 @@
             this.lblFBooks.Image = ((System.Drawing.Image)(resources.GetObject("lblFBooks.Image")));
             this.lblFBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblFBooks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblFBooks.LinkColor = System.Drawing.Color.White;
-            this.lblFBooks.Location = new System.Drawing.Point(195, 0);
-            this.lblFBooks.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFBooks.LinkColor = System.Drawing.Color.Black;
+            this.lblFBooks.Location = new System.Drawing.Point(260, 0);
             this.lblFBooks.Name = "lblFBooks";
-            this.lblFBooks.Size = new System.Drawing.Size(140, 52);
+            this.lblFBooks.Size = new System.Drawing.Size(187, 64);
             this.lblFBooks.TabIndex = 26;
             this.lblFBooks.TabStop = true;
             this.lblFBooks.Text = "Fictional Books";
@@ -62,11 +61,10 @@
             this.lblNFBooks.Image = ((System.Drawing.Image)(resources.GetObject("lblNFBooks.Image")));
             this.lblNFBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblNFBooks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblNFBooks.LinkColor = System.Drawing.Color.White;
-            this.lblNFBooks.Location = new System.Drawing.Point(339, 0);
-            this.lblNFBooks.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNFBooks.LinkColor = System.Drawing.Color.Black;
+            this.lblNFBooks.Location = new System.Drawing.Point(452, 0);
             this.lblNFBooks.Name = "lblNFBooks";
-            this.lblNFBooks.Size = new System.Drawing.Size(183, 52);
+            this.lblNFBooks.Size = new System.Drawing.Size(244, 64);
             this.lblNFBooks.TabIndex = 28;
             this.lblNFBooks.TabStop = true;
             this.lblNFBooks.Text = "Non-Fictional Books";
@@ -80,11 +78,10 @@
             this.lblAcadBooks.Image = ((System.Drawing.Image)(resources.GetObject("lblAcadBooks.Image")));
             this.lblAcadBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblAcadBooks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblAcadBooks.LinkColor = System.Drawing.Color.White;
-            this.lblAcadBooks.Location = new System.Drawing.Point(19, 0);
-            this.lblAcadBooks.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAcadBooks.LinkColor = System.Drawing.Color.Black;
+            this.lblAcadBooks.Location = new System.Drawing.Point(25, 0);
             this.lblAcadBooks.Name = "lblAcadBooks";
-            this.lblAcadBooks.Size = new System.Drawing.Size(156, 52);
+            this.lblAcadBooks.Size = new System.Drawing.Size(208, 64);
             this.lblAcadBooks.TabIndex = 29;
             this.lblAcadBooks.TabStop = true;
             this.lblAcadBooks.Text = "Academic Books";
@@ -93,43 +90,44 @@
             // 
             // academic1
             // 
-            this.academic1.Location = new System.Drawing.Point(2, 54);
-            this.academic1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.academic1.Location = new System.Drawing.Point(3, 66);
+            this.academic1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.academic1.Name = "academic1";
-            this.academic1.Size = new System.Drawing.Size(936, 739);
+            this.academic1.Size = new System.Drawing.Size(1248, 910);
             this.academic1.TabIndex = 30;
             // 
             // fictional1
             // 
-            this.fictional1.Location = new System.Drawing.Point(0, 63);
-            this.fictional1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fictional1.Location = new System.Drawing.Point(0, 98);
+            this.fictional1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fictional1.Name = "fictional1";
-            this.fictional1.Size = new System.Drawing.Size(936, 739);
+            this.fictional1.Size = new System.Drawing.Size(1248, 910);
             this.fictional1.TabIndex = 31;
             // 
             // nonFictional1
             // 
-            this.nonFictional1.BackColor = System.Drawing.Color.RosyBrown;
-            this.nonFictional1.Location = new System.Drawing.Point(0, 63);
-            this.nonFictional1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nonFictional1.BackColor = System.Drawing.Color.White;
+            this.nonFictional1.Location = new System.Drawing.Point(-3, 66);
+            this.nonFictional1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nonFictional1.Name = "nonFictional1";
-            this.nonFictional1.Size = new System.Drawing.Size(936, 739);
+            this.nonFictional1.Size = new System.Drawing.Size(1248, 956);
             this.nonFictional1.TabIndex = 32;
+            this.nonFictional1.Load += new System.EventHandler(this.nonFictional1_Load);
             // 
             // BookList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.nonFictional1);
             this.Controls.Add(this.fictional1);
             this.Controls.Add(this.academic1);
             this.Controls.Add(this.lblAcadBooks);
             this.Controls.Add(this.lblNFBooks);
             this.Controls.Add(this.lblFBooks);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BookList";
-            this.Size = new System.Drawing.Size(936, 860);
+            this.Size = new System.Drawing.Size(1248, 1058);
             this.Load += new System.EventHandler(this.BookList_Load);
             this.ResumeLayout(false);
 
