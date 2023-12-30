@@ -160,5 +160,10 @@ namespace FInalLibrarySystem
             fictional1.Visible = true;
             nonFictional1.Visible = false;
         }
+
+        private void nonFictional1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

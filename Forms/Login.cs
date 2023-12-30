@@ -15,6 +15,7 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+        public Point mouseLocation;
         //set global object
         MainPage mainPage = new MainPage();
 
@@ -38,6 +39,9 @@ namespace FInalLibrarySystem
             
         }
 
+        public frmLogin()
+        {
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -79,12 +83,15 @@ namespace FInalLibrarySystem
             
             frmSignUp f2 = new frmSignUp();
             f2.Show();
+            this.Close();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             txtEmail.Text = "";
             txtPass.Text = "";
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -269,6 +276,11 @@ namespace FInalLibrarySystem
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void mouse_move(object sender, MouseEventArgs e)
+        {
+         
         }
     }
 }

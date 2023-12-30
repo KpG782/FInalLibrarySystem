@@ -140,86 +140,79 @@
             this.grpBook9.Controls.Add(this.label47);
             this.grpBook9.Controls.Add(this.label48);
             this.grpBook9.Controls.Add(this.label49);
-            this.grpBook9.Location = new System.Drawing.Point(583, 439);
-            this.grpBook9.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook9.Location = new System.Drawing.Point(777, 540);
+            this.grpBook9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook9.Name = "grpBook9";
-            this.grpBook9.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook9.Size = new System.Drawing.Size(250, 184);
+            this.grpBook9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook9.Size = new System.Drawing.Size(333, 226);
             this.grpBook9.TabIndex = 51;
             this.grpBook9.TabStop = false;
             this.grpBook9.Text = "Book 9";
             // 
             // label43
             // 
-            this.label43.Location = new System.Drawing.Point(107, 155);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label43.Location = new System.Drawing.Point(143, 191);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(75, 19);
+            this.label43.Size = new System.Drawing.Size(100, 23);
             this.label43.TabIndex = 16;
             this.label43.Text = "Status";
             // 
             // pb9
             // 
             this.pb9.Image = ((System.Drawing.Image)(resources.GetObject("pb9.Image")));
-            this.pb9.Location = new System.Drawing.Point(13, 43);
-            this.pb9.Margin = new System.Windows.Forms.Padding(2);
+            this.pb9.Location = new System.Drawing.Point(17, 53);
+            this.pb9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb9.Name = "pb9";
-            this.pb9.Size = new System.Drawing.Size(79, 123);
+            this.pb9.Size = new System.Drawing.Size(105, 151);
             this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb9.TabIndex = 9;
             this.pb9.TabStop = false;
             // 
             // label44
             // 
-            this.label44.Location = new System.Drawing.Point(107, 136);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label44.Location = new System.Drawing.Point(143, 167);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(75, 19);
+            this.label44.Size = new System.Drawing.Size(100, 23);
             this.label44.TabIndex = 15;
             this.label44.Text = "Publisher";
             // 
             // label45
             // 
-            this.label45.Location = new System.Drawing.Point(107, 43);
-            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label45.Location = new System.Drawing.Point(143, 53);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(75, 19);
+            this.label45.Size = new System.Drawing.Size(100, 23);
             this.label45.TabIndex = 10;
             this.label45.Text = "Title";
             // 
             // label46
             // 
-            this.label46.Location = new System.Drawing.Point(107, 118);
-            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label46.Location = new System.Drawing.Point(143, 145);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(75, 19);
+            this.label46.Size = new System.Drawing.Size(100, 23);
             this.label46.TabIndex = 14;
             this.label46.Text = "Copyright";
             // 
             // label47
             // 
-            this.label47.Location = new System.Drawing.Point(107, 62);
-            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label47.Location = new System.Drawing.Point(143, 76);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(75, 19);
+            this.label47.Size = new System.Drawing.Size(100, 23);
             this.label47.TabIndex = 11;
             this.label47.Text = "ISBN";
             // 
             // label48
             // 
-            this.label48.Location = new System.Drawing.Point(107, 99);
-            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label48.Location = new System.Drawing.Point(143, 122);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(75, 19);
+            this.label48.Size = new System.Drawing.Size(100, 23);
             this.label48.TabIndex = 13;
             this.label48.Text = "Author";
             // 
             // label49
             // 
-            this.label49.Location = new System.Drawing.Point(107, 80);
-            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label49.Location = new System.Drawing.Point(143, 98);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(75, 19);
+            this.label49.Size = new System.Drawing.Size(100, 23);
             this.label49.TabIndex = 12;
             this.label49.Text = "Category";
             // 
@@ -233,86 +226,79 @@
             this.grpBook6.Controls.Add(this.label33);
             this.grpBook6.Controls.Add(this.label34);
             this.grpBook6.Controls.Add(this.label35);
-            this.grpBook6.Location = new System.Drawing.Point(583, 228);
-            this.grpBook6.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook6.Location = new System.Drawing.Point(777, 281);
+            this.grpBook6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook6.Name = "grpBook6";
-            this.grpBook6.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook6.Size = new System.Drawing.Size(250, 184);
+            this.grpBook6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook6.Size = new System.Drawing.Size(333, 226);
             this.grpBook6.TabIndex = 48;
             this.grpBook6.TabStop = false;
             this.grpBook6.Text = "Book 6";
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(107, 155);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Location = new System.Drawing.Point(143, 191);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(75, 19);
+            this.label29.Size = new System.Drawing.Size(100, 23);
             this.label29.TabIndex = 16;
             this.label29.Text = "Status";
             // 
             // pb6
             // 
             this.pb6.Image = ((System.Drawing.Image)(resources.GetObject("pb6.Image")));
-            this.pb6.Location = new System.Drawing.Point(13, 43);
-            this.pb6.Margin = new System.Windows.Forms.Padding(2);
+            this.pb6.Location = new System.Drawing.Point(17, 53);
+            this.pb6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb6.Name = "pb6";
-            this.pb6.Size = new System.Drawing.Size(79, 123);
+            this.pb6.Size = new System.Drawing.Size(105, 151);
             this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb6.TabIndex = 9;
             this.pb6.TabStop = false;
             // 
             // label30
             // 
-            this.label30.Location = new System.Drawing.Point(107, 136);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Location = new System.Drawing.Point(143, 167);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(75, 19);
+            this.label30.Size = new System.Drawing.Size(100, 23);
             this.label30.TabIndex = 15;
             this.label30.Text = "Publisher";
             // 
             // label31
             // 
-            this.label31.Location = new System.Drawing.Point(107, 43);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Location = new System.Drawing.Point(143, 53);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(75, 19);
+            this.label31.Size = new System.Drawing.Size(100, 23);
             this.label31.TabIndex = 10;
             this.label31.Text = "Title";
             // 
             // label32
             // 
-            this.label32.Location = new System.Drawing.Point(107, 118);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label32.Location = new System.Drawing.Point(143, 145);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(75, 19);
+            this.label32.Size = new System.Drawing.Size(100, 23);
             this.label32.TabIndex = 14;
             this.label32.Text = "Copyright";
             // 
             // label33
             // 
-            this.label33.Location = new System.Drawing.Point(107, 62);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Location = new System.Drawing.Point(143, 76);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(75, 19);
+            this.label33.Size = new System.Drawing.Size(100, 23);
             this.label33.TabIndex = 11;
             this.label33.Text = "ISBN";
             // 
             // label34
             // 
-            this.label34.Location = new System.Drawing.Point(107, 99);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Location = new System.Drawing.Point(143, 122);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(75, 19);
+            this.label34.Size = new System.Drawing.Size(100, 23);
             this.label34.TabIndex = 13;
             this.label34.Text = "Author";
             // 
             // label35
             // 
-            this.label35.Location = new System.Drawing.Point(107, 80);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Location = new System.Drawing.Point(143, 98);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(75, 19);
+            this.label35.Size = new System.Drawing.Size(100, 23);
             this.label35.TabIndex = 12;
             this.label35.Text = "Category";
             // 
@@ -326,21 +312,20 @@
             this.grpBook8.Controls.Add(this.label54);
             this.grpBook8.Controls.Add(this.label55);
             this.grpBook8.Controls.Add(this.label56);
-            this.grpBook8.Location = new System.Drawing.Point(298, 439);
-            this.grpBook8.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook8.Location = new System.Drawing.Point(397, 540);
+            this.grpBook8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook8.Name = "grpBook8";
-            this.grpBook8.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook8.Size = new System.Drawing.Size(250, 184);
+            this.grpBook8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook8.Size = new System.Drawing.Size(333, 226);
             this.grpBook8.TabIndex = 50;
             this.grpBook8.TabStop = false;
             this.grpBook8.Text = "Book 8";
             // 
             // label50
             // 
-            this.label50.Location = new System.Drawing.Point(107, 155);
-            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label50.Location = new System.Drawing.Point(143, 191);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(75, 19);
+            this.label50.Size = new System.Drawing.Size(100, 23);
             this.label50.TabIndex = 16;
             this.label50.Text = "Status";
             // 
@@ -348,65 +333,59 @@
             // 
             this.pb8.ErrorImage = null;
             this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
-            this.pb8.Location = new System.Drawing.Point(13, 43);
-            this.pb8.Margin = new System.Windows.Forms.Padding(2);
+            this.pb8.Location = new System.Drawing.Point(17, 53);
+            this.pb8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb8.Name = "pb8";
-            this.pb8.Size = new System.Drawing.Size(79, 123);
+            this.pb8.Size = new System.Drawing.Size(105, 151);
             this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb8.TabIndex = 9;
             this.pb8.TabStop = false;
             // 
             // label51
             // 
-            this.label51.Location = new System.Drawing.Point(107, 136);
-            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label51.Location = new System.Drawing.Point(143, 167);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(75, 19);
+            this.label51.Size = new System.Drawing.Size(100, 23);
             this.label51.TabIndex = 15;
             this.label51.Text = "Publisher";
             // 
             // label52
             // 
-            this.label52.Location = new System.Drawing.Point(107, 43);
-            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label52.Location = new System.Drawing.Point(143, 53);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(75, 19);
+            this.label52.Size = new System.Drawing.Size(100, 23);
             this.label52.TabIndex = 10;
             this.label52.Text = "Title";
             // 
             // label53
             // 
-            this.label53.Location = new System.Drawing.Point(107, 118);
-            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label53.Location = new System.Drawing.Point(143, 145);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(75, 19);
+            this.label53.Size = new System.Drawing.Size(100, 23);
             this.label53.TabIndex = 14;
             this.label53.Text = "Copyright";
             // 
             // label54
             // 
-            this.label54.Location = new System.Drawing.Point(107, 62);
-            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label54.Location = new System.Drawing.Point(143, 76);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(75, 19);
+            this.label54.Size = new System.Drawing.Size(100, 23);
             this.label54.TabIndex = 11;
             this.label54.Text = "ISBN";
             // 
             // label55
             // 
-            this.label55.Location = new System.Drawing.Point(107, 99);
-            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label55.Location = new System.Drawing.Point(143, 122);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(75, 19);
+            this.label55.Size = new System.Drawing.Size(100, 23);
             this.label55.TabIndex = 13;
             this.label55.Text = "Author";
             // 
             // label56
             // 
-            this.label56.Location = new System.Drawing.Point(107, 80);
-            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label56.Location = new System.Drawing.Point(143, 98);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(75, 19);
+            this.label56.Size = new System.Drawing.Size(100, 23);
             this.label56.TabIndex = 12;
             this.label56.Text = "Category";
             // 
@@ -420,86 +399,79 @@
             this.grpBook7.Controls.Add(this.label61);
             this.grpBook7.Controls.Add(this.label62);
             this.grpBook7.Controls.Add(this.label63);
-            this.grpBook7.Location = new System.Drawing.Point(11, 439);
-            this.grpBook7.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook7.Location = new System.Drawing.Point(15, 540);
+            this.grpBook7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook7.Name = "grpBook7";
-            this.grpBook7.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook7.Size = new System.Drawing.Size(250, 184);
+            this.grpBook7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook7.Size = new System.Drawing.Size(333, 226);
             this.grpBook7.TabIndex = 49;
             this.grpBook7.TabStop = false;
             this.grpBook7.Text = "Book 7";
             // 
             // label57
             // 
-            this.label57.Location = new System.Drawing.Point(107, 155);
-            this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label57.Location = new System.Drawing.Point(143, 191);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(75, 19);
+            this.label57.Size = new System.Drawing.Size(100, 23);
             this.label57.TabIndex = 16;
             this.label57.Text = "Status";
             // 
             // pb7
             // 
             this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
-            this.pb7.Location = new System.Drawing.Point(13, 43);
-            this.pb7.Margin = new System.Windows.Forms.Padding(2);
+            this.pb7.Location = new System.Drawing.Point(17, 53);
+            this.pb7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb7.Name = "pb7";
-            this.pb7.Size = new System.Drawing.Size(79, 123);
+            this.pb7.Size = new System.Drawing.Size(105, 151);
             this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb7.TabIndex = 9;
             this.pb7.TabStop = false;
             // 
             // label58
             // 
-            this.label58.Location = new System.Drawing.Point(107, 136);
-            this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label58.Location = new System.Drawing.Point(143, 167);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(75, 19);
+            this.label58.Size = new System.Drawing.Size(100, 23);
             this.label58.TabIndex = 15;
             this.label58.Text = "Publisher";
             // 
             // label59
             // 
-            this.label59.Location = new System.Drawing.Point(107, 43);
-            this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label59.Location = new System.Drawing.Point(143, 53);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(75, 19);
+            this.label59.Size = new System.Drawing.Size(100, 23);
             this.label59.TabIndex = 10;
             this.label59.Text = "Title";
             // 
             // label60
             // 
-            this.label60.Location = new System.Drawing.Point(107, 118);
-            this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label60.Location = new System.Drawing.Point(143, 145);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(75, 19);
+            this.label60.Size = new System.Drawing.Size(100, 23);
             this.label60.TabIndex = 14;
             this.label60.Text = "Copyright";
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(107, 62);
-            this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label61.Location = new System.Drawing.Point(143, 76);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(75, 19);
+            this.label61.Size = new System.Drawing.Size(100, 23);
             this.label61.TabIndex = 11;
             this.label61.Text = "ISBN";
             // 
             // label62
             // 
-            this.label62.Location = new System.Drawing.Point(107, 99);
-            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label62.Location = new System.Drawing.Point(143, 122);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(75, 19);
+            this.label62.Size = new System.Drawing.Size(100, 23);
             this.label62.TabIndex = 13;
             this.label62.Text = "Author";
             // 
             // label63
             // 
-            this.label63.Location = new System.Drawing.Point(107, 80);
-            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label63.Location = new System.Drawing.Point(143, 98);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(75, 19);
+            this.label63.Size = new System.Drawing.Size(100, 23);
             this.label63.TabIndex = 12;
             this.label63.Text = "Category";
             // 
@@ -513,86 +485,79 @@
             this.grpBook3.Controls.Add(this.label40);
             this.grpBook3.Controls.Add(this.label41);
             this.grpBook3.Controls.Add(this.label42);
-            this.grpBook3.Location = new System.Drawing.Point(583, 32);
-            this.grpBook3.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook3.Location = new System.Drawing.Point(777, 39);
+            this.grpBook3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook3.Name = "grpBook3";
-            this.grpBook3.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook3.Size = new System.Drawing.Size(250, 184);
+            this.grpBook3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook3.Size = new System.Drawing.Size(333, 226);
             this.grpBook3.TabIndex = 47;
             this.grpBook3.TabStop = false;
             this.grpBook3.Text = "Book 3";
             // 
             // label36
             // 
-            this.label36.Location = new System.Drawing.Point(107, 155);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.Location = new System.Drawing.Point(143, 191);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(75, 19);
+            this.label36.Size = new System.Drawing.Size(100, 23);
             this.label36.TabIndex = 16;
             this.label36.Text = "Status";
             // 
             // pb3
             // 
             this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
-            this.pb3.Location = new System.Drawing.Point(13, 43);
-            this.pb3.Margin = new System.Windows.Forms.Padding(2);
+            this.pb3.Location = new System.Drawing.Point(17, 53);
+            this.pb3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(79, 123);
+            this.pb3.Size = new System.Drawing.Size(105, 151);
             this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb3.TabIndex = 9;
             this.pb3.TabStop = false;
             // 
             // label37
             // 
-            this.label37.Location = new System.Drawing.Point(107, 136);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Location = new System.Drawing.Point(143, 167);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(75, 19);
+            this.label37.Size = new System.Drawing.Size(100, 23);
             this.label37.TabIndex = 15;
             this.label37.Text = "Publisher";
             // 
             // label38
             // 
-            this.label38.Location = new System.Drawing.Point(107, 43);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Location = new System.Drawing.Point(143, 53);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(75, 19);
+            this.label38.Size = new System.Drawing.Size(100, 23);
             this.label38.TabIndex = 10;
             this.label38.Text = "Title";
             // 
             // label39
             // 
-            this.label39.Location = new System.Drawing.Point(107, 118);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label39.Location = new System.Drawing.Point(143, 145);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(75, 19);
+            this.label39.Size = new System.Drawing.Size(100, 23);
             this.label39.TabIndex = 14;
             this.label39.Text = "Copyright";
             // 
             // label40
             // 
-            this.label40.Location = new System.Drawing.Point(107, 62);
-            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Location = new System.Drawing.Point(143, 76);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(75, 19);
+            this.label40.Size = new System.Drawing.Size(100, 23);
             this.label40.TabIndex = 11;
             this.label40.Text = "ISBN";
             // 
             // label41
             // 
-            this.label41.Location = new System.Drawing.Point(107, 99);
-            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label41.Location = new System.Drawing.Point(143, 122);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(75, 19);
+            this.label41.Size = new System.Drawing.Size(100, 23);
             this.label41.TabIndex = 13;
             this.label41.Text = "Author";
             // 
             // label42
             // 
-            this.label42.Location = new System.Drawing.Point(107, 80);
-            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label42.Location = new System.Drawing.Point(143, 98);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(75, 19);
+            this.label42.Size = new System.Drawing.Size(100, 23);
             this.label42.TabIndex = 12;
             this.label42.Text = "Category";
             // 
@@ -606,86 +571,79 @@
             this.grpBook5.Controls.Add(this.label26);
             this.grpBook5.Controls.Add(this.label27);
             this.grpBook5.Controls.Add(this.label28);
-            this.grpBook5.Location = new System.Drawing.Point(298, 228);
-            this.grpBook5.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook5.Location = new System.Drawing.Point(397, 281);
+            this.grpBook5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook5.Name = "grpBook5";
-            this.grpBook5.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook5.Size = new System.Drawing.Size(250, 184);
+            this.grpBook5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook5.Size = new System.Drawing.Size(333, 226);
             this.grpBook5.TabIndex = 46;
             this.grpBook5.TabStop = false;
             this.grpBook5.Text = "Book 5";
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(107, 155);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(143, 191);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 19);
+            this.label22.Size = new System.Drawing.Size(100, 23);
             this.label22.TabIndex = 16;
             this.label22.Text = "Status";
             // 
             // pb5
             // 
             this.pb5.Image = ((System.Drawing.Image)(resources.GetObject("pb5.Image")));
-            this.pb5.Location = new System.Drawing.Point(13, 43);
-            this.pb5.Margin = new System.Windows.Forms.Padding(2);
+            this.pb5.Location = new System.Drawing.Point(17, 53);
+            this.pb5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb5.Name = "pb5";
-            this.pb5.Size = new System.Drawing.Size(79, 123);
+            this.pb5.Size = new System.Drawing.Size(105, 151);
             this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb5.TabIndex = 9;
             this.pb5.TabStop = false;
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(107, 136);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(143, 167);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(75, 19);
+            this.label23.Size = new System.Drawing.Size(100, 23);
             this.label23.TabIndex = 15;
             this.label23.Text = "Publisher";
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(107, 43);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Location = new System.Drawing.Point(143, 53);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(75, 19);
+            this.label24.Size = new System.Drawing.Size(100, 23);
             this.label24.TabIndex = 10;
             this.label24.Text = "Title";
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(107, 118);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(143, 145);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(75, 19);
+            this.label25.Size = new System.Drawing.Size(100, 23);
             this.label25.TabIndex = 14;
             this.label25.Text = "Copyright";
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(107, 62);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Location = new System.Drawing.Point(143, 76);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(75, 19);
+            this.label26.Size = new System.Drawing.Size(100, 23);
             this.label26.TabIndex = 11;
             this.label26.Text = "ISBN";
             // 
             // label27
             // 
-            this.label27.Location = new System.Drawing.Point(107, 99);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Location = new System.Drawing.Point(143, 122);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(75, 19);
+            this.label27.Size = new System.Drawing.Size(100, 23);
             this.label27.TabIndex = 13;
             this.label27.Text = "Author";
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(107, 80);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Location = new System.Drawing.Point(143, 98);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(75, 19);
+            this.label28.Size = new System.Drawing.Size(100, 23);
             this.label28.TabIndex = 12;
             this.label28.Text = "Category";
             // 
@@ -699,86 +657,79 @@
             this.grpBook4.Controls.Add(this.label19);
             this.grpBook4.Controls.Add(this.label20);
             this.grpBook4.Controls.Add(this.label21);
-            this.grpBook4.Location = new System.Drawing.Point(11, 228);
-            this.grpBook4.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook4.Location = new System.Drawing.Point(15, 281);
+            this.grpBook4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook4.Name = "grpBook4";
-            this.grpBook4.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook4.Size = new System.Drawing.Size(250, 184);
+            this.grpBook4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook4.Size = new System.Drawing.Size(333, 226);
             this.grpBook4.TabIndex = 45;
             this.grpBook4.TabStop = false;
             this.grpBook4.Text = "Book 4";
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(107, 155);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(143, 191);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(75, 19);
+            this.label15.Size = new System.Drawing.Size(100, 23);
             this.label15.TabIndex = 16;
             this.label15.Text = "Status";
             // 
             // pb4
             // 
             this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
-            this.pb4.Location = new System.Drawing.Point(13, 43);
-            this.pb4.Margin = new System.Windows.Forms.Padding(2);
+            this.pb4.Location = new System.Drawing.Point(17, 53);
+            this.pb4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb4.Name = "pb4";
-            this.pb4.Size = new System.Drawing.Size(79, 123);
+            this.pb4.Size = new System.Drawing.Size(105, 151);
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb4.TabIndex = 9;
             this.pb4.TabStop = false;
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(107, 136);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(143, 167);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 19);
+            this.label16.Size = new System.Drawing.Size(100, 23);
             this.label16.TabIndex = 15;
             this.label16.Text = "Publisher";
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(107, 43);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(143, 53);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 19);
+            this.label17.Size = new System.Drawing.Size(100, 23);
             this.label17.TabIndex = 10;
             this.label17.Text = "Title";
             // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(107, 118);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(143, 145);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(75, 19);
+            this.label18.Size = new System.Drawing.Size(100, 23);
             this.label18.TabIndex = 14;
             this.label18.Text = "Copyright";
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(107, 62);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(143, 76);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(75, 19);
+            this.label19.Size = new System.Drawing.Size(100, 23);
             this.label19.TabIndex = 11;
             this.label19.Text = "ISBN";
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(107, 99);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(143, 122);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 19);
+            this.label20.Size = new System.Drawing.Size(100, 23);
             this.label20.TabIndex = 13;
             this.label20.Text = "Author";
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(107, 80);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(143, 98);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(75, 19);
+            this.label21.Size = new System.Drawing.Size(100, 23);
             this.label21.TabIndex = 12;
             this.label21.Text = "Category";
             // 
@@ -792,86 +743,79 @@
             this.grpBook2.Controls.Add(this.label12);
             this.grpBook2.Controls.Add(this.label13);
             this.grpBook2.Controls.Add(this.label14);
-            this.grpBook2.Location = new System.Drawing.Point(298, 32);
-            this.grpBook2.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook2.Location = new System.Drawing.Point(397, 39);
+            this.grpBook2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook2.Name = "grpBook2";
-            this.grpBook2.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook2.Size = new System.Drawing.Size(250, 184);
+            this.grpBook2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook2.Size = new System.Drawing.Size(333, 226);
             this.grpBook2.TabIndex = 44;
             this.grpBook2.TabStop = false;
             this.grpBook2.Text = "Book 2";
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(107, 155);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(143, 191);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 19);
+            this.label8.Size = new System.Drawing.Size(100, 23);
             this.label8.TabIndex = 16;
             this.label8.Text = "Status";
             // 
             // pb2
             // 
             this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
-            this.pb2.Location = new System.Drawing.Point(13, 43);
-            this.pb2.Margin = new System.Windows.Forms.Padding(2);
+            this.pb2.Location = new System.Drawing.Point(17, 53);
+            this.pb2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(79, 123);
+            this.pb2.Size = new System.Drawing.Size(105, 151);
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb2.TabIndex = 9;
             this.pb2.TabStop = false;
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(107, 136);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(143, 167);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 19);
+            this.label9.Size = new System.Drawing.Size(100, 23);
             this.label9.TabIndex = 15;
             this.label9.Text = "Publisher";
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(107, 43);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(143, 53);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 19);
+            this.label10.Size = new System.Drawing.Size(100, 23);
             this.label10.TabIndex = 10;
             this.label10.Text = "Title";
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(107, 118);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(143, 145);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 19);
+            this.label11.Size = new System.Drawing.Size(100, 23);
             this.label11.TabIndex = 14;
             this.label11.Text = "Copyright";
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(107, 62);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(143, 76);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 19);
+            this.label12.Size = new System.Drawing.Size(100, 23);
             this.label12.TabIndex = 11;
             this.label12.Text = "ISBN";
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(107, 99);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(143, 122);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 19);
+            this.label13.Size = new System.Drawing.Size(100, 23);
             this.label13.TabIndex = 13;
             this.label13.Text = "Author";
             // 
             // label14
             // 
-            this.label14.Location = new System.Drawing.Point(107, 80);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(143, 98);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(75, 19);
+            this.label14.Size = new System.Drawing.Size(100, 23);
             this.label14.TabIndex = 12;
             this.label14.Text = "Category";
             // 
@@ -886,21 +830,20 @@
             this.grpBook1.Controls.Add(this.label6);
             this.grpBook1.Controls.Add(this.label4);
             this.grpBook1.Controls.Add(this.label5);
-            this.grpBook1.Location = new System.Drawing.Point(11, 32);
-            this.grpBook1.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBook1.Location = new System.Drawing.Point(15, 39);
+            this.grpBook1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBook1.Name = "grpBook1";
-            this.grpBook1.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook1.Size = new System.Drawing.Size(250, 184);
+            this.grpBook1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpBook1.Size = new System.Drawing.Size(333, 226);
             this.grpBook1.TabIndex = 43;
             this.grpBook1.TabStop = false;
             this.grpBook1.Text = "Book 1";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(107, 155);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(143, 191);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 19);
+            this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 16;
             this.label1.Text = "Status";
             // 
@@ -908,72 +851,67 @@
             // 
             this.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
-            this.pb1.Location = new System.Drawing.Point(13, 50);
-            this.pb1.Margin = new System.Windows.Forms.Padding(2);
+            this.pb1.Location = new System.Drawing.Point(17, 62);
+            this.pb1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(79, 115);
+            this.pb1.Size = new System.Drawing.Size(105, 142);
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb1.TabIndex = 9;
             this.pb1.TabStop = false;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(107, 136);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(143, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 19);
+            this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 15;
             this.label2.Text = "Publisher";
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(107, 43);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(143, 53);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 19);
+            this.label7.Size = new System.Drawing.Size(100, 23);
             this.label7.TabIndex = 10;
             this.label7.Text = "Title";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(107, 118);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(143, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 19);
+            this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 14;
             this.label3.Text = "Copyright";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(107, 62);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(143, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 19);
+            this.label6.Size = new System.Drawing.Size(100, 23);
             this.label6.TabIndex = 11;
             this.label6.Text = "ISBN";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(107, 99);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(143, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 19);
+            this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 13;
             this.label4.Text = "Author";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(107, 80);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(143, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 19);
+            this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "Category";
             // 
             // Fictional
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.grpBook9);
             this.Controls.Add(this.grpBook6);
             this.Controls.Add(this.grpBook8);
@@ -983,9 +921,9 @@
             this.Controls.Add(this.grpBook4);
             this.Controls.Add(this.grpBook2);
             this.Controls.Add(this.grpBook1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Fictional";
-            this.Size = new System.Drawing.Size(936, 739);
+            this.Size = new System.Drawing.Size(1248, 910);
             this.grpBook9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb9)).EndInit();
             this.grpBook6.ResumeLayout(false);
