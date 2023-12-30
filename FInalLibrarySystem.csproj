@@ -103,12 +103,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\Books.cs" />
     <Compile Include="Database\MyDB.cs" />
+    <Compile Include="Database\Users.cs" />
     <Compile Include="Forms\Booklist Panels\Academic.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Booklist Panels\Academic.Designer.cs">
       <DependentUpon>Academic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BorrowerList\Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BorrowerList\Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Main Page Panels\BookBorrowing.cs">
       <SubType>UserControl</SubType>
@@ -186,6 +194,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Booklist Panels\Academic.resx">
       <DependentUpon>Academic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BorrowerList\Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main Page Panels\BookBorrowing.resx">
       <DependentUpon>BookBorrowing.cs</DependentUpon>

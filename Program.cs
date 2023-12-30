@@ -16,7 +16,8 @@ namespace FInalLibrarySystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPage());
+            // Create an instance of MainPage (assuming MainPage is a form in your project)
+            Application.Run(new frmLogin());
         }
     }
 }
