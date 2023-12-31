@@ -166,6 +166,18 @@
     <Compile Include="Forms\Booklist Panels\Non-Fictional.Designer.cs">
       <DependentUpon>Non-Fictional.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SignUp Panels\StudentSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUp Panels\StudentSignUp.Designer.cs">
+      <DependentUpon>StudentSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUp Panels\TeacherSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUp Panels\TeacherSignUp.Designer.cs">
+      <DependentUpon>TeacherSignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +233,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Booklist Panels\Non-Fictional.resx">
       <DependentUpon>Non-Fictional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUp Panels\StudentSignUp.resx">
+      <DependentUpon>StudentSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUp Panels\TeacherSignUp.resx">
+      <DependentUpon>TeacherSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
