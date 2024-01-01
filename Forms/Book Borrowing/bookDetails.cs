@@ -20,7 +20,10 @@ namespace FInalLibrarySystem.Forms
         private void close_Click(object sender, EventArgs e)
         {
             
+
         }
+
+
 
         private void bookDetails_Load(object sender, EventArgs e)
         {
