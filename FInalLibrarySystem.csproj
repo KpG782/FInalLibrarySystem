@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Books.cs" />
+    <Compile Include="Database\BorrowedDetails.cs" />
     <Compile Include="Database\MyDB.cs" />
     <Compile Include="Database\Users.cs" />
     <Compile Include="Forms\Book Borrowing\bookDetails.cs">
