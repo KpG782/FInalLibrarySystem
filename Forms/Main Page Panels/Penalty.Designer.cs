@@ -42,7 +42,7 @@
             this.dasd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dasd.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.dasd.LinkColor = System.Drawing.Color.Black;
-            this.dasd.Location = new System.Drawing.Point(153, 19);
+            this.dasd.Location = new System.Drawing.Point(153, 20);
             this.dasd.Name = "dasd";
             this.dasd.Size = new System.Drawing.Size(169, 112);
             this.dasd.TabIndex = 32;
@@ -60,12 +60,12 @@
             this.Paid.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Paid.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.Paid.LinkColor = System.Drawing.Color.Black;
-            this.Paid.Location = new System.Drawing.Point(910, 19);
+            this.Paid.Location = new System.Drawing.Point(763, 584);
             this.Paid.Name = "Paid";
             this.Paid.Size = new System.Drawing.Size(205, 112);
             this.Paid.TabIndex = 31;
             this.Paid.TabStop = true;
-            this.Paid.Text = "Paid";
+            this.Paid.Text = "View Books Borrowed";
             this.Paid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Paid.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblNFBooks_LinkClicked);
             // 
@@ -82,7 +82,7 @@
             this.pedro.Size = new System.Drawing.Size(148, 112);
             this.pedro.TabIndex = 30;
             this.pedro.TabStop = true;
-            this.pedro.Text = "pedro";
+            this.pedro.Text = "Proceed to Payment";
             this.pedro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.pedro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblFBooks_LinkClicked);
             // 
