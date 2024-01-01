@@ -122,7 +122,7 @@ namespace FInalLibrarySystem
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
- o
+ 
         }
 
         private void label10_Click(object sender, EventArgs e)
