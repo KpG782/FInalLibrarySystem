@@ -41,7 +41,7 @@ namespace FInalLibrarySystem
                 Image coverImage = ByteArrayToImage(book.Cover);
 
                 // Check if the current book is "Introduction to Algorithms"
-                if (book.Title == "Introduction to Algorithms")
+                if (book.Title == "Principles of Economics")
                 {
                     // Set the cover image for "Introduction to Algorithms" in the PictureBox
                     bk1pb1.Image = ByteArrayToImage(book.Cover);

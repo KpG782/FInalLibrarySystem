@@ -247,7 +247,7 @@
             // 
             this.bookBorrowing1.BackColor = System.Drawing.Color.DimGray;
             this.bookBorrowing1.Location = new System.Drawing.Point(192, 4);
-            this.bookBorrowing1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookBorrowing1.Margin = new System.Windows.Forms.Padding(2);
             this.bookBorrowing1.Name = "bookBorrowing1";
             this.bookBorrowing1.Size = new System.Drawing.Size(926, 860);
             this.bookBorrowing1.TabIndex = 29;
@@ -256,7 +256,7 @@
             // 
             this.borrowerList1.BackColor = System.Drawing.Color.LightGray;
             this.borrowerList1.Location = new System.Drawing.Point(192, 4);
-            this.borrowerList1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.borrowerList1.Margin = new System.Windows.Forms.Padding(2);
             this.borrowerList1.Name = "borrowerList1";
             this.borrowerList1.Size = new System.Drawing.Size(936, 860);
             this.borrowerList1.TabIndex = 28;
@@ -275,10 +275,11 @@
             // 
             this.profile1.BackColor = System.Drawing.Color.White;
             this.profile1.Location = new System.Drawing.Point(192, 4);
-            this.profile1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.profile1.Margin = new System.Windows.Forms.Padding(2);
             this.profile1.Name = "profile1";
             this.profile1.Size = new System.Drawing.Size(917, 860);
             this.profile1.TabIndex = 26;
+            this.profile1.UserId = 1;
             // 
             // MainPage
             // 

@@ -21,5 +21,20 @@ namespace FInalLibrarySystem
         {
 
         }
+
+        private void bookDetails1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
+
+        private void BookBorrowing_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

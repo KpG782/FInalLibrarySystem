@@ -153,10 +153,10 @@ namespace FInalLibrarySystem.Forms.SignUp_Panels
                         return;
                     }
 
-                    // Check if the employee ID is already taken
+                    // Check if the studentID is already taken
                     if (usersManager.IsStudentIdTaken(txtbxStudID.Text))
                     {
-                        MessageBox.Show("Employee ID is already taken. Please choose a different Employee ID.", "Employee ID Taken", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Student ID is already taken. Please choose a different Student ID.", "Student ID Taken", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
