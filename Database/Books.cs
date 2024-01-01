@@ -239,11 +239,53 @@ namespace FInalLibrarySystem.Database
             return allBooks;
         }
 
+        // Add a method to insert a borrowed book record
+        public bool BorrowBook(int bookID, int userID, DateTime borrowedDate, DateTime returnDate, string note)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // SQL query to insert borrowed book details
+                    string insertQuery = "INSERT INTO borrowedDetails (bookID, userID, borrowedDate, returnedDate, note) " +
+                                         "VALUES (@bookID, @userID, @borrowedDate, @returnedDate, @note)";
+
+                    using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection))
+                    {
+                        // Use parameters to prevent SQL injection
+                        insertCommand.Parameters.AddWithValue("@bookID", bookID);
+                        insertCommand.Parameters.AddWithValue("@userID", userID);
+                        insertCommand.Parameters.AddWithValue("@borrowedDate", borrowedDate);
+                        insertCommand.Parameters.AddWithValue("@returnedDate", returnDate);
+                        insertCommand.Parameters.AddWithValue("@note", note);
+
+                        // Execute the insert query
+                        int rowsAffected = insertCommand.ExecuteNonQuery();
+
+                        // Return true if the operation is successful
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log or notify the user)
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+        }
+
+
+
+
+
     }
-
-
-
-
 
 
 }

@@ -14,18 +14,19 @@ namespace FInalLibrarySystem
     public partial class frmSignUp : Form
     {
 
-         
 
 
         public frmSignUp()
         {
             InitializeComponent();
             
+
         }
 
         private void frmPrompt_Load(object sender, EventArgs e)
         {
-           
+            studentSignUp1.Visible = false;
+            teacherSignUp1.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +41,10 @@ namespace FInalLibrarySystem
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            
+            studentSignUp1.Visible = false;
+            teacherSignUp1.Visible = true;
+
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -135,7 +139,8 @@ namespace FInalLibrarySystem
 
         private void btnStudent_CheckedChanged(object sender, EventArgs e)
         {
-           
+            studentSignUp1.Visible = true;
+            teacherSignUp1.Visible = false;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -210,6 +215,34 @@ namespace FInalLibrarySystem
             this.Visible = false;
             frmLogin f2 = new frmLogin();
             f2.Show();
+        }
+
+        private void teacherSignUp1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lnkTeacher_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSignUp f2 = new frmSignUp();
+            f2.Visible = false;
+            teacherSignUp1.Visible = true;
+        }
+
+        private void lnkStudent_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           studentSignUp1.Visible = true;
+            teacherSignUp1.Visible = false;
+        }
+
+        private void lnkTeacher_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lnkStudent_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,20 @@ namespace FInalLibrarySystem
         {
             InitializeComponent();
         }
+
+        private void lblNFBooks_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lblFBooks_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lblAcadBooks_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
