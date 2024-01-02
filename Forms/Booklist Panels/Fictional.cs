@@ -122,6 +122,41 @@ namespace FInalLibrarySystem
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
+                else if (book.Title == "Pride and Prejudice")
+                {
+                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
+                    pb3.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk3lbl1.Text = book.Title;
+                    bk3lbl2.Text = book.ISBN;
+                    bk3lbl3.Text = book.Category;
+                    bk3lbl4.Text = book.Author;
+                    bk3lbl5.Text = book.Copyright.ToString();
+                    bk3lbl6.Text = book.Publisher;
+                    bk3lbl7.Text = book.Status;
+                    bk3lbl8.Text = book.Description;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                } else if (book.Title == "The Great Gatsby")
+                {
+                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
+                    pb4.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk4lbl1.Text = book.Title;
+                    bk4lbl2.Text = book.ISBN;
+                    bk4lbl3.Text = book.Category;
+                    bk4lbl4.Text = book.Author;
+                    bk4lbl5.Text = book.Copyright.ToString();
+                    bk4lbl6.Text = book.Publisher;
+                    bk4lbl7.Text = book.Status;
+                    bk4lbl8.Text = book.Description;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                }
             }
             
 
@@ -317,6 +352,16 @@ namespace FInalLibrarySystem
         }
 
         private void bk1lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bk1lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl1_Paint(object sender, PaintEventArgs e)
         {
 
         }
