@@ -219,11 +219,10 @@
             this.pnl1.Controls.Add(this.bk1lbl2);
             this.pnl1.Controls.Add(this.bk1lbl5);
             this.pnl1.Controls.Add(this.bk1lbl6);
-            this.pnl1.Location = new System.Drawing.Point(31, 42);
+            this.pnl1.Location = new System.Drawing.Point(31, 11);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(403, 208);
             this.pnl1.TabIndex = 62;
-            this.pnl1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl1_Paint);
             // 
             // bk1lbl1
             // 
@@ -312,7 +311,7 @@
             this.pnl2.Controls.Add(this.bk2lbl2);
             this.pnl2.Controls.Add(this.bk2lbl5);
             this.pnl2.Controls.Add(this.bk2lbl6);
-            this.pnl2.Location = new System.Drawing.Point(440, 42);
+            this.pnl2.Location = new System.Drawing.Point(494, 11);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(403, 208);
             this.pnl2.TabIndex = 63;
@@ -400,7 +399,7 @@
             this.pnl3.Controls.Add(this.bk3lbl2);
             this.pnl3.Controls.Add(this.bk3lbl5);
             this.pnl3.Controls.Add(this.bk3lbl6);
-            this.pnl3.Location = new System.Drawing.Point(31, 256);
+            this.pnl3.Location = new System.Drawing.Point(31, 270);
             this.pnl3.Name = "pnl3";
             this.pnl3.Size = new System.Drawing.Size(403, 208);
             this.pnl3.TabIndex = 63;
@@ -488,7 +487,7 @@
             this.pnl4.Controls.Add(this.bk4lbl2);
             this.pnl4.Controls.Add(this.bk4lbl5);
             this.pnl4.Controls.Add(this.bk4lbl6);
-            this.pnl4.Location = new System.Drawing.Point(440, 256);
+            this.pnl4.Location = new System.Drawing.Point(494, 270);
             this.pnl4.Name = "pnl4";
             this.pnl4.Size = new System.Drawing.Size(403, 208);
             this.pnl4.TabIndex = 64;
@@ -570,10 +569,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pnl4);
             this.Controls.Add(this.pnl3);
-            this.Controls.Add(this.pnl2);
+            this.Controls.Add(this.pnl4);
             this.Controls.Add(this.pnl1);
+            this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pb10);
             this.Controls.Add(this.pb9);
             this.Controls.Add(this.pb8);
