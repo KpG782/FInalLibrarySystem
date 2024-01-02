@@ -104,6 +104,23 @@ namespace FInalLibrarySystem
                     bk1lbl8.Text = book.Description;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                } else if (book.Title == "1984")
+                {
+                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
+                    pb2.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk2lbl1.Text = book.Title;
+                    bk2lbl2.Text = book.ISBN;
+                    bk2lbl3.Text = book.Category;
+                    bk2lbl4.Text = book.Author;
+                    bk2lbl5.Text = book.Copyright.ToString();
+                    bk2lbl6.Text = book.Publisher;
+                    bk2lbl7.Text = book.Status;
+                    bk2lbl8.Text = book.Description;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
             }
             
@@ -295,6 +312,11 @@ namespace FInalLibrarySystem
         }
 
         private void pb10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bk1lbl1_Click(object sender, EventArgs e)
         {
 
         }
