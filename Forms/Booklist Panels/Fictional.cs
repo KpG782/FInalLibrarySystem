@@ -106,7 +106,7 @@ namespace FInalLibrarySystem
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 } else if (book.Title == "1984")
                 {
-                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
+                    // Set the cover image for "1984" in the PictureBox
                     pb2.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
@@ -124,7 +124,7 @@ namespace FInalLibrarySystem
                 }
                 else if (book.Title == "Pride and Prejudice")
                 {
-                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
+                    // Set the cover image for "Pride and Prejudice" in the PictureBox
                     pb3.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
@@ -141,7 +141,7 @@ namespace FInalLibrarySystem
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 } else if (book.Title == "The Great Gatsby")
                 {
-                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
+                    // Set the cover image for "The Great Gatsby" in the PictureBox
                     pb4.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
@@ -256,7 +256,7 @@ namespace FInalLibrarySystem
         //pb3
         private void pb3_MouseHover(object sender, EventArgs e)
         {
-            pnl1.Visible = true;
+            pnl3.Visible = true;
         }
 
         private void pb3_MouseLeave(object sender, EventArgs e)
@@ -377,6 +377,21 @@ namespace FInalLibrarySystem
         }
 
         private void pb1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bk2lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bk2lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl3_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

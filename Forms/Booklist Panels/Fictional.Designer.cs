@@ -39,16 +39,6 @@
             this.pb8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pb7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pb10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bk3lbl6 = new System.Windows.Forms.Label();
-            this.bk3lbl5 = new System.Windows.Forms.Label();
-            this.bk3lbl2 = new System.Windows.Forms.Label();
-            this.bk3lbl7 = new System.Windows.Forms.Label();
-            this.bk3lbl8 = new System.Windows.Forms.Label();
-            this.bk3lbl3 = new System.Windows.Forms.Label();
-            this.bk3lbl1 = new System.Windows.Forms.Label();
-            this.pnl3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.bk4lbl1 = new System.Windows.Forms.Label();
-            this.bk3lbl4 = new System.Windows.Forms.Label();
             this.bk2lbl6 = new System.Windows.Forms.Label();
             this.bk2lbl5 = new System.Windows.Forms.Label();
             this.bk2lbl2 = new System.Windows.Forms.Label();
@@ -58,23 +48,6 @@
             this.bk2lbl3 = new System.Windows.Forms.Label();
             this.bk2lbl1 = new System.Windows.Forms.Label();
             this.pnl2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnl4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.bk4lbl3 = new System.Windows.Forms.Label();
-            this.bk4lbl8 = new System.Windows.Forms.Label();
-            this.bk4lbl7 = new System.Windows.Forms.Label();
-            this.bk4lbl2 = new System.Windows.Forms.Label();
-            this.bk4lbl5 = new System.Windows.Forms.Label();
-            this.bk4lbl6 = new System.Windows.Forms.Label();
-            this.bk4lbl4 = new System.Windows.Forms.Label();
-            this.bk1lbl6 = new System.Windows.Forms.Label();
-            this.bk1lbl5 = new System.Windows.Forms.Label();
-            this.bk1lbl2 = new System.Windows.Forms.Label();
-            this.bk1lbl7 = new System.Windows.Forms.Label();
-            this.bk1lbl4 = new System.Windows.Forms.Label();
-            this.bk1lbl8 = new System.Windows.Forms.Label();
-            this.bk1lbl3 = new System.Windows.Forms.Label();
-            this.bk1lbl1 = new System.Windows.Forms.Label();
-            this.pnl1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -95,6 +68,33 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.pnl1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk1lbl1 = new System.Windows.Forms.Label();
+            this.bk1lbl3 = new System.Windows.Forms.Label();
+            this.bk1lbl8 = new System.Windows.Forms.Label();
+            this.bk1lbl4 = new System.Windows.Forms.Label();
+            this.bk1lbl7 = new System.Windows.Forms.Label();
+            this.bk1lbl2 = new System.Windows.Forms.Label();
+            this.bk1lbl5 = new System.Windows.Forms.Label();
+            this.bk1lbl6 = new System.Windows.Forms.Label();
+            this.pnl3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk3lbl1 = new System.Windows.Forms.Label();
+            this.bk3lbl3 = new System.Windows.Forms.Label();
+            this.bk3lbl8 = new System.Windows.Forms.Label();
+            this.bk3lbl4 = new System.Windows.Forms.Label();
+            this.bk3lbl7 = new System.Windows.Forms.Label();
+            this.bk3lbl2 = new System.Windows.Forms.Label();
+            this.bk3lbl5 = new System.Windows.Forms.Label();
+            this.bk3lbl6 = new System.Windows.Forms.Label();
+            this.pnl4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk4lbl1 = new System.Windows.Forms.Label();
+            this.bk4lbl3 = new System.Windows.Forms.Label();
+            this.bk4lbl8 = new System.Windows.Forms.Label();
+            this.bk4lbl4 = new System.Windows.Forms.Label();
+            this.bk4lbl7 = new System.Windows.Forms.Label();
+            this.bk4lbl2 = new System.Windows.Forms.Label();
+            this.bk4lbl5 = new System.Windows.Forms.Label();
+            this.bk4lbl6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
@@ -105,17 +105,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb10)).BeginInit();
-            this.pnl3.SuspendLayout();
             this.pnl2.SuspendLayout();
-            this.pnl4.SuspendLayout();
             this.pnl1.SuspendLayout();
+            this.pnl3.SuspendLayout();
+            this.pnl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb6
             // 
             this.pb6.Image = ((System.Drawing.Image)(resources.GetObject("pb6.Image")));
             this.pb6.ImageRotate = 0F;
-            this.pb6.Location = new System.Drawing.Point(303, 308);
+            this.pb6.Location = new System.Drawing.Point(153, 309);
             this.pb6.Name = "pb6";
             this.pb6.Size = new System.Drawing.Size(120, 250);
             this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +126,7 @@
             // 
             this.pb5.Image = ((System.Drawing.Image)(resources.GetObject("pb5.Image")));
             this.pb5.ImageRotate = 0F;
-            this.pb5.Location = new System.Drawing.Point(153, 308);
+            this.pb5.Location = new System.Drawing.Point(5, 309);
             this.pb5.Name = "pb5";
             this.pb5.Size = new System.Drawing.Size(120, 250);
             this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,6 +145,8 @@
             this.pb2.TabIndex = 53;
             this.pb2.TabStop = false;
             this.pb2.Click += new System.EventHandler(this.pb2_Click);
+            this.pb2.MouseLeave += new System.EventHandler(this.pb2_MouseLeave);
+            this.pb2.MouseHover += new System.EventHandler(this.pb2_MouseHover);
             // 
             // pb1
             // 
@@ -158,6 +160,8 @@
             this.pb1.TabIndex = 50;
             this.pb1.TabStop = false;
             this.pb1.Click += new System.EventHandler(this.pb1_Click);
+            this.pb1.MouseLeave += new System.EventHandler(this.pb1_MouseLeave);
+            this.pb1.MouseHover += new System.EventHandler(this.pb1_MouseHover);
             // 
             // pb3
             // 
@@ -170,24 +174,28 @@
             this.pb3.TabIndex = 55;
             this.pb3.TabStop = false;
             this.pb3.Click += new System.EventHandler(this.pb3_Click);
+            this.pb3.MouseLeave += new System.EventHandler(this.pb3_MouseLeave);
+            this.pb3.MouseHover += new System.EventHandler(this.pb3_MouseHover);
             // 
             // pb4
             // 
             this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
             this.pb4.ImageRotate = 0F;
-            this.pb4.Location = new System.Drawing.Point(4, 311);
+            this.pb4.Location = new System.Drawing.Point(444, 11);
             this.pb4.Name = "pb4";
             this.pb4.Size = new System.Drawing.Size(120, 250);
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb4.TabIndex = 54;
             this.pb4.TabStop = false;
             this.pb4.Click += new System.EventHandler(this.pb4_Click);
+            this.pb4.MouseLeave += new System.EventHandler(this.pb4_MouseLeave);
+            this.pb4.MouseHover += new System.EventHandler(this.pb4_MouseHover);
             // 
             // pb9
             // 
             this.pb9.Image = ((System.Drawing.Image)(resources.GetObject("pb9.Image")));
             this.pb9.ImageRotate = 0F;
-            this.pb9.Location = new System.Drawing.Point(701, 304);
+            this.pb9.Location = new System.Drawing.Point(585, 309);
             this.pb9.Name = "pb9";
             this.pb9.Size = new System.Drawing.Size(120, 250);
             this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -199,7 +207,7 @@
             // 
             this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
             this.pb8.ImageRotate = 0F;
-            this.pb8.Location = new System.Drawing.Point(598, 308);
+            this.pb8.Location = new System.Drawing.Point(444, 309);
             this.pb8.Name = "pb8";
             this.pb8.Size = new System.Drawing.Size(120, 250);
             this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,7 +219,7 @@
             // 
             this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
             this.pb7.ImageRotate = 0F;
-            this.pb7.Location = new System.Drawing.Point(444, 308);
+            this.pb7.Location = new System.Drawing.Point(305, 309);
             this.pb7.Name = "pb7";
             this.pb7.Size = new System.Drawing.Size(120, 250);
             this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,112 +231,15 @@
             // 
             this.pb10.Image = ((System.Drawing.Image)(resources.GetObject("pb10.Image")));
             this.pb10.ImageRotate = 0F;
-            this.pb10.Location = new System.Drawing.Point(444, 11);
+            this.pb10.Location = new System.Drawing.Point(737, 309);
             this.pb10.Name = "pb10";
             this.pb10.Size = new System.Drawing.Size(120, 250);
             this.pb10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb10.TabIndex = 61;
             this.pb10.TabStop = false;
             this.pb10.Click += new System.EventHandler(this.pb10_Click);
-            // 
-            // bk3lbl6
-            // 
-            this.bk3lbl6.Location = new System.Drawing.Point(12, 161);
-            this.bk3lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl6.Name = "bk3lbl6";
-            this.bk3lbl6.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl6.TabIndex = 39;
-            this.bk3lbl6.Text = "Publisher";
-            // 
-            // bk3lbl5
-            // 
-            this.bk3lbl5.Location = new System.Drawing.Point(12, 130);
-            this.bk3lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl5.Name = "bk3lbl5";
-            this.bk3lbl5.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl5.TabIndex = 38;
-            this.bk3lbl5.Text = "Copyright";
-            // 
-            // bk3lbl2
-            // 
-            this.bk3lbl2.Location = new System.Drawing.Point(12, 46);
-            this.bk3lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl2.Name = "bk3lbl2";
-            this.bk3lbl2.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl2.TabIndex = 35;
-            this.bk3lbl2.Text = "ISBN";
-            // 
-            // bk3lbl7
-            // 
-            this.bk3lbl7.Location = new System.Drawing.Point(12, 189);
-            this.bk3lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl7.Name = "bk3lbl7";
-            this.bk3lbl7.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl7.TabIndex = 40;
-            this.bk3lbl7.Text = "Status";
-            // 
-            // bk3lbl8
-            // 
-            this.bk3lbl8.Location = new System.Drawing.Point(162, 23);
-            this.bk3lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl8.Name = "bk3lbl8";
-            this.bk3lbl8.Size = new System.Drawing.Size(228, 135);
-            this.bk3lbl8.TabIndex = 41;
-            this.bk3lbl8.Text = "Description";
-            // 
-            // bk3lbl3
-            // 
-            this.bk3lbl3.Location = new System.Drawing.Point(12, 74);
-            this.bk3lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl3.Name = "bk3lbl3";
-            this.bk3lbl3.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl3.TabIndex = 36;
-            this.bk3lbl3.Text = "Category";
-            // 
-            // bk3lbl1
-            // 
-            this.bk3lbl1.Location = new System.Drawing.Point(12, 18);
-            this.bk3lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl1.Name = "bk3lbl1";
-            this.bk3lbl1.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl1.TabIndex = 34;
-            this.bk3lbl1.Text = "Title";
-            // 
-            // pnl3
-            // 
-            this.pnl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl3.Controls.Add(this.bk4lbl1);
-            this.pnl3.Controls.Add(this.bk3lbl1);
-            this.pnl3.Controls.Add(this.bk3lbl3);
-            this.pnl3.Controls.Add(this.bk3lbl8);
-            this.pnl3.Controls.Add(this.bk3lbl4);
-            this.pnl3.Controls.Add(this.bk3lbl7);
-            this.pnl3.Controls.Add(this.bk3lbl2);
-            this.pnl3.Controls.Add(this.bk3lbl5);
-            this.pnl3.Controls.Add(this.bk3lbl6);
-            this.pnl3.Location = new System.Drawing.Point(81, 35);
-            this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(275, 250);
-            this.pnl3.TabIndex = 63;
-            this.pnl3.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl3_Paint);
-            // 
-            // bk4lbl1
-            // 
-            this.bk4lbl1.Location = new System.Drawing.Point(12, 11);
-            this.bk4lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl1.Name = "bk4lbl1";
-            this.bk4lbl1.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl1.TabIndex = 34;
-            this.bk4lbl1.Text = "Title";
-            // 
-            // bk3lbl4
-            // 
-            this.bk3lbl4.Location = new System.Drawing.Point(12, 102);
-            this.bk3lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk3lbl4.Name = "bk3lbl4";
-            this.bk3lbl4.Size = new System.Drawing.Size(138, 19);
-            this.bk3lbl4.TabIndex = 37;
-            this.bk3lbl4.Text = "Author";
+            this.pb10.MouseLeave += new System.EventHandler(this.pb4_MouseLeave);
+            this.pb10.MouseHover += new System.EventHandler(this.pb4_MouseHover);
             // 
             // bk2lbl6
             // 
@@ -377,21 +288,23 @@
             // 
             // bk2lbl8
             // 
-            this.bk2lbl8.Location = new System.Drawing.Point(162, 14);
+            this.bk2lbl8.Location = new System.Drawing.Point(149, 8);
             this.bk2lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk2lbl8.Name = "bk2lbl8";
-            this.bk2lbl8.Size = new System.Drawing.Size(228, 135);
+            this.bk2lbl8.Size = new System.Drawing.Size(172, 200);
             this.bk2lbl8.TabIndex = 41;
             this.bk2lbl8.Text = "Description";
+            this.bk2lbl8.Click += new System.EventHandler(this.bk2lbl8_Click);
             // 
             // bk2lbl3
             // 
-            this.bk2lbl3.Location = new System.Drawing.Point(-42, 55);
+            this.bk2lbl3.Location = new System.Drawing.Point(12, 70);
             this.bk2lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk2lbl3.Name = "bk2lbl3";
             this.bk2lbl3.Size = new System.Drawing.Size(138, 19);
             this.bk2lbl3.TabIndex = 36;
             this.bk2lbl3.Text = "Category";
+            this.bk2lbl3.Click += new System.EventHandler(this.bk2lbl3_Click);
             // 
             // bk2lbl1
             // 
@@ -404,7 +317,7 @@
             // 
             // pnl2
             // 
-            this.pnl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl2.Controls.Add(this.bk2lbl1);
             this.pnl2.Controls.Add(this.bk2lbl3);
             this.pnl2.Controls.Add(this.bk2lbl8);
@@ -413,182 +326,10 @@
             this.pnl2.Controls.Add(this.bk2lbl2);
             this.pnl2.Controls.Add(this.bk2lbl5);
             this.pnl2.Controls.Add(this.bk2lbl6);
-            this.pnl2.Controls.Add(this.pnl4);
-            this.pnl2.Location = new System.Drawing.Point(578, 11);
+            this.pnl2.Location = new System.Drawing.Point(570, 3);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(339, 291);
-            this.pnl2.TabIndex = 63;
-            // 
-            // pnl4
-            // 
-            this.pnl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl4.Controls.Add(this.pnl3);
-            this.pnl4.Controls.Add(this.bk4lbl3);
-            this.pnl4.Controls.Add(this.bk4lbl8);
-            this.pnl4.Controls.Add(this.bk4lbl7);
-            this.pnl4.Controls.Add(this.bk4lbl2);
-            this.pnl4.Controls.Add(this.bk4lbl5);
-            this.pnl4.Controls.Add(this.bk4lbl6);
-            this.pnl4.Controls.Add(this.bk4lbl4);
-            this.pnl4.Location = new System.Drawing.Point(65, 68);
-            this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(325, 264);
-            this.pnl4.TabIndex = 64;
-            // 
-            // bk4lbl3
-            // 
-            this.bk4lbl3.Location = new System.Drawing.Point(12, 74);
-            this.bk4lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl3.Name = "bk4lbl3";
-            this.bk4lbl3.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl3.TabIndex = 36;
-            this.bk4lbl3.Text = "Category";
-            // 
-            // bk4lbl8
-            // 
-            this.bk4lbl8.Location = new System.Drawing.Point(162, 14);
-            this.bk4lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl8.Name = "bk4lbl8";
-            this.bk4lbl8.Size = new System.Drawing.Size(228, 135);
-            this.bk4lbl8.TabIndex = 41;
-            this.bk4lbl8.Text = "Description";
-            // 
-            // bk4lbl7
-            // 
-            this.bk4lbl7.Location = new System.Drawing.Point(12, 189);
-            this.bk4lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl7.Name = "bk4lbl7";
-            this.bk4lbl7.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl7.TabIndex = 40;
-            this.bk4lbl7.Text = "Status";
-            // 
-            // bk4lbl2
-            // 
-            this.bk4lbl2.Location = new System.Drawing.Point(12, 46);
-            this.bk4lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl2.Name = "bk4lbl2";
-            this.bk4lbl2.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl2.TabIndex = 35;
-            this.bk4lbl2.Text = "ISBN";
-            // 
-            // bk4lbl5
-            // 
-            this.bk4lbl5.Location = new System.Drawing.Point(12, 130);
-            this.bk4lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl5.Name = "bk4lbl5";
-            this.bk4lbl5.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl5.TabIndex = 38;
-            this.bk4lbl5.Text = "Copyright";
-            // 
-            // bk4lbl6
-            // 
-            this.bk4lbl6.Location = new System.Drawing.Point(12, 161);
-            this.bk4lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl6.Name = "bk4lbl6";
-            this.bk4lbl6.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl6.TabIndex = 39;
-            this.bk4lbl6.Text = "Publisher";
-            // 
-            // bk4lbl4
-            // 
-            this.bk4lbl4.Location = new System.Drawing.Point(12, 102);
-            this.bk4lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk4lbl4.Name = "bk4lbl4";
-            this.bk4lbl4.Size = new System.Drawing.Size(138, 19);
-            this.bk4lbl4.TabIndex = 37;
-            this.bk4lbl4.Text = "Author";
-            // 
-            // bk1lbl6
-            // 
-            this.bk1lbl6.Location = new System.Drawing.Point(12, 161);
-            this.bk1lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl6.Name = "bk1lbl6";
-            this.bk1lbl6.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl6.TabIndex = 39;
-            this.bk1lbl6.Text = "Publisher";
-            this.bk1lbl6.Click += new System.EventHandler(this.bk1lbl6_Click);
-            // 
-            // bk1lbl5
-            // 
-            this.bk1lbl5.Location = new System.Drawing.Point(12, 130);
-            this.bk1lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl5.Name = "bk1lbl5";
-            this.bk1lbl5.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl5.TabIndex = 38;
-            this.bk1lbl5.Text = "Copyright";
-            this.bk1lbl5.Click += new System.EventHandler(this.bk1lbl5_Click);
-            // 
-            // bk1lbl2
-            // 
-            this.bk1lbl2.Location = new System.Drawing.Point(12, 46);
-            this.bk1lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl2.Name = "bk1lbl2";
-            this.bk1lbl2.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl2.TabIndex = 35;
-            this.bk1lbl2.Text = "ISBN";
-            // 
-            // bk1lbl7
-            // 
-            this.bk1lbl7.Location = new System.Drawing.Point(12, 189);
-            this.bk1lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl7.Name = "bk1lbl7";
-            this.bk1lbl7.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl7.TabIndex = 40;
-            this.bk1lbl7.Text = "Status";
-            this.bk1lbl7.Click += new System.EventHandler(this.bk1lbl7_Click);
-            // 
-            // bk1lbl4
-            // 
-            this.bk1lbl4.Location = new System.Drawing.Point(12, 102);
-            this.bk1lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl4.Name = "bk1lbl4";
-            this.bk1lbl4.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl4.TabIndex = 37;
-            this.bk1lbl4.Text = "Author";
-            // 
-            // bk1lbl8
-            // 
-            this.bk1lbl8.Location = new System.Drawing.Point(162, 14);
-            this.bk1lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl8.Name = "bk1lbl8";
-            this.bk1lbl8.Size = new System.Drawing.Size(228, 135);
-            this.bk1lbl8.TabIndex = 41;
-            this.bk1lbl8.Text = "Description";
-            // 
-            // bk1lbl3
-            // 
-            this.bk1lbl3.Location = new System.Drawing.Point(12, 74);
-            this.bk1lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl3.Name = "bk1lbl3";
-            this.bk1lbl3.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl3.TabIndex = 36;
-            this.bk1lbl3.Text = "Category";
-            // 
-            // bk1lbl1
-            // 
-            this.bk1lbl1.Location = new System.Drawing.Point(12, 18);
-            this.bk1lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl1.Name = "bk1lbl1";
-            this.bk1lbl1.Size = new System.Drawing.Size(138, 19);
-            this.bk1lbl1.TabIndex = 34;
-            this.bk1lbl1.Text = "Title";
-            this.bk1lbl1.Click += new System.EventHandler(this.bk1lbl1_Click);
-            // 
-            // pnl1
-            // 
-            this.pnl1.Controls.Add(this.bk1lbl1);
-            this.pnl1.Controls.Add(this.bk1lbl3);
-            this.pnl1.Controls.Add(this.bk1lbl8);
-            this.pnl1.Controls.Add(this.bk1lbl4);
-            this.pnl1.Controls.Add(this.bk1lbl7);
-            this.pnl1.Controls.Add(this.bk1lbl2);
-            this.pnl1.Controls.Add(this.bk1lbl5);
-            this.pnl1.Controls.Add(this.bk1lbl6);
-            this.pnl1.Location = new System.Drawing.Point(578, 11);
-            this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(403, 208);
-            this.pnl1.TabIndex = 62;
-            this.pnl1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl1_Paint);
+            this.pnl2.TabIndex = 71;
             // 
             // label2
             // 
@@ -697,7 +438,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(312, 281);
+            this.label6.Location = new System.Drawing.Point(312, 286);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 24);
@@ -780,6 +521,271 @@
             this.label20.TabIndex = 66;
             this.label20.Text = "Author";
             // 
+            // pnl1
+            // 
+            this.pnl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl1.Controls.Add(this.bk1lbl1);
+            this.pnl1.Controls.Add(this.bk1lbl3);
+            this.pnl1.Controls.Add(this.bk1lbl8);
+            this.pnl1.Controls.Add(this.bk1lbl4);
+            this.pnl1.Controls.Add(this.bk1lbl7);
+            this.pnl1.Controls.Add(this.bk1lbl2);
+            this.pnl1.Controls.Add(this.bk1lbl5);
+            this.pnl1.Controls.Add(this.bk1lbl6);
+            this.pnl1.Location = new System.Drawing.Point(570, 7);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(339, 291);
+            this.pnl1.TabIndex = 70;
+            // 
+            // bk1lbl1
+            // 
+            this.bk1lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk1lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl1.Name = "bk1lbl1";
+            this.bk1lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl1.TabIndex = 34;
+            this.bk1lbl1.Text = "Title";
+            // 
+            // bk1lbl3
+            // 
+            this.bk1lbl3.Location = new System.Drawing.Point(12, 70);
+            this.bk1lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl3.Name = "bk1lbl3";
+            this.bk1lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl3.TabIndex = 36;
+            this.bk1lbl3.Text = "Category";
+            // 
+            // bk1lbl8
+            // 
+            this.bk1lbl8.Location = new System.Drawing.Point(149, 11);
+            this.bk1lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl8.Name = "bk1lbl8";
+            this.bk1lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk1lbl8.TabIndex = 41;
+            this.bk1lbl8.Text = "Description";
+            // 
+            // bk1lbl4
+            // 
+            this.bk1lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk1lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl4.Name = "bk1lbl4";
+            this.bk1lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl4.TabIndex = 37;
+            this.bk1lbl4.Text = "Author";
+            // 
+            // bk1lbl7
+            // 
+            this.bk1lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk1lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl7.Name = "bk1lbl7";
+            this.bk1lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl7.TabIndex = 40;
+            this.bk1lbl7.Text = "Status";
+            // 
+            // bk1lbl2
+            // 
+            this.bk1lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk1lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl2.Name = "bk1lbl2";
+            this.bk1lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl2.TabIndex = 35;
+            this.bk1lbl2.Text = "ISBN";
+            // 
+            // bk1lbl5
+            // 
+            this.bk1lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk1lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl5.Name = "bk1lbl5";
+            this.bk1lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl5.TabIndex = 38;
+            this.bk1lbl5.Text = "Copyright";
+            // 
+            // bk1lbl6
+            // 
+            this.bk1lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk1lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl6.Name = "bk1lbl6";
+            this.bk1lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl6.TabIndex = 39;
+            this.bk1lbl6.Text = "Publisher";
+            // 
+            // pnl3
+            // 
+            this.pnl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl3.Controls.Add(this.bk3lbl1);
+            this.pnl3.Controls.Add(this.bk3lbl3);
+            this.pnl3.Controls.Add(this.bk3lbl8);
+            this.pnl3.Controls.Add(this.bk3lbl4);
+            this.pnl3.Controls.Add(this.bk3lbl7);
+            this.pnl3.Controls.Add(this.bk3lbl2);
+            this.pnl3.Controls.Add(this.bk3lbl5);
+            this.pnl3.Controls.Add(this.bk3lbl6);
+            this.pnl3.Location = new System.Drawing.Point(570, 4);
+            this.pnl3.Name = "pnl3";
+            this.pnl3.Size = new System.Drawing.Size(339, 291);
+            this.pnl3.TabIndex = 68;
+            this.pnl3.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl3_Paint_1);
+            // 
+            // bk3lbl1
+            // 
+            this.bk3lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk3lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl1.Name = "bk3lbl1";
+            this.bk3lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl1.TabIndex = 34;
+            this.bk3lbl1.Text = "Title";
+            // 
+            // bk3lbl3
+            // 
+            this.bk3lbl3.Location = new System.Drawing.Point(12, 70);
+            this.bk3lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl3.Name = "bk3lbl3";
+            this.bk3lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl3.TabIndex = 36;
+            this.bk3lbl3.Text = "Category";
+            // 
+            // bk3lbl8
+            // 
+            this.bk3lbl8.Location = new System.Drawing.Point(149, 11);
+            this.bk3lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl8.Name = "bk3lbl8";
+            this.bk3lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk3lbl8.TabIndex = 41;
+            this.bk3lbl8.Text = "Description";
+            // 
+            // bk3lbl4
+            // 
+            this.bk3lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk3lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl4.Name = "bk3lbl4";
+            this.bk3lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl4.TabIndex = 37;
+            this.bk3lbl4.Text = "Author";
+            // 
+            // bk3lbl7
+            // 
+            this.bk3lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk3lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl7.Name = "bk3lbl7";
+            this.bk3lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl7.TabIndex = 40;
+            this.bk3lbl7.Text = "Status";
+            // 
+            // bk3lbl2
+            // 
+            this.bk3lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk3lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl2.Name = "bk3lbl2";
+            this.bk3lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl2.TabIndex = 35;
+            this.bk3lbl2.Text = "ISBN";
+            // 
+            // bk3lbl5
+            // 
+            this.bk3lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk3lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl5.Name = "bk3lbl5";
+            this.bk3lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl5.TabIndex = 38;
+            this.bk3lbl5.Text = "Copyright";
+            // 
+            // bk3lbl6
+            // 
+            this.bk3lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk3lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl6.Name = "bk3lbl6";
+            this.bk3lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl6.TabIndex = 39;
+            this.bk3lbl6.Text = "Publisher";
+            // 
+            // pnl4
+            // 
+            this.pnl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl4.Controls.Add(this.bk4lbl1);
+            this.pnl4.Controls.Add(this.bk4lbl3);
+            this.pnl4.Controls.Add(this.bk4lbl8);
+            this.pnl4.Controls.Add(this.bk4lbl4);
+            this.pnl4.Controls.Add(this.bk4lbl7);
+            this.pnl4.Controls.Add(this.bk4lbl2);
+            this.pnl4.Controls.Add(this.bk4lbl5);
+            this.pnl4.Controls.Add(this.bk4lbl6);
+            this.pnl4.Location = new System.Drawing.Point(570, 4);
+            this.pnl4.Name = "pnl4";
+            this.pnl4.Size = new System.Drawing.Size(339, 291);
+            this.pnl4.TabIndex = 69;
+            // 
+            // bk4lbl1
+            // 
+            this.bk4lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk4lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl1.Name = "bk4lbl1";
+            this.bk4lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl1.TabIndex = 34;
+            this.bk4lbl1.Text = "Title";
+            // 
+            // bk4lbl3
+            // 
+            this.bk4lbl3.Location = new System.Drawing.Point(12, 70);
+            this.bk4lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl3.Name = "bk4lbl3";
+            this.bk4lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl3.TabIndex = 36;
+            this.bk4lbl3.Text = "Category";
+            // 
+            // bk4lbl8
+            // 
+            this.bk4lbl8.Location = new System.Drawing.Point(149, 11);
+            this.bk4lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl8.Name = "bk4lbl8";
+            this.bk4lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk4lbl8.TabIndex = 41;
+            this.bk4lbl8.Text = "Description";
+            // 
+            // bk4lbl4
+            // 
+            this.bk4lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk4lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl4.Name = "bk4lbl4";
+            this.bk4lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl4.TabIndex = 37;
+            this.bk4lbl4.Text = "Author";
+            // 
+            // bk4lbl7
+            // 
+            this.bk4lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk4lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl7.Name = "bk4lbl7";
+            this.bk4lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl7.TabIndex = 40;
+            this.bk4lbl7.Text = "Status";
+            // 
+            // bk4lbl2
+            // 
+            this.bk4lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk4lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl2.Name = "bk4lbl2";
+            this.bk4lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl2.TabIndex = 35;
+            this.bk4lbl2.Text = "ISBN";
+            // 
+            // bk4lbl5
+            // 
+            this.bk4lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk4lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl5.Name = "bk4lbl5";
+            this.bk4lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl5.TabIndex = 38;
+            this.bk4lbl5.Text = "Copyright";
+            // 
+            // bk4lbl6
+            // 
+            this.bk4lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk4lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl6.Name = "bk4lbl6";
+            this.bk4lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl6.TabIndex = 39;
+            this.bk4lbl6.Text = "Publisher";
+            // 
             // Fictional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -793,6 +799,9 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
+            this.Controls.Add(this.pnl2);
+            this.Controls.Add(this.pnl3);
+            this.Controls.Add(this.pnl4);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label8);
@@ -803,8 +812,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pnl2);
-            this.Controls.Add(this.pnl1);
             this.Controls.Add(this.pb10);
             this.Controls.Add(this.pb9);
             this.Controls.Add(this.pb8);
@@ -817,6 +824,7 @@
             this.Controls.Add(this.pb4);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.pnl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Fictional";
             this.Size = new System.Drawing.Size(920, 687);
@@ -831,10 +839,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb10)).EndInit();
-            this.pnl3.ResumeLayout(false);
             this.pnl2.ResumeLayout(false);
-            this.pnl4.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);
+            this.pnl3.ResumeLayout(false);
+            this.pnl4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -850,14 +858,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pb8;
         private Guna.UI2.WinForms.Guna2PictureBox pb7;
         private Guna.UI2.WinForms.Guna2PictureBox pb10;
-        private System.Windows.Forms.Label bk3lbl6;
-        private System.Windows.Forms.Label bk3lbl5;
-        private System.Windows.Forms.Label bk3lbl2;
-        private System.Windows.Forms.Label bk3lbl7;
-        private System.Windows.Forms.Label bk3lbl8;
-        private System.Windows.Forms.Label bk3lbl3;
-        private System.Windows.Forms.Label bk3lbl1;
-        private Guna.UI2.WinForms.Guna2Panel pnl3;
         private System.Windows.Forms.Label bk2lbl6;
         private System.Windows.Forms.Label bk2lbl5;
         private System.Windows.Forms.Label bk2lbl2;
@@ -867,25 +867,6 @@
         private System.Windows.Forms.Label bk2lbl3;
         private System.Windows.Forms.Label bk2lbl1;
         private Guna.UI2.WinForms.Guna2Panel pnl2;
-        private System.Windows.Forms.Label bk4lbl6;
-        private System.Windows.Forms.Label bk4lbl5;
-        private System.Windows.Forms.Label bk4lbl2;
-        private System.Windows.Forms.Label bk4lbl7;
-        private System.Windows.Forms.Label bk4lbl4;
-        private System.Windows.Forms.Label bk4lbl8;
-        private System.Windows.Forms.Label bk4lbl3;
-        private Guna.UI2.WinForms.Guna2Panel pnl4;
-        private System.Windows.Forms.Label bk1lbl6;
-        private System.Windows.Forms.Label bk1lbl5;
-        private System.Windows.Forms.Label bk1lbl2;
-        private System.Windows.Forms.Label bk1lbl7;
-        private System.Windows.Forms.Label bk1lbl4;
-        private System.Windows.Forms.Label bk1lbl8;
-        private System.Windows.Forms.Label bk1lbl3;
-        private System.Windows.Forms.Label bk1lbl1;
-        private Guna.UI2.WinForms.Guna2Panel pnl1;
-        private System.Windows.Forms.Label bk4lbl1;
-        private System.Windows.Forms.Label bk3lbl4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
@@ -906,5 +887,32 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private Guna.UI2.WinForms.Guna2Panel pnl1;
+        private Guna.UI2.WinForms.Guna2Panel pnl3;
+        private Guna.UI2.WinForms.Guna2Panel pnl4;
+        private System.Windows.Forms.Label bk4lbl1;
+        private System.Windows.Forms.Label bk4lbl3;
+        private System.Windows.Forms.Label bk4lbl8;
+        private System.Windows.Forms.Label bk4lbl4;
+        private System.Windows.Forms.Label bk4lbl7;
+        private System.Windows.Forms.Label bk4lbl2;
+        private System.Windows.Forms.Label bk4lbl5;
+        private System.Windows.Forms.Label bk4lbl6;
+        private System.Windows.Forms.Label bk3lbl1;
+        private System.Windows.Forms.Label bk3lbl3;
+        private System.Windows.Forms.Label bk3lbl8;
+        private System.Windows.Forms.Label bk3lbl4;
+        private System.Windows.Forms.Label bk3lbl7;
+        private System.Windows.Forms.Label bk3lbl2;
+        private System.Windows.Forms.Label bk3lbl5;
+        private System.Windows.Forms.Label bk3lbl6;
+        private System.Windows.Forms.Label bk1lbl1;
+        private System.Windows.Forms.Label bk1lbl3;
+        private System.Windows.Forms.Label bk1lbl8;
+        private System.Windows.Forms.Label bk1lbl4;
+        private System.Windows.Forms.Label bk1lbl7;
+        private System.Windows.Forms.Label bk1lbl2;
+        private System.Windows.Forms.Label bk1lbl5;
+        private System.Windows.Forms.Label bk1lbl6;
     }
 }
