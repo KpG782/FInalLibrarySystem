@@ -20,12 +20,63 @@ namespace FInalLibrarySystem
         private void Fictional_Load(object sender, EventArgs e)
         {
             LoadFictionalData();
+
+            //pb1
+            pb1.MouseHover += pb1_MouseHover;
+            pb1.MouseLeave += pb1_MouseLeave;
+            pnl1.Visible = false;
+
+            //pb2
+            pb2.MouseHover += pb2_MouseHover;
+            pb2.MouseLeave += pb2_MouseLeave;
+            pnl2.Visible = false;
+
+            //pb3
+            pb3.MouseHover += pb3_MouseHover;
+            pb3.MouseLeave += pb3_MouseLeave;
+            pnl3.Visible = false;
+
+            //pb4
+            pb4.MouseHover += pb4_MouseHover;
+            pb4.MouseLeave += pb4_MouseLeave;
+            pnl4.Visible = false;
+
+            //pb5
+            /*pb5.MouseHover += pb5_MouseHover;
+            pb5.MouseLeave += pb5_MouseLeave;
+            pnl5.Visible = false; 
+            
+            //pb6
+            pb6.MouseHover += pb6_MouseHover;
+            pb6.MouseLeave += pb6_MouseLeave;
+            pnl6.Visible = false;
+
+            //pb7
+            pb7.MouseHover += pb7_MouseHover;
+            pb7.MouseLeave += pb7_MouseLeave;
+            pnl7.Visible = false;
+
+            //pb8
+            pb8.MouseHover += pb8_MouseHover;
+            pb8.MouseLeave += pb8_MouseLeave;
+            pnl8.Visible = false;
+
+            //pb9
+            pb9.MouseHover += pb9_MouseHover;
+            pb9.MouseLeave += pb9_MouseLeave;
+            pnl9.Visible = false;
+
+            //pb10
+            pb10.MouseHover += pb10_MouseHover;
+            pb10.MouseLeave += pb10_MouseLeave;
+            pnl10.Visible = false; */
+
+
         }
 
         private void LoadFictionalData()
         {
-            // Assuming you have a DataGridView named Fictional in your form
-            dgvFictional.Rows.Clear();
+            
 
             List<Book> fictionalBooks = booksManager1.GetFictionalBooks();
 
@@ -39,7 +90,7 @@ namespace FInalLibrarySystem
                 if (book.Title == "To Kill a Mockingbird")
                 {
                     // Set the cover image for "To Kill a Mockingbird" in the PictureBox
-                    bk1pb1.Image = ByteArrayToImage(book.Cover);
+                    pb1.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
                     // For example, you might set labels or other controls with book details
@@ -54,22 +105,10 @@ namespace FInalLibrarySystem
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
-
-                dgvFictional.Rows.Add(
-                    book.Id,
-                    book.Title,
-                    book.ISBN,
-                    book.Author,
-                    book.Category,
-                    book.Copyright,
-                    book.Publisher,
-                    book.Status,
-                    book.Description,
-                    coverImage
-                // Add more columns as needed
-                );
             }
-        }
+            
+
+            }
 
         // Helper method to convert byte array to Image
         private Image ByteArrayToImage(byte[] byteArray)
@@ -81,6 +120,183 @@ namespace FInalLibrarySystem
             {
                 return Image.FromStream(ms);
             }
+        }
+
+        private void bk1pb1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bk1lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void bk1lbl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bk1lbl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //pb1
+        private void pb1_MouseHover(object sender, EventArgs e)
+        {
+            pnl1.Visible = true;
+        }
+
+        private void pb1_MouseLeave(object sender, EventArgs e)
+        {
+            pnl1.Visible = false;
+        }
+
+        //pb2
+        private void pb2_MouseHover(object sender, EventArgs e)
+        {
+            pnl2.Visible = true;
+        }
+
+        private void pb2_MouseLeave(object sender, EventArgs e)
+        {
+            pnl2.Visible = false;
+        }
+
+        //pb3
+        private void pb3_MouseHover(object sender, EventArgs e)
+        {
+            pnl1.Visible = true;
+        }
+
+        private void pb3_MouseLeave(object sender, EventArgs e)
+        {
+            pnl3.Visible = false;
+        }
+
+        //pb4
+        private void pb4_MouseHover(object sender, EventArgs e)
+        {
+            pnl4.Visible = true;
+        }
+
+        private void pb4_MouseLeave(object sender, EventArgs e)
+        {
+            pnl4.Visible = false;
+        }
+
+        //pb5
+        /*private void pb5_MouseHover(object sender, EventArgs e)
+        {
+            pnl5.Visible = true;
+        }
+
+        private void pb5_MouseLeave(object sender, EventArgs e)
+        {
+            pnl5.Visible = false;
+        }
+
+        //pb6
+        private void pb6_MouseHover(object sender, EventArgs e)
+        {
+            pnl6.Visible = true;
+        }
+
+        private void pb6_MouseLeave(object sender, EventArgs e)
+        {
+            pnl6.Visible = false;
+        }
+
+        //pb7
+        private void pb7_MouseHover(object sender, EventArgs e)
+        {
+            pnl7.Visible = true;
+        }
+
+        private void pb7_MouseLeave(object sender, EventArgs e)
+        {
+            pnl7.Visible = false;
+        }
+
+        //pb8
+        private void pb8_MouseHover(object sender, EventArgs e)
+        {
+            pnl8.Visible = true;
+        }
+
+        private void pb8_MouseLeave(object sender, EventArgs e)
+        {
+            pnl8.Visible = false;
+        }
+
+        //pb9
+        private void pb9_MouseHover(object sender, EventArgs e)
+        {
+            pnl9.Visible = true;
+        }
+
+        private void pb9_MouseLeave(object sender, EventArgs e)
+        {
+            pnl9.Visible = false;
+        }
+
+        //pb10
+        private void pb10_MouseHover(object sender, EventArgs e)
+        {
+            pnl10.Visible = true;
+        }
+
+        private void pb10_MouseLeave(object sender, EventArgs e)
+        {
+            pnl10.Visible = false;
+        } */
+
+        private void pb8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
