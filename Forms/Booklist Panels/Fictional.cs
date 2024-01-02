@@ -365,5 +365,20 @@ namespace FInalLibrarySystem
         {
 
         }
+
+        private void pnl3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pb4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
