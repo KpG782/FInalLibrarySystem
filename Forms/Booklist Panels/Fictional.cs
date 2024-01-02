@@ -72,11 +72,11 @@ namespace FInalLibrarySystem
             pnl10.Visible = false; */
 
 
-
         }
+
         private void LoadFictionalData()
         {
-
+            
 
             List<Book> fictionalBooks = booksManager1.GetFictionalBooks();
 
@@ -104,10 +104,9 @@ namespace FInalLibrarySystem
                     bk1lbl8.Text = book.Description;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
-                }
-                else if (book.Title == "1984")
+                } else if (book.Title == "1984")
                 {
-                    // Set the cover image for "1984" in the PictureBox
+                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
                     pb2.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
@@ -125,7 +124,7 @@ namespace FInalLibrarySystem
                 }
                 else if (book.Title == "Pride and Prejudice")
                 {
-                    // Set the cover image for "Pride and Prejudice" in the PictureBox
+                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
                     pb3.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
@@ -140,10 +139,9 @@ namespace FInalLibrarySystem
                     bk3lbl8.Text = book.Description;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
-                }
-                else if (book.Title == "The Great Gatsby")
+                } else if (book.Title == "The Great Gatsby")
                 {
-                    // Set the cover image for "The Great Gatsby" in the PictureBox
+                    // Set the cover image for "To Kill a Mockingbird" in the PictureBox
                     pb4.Image = ByteArrayToImage(book.Cover);
 
                     // Additional logic for displaying other book information
@@ -159,9 +157,8 @@ namespace FInalLibrarySystem
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
-
             }
-        
+            
 
             }
 
@@ -238,7 +235,6 @@ namespace FInalLibrarySystem
         private void pb1_MouseHover(object sender, EventArgs e)
         {
             pnl1.Visible = true;
-       
         }
 
         private void pb1_MouseLeave(object sender, EventArgs e)
@@ -250,7 +246,6 @@ namespace FInalLibrarySystem
         private void pb2_MouseHover(object sender, EventArgs e)
         {
             pnl2.Visible = true;
-         
         }
 
         private void pb2_MouseLeave(object sender, EventArgs e)
@@ -261,7 +256,7 @@ namespace FInalLibrarySystem
         //pb3
         private void pb3_MouseHover(object sender, EventArgs e)
         {
-            pnl3.Visible = true;
+            pnl1.Visible = true;
         }
 
         private void pb3_MouseLeave(object sender, EventArgs e)
@@ -362,6 +357,26 @@ namespace FInalLibrarySystem
         }
 
         private void bk1lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pb4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb1_Click(object sender, EventArgs e)
         {
 
         }
