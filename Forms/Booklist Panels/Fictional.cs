@@ -256,7 +256,7 @@ namespace FInalLibrarySystem
         //pb3
         private void pb3_MouseHover(object sender, EventArgs e)
         {
-            pnl1.Visible = true;
+            pnl3.Visible = true;
         }
 
         private void pb3_MouseLeave(object sender, EventArgs e)
@@ -273,7 +273,7 @@ namespace FInalLibrarySystem
         private void pb4_MouseLeave(object sender, EventArgs e)
         {
             pnl4.Visible = false;
-        }
+        } 
 
         //pb5
         /*private void pb5_MouseHover(object sender, EventArgs e)
@@ -377,6 +377,11 @@ namespace FInalLibrarySystem
         }
 
         private void pb1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
