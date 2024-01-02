@@ -48,20 +48,14 @@
             this.bk2lbl3 = new System.Windows.Forms.Label();
             this.bk2lbl1 = new System.Windows.Forms.Label();
             this.pnl2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.title1 = new System.Windows.Forms.Label();
+            this.author1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -95,6 +89,12 @@
             this.bk4lbl2 = new System.Windows.Forms.Label();
             this.bk4lbl5 = new System.Windows.Forms.Label();
             this.bk4lbl6 = new System.Windows.Forms.Label();
+            this.title2 = new System.Windows.Forms.Label();
+            this.author2 = new System.Windows.Forms.Label();
+            this.title3 = new System.Windows.Forms.Label();
+            this.title4 = new System.Windows.Forms.Label();
+            this.author3 = new System.Windows.Forms.Label();
+            this.author4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
@@ -331,24 +331,27 @@
             this.pnl2.Size = new System.Drawing.Size(339, 291);
             this.pnl2.TabIndex = 71;
             // 
-            // label2
+            // title1
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1, 260);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 65;
-            this.label2.Text = "Title";
+            this.title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title1.Location = new System.Drawing.Point(1, 260);
+            this.title1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.title1.Name = "title1";
+            this.title1.Size = new System.Drawing.Size(148, 23);
+            this.title1.TabIndex = 65;
+            this.title1.Text = "Title";
+            this.title1.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // author1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 279);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 23);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Author";
+            this.author1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author1.Location = new System.Drawing.Point(4, 279);
+            this.author1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.author1.Name = "author1";
+            this.author1.Size = new System.Drawing.Size(135, 23);
+            this.author1.TabIndex = 66;
+            this.author1.Text = "Author";
+            this.author1.Click += new System.EventHandler(this.author1_Click);
             // 
             // label7
             // 
@@ -406,63 +409,6 @@
             this.label12.Size = new System.Drawing.Size(135, 23);
             this.label12.TabIndex = 66;
             this.label12.Text = "Author";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(152, 259);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 24);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "Title";
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(163, 278);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 24);
-            this.label4.TabIndex = 66;
-            this.label4.Text = "Author";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(301, 262);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 24);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "Title";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(312, 286);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 24);
-            this.label6.TabIndex = 66;
-            this.label6.Text = "Author";
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(440, 262);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 24);
-            this.label13.TabIndex = 65;
-            this.label13.Text = "Title";
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(451, 281);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(135, 24);
-            this.label14.TabIndex = 66;
-            this.label14.Text = "Author";
             // 
             // label15
             // 
@@ -786,11 +732,77 @@
             this.bk4lbl6.TabIndex = 39;
             this.bk4lbl6.Text = "Publisher";
             // 
+            // title2
+            // 
+            this.title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title2.Location = new System.Drawing.Point(150, 263);
+            this.title2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.title2.Name = "title2";
+            this.title2.Size = new System.Drawing.Size(148, 23);
+            this.title2.TabIndex = 72;
+            this.title2.Text = "Title";
+            // 
+            // author2
+            // 
+            this.author2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author2.Location = new System.Drawing.Point(150, 280);
+            this.author2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.author2.Name = "author2";
+            this.author2.Size = new System.Drawing.Size(135, 23);
+            this.author2.TabIndex = 73;
+            this.author2.Text = "Author";
+            // 
+            // title3
+            // 
+            this.title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title3.Location = new System.Drawing.Point(300, 263);
+            this.title3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.title3.Name = "title3";
+            this.title3.Size = new System.Drawing.Size(148, 23);
+            this.title3.TabIndex = 74;
+            this.title3.Text = "Title";
+            // 
+            // title4
+            // 
+            this.title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title4.Location = new System.Drawing.Point(443, 260);
+            this.title4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.title4.Name = "title4";
+            this.title4.Size = new System.Drawing.Size(148, 23);
+            this.title4.TabIndex = 75;
+            this.title4.Text = "Title";
+            // 
+            // author3
+            // 
+            this.author3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author3.Location = new System.Drawing.Point(302, 280);
+            this.author3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.author3.Name = "author3";
+            this.author3.Size = new System.Drawing.Size(135, 23);
+            this.author3.TabIndex = 76;
+            this.author3.Text = "Author";
+            // 
+            // author4
+            // 
+            this.author4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author4.Location = new System.Drawing.Point(441, 279);
+            this.author4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.author4.Name = "author4";
+            this.author4.Size = new System.Drawing.Size(135, 23);
+            this.author4.TabIndex = 77;
+            this.author4.Text = "Author";
+            // 
             // Fictional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.author4);
+            this.Controls.Add(this.author3);
+            this.Controls.Add(this.title4);
+            this.Controls.Add(this.title3);
+            this.Controls.Add(this.author2);
+            this.Controls.Add(this.title2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -806,12 +818,8 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.author1);
+            this.Controls.Add(this.title1);
             this.Controls.Add(this.pb10);
             this.Controls.Add(this.pb9);
             this.Controls.Add(this.pb8);
@@ -822,8 +830,6 @@
             this.Controls.Add(this.pb2);
             this.Controls.Add(this.pb3);
             this.Controls.Add(this.pb4);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.pnl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Fictional";
@@ -867,20 +873,14 @@
         private System.Windows.Forms.Label bk2lbl3;
         private System.Windows.Forms.Label bk2lbl1;
         private Guna.UI2.WinForms.Guna2Panel pnl2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label title1;
+        private System.Windows.Forms.Label author1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -914,5 +914,11 @@
         private System.Windows.Forms.Label bk1lbl2;
         private System.Windows.Forms.Label bk1lbl5;
         private System.Windows.Forms.Label bk1lbl6;
+        private System.Windows.Forms.Label title2;
+        private System.Windows.Forms.Label author2;
+        private System.Windows.Forms.Label title3;
+        private System.Windows.Forms.Label title4;
+        private System.Windows.Forms.Label author3;
+        private System.Windows.Forms.Label author4;
     }
 }

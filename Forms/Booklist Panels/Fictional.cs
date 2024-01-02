@@ -102,6 +102,8 @@ namespace FInalLibrarySystem
                     bk1lbl6.Text = book.Publisher;
                     bk1lbl7.Text = book.Status;
                     bk1lbl8.Text = book.Description;
+                    title1.Text = book.Title;
+                    author1.Text = book.Author;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 } else if (book.Title == "1984")
@@ -119,6 +121,9 @@ namespace FInalLibrarySystem
                     bk2lbl6.Text = book.Publisher;
                     bk2lbl7.Text = book.Status;
                     bk2lbl8.Text = book.Description;
+                    title2.Text = book.Title;
+                    author2.Text = book.Author;
+
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
@@ -137,6 +142,8 @@ namespace FInalLibrarySystem
                     bk3lbl6.Text = book.Publisher;
                     bk3lbl7.Text = book.Status;
                     bk3lbl8.Text = book.Description;
+                    title3.Text = book.Title;
+                    author3.Text = book.Author;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 } else if (book.Title == "The Great Gatsby")
@@ -154,6 +161,8 @@ namespace FInalLibrarySystem
                     bk4lbl6.Text = book.Publisher;
                     bk4lbl7.Text = book.Status;
                     bk4lbl8.Text = book.Description;
+                    title4.Text = book.Title;
+                    author4.Text = book.Author;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
@@ -392,6 +401,21 @@ namespace FInalLibrarySystem
         }
 
         private void pnl3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void author1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }
