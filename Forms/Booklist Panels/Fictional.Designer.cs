@@ -29,1067 +29,882 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fictional));
-            this.grpBook9 = new System.Windows.Forms.GroupBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.pb9 = new System.Windows.Forms.PictureBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.grpBook6 = new System.Windows.Forms.GroupBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.pb6 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.grpBook8 = new System.Windows.Forms.GroupBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.pb8 = new System.Windows.Forms.PictureBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.grpBook7 = new System.Windows.Forms.GroupBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.pb7 = new System.Windows.Forms.PictureBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.grpBook3 = new System.Windows.Forms.GroupBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.pb3 = new System.Windows.Forms.PictureBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.grpBook5 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.pb5 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.grpBook4 = new System.Windows.Forms.GroupBox();
+            this.pb6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pb10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bk3lbl6 = new System.Windows.Forms.Label();
+            this.bk3lbl5 = new System.Windows.Forms.Label();
+            this.bk3lbl2 = new System.Windows.Forms.Label();
+            this.bk3lbl7 = new System.Windows.Forms.Label();
+            this.bk3lbl8 = new System.Windows.Forms.Label();
+            this.bk3lbl3 = new System.Windows.Forms.Label();
+            this.bk3lbl1 = new System.Windows.Forms.Label();
+            this.pnl3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk4lbl1 = new System.Windows.Forms.Label();
+            this.bk3lbl4 = new System.Windows.Forms.Label();
+            this.bk2lbl6 = new System.Windows.Forms.Label();
+            this.bk2lbl5 = new System.Windows.Forms.Label();
+            this.bk2lbl2 = new System.Windows.Forms.Label();
+            this.bk2lbl7 = new System.Windows.Forms.Label();
+            this.bk2lbl4 = new System.Windows.Forms.Label();
+            this.bk2lbl8 = new System.Windows.Forms.Label();
+            this.bk2lbl3 = new System.Windows.Forms.Label();
+            this.bk2lbl1 = new System.Windows.Forms.Label();
+            this.pnl2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnl4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk4lbl3 = new System.Windows.Forms.Label();
+            this.bk4lbl8 = new System.Windows.Forms.Label();
+            this.bk4lbl7 = new System.Windows.Forms.Label();
+            this.bk4lbl2 = new System.Windows.Forms.Label();
+            this.bk4lbl5 = new System.Windows.Forms.Label();
+            this.bk4lbl6 = new System.Windows.Forms.Label();
+            this.bk4lbl4 = new System.Windows.Forms.Label();
+            this.bk1lbl6 = new System.Windows.Forms.Label();
+            this.bk1lbl5 = new System.Windows.Forms.Label();
+            this.bk1lbl2 = new System.Windows.Forms.Label();
+            this.bk1lbl7 = new System.Windows.Forms.Label();
+            this.bk1lbl4 = new System.Windows.Forms.Label();
+            this.bk1lbl8 = new System.Windows.Forms.Label();
+            this.bk1lbl3 = new System.Windows.Forms.Label();
+            this.bk1lbl1 = new System.Windows.Forms.Label();
+            this.pnl1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.pb4 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.grpBook2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pb2 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.grpBook1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pb1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.grpBook9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb9)).BeginInit();
-            this.grpBook6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
-            this.grpBook8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
-            this.grpBook7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
-            this.grpBook3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
-            this.grpBook5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
-            this.grpBook4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
-            this.grpBook2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
-            this.grpBook1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb10)).BeginInit();
+            this.pnl3.SuspendLayout();
+            this.pnl2.SuspendLayout();
+            this.pnl4.SuspendLayout();
+            this.pnl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // grpBook9
-            // 
-            this.grpBook9.Controls.Add(this.label43);
-            this.grpBook9.Controls.Add(this.pb9);
-            this.grpBook9.Controls.Add(this.label44);
-            this.grpBook9.Controls.Add(this.label45);
-            this.grpBook9.Controls.Add(this.label46);
-            this.grpBook9.Controls.Add(this.label47);
-            this.grpBook9.Controls.Add(this.label48);
-            this.grpBook9.Controls.Add(this.label49);
-            this.grpBook9.Location = new System.Drawing.Point(583, 439);
-            this.grpBook9.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook9.Name = "grpBook9";
-            this.grpBook9.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook9.Size = new System.Drawing.Size(250, 184);
-            this.grpBook9.TabIndex = 51;
-            this.grpBook9.TabStop = false;
-            this.grpBook9.Text = "Book 9";
-            // 
-            // label43
-            // 
-            this.label43.Location = new System.Drawing.Point(107, 155);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(75, 19);
-            this.label43.TabIndex = 16;
-            this.label43.Text = "Status";
-            // 
-            // pb9
-            // 
-            this.pb9.Image = ((System.Drawing.Image)(resources.GetObject("pb9.Image")));
-            this.pb9.Location = new System.Drawing.Point(13, 43);
-            this.pb9.Margin = new System.Windows.Forms.Padding(2);
-            this.pb9.Name = "pb9";
-            this.pb9.Size = new System.Drawing.Size(79, 123);
-            this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb9.TabIndex = 9;
-            this.pb9.TabStop = false;
-            // 
-            // label44
-            // 
-            this.label44.Location = new System.Drawing.Point(107, 136);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(75, 19);
-            this.label44.TabIndex = 15;
-            this.label44.Text = "Publisher";
-            // 
-            // label45
-            // 
-            this.label45.Location = new System.Drawing.Point(107, 43);
-            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(75, 19);
-            this.label45.TabIndex = 10;
-            this.label45.Text = "Title";
-            // 
-            // label46
-            // 
-            this.label46.Location = new System.Drawing.Point(107, 118);
-            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(75, 19);
-            this.label46.TabIndex = 14;
-            this.label46.Text = "Copyright";
-            // 
-            // label47
-            // 
-            this.label47.Location = new System.Drawing.Point(107, 62);
-            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(75, 19);
-            this.label47.TabIndex = 11;
-            this.label47.Text = "ISBN";
-            // 
-            // label48
-            // 
-            this.label48.Location = new System.Drawing.Point(107, 99);
-            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(75, 19);
-            this.label48.TabIndex = 13;
-            this.label48.Text = "Author";
-            // 
-            // label49
-            // 
-            this.label49.Location = new System.Drawing.Point(107, 80);
-            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(75, 19);
-            this.label49.TabIndex = 12;
-            this.label49.Text = "Category";
-            // 
-            // grpBook6
-            // 
-            this.grpBook6.Controls.Add(this.label29);
-            this.grpBook6.Controls.Add(this.pb6);
-            this.grpBook6.Controls.Add(this.label30);
-            this.grpBook6.Controls.Add(this.label31);
-            this.grpBook6.Controls.Add(this.label32);
-            this.grpBook6.Controls.Add(this.label33);
-            this.grpBook6.Controls.Add(this.label34);
-            this.grpBook6.Controls.Add(this.label35);
-            this.grpBook6.Location = new System.Drawing.Point(583, 228);
-            this.grpBook6.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook6.Name = "grpBook6";
-            this.grpBook6.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook6.Size = new System.Drawing.Size(250, 184);
-            this.grpBook6.TabIndex = 48;
-            this.grpBook6.TabStop = false;
-            this.grpBook6.Text = "Book 6";
-            // 
-            // label29
-            // 
-            this.label29.Location = new System.Drawing.Point(107, 155);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(75, 19);
-            this.label29.TabIndex = 16;
-            this.label29.Text = "Status";
             // 
             // pb6
             // 
             this.pb6.Image = ((System.Drawing.Image)(resources.GetObject("pb6.Image")));
-            this.pb6.Location = new System.Drawing.Point(13, 43);
-            this.pb6.Margin = new System.Windows.Forms.Padding(2);
+            this.pb6.ImageRotate = 0F;
+            this.pb6.Location = new System.Drawing.Point(303, 308);
             this.pb6.Name = "pb6";
-            this.pb6.Size = new System.Drawing.Size(79, 123);
-            this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb6.TabIndex = 9;
+            this.pb6.Size = new System.Drawing.Size(120, 250);
+            this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb6.TabIndex = 57;
             this.pb6.TabStop = false;
-            // 
-            // label30
-            // 
-            this.label30.Location = new System.Drawing.Point(107, 136);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(75, 19);
-            this.label30.TabIndex = 15;
-            this.label30.Text = "Publisher";
-            // 
-            // label31
-            // 
-            this.label31.Location = new System.Drawing.Point(107, 43);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(75, 19);
-            this.label31.TabIndex = 10;
-            this.label31.Text = "Title";
-            // 
-            // label32
-            // 
-            this.label32.Location = new System.Drawing.Point(107, 118);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(75, 19);
-            this.label32.TabIndex = 14;
-            this.label32.Text = "Copyright";
-            // 
-            // label33
-            // 
-            this.label33.Location = new System.Drawing.Point(107, 62);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(75, 19);
-            this.label33.TabIndex = 11;
-            this.label33.Text = "ISBN";
-            // 
-            // label34
-            // 
-            this.label34.Location = new System.Drawing.Point(107, 99);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(75, 19);
-            this.label34.TabIndex = 13;
-            this.label34.Text = "Author";
-            // 
-            // label35
-            // 
-            this.label35.Location = new System.Drawing.Point(107, 80);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(75, 19);
-            this.label35.TabIndex = 12;
-            this.label35.Text = "Category";
-            // 
-            // grpBook8
-            // 
-            this.grpBook8.Controls.Add(this.label50);
-            this.grpBook8.Controls.Add(this.pb8);
-            this.grpBook8.Controls.Add(this.label51);
-            this.grpBook8.Controls.Add(this.label52);
-            this.grpBook8.Controls.Add(this.label53);
-            this.grpBook8.Controls.Add(this.label54);
-            this.grpBook8.Controls.Add(this.label55);
-            this.grpBook8.Controls.Add(this.label56);
-            this.grpBook8.Location = new System.Drawing.Point(298, 439);
-            this.grpBook8.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook8.Name = "grpBook8";
-            this.grpBook8.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook8.Size = new System.Drawing.Size(250, 184);
-            this.grpBook8.TabIndex = 50;
-            this.grpBook8.TabStop = false;
-            this.grpBook8.Text = "Book 8";
-            // 
-            // label50
-            // 
-            this.label50.Location = new System.Drawing.Point(107, 155);
-            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(75, 19);
-            this.label50.TabIndex = 16;
-            this.label50.Text = "Status";
-            // 
-            // pb8
-            // 
-            this.pb8.ErrorImage = null;
-            this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
-            this.pb8.Location = new System.Drawing.Point(13, 43);
-            this.pb8.Margin = new System.Windows.Forms.Padding(2);
-            this.pb8.Name = "pb8";
-            this.pb8.Size = new System.Drawing.Size(79, 123);
-            this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb8.TabIndex = 9;
-            this.pb8.TabStop = false;
-            // 
-            // label51
-            // 
-            this.label51.Location = new System.Drawing.Point(107, 136);
-            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(75, 19);
-            this.label51.TabIndex = 15;
-            this.label51.Text = "Publisher";
-            // 
-            // label52
-            // 
-            this.label52.Location = new System.Drawing.Point(107, 43);
-            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(75, 19);
-            this.label52.TabIndex = 10;
-            this.label52.Text = "Title";
-            // 
-            // label53
-            // 
-            this.label53.Location = new System.Drawing.Point(107, 118);
-            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(75, 19);
-            this.label53.TabIndex = 14;
-            this.label53.Text = "Copyright";
-            // 
-            // label54
-            // 
-            this.label54.Location = new System.Drawing.Point(107, 62);
-            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(75, 19);
-            this.label54.TabIndex = 11;
-            this.label54.Text = "ISBN";
-            // 
-            // label55
-            // 
-            this.label55.Location = new System.Drawing.Point(107, 99);
-            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(75, 19);
-            this.label55.TabIndex = 13;
-            this.label55.Text = "Author";
-            // 
-            // label56
-            // 
-            this.label56.Location = new System.Drawing.Point(107, 80);
-            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(75, 19);
-            this.label56.TabIndex = 12;
-            this.label56.Text = "Category";
-            // 
-            // grpBook7
-            // 
-            this.grpBook7.Controls.Add(this.label57);
-            this.grpBook7.Controls.Add(this.pb7);
-            this.grpBook7.Controls.Add(this.label58);
-            this.grpBook7.Controls.Add(this.label59);
-            this.grpBook7.Controls.Add(this.label60);
-            this.grpBook7.Controls.Add(this.label61);
-            this.grpBook7.Controls.Add(this.label62);
-            this.grpBook7.Controls.Add(this.label63);
-            this.grpBook7.Location = new System.Drawing.Point(11, 439);
-            this.grpBook7.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook7.Name = "grpBook7";
-            this.grpBook7.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook7.Size = new System.Drawing.Size(250, 184);
-            this.grpBook7.TabIndex = 49;
-            this.grpBook7.TabStop = false;
-            this.grpBook7.Text = "Book 7";
-            // 
-            // label57
-            // 
-            this.label57.Location = new System.Drawing.Point(107, 155);
-            this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(75, 19);
-            this.label57.TabIndex = 16;
-            this.label57.Text = "Status";
-            // 
-            // pb7
-            // 
-            this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
-            this.pb7.Location = new System.Drawing.Point(13, 43);
-            this.pb7.Margin = new System.Windows.Forms.Padding(2);
-            this.pb7.Name = "pb7";
-            this.pb7.Size = new System.Drawing.Size(79, 123);
-            this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb7.TabIndex = 9;
-            this.pb7.TabStop = false;
-            // 
-            // label58
-            // 
-            this.label58.Location = new System.Drawing.Point(107, 136);
-            this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(75, 19);
-            this.label58.TabIndex = 15;
-            this.label58.Text = "Publisher";
-            // 
-            // label59
-            // 
-            this.label59.Location = new System.Drawing.Point(107, 43);
-            this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(75, 19);
-            this.label59.TabIndex = 10;
-            this.label59.Text = "Title";
-            // 
-            // label60
-            // 
-            this.label60.Location = new System.Drawing.Point(107, 118);
-            this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(75, 19);
-            this.label60.TabIndex = 14;
-            this.label60.Text = "Copyright";
-            // 
-            // label61
-            // 
-            this.label61.Location = new System.Drawing.Point(107, 62);
-            this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(75, 19);
-            this.label61.TabIndex = 11;
-            this.label61.Text = "ISBN";
-            // 
-            // label62
-            // 
-            this.label62.Location = new System.Drawing.Point(107, 99);
-            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(75, 19);
-            this.label62.TabIndex = 13;
-            this.label62.Text = "Author";
-            // 
-            // label63
-            // 
-            this.label63.Location = new System.Drawing.Point(107, 80);
-            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(75, 19);
-            this.label63.TabIndex = 12;
-            this.label63.Text = "Category";
-            // 
-            // grpBook3
-            // 
-            this.grpBook3.Controls.Add(this.label36);
-            this.grpBook3.Controls.Add(this.pb3);
-            this.grpBook3.Controls.Add(this.label37);
-            this.grpBook3.Controls.Add(this.label38);
-            this.grpBook3.Controls.Add(this.label39);
-            this.grpBook3.Controls.Add(this.label40);
-            this.grpBook3.Controls.Add(this.label41);
-            this.grpBook3.Controls.Add(this.label42);
-            this.grpBook3.Location = new System.Drawing.Point(583, 32);
-            this.grpBook3.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook3.Name = "grpBook3";
-            this.grpBook3.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook3.Size = new System.Drawing.Size(250, 184);
-            this.grpBook3.TabIndex = 47;
-            this.grpBook3.TabStop = false;
-            this.grpBook3.Text = "Book 3";
-            // 
-            // label36
-            // 
-            this.label36.Location = new System.Drawing.Point(107, 155);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(75, 19);
-            this.label36.TabIndex = 16;
-            this.label36.Text = "Status";
-            // 
-            // pb3
-            // 
-            this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
-            this.pb3.Location = new System.Drawing.Point(13, 43);
-            this.pb3.Margin = new System.Windows.Forms.Padding(2);
-            this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(79, 123);
-            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb3.TabIndex = 9;
-            this.pb3.TabStop = false;
-            // 
-            // label37
-            // 
-            this.label37.Location = new System.Drawing.Point(107, 136);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(75, 19);
-            this.label37.TabIndex = 15;
-            this.label37.Text = "Publisher";
-            // 
-            // label38
-            // 
-            this.label38.Location = new System.Drawing.Point(107, 43);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(75, 19);
-            this.label38.TabIndex = 10;
-            this.label38.Text = "Title";
-            // 
-            // label39
-            // 
-            this.label39.Location = new System.Drawing.Point(107, 118);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(75, 19);
-            this.label39.TabIndex = 14;
-            this.label39.Text = "Copyright";
-            // 
-            // label40
-            // 
-            this.label40.Location = new System.Drawing.Point(107, 62);
-            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(75, 19);
-            this.label40.TabIndex = 11;
-            this.label40.Text = "ISBN";
-            // 
-            // label41
-            // 
-            this.label41.Location = new System.Drawing.Point(107, 99);
-            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(75, 19);
-            this.label41.TabIndex = 13;
-            this.label41.Text = "Author";
-            // 
-            // label42
-            // 
-            this.label42.Location = new System.Drawing.Point(107, 80);
-            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(75, 19);
-            this.label42.TabIndex = 12;
-            this.label42.Text = "Category";
-            // 
-            // grpBook5
-            // 
-            this.grpBook5.Controls.Add(this.label22);
-            this.grpBook5.Controls.Add(this.pb5);
-            this.grpBook5.Controls.Add(this.label23);
-            this.grpBook5.Controls.Add(this.label24);
-            this.grpBook5.Controls.Add(this.label25);
-            this.grpBook5.Controls.Add(this.label26);
-            this.grpBook5.Controls.Add(this.label27);
-            this.grpBook5.Controls.Add(this.label28);
-            this.grpBook5.Location = new System.Drawing.Point(298, 228);
-            this.grpBook5.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook5.Name = "grpBook5";
-            this.grpBook5.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook5.Size = new System.Drawing.Size(250, 184);
-            this.grpBook5.TabIndex = 46;
-            this.grpBook5.TabStop = false;
-            this.grpBook5.Text = "Book 5";
-            // 
-            // label22
-            // 
-            this.label22.Location = new System.Drawing.Point(107, 155);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 19);
-            this.label22.TabIndex = 16;
-            this.label22.Text = "Status";
             // 
             // pb5
             // 
             this.pb5.Image = ((System.Drawing.Image)(resources.GetObject("pb5.Image")));
-            this.pb5.Location = new System.Drawing.Point(13, 43);
-            this.pb5.Margin = new System.Windows.Forms.Padding(2);
+            this.pb5.ImageRotate = 0F;
+            this.pb5.Location = new System.Drawing.Point(153, 308);
             this.pb5.Name = "pb5";
-            this.pb5.Size = new System.Drawing.Size(79, 123);
-            this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb5.TabIndex = 9;
+            this.pb5.Size = new System.Drawing.Size(120, 250);
+            this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb5.TabIndex = 56;
             this.pb5.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.Location = new System.Drawing.Point(107, 136);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(75, 19);
-            this.label23.TabIndex = 15;
-            this.label23.Text = "Publisher";
-            // 
-            // label24
-            // 
-            this.label24.Location = new System.Drawing.Point(107, 43);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(75, 19);
-            this.label24.TabIndex = 10;
-            this.label24.Text = "Title";
-            // 
-            // label25
-            // 
-            this.label25.Location = new System.Drawing.Point(107, 118);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(75, 19);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "Copyright";
-            // 
-            // label26
-            // 
-            this.label26.Location = new System.Drawing.Point(107, 62);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(75, 19);
-            this.label26.TabIndex = 11;
-            this.label26.Text = "ISBN";
-            // 
-            // label27
-            // 
-            this.label27.Location = new System.Drawing.Point(107, 99);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(75, 19);
-            this.label27.TabIndex = 13;
-            this.label27.Text = "Author";
-            // 
-            // label28
-            // 
-            this.label28.Location = new System.Drawing.Point(107, 80);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(75, 19);
-            this.label28.TabIndex = 12;
-            this.label28.Text = "Category";
-            // 
-            // grpBook4
-            // 
-            this.grpBook4.Controls.Add(this.label15);
-            this.grpBook4.Controls.Add(this.pb4);
-            this.grpBook4.Controls.Add(this.label16);
-            this.grpBook4.Controls.Add(this.label17);
-            this.grpBook4.Controls.Add(this.label18);
-            this.grpBook4.Controls.Add(this.label19);
-            this.grpBook4.Controls.Add(this.label20);
-            this.grpBook4.Controls.Add(this.label21);
-            this.grpBook4.Location = new System.Drawing.Point(11, 228);
-            this.grpBook4.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook4.Name = "grpBook4";
-            this.grpBook4.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook4.Size = new System.Drawing.Size(250, 184);
-            this.grpBook4.TabIndex = 45;
-            this.grpBook4.TabStop = false;
-            this.grpBook4.Text = "Book 4";
-            // 
-            // label15
-            // 
-            this.label15.Location = new System.Drawing.Point(107, 155);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(75, 19);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Status";
-            // 
-            // pb4
-            // 
-            this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
-            this.pb4.Location = new System.Drawing.Point(13, 43);
-            this.pb4.Margin = new System.Windows.Forms.Padding(2);
-            this.pb4.Name = "pb4";
-            this.pb4.Size = new System.Drawing.Size(79, 123);
-            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb4.TabIndex = 9;
-            this.pb4.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.Location = new System.Drawing.Point(107, 136);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 19);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Publisher";
-            // 
-            // label17
-            // 
-            this.label17.Location = new System.Drawing.Point(107, 43);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 19);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Title";
-            // 
-            // label18
-            // 
-            this.label18.Location = new System.Drawing.Point(107, 118);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(75, 19);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Copyright";
-            // 
-            // label19
-            // 
-            this.label19.Location = new System.Drawing.Point(107, 62);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(75, 19);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "ISBN";
-            // 
-            // label20
-            // 
-            this.label20.Location = new System.Drawing.Point(107, 99);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 19);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "Author";
-            // 
-            // label21
-            // 
-            this.label21.Location = new System.Drawing.Point(107, 80);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(75, 19);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "Category";
-            // 
-            // grpBook2
-            // 
-            this.grpBook2.Controls.Add(this.label8);
-            this.grpBook2.Controls.Add(this.pb2);
-            this.grpBook2.Controls.Add(this.label9);
-            this.grpBook2.Controls.Add(this.label10);
-            this.grpBook2.Controls.Add(this.label11);
-            this.grpBook2.Controls.Add(this.label12);
-            this.grpBook2.Controls.Add(this.label13);
-            this.grpBook2.Controls.Add(this.label14);
-            this.grpBook2.Location = new System.Drawing.Point(298, 32);
-            this.grpBook2.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook2.Name = "grpBook2";
-            this.grpBook2.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook2.Size = new System.Drawing.Size(250, 184);
-            this.grpBook2.TabIndex = 44;
-            this.grpBook2.TabStop = false;
-            this.grpBook2.Text = "Book 2";
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(107, 155);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 19);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Status";
+            this.pb5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
             // 
             // pb2
             // 
             this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
-            this.pb2.Location = new System.Drawing.Point(13, 43);
-            this.pb2.Margin = new System.Windows.Forms.Padding(2);
+            this.pb2.ImageRotate = 0F;
+            this.pb2.Location = new System.Drawing.Point(153, 11);
             this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(79, 123);
-            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb2.TabIndex = 9;
+            this.pb2.Size = new System.Drawing.Size(120, 250);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb2.TabIndex = 53;
             this.pb2.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(107, 136);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 19);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Publisher";
-            // 
-            // label10
-            // 
-            this.label10.Location = new System.Drawing.Point(107, 43);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 19);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Title";
-            // 
-            // label11
-            // 
-            this.label11.Location = new System.Drawing.Point(107, 118);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 19);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "Copyright";
-            // 
-            // label12
-            // 
-            this.label12.Location = new System.Drawing.Point(107, 62);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 19);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "ISBN";
-            // 
-            // label13
-            // 
-            this.label13.Location = new System.Drawing.Point(107, 99);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 19);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Author";
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(107, 80);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(75, 19);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Category";
-            // 
-            // grpBook1
-            // 
-            this.grpBook1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.grpBook1.Controls.Add(this.label1);
-            this.grpBook1.Controls.Add(this.pb1);
-            this.grpBook1.Controls.Add(this.label2);
-            this.grpBook1.Controls.Add(this.label7);
-            this.grpBook1.Controls.Add(this.label3);
-            this.grpBook1.Controls.Add(this.label6);
-            this.grpBook1.Controls.Add(this.label4);
-            this.grpBook1.Controls.Add(this.label5);
-            this.grpBook1.Location = new System.Drawing.Point(11, 32);
-            this.grpBook1.Margin = new System.Windows.Forms.Padding(2);
-            this.grpBook1.Name = "grpBook1";
-            this.grpBook1.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBook1.Size = new System.Drawing.Size(250, 184);
-            this.grpBook1.TabIndex = 43;
-            this.grpBook1.TabStop = false;
-            this.grpBook1.Text = "Book 1";
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(107, 155);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 19);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Status";
+            this.pb2.Click += new System.EventHandler(this.pb2_Click);
             // 
             // pb1
             // 
-            this.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
-            this.pb1.Location = new System.Drawing.Point(13, 50);
-            this.pb1.Margin = new System.Windows.Forms.Padding(2);
+            this.pb1.ImageRotate = 0F;
+            this.pb1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb1.InitialImage")));
+            this.pb1.Location = new System.Drawing.Point(4, 11);
             this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(79, 115);
-            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb1.TabIndex = 9;
+            this.pb1.Size = new System.Drawing.Size(120, 250);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb1.TabIndex = 50;
             this.pb1.TabStop = false;
+            this.pb1.Click += new System.EventHandler(this.pb1_Click);
+            // 
+            // pb3
+            // 
+            this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
+            this.pb3.ImageRotate = 0F;
+            this.pb3.Location = new System.Drawing.Point(303, 11);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(120, 250);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb3.TabIndex = 55;
+            this.pb3.TabStop = false;
+            this.pb3.Click += new System.EventHandler(this.pb3_Click);
+            // 
+            // pb4
+            // 
+            this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
+            this.pb4.ImageRotate = 0F;
+            this.pb4.Location = new System.Drawing.Point(4, 311);
+            this.pb4.Name = "pb4";
+            this.pb4.Size = new System.Drawing.Size(120, 250);
+            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb4.TabIndex = 54;
+            this.pb4.TabStop = false;
+            this.pb4.Click += new System.EventHandler(this.pb4_Click);
+            // 
+            // pb9
+            // 
+            this.pb9.Image = ((System.Drawing.Image)(resources.GetObject("pb9.Image")));
+            this.pb9.ImageRotate = 0F;
+            this.pb9.Location = new System.Drawing.Point(701, 304);
+            this.pb9.Name = "pb9";
+            this.pb9.Size = new System.Drawing.Size(120, 250);
+            this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb9.TabIndex = 60;
+            this.pb9.TabStop = false;
+            this.pb9.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // pb8
+            // 
+            this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
+            this.pb8.ImageRotate = 0F;
+            this.pb8.Location = new System.Drawing.Point(598, 308);
+            this.pb8.Name = "pb8";
+            this.pb8.Size = new System.Drawing.Size(120, 250);
+            this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb8.TabIndex = 59;
+            this.pb8.TabStop = false;
+            this.pb8.Click += new System.EventHandler(this.pb8_Click);
+            // 
+            // pb7
+            // 
+            this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
+            this.pb7.ImageRotate = 0F;
+            this.pb7.Location = new System.Drawing.Point(444, 308);
+            this.pb7.Name = "pb7";
+            this.pb7.Size = new System.Drawing.Size(120, 250);
+            this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb7.TabIndex = 58;
+            this.pb7.TabStop = false;
+            this.pb7.Click += new System.EventHandler(this.guna2PictureBox7_Click);
+            // 
+            // pb10
+            // 
+            this.pb10.Image = ((System.Drawing.Image)(resources.GetObject("pb10.Image")));
+            this.pb10.ImageRotate = 0F;
+            this.pb10.Location = new System.Drawing.Point(444, 11);
+            this.pb10.Name = "pb10";
+            this.pb10.Size = new System.Drawing.Size(120, 250);
+            this.pb10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb10.TabIndex = 61;
+            this.pb10.TabStop = false;
+            this.pb10.Click += new System.EventHandler(this.pb10_Click);
+            // 
+            // bk3lbl6
+            // 
+            this.bk3lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk3lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl6.Name = "bk3lbl6";
+            this.bk3lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl6.TabIndex = 39;
+            this.bk3lbl6.Text = "Publisher";
+            // 
+            // bk3lbl5
+            // 
+            this.bk3lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk3lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl5.Name = "bk3lbl5";
+            this.bk3lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl5.TabIndex = 38;
+            this.bk3lbl5.Text = "Copyright";
+            // 
+            // bk3lbl2
+            // 
+            this.bk3lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk3lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl2.Name = "bk3lbl2";
+            this.bk3lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl2.TabIndex = 35;
+            this.bk3lbl2.Text = "ISBN";
+            // 
+            // bk3lbl7
+            // 
+            this.bk3lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk3lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl7.Name = "bk3lbl7";
+            this.bk3lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl7.TabIndex = 40;
+            this.bk3lbl7.Text = "Status";
+            // 
+            // bk3lbl8
+            // 
+            this.bk3lbl8.Location = new System.Drawing.Point(162, 23);
+            this.bk3lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl8.Name = "bk3lbl8";
+            this.bk3lbl8.Size = new System.Drawing.Size(228, 135);
+            this.bk3lbl8.TabIndex = 41;
+            this.bk3lbl8.Text = "Description";
+            // 
+            // bk3lbl3
+            // 
+            this.bk3lbl3.Location = new System.Drawing.Point(12, 74);
+            this.bk3lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl3.Name = "bk3lbl3";
+            this.bk3lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl3.TabIndex = 36;
+            this.bk3lbl3.Text = "Category";
+            // 
+            // bk3lbl1
+            // 
+            this.bk3lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk3lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl1.Name = "bk3lbl1";
+            this.bk3lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl1.TabIndex = 34;
+            this.bk3lbl1.Text = "Title";
+            // 
+            // pnl3
+            // 
+            this.pnl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl3.Controls.Add(this.bk4lbl1);
+            this.pnl3.Controls.Add(this.bk3lbl1);
+            this.pnl3.Controls.Add(this.bk3lbl3);
+            this.pnl3.Controls.Add(this.bk3lbl8);
+            this.pnl3.Controls.Add(this.bk3lbl4);
+            this.pnl3.Controls.Add(this.bk3lbl7);
+            this.pnl3.Controls.Add(this.bk3lbl2);
+            this.pnl3.Controls.Add(this.bk3lbl5);
+            this.pnl3.Controls.Add(this.bk3lbl6);
+            this.pnl3.Location = new System.Drawing.Point(81, 35);
+            this.pnl3.Name = "pnl3";
+            this.pnl3.Size = new System.Drawing.Size(275, 250);
+            this.pnl3.TabIndex = 63;
+            this.pnl3.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl3_Paint);
+            // 
+            // bk4lbl1
+            // 
+            this.bk4lbl1.Location = new System.Drawing.Point(12, 11);
+            this.bk4lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl1.Name = "bk4lbl1";
+            this.bk4lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl1.TabIndex = 34;
+            this.bk4lbl1.Text = "Title";
+            // 
+            // bk3lbl4
+            // 
+            this.bk3lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk3lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk3lbl4.Name = "bk3lbl4";
+            this.bk3lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk3lbl4.TabIndex = 37;
+            this.bk3lbl4.Text = "Author";
+            // 
+            // bk2lbl6
+            // 
+            this.bk2lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk2lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl6.Name = "bk2lbl6";
+            this.bk2lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl6.TabIndex = 39;
+            this.bk2lbl6.Text = "Publisher";
+            // 
+            // bk2lbl5
+            // 
+            this.bk2lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk2lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl5.Name = "bk2lbl5";
+            this.bk2lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl5.TabIndex = 38;
+            this.bk2lbl5.Text = "Copyright";
+            // 
+            // bk2lbl2
+            // 
+            this.bk2lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk2lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl2.Name = "bk2lbl2";
+            this.bk2lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl2.TabIndex = 35;
+            this.bk2lbl2.Text = "ISBN";
+            // 
+            // bk2lbl7
+            // 
+            this.bk2lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk2lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl7.Name = "bk2lbl7";
+            this.bk2lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl7.TabIndex = 40;
+            this.bk2lbl7.Text = "Status";
+            // 
+            // bk2lbl4
+            // 
+            this.bk2lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk2lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl4.Name = "bk2lbl4";
+            this.bk2lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl4.TabIndex = 37;
+            this.bk2lbl4.Text = "Author";
+            // 
+            // bk2lbl8
+            // 
+            this.bk2lbl8.Location = new System.Drawing.Point(162, 14);
+            this.bk2lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl8.Name = "bk2lbl8";
+            this.bk2lbl8.Size = new System.Drawing.Size(228, 135);
+            this.bk2lbl8.TabIndex = 41;
+            this.bk2lbl8.Text = "Description";
+            // 
+            // bk2lbl3
+            // 
+            this.bk2lbl3.Location = new System.Drawing.Point(-42, 55);
+            this.bk2lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl3.Name = "bk2lbl3";
+            this.bk2lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl3.TabIndex = 36;
+            this.bk2lbl3.Text = "Category";
+            // 
+            // bk2lbl1
+            // 
+            this.bk2lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk2lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk2lbl1.Name = "bk2lbl1";
+            this.bk2lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk2lbl1.TabIndex = 34;
+            this.bk2lbl1.Text = "Title";
+            // 
+            // pnl2
+            // 
+            this.pnl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl2.Controls.Add(this.bk2lbl1);
+            this.pnl2.Controls.Add(this.bk2lbl3);
+            this.pnl2.Controls.Add(this.bk2lbl8);
+            this.pnl2.Controls.Add(this.bk2lbl4);
+            this.pnl2.Controls.Add(this.bk2lbl7);
+            this.pnl2.Controls.Add(this.bk2lbl2);
+            this.pnl2.Controls.Add(this.bk2lbl5);
+            this.pnl2.Controls.Add(this.bk2lbl6);
+            this.pnl2.Controls.Add(this.pnl4);
+            this.pnl2.Location = new System.Drawing.Point(578, 11);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(339, 291);
+            this.pnl2.TabIndex = 63;
+            // 
+            // pnl4
+            // 
+            this.pnl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl4.Controls.Add(this.pnl3);
+            this.pnl4.Controls.Add(this.bk4lbl3);
+            this.pnl4.Controls.Add(this.bk4lbl8);
+            this.pnl4.Controls.Add(this.bk4lbl7);
+            this.pnl4.Controls.Add(this.bk4lbl2);
+            this.pnl4.Controls.Add(this.bk4lbl5);
+            this.pnl4.Controls.Add(this.bk4lbl6);
+            this.pnl4.Controls.Add(this.bk4lbl4);
+            this.pnl4.Location = new System.Drawing.Point(65, 68);
+            this.pnl4.Name = "pnl4";
+            this.pnl4.Size = new System.Drawing.Size(325, 264);
+            this.pnl4.TabIndex = 64;
+            // 
+            // bk4lbl3
+            // 
+            this.bk4lbl3.Location = new System.Drawing.Point(12, 74);
+            this.bk4lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl3.Name = "bk4lbl3";
+            this.bk4lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl3.TabIndex = 36;
+            this.bk4lbl3.Text = "Category";
+            // 
+            // bk4lbl8
+            // 
+            this.bk4lbl8.Location = new System.Drawing.Point(162, 14);
+            this.bk4lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl8.Name = "bk4lbl8";
+            this.bk4lbl8.Size = new System.Drawing.Size(228, 135);
+            this.bk4lbl8.TabIndex = 41;
+            this.bk4lbl8.Text = "Description";
+            // 
+            // bk4lbl7
+            // 
+            this.bk4lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk4lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl7.Name = "bk4lbl7";
+            this.bk4lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl7.TabIndex = 40;
+            this.bk4lbl7.Text = "Status";
+            // 
+            // bk4lbl2
+            // 
+            this.bk4lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk4lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl2.Name = "bk4lbl2";
+            this.bk4lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl2.TabIndex = 35;
+            this.bk4lbl2.Text = "ISBN";
+            // 
+            // bk4lbl5
+            // 
+            this.bk4lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk4lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl5.Name = "bk4lbl5";
+            this.bk4lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl5.TabIndex = 38;
+            this.bk4lbl5.Text = "Copyright";
+            // 
+            // bk4lbl6
+            // 
+            this.bk4lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk4lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl6.Name = "bk4lbl6";
+            this.bk4lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl6.TabIndex = 39;
+            this.bk4lbl6.Text = "Publisher";
+            // 
+            // bk4lbl4
+            // 
+            this.bk4lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk4lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk4lbl4.Name = "bk4lbl4";
+            this.bk4lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk4lbl4.TabIndex = 37;
+            this.bk4lbl4.Text = "Author";
+            // 
+            // bk1lbl6
+            // 
+            this.bk1lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk1lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl6.Name = "bk1lbl6";
+            this.bk1lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl6.TabIndex = 39;
+            this.bk1lbl6.Text = "Publisher";
+            this.bk1lbl6.Click += new System.EventHandler(this.bk1lbl6_Click);
+            // 
+            // bk1lbl5
+            // 
+            this.bk1lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk1lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl5.Name = "bk1lbl5";
+            this.bk1lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl5.TabIndex = 38;
+            this.bk1lbl5.Text = "Copyright";
+            this.bk1lbl5.Click += new System.EventHandler(this.bk1lbl5_Click);
+            // 
+            // bk1lbl2
+            // 
+            this.bk1lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk1lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl2.Name = "bk1lbl2";
+            this.bk1lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl2.TabIndex = 35;
+            this.bk1lbl2.Text = "ISBN";
+            // 
+            // bk1lbl7
+            // 
+            this.bk1lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk1lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl7.Name = "bk1lbl7";
+            this.bk1lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl7.TabIndex = 40;
+            this.bk1lbl7.Text = "Status";
+            this.bk1lbl7.Click += new System.EventHandler(this.bk1lbl7_Click);
+            // 
+            // bk1lbl4
+            // 
+            this.bk1lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk1lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl4.Name = "bk1lbl4";
+            this.bk1lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl4.TabIndex = 37;
+            this.bk1lbl4.Text = "Author";
+            // 
+            // bk1lbl8
+            // 
+            this.bk1lbl8.Location = new System.Drawing.Point(162, 14);
+            this.bk1lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl8.Name = "bk1lbl8";
+            this.bk1lbl8.Size = new System.Drawing.Size(228, 135);
+            this.bk1lbl8.TabIndex = 41;
+            this.bk1lbl8.Text = "Description";
+            // 
+            // bk1lbl3
+            // 
+            this.bk1lbl3.Location = new System.Drawing.Point(12, 74);
+            this.bk1lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl3.Name = "bk1lbl3";
+            this.bk1lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl3.TabIndex = 36;
+            this.bk1lbl3.Text = "Category";
+            // 
+            // bk1lbl1
+            // 
+            this.bk1lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk1lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk1lbl1.Name = "bk1lbl1";
+            this.bk1lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk1lbl1.TabIndex = 34;
+            this.bk1lbl1.Text = "Title";
+            this.bk1lbl1.Click += new System.EventHandler(this.bk1lbl1_Click);
+            // 
+            // pnl1
+            // 
+            this.pnl1.Controls.Add(this.bk1lbl1);
+            this.pnl1.Controls.Add(this.bk1lbl3);
+            this.pnl1.Controls.Add(this.bk1lbl8);
+            this.pnl1.Controls.Add(this.bk1lbl4);
+            this.pnl1.Controls.Add(this.bk1lbl7);
+            this.pnl1.Controls.Add(this.bk1lbl2);
+            this.pnl1.Controls.Add(this.bk1lbl5);
+            this.pnl1.Controls.Add(this.bk1lbl6);
+            this.pnl1.Location = new System.Drawing.Point(578, 11);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(403, 208);
+            this.pnl1.TabIndex = 62;
+            this.pnl1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl1_Paint);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(107, 136);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1, 260);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 19);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Publisher";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 65;
+            this.label2.Text = "Title";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(12, 279);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 23);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "Author";
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(107, 43);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 562);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 19);
-            this.label7.TabIndex = 10;
+            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.TabIndex = 65;
             this.label7.Text = "Title";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(14, 581);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(135, 23);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Author";
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(594, 557);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 23);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "Title";
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(605, 576);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(135, 23);
+            this.label10.TabIndex = 66;
+            this.label10.Text = "Author";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(745, 557);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 23);
+            this.label11.TabIndex = 65;
+            this.label11.Text = "Title";
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(756, 576);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(135, 23);
+            this.label12.TabIndex = 66;
+            this.label12.Text = "Author";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(107, 118);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(152, 259);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 19);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Copyright";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(107, 62);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "ISBN";
+            this.label3.Size = new System.Drawing.Size(100, 24);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "Title";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(107, 99);
+            this.label4.Location = new System.Drawing.Point(163, 278);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 19);
-            this.label4.TabIndex = 13;
+            this.label4.Size = new System.Drawing.Size(135, 24);
+            this.label4.TabIndex = 66;
             this.label4.Text = "Author";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(107, 80);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(301, 262);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 19);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Category";
+            this.label5.Size = new System.Drawing.Size(100, 24);
+            this.label5.TabIndex = 65;
+            this.label5.Text = "Title";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(312, 281);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(135, 24);
+            this.label6.TabIndex = 66;
+            this.label6.Text = "Author";
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(440, 262);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(100, 24);
+            this.label13.TabIndex = 65;
+            this.label13.Text = "Title";
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(451, 281);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(135, 24);
+            this.label14.TabIndex = 66;
+            this.label14.Text = "Author";
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(144, 560);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 23);
+            this.label15.TabIndex = 65;
+            this.label15.Text = "Title";
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(155, 579);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(135, 23);
+            this.label16.TabIndex = 66;
+            this.label16.Text = "Author";
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(303, 562);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 23);
+            this.label17.TabIndex = 65;
+            this.label17.Text = "Title";
+            // 
+            // label18
+            // 
+            this.label18.Location = new System.Drawing.Point(314, 581);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(135, 23);
+            this.label18.TabIndex = 66;
+            this.label18.Text = "Author";
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(442, 562);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 23);
+            this.label19.TabIndex = 65;
+            this.label19.Text = "Title";
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(453, 581);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(135, 23);
+            this.label20.TabIndex = 66;
+            this.label20.Text = "Author";
             // 
             // Fictional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.grpBook9);
-            this.Controls.Add(this.grpBook6);
-            this.Controls.Add(this.grpBook8);
-            this.Controls.Add(this.grpBook7);
-            this.Controls.Add(this.grpBook3);
-            this.Controls.Add(this.grpBook5);
-            this.Controls.Add(this.grpBook4);
-            this.Controls.Add(this.grpBook2);
-            this.Controls.Add(this.grpBook1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pnl2);
+            this.Controls.Add(this.pnl1);
+            this.Controls.Add(this.pb10);
+            this.Controls.Add(this.pb9);
+            this.Controls.Add(this.pb8);
+            this.Controls.Add(this.pb7);
+            this.Controls.Add(this.pb6);
+            this.Controls.Add(this.pb5);
+            this.Controls.Add(this.pb1);
+            this.Controls.Add(this.pb2);
+            this.Controls.Add(this.pb3);
+            this.Controls.Add(this.pb4);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Fictional";
-            this.Size = new System.Drawing.Size(936, 739);
-            this.grpBook9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb9)).EndInit();
-            this.grpBook6.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(920, 687);
+            this.Load += new System.EventHandler(this.Fictional_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).EndInit();
-            this.grpBook8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
-            this.grpBook7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
-            this.grpBook3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
-            this.grpBook5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
-            this.grpBook4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
-            this.grpBook2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
-            this.grpBook1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb10)).EndInit();
+            this.pnl3.ResumeLayout(false);
+            this.pnl2.ResumeLayout(false);
+            this.pnl4.ResumeLayout(false);
+            this.pnl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox grpBook9;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.PictureBox pb9;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.GroupBox grpBook6;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.PictureBox pb6;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.GroupBox grpBook8;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.PictureBox pb8;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.GroupBox grpBook7;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.PictureBox pb7;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.GroupBox grpBook3;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.PictureBox pb3;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.GroupBox grpBook5;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pb5;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.GroupBox grpBook4;
+        private Guna.UI2.WinForms.Guna2PictureBox pb6;
+        private Guna.UI2.WinForms.Guna2PictureBox pb5;
+        private Guna.UI2.WinForms.Guna2PictureBox pb2;
+        private Guna.UI2.WinForms.Guna2PictureBox pb1;
+        private Guna.UI2.WinForms.Guna2PictureBox pb3;
+        private Guna.UI2.WinForms.Guna2PictureBox pb4;
+        private Guna.UI2.WinForms.Guna2PictureBox pb9;
+        private Guna.UI2.WinForms.Guna2PictureBox pb8;
+        private Guna.UI2.WinForms.Guna2PictureBox pb7;
+        private Guna.UI2.WinForms.Guna2PictureBox pb10;
+        private System.Windows.Forms.Label bk3lbl6;
+        private System.Windows.Forms.Label bk3lbl5;
+        private System.Windows.Forms.Label bk3lbl2;
+        private System.Windows.Forms.Label bk3lbl7;
+        private System.Windows.Forms.Label bk3lbl8;
+        private System.Windows.Forms.Label bk3lbl3;
+        private System.Windows.Forms.Label bk3lbl1;
+        private Guna.UI2.WinForms.Guna2Panel pnl3;
+        private System.Windows.Forms.Label bk2lbl6;
+        private System.Windows.Forms.Label bk2lbl5;
+        private System.Windows.Forms.Label bk2lbl2;
+        private System.Windows.Forms.Label bk2lbl7;
+        private System.Windows.Forms.Label bk2lbl4;
+        private System.Windows.Forms.Label bk2lbl8;
+        private System.Windows.Forms.Label bk2lbl3;
+        private System.Windows.Forms.Label bk2lbl1;
+        private Guna.UI2.WinForms.Guna2Panel pnl2;
+        private System.Windows.Forms.Label bk4lbl6;
+        private System.Windows.Forms.Label bk4lbl5;
+        private System.Windows.Forms.Label bk4lbl2;
+        private System.Windows.Forms.Label bk4lbl7;
+        private System.Windows.Forms.Label bk4lbl4;
+        private System.Windows.Forms.Label bk4lbl8;
+        private System.Windows.Forms.Label bk4lbl3;
+        private Guna.UI2.WinForms.Guna2Panel pnl4;
+        private System.Windows.Forms.Label bk1lbl6;
+        private System.Windows.Forms.Label bk1lbl5;
+        private System.Windows.Forms.Label bk1lbl2;
+        private System.Windows.Forms.Label bk1lbl7;
+        private System.Windows.Forms.Label bk1lbl4;
+        private System.Windows.Forms.Label bk1lbl8;
+        private System.Windows.Forms.Label bk1lbl3;
+        private System.Windows.Forms.Label bk1lbl1;
+        private Guna.UI2.WinForms.Guna2Panel pnl1;
+        private System.Windows.Forms.Label bk4lbl1;
+        private System.Windows.Forms.Label bk3lbl4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pb4;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox grpBook2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pb2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.GroupBox grpBook1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pb1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
     }
 }
