@@ -103,6 +103,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\BookBorrows1.cs" />
     <Compile Include="Database\Books.cs" />
     <Compile Include="Database\BorrowedDetails.cs" />
     <Compile Include="Database\MyDB.cs" />

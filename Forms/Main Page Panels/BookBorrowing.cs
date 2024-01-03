@@ -24,30 +24,7 @@ namespace FInalLibrarySystem
             booksManager1 = new Books();
         }
 
-        // Inside BookBorrowing class
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            // Get user input from form controls
-            int bookID = Convert.ToInt32(nudBookID.Value);
-            int userID = Convert.ToInt32(nudMemberID.Value);
-            DateTime borrowedDate = dateBorrow.Value;
-            DateTime returnDate = dateReturn.Value;
-            string note = lblNote.Text; // Assuming lblNote is a control where the user can input notes
 
-            // Call the Books class method to borrow the book
-            bool success = booksManager1.BorrowBook(bookID, userID, borrowedDate, returnDate, note);
-
-            // Check if the operation was successful and provide feedback to the user
-            if (success)
-            {
-                MessageBox.Show("Book borrowed successfully!");
-                // Optionally, you can perform additional actions (clear fields, update UI, etc.)
-            }
-            else
-            {
-                MessageBox.Show("Error borrowing book. Please try again.");
-            }
-        }
 
         private void LoadAllBooks()
         {
@@ -64,7 +41,7 @@ namespace FInalLibrarySystem
                 // Check if the current book is "To KIll a Mockingbird"
 
 
-               
+
             }
         }
 
@@ -80,56 +57,11 @@ namespace FInalLibrarySystem
             }
         }
 
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void bookDetails1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            
-        }
 
         private void BookBorrowing_Load(object sender, EventArgs e)
         {
             LoadAllBooks();
-        }
-
-        private void nudbookID_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void nudMemberID_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateBorrow_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateReturn_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNote_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

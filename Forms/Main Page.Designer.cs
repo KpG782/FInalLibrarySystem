@@ -225,29 +225,29 @@
             // 
             // bookBorrowing1
             // 
-            this.bookBorrowing1.BackColor = System.Drawing.Color.DimGray;
+            this.bookBorrowing1.BackColor = System.Drawing.Color.White;
             this.bookBorrowing1.Location = new System.Drawing.Point(192, 4);
             this.bookBorrowing1.Margin = new System.Windows.Forms.Padding(2);
             this.bookBorrowing1.Name = "bookBorrowing1";
-            this.bookBorrowing1.Size = new System.Drawing.Size(926, 860);
+            this.bookBorrowing1.Size = new System.Drawing.Size(926, 687);
             this.bookBorrowing1.TabIndex = 29;
             // 
             // borrowerList1
             // 
-            this.borrowerList1.BackColor = System.Drawing.Color.LightGray;
+            this.borrowerList1.BackColor = System.Drawing.Color.White;
             this.borrowerList1.Location = new System.Drawing.Point(192, 4);
             this.borrowerList1.Margin = new System.Windows.Forms.Padding(2);
             this.borrowerList1.Name = "borrowerList1";
-            this.borrowerList1.Size = new System.Drawing.Size(936, 860);
+            this.borrowerList1.Size = new System.Drawing.Size(918, 683);
             this.borrowerList1.TabIndex = 28;
             // 
             // bookList1
             // 
-            this.bookList1.BackColor = System.Drawing.Color.Gray;
+            this.bookList1.BackColor = System.Drawing.Color.White;
             this.bookList1.Location = new System.Drawing.Point(192, 4);
             this.bookList1.Margin = new System.Windows.Forms.Padding(2);
             this.bookList1.Name = "bookList1";
-            this.bookList1.Size = new System.Drawing.Size(926, 860);
+            this.bookList1.Size = new System.Drawing.Size(918, 683);
             this.bookList1.TabIndex = 27;
             this.bookList1.Load += new System.EventHandler(this.bookList1_Load);
             // 
@@ -278,10 +278,6 @@
             this.ClientSize = new System.Drawing.Size(1112, 687);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.bookBorrowing1);
-            this.Controls.Add(this.borrowerList1);
-            this.Controls.Add(this.bookList1);
-            this.Controls.Add(this.profile1);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.UProfileLinkList);
             this.Controls.Add(this.SettingsLink);
@@ -290,7 +286,11 @@
             this.Controls.Add(this.BookBorrowingLink);
             this.Controls.Add(this.BorrowerListLink);
             this.Controls.Add(this.BookListLink);
+            this.Controls.Add(this.bookList1);
+            this.Controls.Add(this.profile1);
             this.Controls.Add(this.bookReturning1);
+            this.Controls.Add(this.bookBorrowing1);
+            this.Controls.Add(this.borrowerList1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);

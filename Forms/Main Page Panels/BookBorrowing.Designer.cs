@@ -28,275 +28,439 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblNote = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateReturn = new System.Windows.Forms.DateTimePicker();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.nudMemberID = new System.Windows.Forms.NumericUpDown();
+            this.UserID = new System.Windows.Forms.Label();
+            this.txtUserID = new System.Windows.Forms.TextBox();
+            this.lblBookTitle = new System.Windows.Forms.Label();
+            this.lblAuthorName = new System.Windows.Forms.Label();
+            this.lbltitleBook = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.MainPanel = new System.Windows.Forms.Panel();
+            this.SecondaryPanel = new System.Windows.Forms.Panel();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrimaryPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.dtpBorrow = new System.Windows.Forms.DateTimePicker();
+            this.lblBorrow = new System.Windows.Forms.Label();
+            this.AuthorLabel = new System.Windows.Forms.Label();
+            this.TitleLabel = new System.Windows.Forms.Label();
+            this.txtBookID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateBorrow = new System.Windows.Forms.DateTimePicker();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.nudBookID = new System.Windows.Forms.NumericUpDown();
-            this.bk1lbl7 = new System.Windows.Forms.Label();
-            this.bookDetails1 = new FInalLibrarySystem.Forms.bookDetails();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMemberID)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudBookID)).BeginInit();
+            this.pbPicture = new System.Windows.Forms.PictureBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnBorrow = new System.Windows.Forms.Button();
+            this.MainPanel.SuspendLayout();
+            this.SecondaryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            this.PrimaryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblTitle
+            // lblUserName
             // 
-            this.lblTitle.Location = new System.Drawing.Point(20, 24);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(113, 32);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Book Borrowing";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
-            // 
-            // lblNote
-            // 
-            this.lblNote.Location = new System.Drawing.Point(220, 447);
-            this.lblNote.Multiline = true;
-            this.lblNote.Name = "lblNote";
-            this.lblNote.Size = new System.Drawing.Size(248, 99);
-            this.lblNote.TabIndex = 51;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(182, 462);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 13);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Note:";
+            this.lblUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUserName.Location = new System.Drawing.Point(109, 590);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(238, 18);
+            this.lblUserName.TabIndex = 24;
+            this.lblUserName.Text = "Username";
+            this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(268, 301);
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Location = new System.Drawing.Point(38, 590);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 23);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Yes";
+            this.label4.Size = new System.Drawing.Size(84, 18);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "USERNAME";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // UserID
             // 
-            this.label5.Location = new System.Drawing.Point(150, 306);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 23);
-            this.label5.TabIndex = 48;
-            this.label5.Text = "Is This Book Available:";
+            this.UserID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UserID.Location = new System.Drawing.Point(51, 557);
+            this.UserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UserID.Name = "UserID";
+            this.UserID.Size = new System.Drawing.Size(71, 18);
+            this.UserID.TabIndex = 22;
+            this.UserID.Text = "USER ID:";
+            this.UserID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // txtUserID
             // 
-            this.label3.Location = new System.Drawing.Point(144, 406);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 23);
-            this.label3.TabIndex = 47;
-            this.label3.Text = "Book Return:  ";
+            this.txtUserID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUserID.Location = new System.Drawing.Point(126, 557);
+            this.txtUserID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(221, 20);
+            this.txtUserID.TabIndex = 21;
             // 
-            // dateReturn
+            // lblBookTitle
             // 
-            this.dateReturn.Location = new System.Drawing.Point(237, 409);
-            this.dateReturn.Name = "dateReturn";
-            this.dateReturn.Size = new System.Drawing.Size(200, 20);
-            this.dateReturn.TabIndex = 46;
+            this.lblBookTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBookTitle.Location = new System.Drawing.Point(109, 498);
+            this.lblBookTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBookTitle.Name = "lblBookTitle";
+            this.lblBookTitle.Size = new System.Drawing.Size(238, 18);
+            this.lblBookTitle.TabIndex = 20;
+            this.lblBookTitle.Text = "Book Title";
+            this.lblBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2Button3
+            // lblAuthorName
             // 
-            this.guna2Button3.AutoRoundedCorners = true;
-            this.guna2Button3.BorderRadius = 21;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(406, 243);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button3.TabIndex = 45;
-            this.guna2Button3.Text = "Name";
+            this.lblAuthorName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAuthorName.Location = new System.Drawing.Point(109, 527);
+            this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAuthorName.Name = "lblAuthorName";
+            this.lblAuthorName.Size = new System.Drawing.Size(238, 18);
+            this.lblAuthorName.TabIndex = 19;
+            this.lblAuthorName.Text = "AuthorName";
+            this.lblAuthorName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel2
+            // lbltitleBook
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(269, 277);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(76, 13);
-            this.linkLabel2.TabIndex = 44;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Member Name";
+            this.lbltitleBook.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitleBook.Location = new System.Drawing.Point(101, 19);
+            this.lbltitleBook.Name = "lbltitleBook";
+            this.lbltitleBook.Size = new System.Drawing.Size(78, 15);
+            this.lbltitleBook.TabIndex = 17;
+            this.lbltitleBook.Text = "Book Borrowing";
             // 
-            // nudMemberID
+            // MainPanel
             // 
-            this.nudMemberID.Location = new System.Drawing.Point(257, 246);
-            this.nudMemberID.Name = "nudMemberID";
-            this.nudMemberID.Size = new System.Drawing.Size(120, 20);
-            this.nudMemberID.TabIndex = 43;
+            this.MainPanel.Controls.Add(this.SecondaryPanel);
+            this.MainPanel.Controls.Add(this.PrimaryPanel);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(936, 860);
+            this.MainPanel.TabIndex = 2;
+            // 
+            // SecondaryPanel
+            // 
+            this.SecondaryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SecondaryPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SecondaryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SecondaryPanel.Controls.Add(this.DataGridView);
+            this.SecondaryPanel.Location = new System.Drawing.Point(404, 2);
+            this.SecondaryPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SecondaryPanel.Name = "SecondaryPanel";
+            this.SecondaryPanel.Size = new System.Drawing.Size(526, 860);
+            this.SecondaryPanel.TabIndex = 1;
+            // 
+            // DataGridView
+            // 
+            this.DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column11,
+            this.Column10});
+            this.DataGridView.Location = new System.Drawing.Point(3, 2);
+            this.DataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.RowHeadersWidth = 51;
+            this.DataGridView.RowTemplate.Height = 24;
+            this.DataGridView.Size = new System.Drawing.Size(519, 849);
+            this.DataGridView.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Issue_ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 30;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Student_ID";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 40;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Student_Name";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Student_Course";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Student_Email";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Book_ID";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Book_Title";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Book_Author";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Book_IssueDate";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 125;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Book_DueDate";
+            this.Column11.MinimumWidth = 6;
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 125;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Book_Status";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 125;
+            // 
+            // PrimaryPanel
+            // 
+            this.PrimaryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PrimaryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PrimaryPanel.Controls.Add(this.lblUserName);
+            this.PrimaryPanel.Controls.Add(this.label4);
+            this.PrimaryPanel.Controls.Add(this.UserID);
+            this.PrimaryPanel.Controls.Add(this.txtUserID);
+            this.PrimaryPanel.Controls.Add(this.lblBookTitle);
+            this.PrimaryPanel.Controls.Add(this.lblAuthorName);
+            this.PrimaryPanel.Controls.Add(this.label2);
+            this.PrimaryPanel.Controls.Add(this.lbltitleBook);
+            this.PrimaryPanel.Controls.Add(this.dtpBorrow);
+            this.PrimaryPanel.Controls.Add(this.lblBorrow);
+            this.PrimaryPanel.Controls.Add(this.AuthorLabel);
+            this.PrimaryPanel.Controls.Add(this.TitleLabel);
+            this.PrimaryPanel.Controls.Add(this.txtBookID);
+            this.PrimaryPanel.Controls.Add(this.label1);
+            this.PrimaryPanel.Controls.Add(this.pbPicture);
+            this.PrimaryPanel.Controls.Add(this.btnClear);
+            this.PrimaryPanel.Controls.Add(this.btnBorrow);
+            this.PrimaryPanel.Location = new System.Drawing.Point(2, 2);
+            this.PrimaryPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.PrimaryPanel.Name = "PrimaryPanel";
+            this.PrimaryPanel.Size = new System.Drawing.Size(416, 852);
+            this.PrimaryPanel.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(149, 243);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Location = new System.Drawing.Point(51, 459);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 23);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Enter member id ; ";
+            this.label2.Size = new System.Drawing.Size(71, 18);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "BOOK ID:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2Button2
+            // dtpBorrow
             // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BorderRadius = 21;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(288, 568);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button2.TabIndex = 41;
-            this.guna2Button2.Text = "Borrow Book";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
+            this.dtpBorrow.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpBorrow.Location = new System.Drawing.Point(138, 633);
+            this.dtpBorrow.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpBorrow.Name = "dtpBorrow";
+            this.dtpBorrow.Size = new System.Drawing.Size(151, 20);
+            this.dtpBorrow.TabIndex = 0;
+            // 
+            // lblBorrow
+            // 
+            this.lblBorrow.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBorrow.Location = new System.Drawing.Point(52, 633);
+            this.lblBorrow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBorrow.Name = "lblBorrow";
+            this.lblBorrow.Size = new System.Drawing.Size(81, 18);
+            this.lblBorrow.TabIndex = 13;
+            this.lblBorrow.Text = "BORROW";
+            this.lblBorrow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AuthorLabel
+            // 
+            this.AuthorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AuthorLabel.Location = new System.Drawing.Point(52, 527);
+            this.AuthorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AuthorLabel.Name = "AuthorLabel";
+            this.AuthorLabel.Size = new System.Drawing.Size(53, 18);
+            this.AuthorLabel.TabIndex = 12;
+            this.AuthorLabel.Text = "AUTHOR:";
+            this.AuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TitleLabel
+            // 
+            this.TitleLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TitleLabel.Location = new System.Drawing.Point(21, 498);
+            this.TitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(112, 18);
+            this.TitleLabel.TabIndex = 11;
+            this.TitleLabel.Text = "BOOK TITLE:";
+            this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtBookID
+            // 
+            this.txtBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBookID.Location = new System.Drawing.Point(126, 459);
+            this.txtBookID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBookID.Name = "txtBookID";
+            this.txtBookID.Size = new System.Drawing.Size(221, 20);
+            this.txtBookID.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(149, 354);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-98, 82);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 23);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Issue Data:";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
             // 
-            // dateBorrow
+            // pbPicture
             // 
-            this.dateBorrow.Location = new System.Drawing.Point(242, 354);
-            this.dateBorrow.Name = "dateBorrow";
-            this.dateBorrow.Size = new System.Drawing.Size(200, 20);
-            this.dateBorrow.TabIndex = 39;
+            this.pbPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbPicture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pbPicture.Location = new System.Drawing.Point(95, 150);
+            this.pbPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(194, 275);
+            this.pbPicture.TabIndex = 6;
+            this.pbPicture.TabStop = false;
             // 
-            // linkLabel1
+            // btnClear
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(269, 209);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel1.TabIndex = 38;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Book Title";
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Location = new System.Drawing.Point(226, 680);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(79, 32);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // guna2Button1
+            // btnBorrow
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 21;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(406, 165);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 37;
-            this.guna2Button1.Text = "Search Book";
-            // 
-            // nudBookID
-            // 
-            this.nudBookID.Location = new System.Drawing.Point(257, 178);
-            this.nudBookID.Name = "nudBookID";
-            this.nudBookID.Size = new System.Drawing.Size(120, 20);
-            this.nudBookID.TabIndex = 36;
-            // 
-            // bk1lbl7
-            // 
-            this.bk1lbl7.Location = new System.Drawing.Point(149, 175);
-            this.bk1lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk1lbl7.Name = "bk1lbl7";
-            this.bk1lbl7.Size = new System.Drawing.Size(88, 23);
-            this.bk1lbl7.TabIndex = 35;
-            this.bk1lbl7.Text = "Enter a book id ; ";
-            // 
-            // bookDetails1
-            // 
-            this.bookDetails1.Location = new System.Drawing.Point(105, 156);
-            this.bookDetails1.Name = "bookDetails1";
-            this.bookDetails1.Size = new System.Drawing.Size(481, 406);
-            this.bookDetails1.TabIndex = 52;
+            this.btnBorrow.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBorrow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnBorrow.BackColor = System.Drawing.Color.White;
+            this.btnBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrow.Location = new System.Drawing.Point(126, 680);
+            this.btnBorrow.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBorrow.Name = "btnBorrow";
+            this.btnBorrow.Size = new System.Drawing.Size(79, 32);
+            this.btnBorrow.TabIndex = 3;
+            this.btnBorrow.Text = "BORROW";
+            this.btnBorrow.UseVisualStyleBackColor = false;
             // 
             // BookBorrowing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.lblNote);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateReturn);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.nudMemberID);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateBorrow);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.nudBookID);
-            this.Controls.Add(this.bk1lbl7);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.bookDetails1);
+            this.Controls.Add(this.MainPanel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookBorrowing";
             this.Size = new System.Drawing.Size(936, 860);
             this.Load += new System.EventHandler(this.BookBorrowing_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nudMemberID)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudBookID)).EndInit();
+            this.MainPanel.ResumeLayout(false);
+            this.SecondaryPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            this.PrimaryPanel.ResumeLayout(false);
+            this.PrimaryPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.TextBox lblNote;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateReturn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.NumericUpDown nudMemberID;
+        private System.Windows.Forms.Label UserID;
+        private System.Windows.Forms.TextBox txtUserID;
+        private System.Windows.Forms.Label lblBookTitle;
+        private System.Windows.Forms.Label lblAuthorName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbltitleBook;
+        private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Panel SecondaryPanel;
+        private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.Panel PrimaryPanel;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.DateTimePicker dtpBorrow;
+        private System.Windows.Forms.Label lblBorrow;
+        private System.Windows.Forms.Label AuthorLabel;
+        private System.Windows.Forms.Label TitleLabel;
+        private System.Windows.Forms.TextBox txtBookID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateBorrow;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.NumericUpDown nudBookID;
-        private System.Windows.Forms.Label bk1lbl7;
-        private Forms.bookDetails bookDetails1;
+        private System.Windows.Forms.PictureBox pbPicture;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnBorrow;
     }
 }
