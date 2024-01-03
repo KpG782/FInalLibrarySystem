@@ -39,13 +39,12 @@
             this.BookListLink = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.penalty1 = new FInalLibrarySystem.Penalty();
-            this.bookReservation1 = new FInalLibrarySystem.BookReservation();
             this.bookReturning1 = new FInalLibrarySystem.BookReturning();
             this.bookBorrowing1 = new FInalLibrarySystem.BookBorrowing();
             this.borrowerList1 = new FInalLibrarySystem.BorrowerList();
             this.bookList1 = new FInalLibrarySystem.BookList();
             this.profile1 = new FInalLibrarySystem.Profile();
+            this.bookReservation1 = new FInalLibrarySystem.BookReservation();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,33 +214,14 @@
             this.guna2ControlBox1.TabIndex = 34;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
-            // penalty1
-            // 
-            this.penalty1.BackColor = System.Drawing.Color.White;
-            this.penalty1.Location = new System.Drawing.Point(192, -2);
-            this.penalty1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.penalty1.Name = "penalty1";
-            this.penalty1.Size = new System.Drawing.Size(926, 865);
-            this.penalty1.TabIndex = 32;
-            this.penalty1.Load += new System.EventHandler(this.penalty1_Load_2);
-            // 
-            // bookReservation1
-            // 
-            this.bookReservation1.BackColor = System.Drawing.Color.DarkGray;
-            this.bookReservation1.Location = new System.Drawing.Point(192, 4);
-            this.bookReservation1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bookReservation1.Name = "bookReservation1";
-            this.bookReservation1.Size = new System.Drawing.Size(926, 860);
-            this.bookReservation1.TabIndex = 31;
-            // 
             // bookReturning1
             // 
-            this.bookReturning1.BackColor = System.Drawing.Color.Silver;
-            this.bookReturning1.Location = new System.Drawing.Point(533, 338);
-            this.bookReturning1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookReturning1.BackColor = System.Drawing.Color.White;
+            this.bookReturning1.Location = new System.Drawing.Point(192, 4);
+            this.bookReturning1.Margin = new System.Windows.Forms.Padding(2);
             this.bookReturning1.Name = "bookReturning1";
-            this.bookReturning1.Size = new System.Drawing.Size(926, 860);
-            this.bookReturning1.TabIndex = 30;
+            this.bookReturning1.Size = new System.Drawing.Size(918, 687);
+            this.bookReturning1.TabIndex = 35;
             // 
             // bookBorrowing1
             // 
@@ -265,7 +245,7 @@
             // 
             this.bookList1.BackColor = System.Drawing.Color.Gray;
             this.bookList1.Location = new System.Drawing.Point(192, 4);
-            this.bookList1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookList1.Margin = new System.Windows.Forms.Padding(2);
             this.bookList1.Name = "bookList1";
             this.bookList1.Size = new System.Drawing.Size(926, 860);
             this.bookList1.TabIndex = 27;
@@ -281,6 +261,15 @@
             this.profile1.TabIndex = 26;
             this.profile1.UserId = 1;
             // 
+            // bookReservation1
+            // 
+            this.bookReservation1.BackColor = System.Drawing.Color.DarkGray;
+            this.bookReservation1.Location = new System.Drawing.Point(192, 4);
+            this.bookReservation1.Margin = new System.Windows.Forms.Padding(2);
+            this.bookReservation1.Name = "bookReservation1";
+            this.bookReservation1.Size = new System.Drawing.Size(926, 860);
+            this.bookReservation1.TabIndex = 31;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,9 +278,6 @@
             this.ClientSize = new System.Drawing.Size(1112, 687);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.penalty1);
-            this.Controls.Add(this.bookReservation1);
-            this.Controls.Add(this.bookReturning1);
             this.Controls.Add(this.bookBorrowing1);
             this.Controls.Add(this.borrowerList1);
             this.Controls.Add(this.bookList1);
@@ -304,6 +290,7 @@
             this.Controls.Add(this.BookBorrowingLink);
             this.Controls.Add(this.BorrowerListLink);
             this.Controls.Add(this.BookListLink);
+            this.Controls.Add(this.bookReturning1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -331,10 +318,10 @@
         private BookList bookList1;
         private BorrowerList borrowerList1;
         private BookBorrowing bookBorrowing1;
-        private BookReturning bookReturning1;
         private BookReservation bookReservation1;
-        private Penalty penalty1;
+       
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private BookReturning bookReturning1;
     }
 }

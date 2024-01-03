@@ -56,5 +56,12 @@ namespace FInalLibrarySystem
         {
 
         }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+            penaltyPanel1.Visible = false;
+        }
+
+
     }
 }

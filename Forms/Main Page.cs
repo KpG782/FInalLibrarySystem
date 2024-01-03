@@ -32,7 +32,7 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
-            penalty1.Visible = false;
+            
 
 
 
@@ -104,7 +104,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
-            penalty1.Visible = false;
         }
 
         private void BookListLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -116,7 +115,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
-            penalty1.Visible = false;
         }
 
         private void BorrowerListLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -128,7 +126,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
-            penalty1.Visible = false;
         }
 
         private void BookBorrowingLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -140,7 +137,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = true;
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
-            penalty1.Visible = false;
         }
 
         private void BookReturningLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -152,7 +148,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = true;
             bookReservation1.Visible = false;
-            penalty1.Visible = false;
         }
 
         private void BookReservationLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -164,7 +159,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation1.Visible = true;
-            penalty1.Visible = false;
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -176,7 +170,6 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation1.Visible = false;
-            penalty1.Visible = true;
         }
 
         private void penalty1_Load_2(object sender, EventArgs e)
