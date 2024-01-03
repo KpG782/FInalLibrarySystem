@@ -77,6 +77,7 @@
             this.lblUserName.TabIndex = 24;
             this.lblUserName.Text = "Username";
             this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUserName.Click += new System.EventHandler(this.lblUserName_Click);
             // 
             // label4
             // 
@@ -108,6 +109,7 @@
             this.txtUserID.Name = "txtUserID";
             this.txtUserID.Size = new System.Drawing.Size(221, 20);
             this.txtUserID.TabIndex = 21;
+            this.txtUserID.TextChanged += new System.EventHandler(this.txtUserID_TextChanged);
             // 
             // lblBookTitle
             // 
@@ -119,6 +121,7 @@
             this.lblBookTitle.TabIndex = 20;
             this.lblBookTitle.Text = "Book Title";
             this.lblBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBookTitle.Click += new System.EventHandler(this.lblBookTitle_Click);
             // 
             // lblAuthorName
             // 
@@ -130,6 +133,7 @@
             this.lblAuthorName.TabIndex = 19;
             this.lblAuthorName.Text = "AuthorName";
             this.lblAuthorName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAuthorName.Click += new System.EventHandler(this.lblAuthorName_Click);
             // 
             // lbltitleBook
             // 
@@ -297,6 +301,7 @@
             this.PrimaryPanel.Name = "PrimaryPanel";
             this.PrimaryPanel.Size = new System.Drawing.Size(416, 852);
             this.PrimaryPanel.TabIndex = 2;
+            this.PrimaryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PrimaryPanel_Paint);
             // 
             // label2
             // 
@@ -317,6 +322,7 @@
             this.dtpBorrow.Name = "dtpBorrow";
             this.dtpBorrow.Size = new System.Drawing.Size(151, 20);
             this.dtpBorrow.TabIndex = 0;
+            this.dtpBorrow.ValueChanged += new System.EventHandler(this.dtpBorrow_ValueChanged);
             // 
             // lblBorrow
             // 
@@ -359,6 +365,7 @@
             this.txtBookID.Name = "txtBookID";
             this.txtBookID.Size = new System.Drawing.Size(221, 20);
             this.txtBookID.TabIndex = 1;
+            this.txtBookID.TextChanged += new System.EventHandler(this.txtBookID_TextChanged);
             // 
             // label1
             // 
@@ -407,6 +414,7 @@
             this.btnBorrow.TabIndex = 3;
             this.btnBorrow.Text = "BORROW";
             this.btnBorrow.UseVisualStyleBackColor = false;
+            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // BookBorrowing
             // 

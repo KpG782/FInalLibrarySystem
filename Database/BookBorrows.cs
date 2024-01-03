@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static FInalLibrarySystem.Database.Users;
 
 namespace FInalLibrarySystem.Database
 {
@@ -22,6 +23,8 @@ namespace FInalLibrarySystem.Database
         public DateTime Reserved { get; set; }
         public byte[] Picture { get; set; }
     }
+
+
 
     internal class BookBorrows
     {
@@ -77,6 +80,12 @@ namespace FInalLibrarySystem.Database
                 db.closeConnection(); // Close the database connection
             }
         }
+
+
+        
+
+
+
     }
 
 }

@@ -107,6 +107,7 @@
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 22);
             this.guna2ControlBox2.TabIndex = 22;
+            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
             // 
             // guna2ControlBox1
             // 
@@ -246,6 +247,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // guna2Elipse2
             // 

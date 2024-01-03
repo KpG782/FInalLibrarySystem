@@ -189,7 +189,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.lblTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BorrowerList";
             this.Size = new System.Drawing.Size(936, 860);
             this.Load += new System.EventHandler(this.BorrowerList_Load);

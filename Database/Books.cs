@@ -8,6 +8,15 @@ using static FInalLibrarySystem.BookList;
 
 namespace FInalLibrarySystem.Database
 {
+    public class User
+    {
+        // Define properties for user information
+        public int UserID { get; set; }
+        public string Username { get; set; }
+        public string UserType { get; set; } // Add a property to store user type (e.g., "Student" or "Employee")
+                                             // Add other properties as needed
+    }
+
     //constructor
     public class Book
     {
@@ -281,8 +290,98 @@ namespace FInalLibrarySystem.Database
             }
         }
 
+        //get book details by id
+        public Book GetBookDetailsById(int bookID)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
 
+                    // Modify the query to retrieve book details by ID
+                    string query = "SELECT * FROM books WHERE id = @bookID";
 
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@bookID", bookID);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Create a Book object with retrieved details
+                                return new Book
+                                {
+                                    Id = reader.GetInt32("id"),
+                                    Title = reader.GetString("title"),
+                                    Author = reader.GetString("author"),
+                                    // Add other properties as needed
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return null; // Return null if the book is not found or an error occurs
+        }
+
+        public User GetUserDetailsById(int userID)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to retrieve user details and user type by ID
+                    string query = "SELECT userID, username, 'Student' AS userType FROM students WHERE studentID = @userID " +
+                                   "UNION " +
+                                   "SELECT userID, username, 'Employee' AS userType FROM employees WHERE employeeID = @userID";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@userID", userID);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Create a User object with retrieved details
+                                return new User
+                                {
+                                    UserID = reader.GetInt32("userID"),
+                                    Username = reader.GetString("username"),
+                                    UserType = reader.GetString("userType"),
+                                    // Add other properties as needed
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return null; // Return null if the user is not found or an error occurs
+        }
 
 
     }

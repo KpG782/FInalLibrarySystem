@@ -249,6 +249,13 @@ namespace FInalLibrarySystem
                 // Create an instance of the Users class
                 Users usersManager = new Users();
 
+                //
+                BookBorrowing bookBorrowingForm = new BookBorrowing();
+
+                // Set the logged-in user ID in the BookBorrowing class
+ 
+
+
                 // Get the user data by ID
                 Users.User userProfile = usersManager.GetUserById(loggedInUserId);
 
@@ -315,6 +322,16 @@ namespace FInalLibrarySystem
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
