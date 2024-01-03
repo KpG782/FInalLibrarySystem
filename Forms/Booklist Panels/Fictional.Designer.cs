@@ -48,14 +48,21 @@
             this.bk2lbl3 = new System.Windows.Forms.Label();
             this.bk2lbl1 = new System.Windows.Forms.Label();
             this.pnl2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnl5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk5lbl1 = new System.Windows.Forms.Label();
+            this.bk5lbl3 = new System.Windows.Forms.Label();
+            this.bk5lbl8 = new System.Windows.Forms.Label();
+            this.bk5lbl4 = new System.Windows.Forms.Label();
+            this.bk5lbl7 = new System.Windows.Forms.Label();
+            this.bk5lbl2 = new System.Windows.Forms.Label();
+            this.bk5lbl5 = new System.Windows.Forms.Label();
+            this.bk5lbl6 = new System.Windows.Forms.Label();
             this.title1 = new System.Windows.Forms.Label();
             this.author1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -93,17 +100,20 @@
             this.title4 = new System.Windows.Forms.Label();
             this.author3 = new System.Windows.Forms.Label();
             this.author4 = new System.Windows.Forms.Label();
-            this.pnl5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.bk5lbl1 = new System.Windows.Forms.Label();
-            this.bk5lbl3 = new System.Windows.Forms.Label();
-            this.bk5lbl8 = new System.Windows.Forms.Label();
-            this.bk5lbl4 = new System.Windows.Forms.Label();
-            this.bk5lbl7 = new System.Windows.Forms.Label();
-            this.bk5lbl2 = new System.Windows.Forms.Label();
-            this.bk5lbl5 = new System.Windows.Forms.Label();
-            this.bk5lbl6 = new System.Windows.Forms.Label();
             this.title5 = new System.Windows.Forms.Label();
             this.author5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pnl6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk6lbl1 = new System.Windows.Forms.Label();
+            this.bk6lbl3 = new System.Windows.Forms.Label();
+            this.bk6lbl8 = new System.Windows.Forms.Label();
+            this.bk6lbl4 = new System.Windows.Forms.Label();
+            this.bk6lbl7 = new System.Windows.Forms.Label();
+            this.bk6lbl2 = new System.Windows.Forms.Label();
+            this.bk6lbl5 = new System.Windows.Forms.Label();
+            this.bk6lbl6 = new System.Windows.Forms.Label();
+            this.author6 = new System.Windows.Forms.Label();
+            this.title6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
@@ -115,10 +125,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb10)).BeginInit();
             this.pnl2.SuspendLayout();
+            this.pnl5.SuspendLayout();
             this.pnl1.SuspendLayout();
             this.pnl3.SuspendLayout();
             this.pnl4.SuspendLayout();
-            this.pnl5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.pnl6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb6
@@ -131,6 +143,9 @@
             this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb6.TabIndex = 57;
             this.pb6.TabStop = false;
+            this.pb6.Click += new System.EventHandler(this.pb6_Click);
+            this.pb6.MouseLeave += new System.EventHandler(this.pb6_MouseLeave);
+            this.pb6.MouseHover += new System.EventHandler(this.pb6_MouseHover);
             // 
             // pb5
             // 
@@ -179,7 +194,7 @@
             // 
             this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
             this.pb3.ImageRotate = 0F;
-            this.pb3.Location = new System.Drawing.Point(303, 11);
+            this.pb3.Location = new System.Drawing.Point(307, 11);
             this.pb3.Name = "pb3";
             this.pb3.Size = new System.Drawing.Size(120, 250);
             this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -250,8 +265,8 @@
             this.pb10.TabIndex = 61;
             this.pb10.TabStop = false;
             this.pb10.Click += new System.EventHandler(this.pb10_Click);
-            this.pb10.MouseLeave += new System.EventHandler(this.pb4_MouseLeave);
-            this.pb10.MouseHover += new System.EventHandler(this.pb4_MouseHover);
+            this.pb10.MouseLeave += new System.EventHandler(this.pb5_MouseHover);
+            this.pb10.MouseHover += new System.EventHandler(this.pb5_MouseHover);
             // 
             // bk2lbl6
             // 
@@ -303,7 +318,7 @@
             this.bk2lbl8.Location = new System.Drawing.Point(149, 8);
             this.bk2lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk2lbl8.Name = "bk2lbl8";
-            this.bk2lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk2lbl8.Size = new System.Drawing.Size(152, 200);
             this.bk2lbl8.TabIndex = 41;
             this.bk2lbl8.Text = "Description";
             this.bk2lbl8.Click += new System.EventHandler(this.bk2lbl8_Click);
@@ -330,7 +345,6 @@
             // pnl2
             // 
             this.pnl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl2.Controls.Add(this.pnl5);
             this.pnl2.Controls.Add(this.bk2lbl1);
             this.pnl2.Controls.Add(this.bk2lbl3);
             this.pnl2.Controls.Add(this.bk2lbl8);
@@ -339,10 +353,98 @@
             this.pnl2.Controls.Add(this.bk2lbl2);
             this.pnl2.Controls.Add(this.bk2lbl5);
             this.pnl2.Controls.Add(this.bk2lbl6);
-            this.pnl2.Location = new System.Drawing.Point(570, 3);
+            this.pnl2.Location = new System.Drawing.Point(6, 14);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(339, 291);
+            this.pnl2.Size = new System.Drawing.Size(315, 272);
             this.pnl2.TabIndex = 71;
+            // 
+            // pnl5
+            // 
+            this.pnl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl5.Controls.Add(this.bk5lbl1);
+            this.pnl5.Controls.Add(this.bk5lbl3);
+            this.pnl5.Controls.Add(this.bk5lbl8);
+            this.pnl5.Controls.Add(this.bk5lbl4);
+            this.pnl5.Controls.Add(this.bk5lbl7);
+            this.pnl5.Controls.Add(this.bk5lbl2);
+            this.pnl5.Controls.Add(this.bk5lbl5);
+            this.pnl5.Controls.Add(this.bk5lbl6);
+            this.pnl5.Location = new System.Drawing.Point(6, 14);
+            this.pnl5.Name = "pnl5";
+            this.pnl5.Size = new System.Drawing.Size(315, 272);
+            this.pnl5.TabIndex = 72;
+            // 
+            // bk5lbl1
+            // 
+            this.bk5lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk5lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl1.Name = "bk5lbl1";
+            this.bk5lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl1.TabIndex = 34;
+            this.bk5lbl1.Text = "Title";
+            // 
+            // bk5lbl3
+            // 
+            this.bk5lbl3.Location = new System.Drawing.Point(12, 70);
+            this.bk5lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl3.Name = "bk5lbl3";
+            this.bk5lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl3.TabIndex = 36;
+            this.bk5lbl3.Text = "Category";
+            // 
+            // bk5lbl8
+            // 
+            this.bk5lbl8.Location = new System.Drawing.Point(146, 10);
+            this.bk5lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl8.Name = "bk5lbl8";
+            this.bk5lbl8.Size = new System.Drawing.Size(155, 200);
+            this.bk5lbl8.TabIndex = 41;
+            this.bk5lbl8.Text = "Description";
+            // 
+            // bk5lbl4
+            // 
+            this.bk5lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk5lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl4.Name = "bk5lbl4";
+            this.bk5lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl4.TabIndex = 37;
+            this.bk5lbl4.Text = "Author";
+            // 
+            // bk5lbl7
+            // 
+            this.bk5lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk5lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl7.Name = "bk5lbl7";
+            this.bk5lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl7.TabIndex = 40;
+            this.bk5lbl7.Text = "Status";
+            // 
+            // bk5lbl2
+            // 
+            this.bk5lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk5lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl2.Name = "bk5lbl2";
+            this.bk5lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl2.TabIndex = 35;
+            this.bk5lbl2.Text = "ISBN";
+            // 
+            // bk5lbl5
+            // 
+            this.bk5lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk5lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl5.Name = "bk5lbl5";
+            this.bk5lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl5.TabIndex = 38;
+            this.bk5lbl5.Text = "Copyright";
+            // 
+            // bk5lbl6
+            // 
+            this.bk5lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk5lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk5lbl6.Name = "bk5lbl6";
+            this.bk5lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk5lbl6.TabIndex = 39;
+            this.bk5lbl6.Text = "Publisher";
             // 
             // title1
             // 
@@ -404,25 +506,6 @@
             this.label12.TabIndex = 66;
             this.label12.Text = "Author";
             // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(144, 560);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 23);
-            this.label15.TabIndex = 65;
-            this.label15.Text = "Title";
-            // 
-            // label16
-            // 
-            this.label16.Location = new System.Drawing.Point(155, 579);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(135, 23);
-            this.label16.TabIndex = 66;
-            this.label16.Text = "Author";
-            // 
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -472,9 +555,9 @@
             this.pnl1.Controls.Add(this.bk1lbl2);
             this.pnl1.Controls.Add(this.bk1lbl5);
             this.pnl1.Controls.Add(this.bk1lbl6);
-            this.pnl1.Location = new System.Drawing.Point(570, 7);
+            this.pnl1.Location = new System.Drawing.Point(6, 15);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(339, 291);
+            this.pnl1.Size = new System.Drawing.Size(315, 271);
             this.pnl1.TabIndex = 70;
             // 
             // bk1lbl1
@@ -500,7 +583,7 @@
             this.bk1lbl8.Location = new System.Drawing.Point(149, 11);
             this.bk1lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk1lbl8.Name = "bk1lbl8";
-            this.bk1lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk1lbl8.Size = new System.Drawing.Size(153, 200);
             this.bk1lbl8.TabIndex = 41;
             this.bk1lbl8.Text = "Description";
             // 
@@ -560,9 +643,9 @@
             this.pnl3.Controls.Add(this.bk3lbl2);
             this.pnl3.Controls.Add(this.bk3lbl5);
             this.pnl3.Controls.Add(this.bk3lbl6);
-            this.pnl3.Location = new System.Drawing.Point(570, 4);
+            this.pnl3.Location = new System.Drawing.Point(6, 15);
             this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(339, 291);
+            this.pnl3.Size = new System.Drawing.Size(315, 271);
             this.pnl3.TabIndex = 68;
             this.pnl3.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl3_Paint_1);
             // 
@@ -589,7 +672,7 @@
             this.bk3lbl8.Location = new System.Drawing.Point(149, 11);
             this.bk3lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk3lbl8.Name = "bk3lbl8";
-            this.bk3lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk3lbl8.Size = new System.Drawing.Size(155, 200);
             this.bk3lbl8.TabIndex = 41;
             this.bk3lbl8.Text = "Description";
             // 
@@ -649,9 +732,9 @@
             this.pnl4.Controls.Add(this.bk4lbl2);
             this.pnl4.Controls.Add(this.bk4lbl5);
             this.pnl4.Controls.Add(this.bk4lbl6);
-            this.pnl4.Location = new System.Drawing.Point(570, 4);
+            this.pnl4.Location = new System.Drawing.Point(6, 14);
             this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(339, 291);
+            this.pnl4.Size = new System.Drawing.Size(315, 272);
             this.pnl4.TabIndex = 69;
             // 
             // bk4lbl1
@@ -677,7 +760,7 @@
             this.bk4lbl8.Location = new System.Drawing.Point(149, 11);
             this.bk4lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk4lbl8.Name = "bk4lbl8";
-            this.bk4lbl8.Size = new System.Drawing.Size(172, 200);
+            this.bk4lbl8.Size = new System.Drawing.Size(155, 200);
             this.bk4lbl8.TabIndex = 41;
             this.bk4lbl8.Text = "Description";
             // 
@@ -786,119 +869,160 @@
             this.author4.TabIndex = 77;
             this.author4.Text = "Author";
             // 
-            // pnl5
-            // 
-            this.pnl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl5.Controls.Add(this.bk5lbl1);
-            this.pnl5.Controls.Add(this.bk5lbl3);
-            this.pnl5.Controls.Add(this.bk5lbl8);
-            this.pnl5.Controls.Add(this.bk5lbl4);
-            this.pnl5.Controls.Add(this.bk5lbl7);
-            this.pnl5.Controls.Add(this.bk5lbl2);
-            this.pnl5.Controls.Add(this.bk5lbl5);
-            this.pnl5.Controls.Add(this.bk5lbl6);
-            this.pnl5.Location = new System.Drawing.Point(0, 1);
-            this.pnl5.Name = "pnl5";
-            this.pnl5.Size = new System.Drawing.Size(339, 291);
-            this.pnl5.TabIndex = 67;
-            // 
-            // bk5lbl1
-            // 
-            this.bk5lbl1.Location = new System.Drawing.Point(12, 18);
-            this.bk5lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl1.Name = "bk5lbl1";
-            this.bk5lbl1.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl1.TabIndex = 34;
-            this.bk5lbl1.Text = "Title";
-            // 
-            // bk5lbl3
-            // 
-            this.bk5lbl3.Location = new System.Drawing.Point(12, 70);
-            this.bk5lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl3.Name = "bk5lbl3";
-            this.bk5lbl3.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl3.TabIndex = 36;
-            this.bk5lbl3.Text = "Category";
-            // 
-            // bk5lbl8
-            // 
-            this.bk5lbl8.Location = new System.Drawing.Point(149, 8);
-            this.bk5lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl8.Name = "bk5lbl8";
-            this.bk5lbl8.Size = new System.Drawing.Size(172, 200);
-            this.bk5lbl8.TabIndex = 41;
-            this.bk5lbl8.Text = "Description";
-            // 
-            // bk5lbl4
-            // 
-            this.bk5lbl4.Location = new System.Drawing.Point(12, 102);
-            this.bk5lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl4.Name = "bk5lbl4";
-            this.bk5lbl4.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl4.TabIndex = 37;
-            this.bk5lbl4.Text = "Author";
-            // 
-            // bk5lbl7
-            // 
-            this.bk5lbl7.Location = new System.Drawing.Point(12, 189);
-            this.bk5lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl7.Name = "bk5lbl7";
-            this.bk5lbl7.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl7.TabIndex = 40;
-            this.bk5lbl7.Text = "Status";
-            // 
-            // bk5lbl2
-            // 
-            this.bk5lbl2.Location = new System.Drawing.Point(12, 46);
-            this.bk5lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl2.Name = "bk5lbl2";
-            this.bk5lbl2.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl2.TabIndex = 35;
-            this.bk5lbl2.Text = "ISBN";
-            // 
-            // bk5lbl5
-            // 
-            this.bk5lbl5.Location = new System.Drawing.Point(12, 130);
-            this.bk5lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl5.Name = "bk5lbl5";
-            this.bk5lbl5.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl5.TabIndex = 38;
-            this.bk5lbl5.Text = "Copyright";
-            // 
-            // bk5lbl6
-            // 
-            this.bk5lbl6.Location = new System.Drawing.Point(12, 161);
-            this.bk5lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk5lbl6.Name = "bk5lbl6";
-            this.bk5lbl6.Size = new System.Drawing.Size(138, 19);
-            this.bk5lbl6.TabIndex = 39;
-            this.bk5lbl6.Text = "Publisher";
-            // 
             // title5
             // 
-            this.title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title5.Location = new System.Drawing.Point(4, 562);
             this.title5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title5.Name = "title5";
-            this.title5.Size = new System.Drawing.Size(148, 23);
+            this.title5.Size = new System.Drawing.Size(148, 56);
             this.title5.TabIndex = 78;
             this.title5.Text = "Title";
             // 
             // author5
             // 
             this.author5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.author5.Location = new System.Drawing.Point(4, 581);
+            this.author5.Location = new System.Drawing.Point(4, 590);
             this.author5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author5.Name = "author5";
-            this.author5.Size = new System.Drawing.Size(135, 23);
+            this.author5.Size = new System.Drawing.Size(135, 28);
             this.author5.TabIndex = 79;
             this.author5.Text = "Author";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pnl6);
+            this.groupBox1.Controls.Add(this.pnl4);
+            this.groupBox1.Controls.Add(this.pnl5);
+            this.groupBox1.Controls.Add(this.pnl3);
+            this.groupBox1.Controls.Add(this.pnl1);
+            this.groupBox1.Controls.Add(this.pnl2);
+            this.groupBox1.Location = new System.Drawing.Point(570, 11);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(333, 292);
+            this.groupBox1.TabIndex = 80;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Book Details";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // pnl6
+            // 
+            this.pnl6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl6.Controls.Add(this.bk6lbl1);
+            this.pnl6.Controls.Add(this.bk6lbl3);
+            this.pnl6.Controls.Add(this.bk6lbl8);
+            this.pnl6.Controls.Add(this.bk6lbl4);
+            this.pnl6.Controls.Add(this.bk6lbl7);
+            this.pnl6.Controls.Add(this.bk6lbl2);
+            this.pnl6.Controls.Add(this.bk6lbl5);
+            this.pnl6.Controls.Add(this.bk6lbl6);
+            this.pnl6.Location = new System.Drawing.Point(6, 14);
+            this.pnl6.Name = "pnl6";
+            this.pnl6.Size = new System.Drawing.Size(315, 272);
+            this.pnl6.TabIndex = 73;
+            // 
+            // bk6lbl1
+            // 
+            this.bk6lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk6lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl1.Name = "bk6lbl1";
+            this.bk6lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl1.TabIndex = 34;
+            this.bk6lbl1.Text = "Title";
+            // 
+            // bk6lbl3
+            // 
+            this.bk6lbl3.Location = new System.Drawing.Point(12, 70);
+            this.bk6lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl3.Name = "bk6lbl3";
+            this.bk6lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl3.TabIndex = 36;
+            this.bk6lbl3.Text = "Category";
+            // 
+            // bk6lbl8
+            // 
+            this.bk6lbl8.Location = new System.Drawing.Point(149, 11);
+            this.bk6lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl8.Name = "bk6lbl8";
+            this.bk6lbl8.Size = new System.Drawing.Size(155, 200);
+            this.bk6lbl8.TabIndex = 41;
+            this.bk6lbl8.Text = "Description";
+            // 
+            // bk6lbl4
+            // 
+            this.bk6lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk6lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl4.Name = "bk6lbl4";
+            this.bk6lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl4.TabIndex = 37;
+            this.bk6lbl4.Text = "Author";
+            // 
+            // bk6lbl7
+            // 
+            this.bk6lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk6lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl7.Name = "bk6lbl7";
+            this.bk6lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl7.TabIndex = 40;
+            this.bk6lbl7.Text = "Status";
+            // 
+            // bk6lbl2
+            // 
+            this.bk6lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk6lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl2.Name = "bk6lbl2";
+            this.bk6lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl2.TabIndex = 35;
+            this.bk6lbl2.Text = "ISBN";
+            // 
+            // bk6lbl5
+            // 
+            this.bk6lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk6lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl5.Name = "bk6lbl5";
+            this.bk6lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl5.TabIndex = 38;
+            this.bk6lbl5.Text = "Copyright";
+            // 
+            // bk6lbl6
+            // 
+            this.bk6lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk6lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk6lbl6.Name = "bk6lbl6";
+            this.bk6lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk6lbl6.TabIndex = 39;
+            this.bk6lbl6.Text = "Publisher";
+            // 
+            // author6
+            // 
+            this.author6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author6.Location = new System.Drawing.Point(150, 590);
+            this.author6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.author6.Name = "author6";
+            this.author6.Size = new System.Drawing.Size(135, 28);
+            this.author6.TabIndex = 82;
+            this.author6.Text = "Author";
+            this.author6.Click += new System.EventHandler(this.author6_Click);
+            // 
+            // title6
+            // 
+            this.title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title6.Location = new System.Drawing.Point(150, 562);
+            this.title6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.title6.Name = "title6";
+            this.title6.Size = new System.Drawing.Size(148, 56);
+            this.title6.TabIndex = 81;
+            this.title6.Text = "Title";
+            this.title6.Click += new System.EventHandler(this.title6_Click);
             // 
             // Fictional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.author6);
+            this.Controls.Add(this.title6);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.author5);
             this.Controls.Add(this.title5);
             this.Controls.Add(this.author4);
@@ -915,11 +1039,6 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.pnl2);
-            this.Controls.Add(this.pnl3);
-            this.Controls.Add(this.pnl4);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.author1);
             this.Controls.Add(this.title1);
             this.Controls.Add(this.pb10);
@@ -932,10 +1051,9 @@
             this.Controls.Add(this.pb2);
             this.Controls.Add(this.pb3);
             this.Controls.Add(this.pb4);
-            this.Controls.Add(this.pnl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Fictional";
-            this.Size = new System.Drawing.Size(920, 687);
+            this.Size = new System.Drawing.Size(1275, 934);
             this.Load += new System.EventHandler(this.Fictional_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
@@ -948,10 +1066,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb10)).EndInit();
             this.pnl2.ResumeLayout(false);
+            this.pnl5.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);
             this.pnl3.ResumeLayout(false);
             this.pnl4.ResumeLayout(false);
-            this.pnl5.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.pnl6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -982,8 +1102,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -1032,5 +1150,17 @@
         private System.Windows.Forms.Label bk5lbl6;
         private System.Windows.Forms.Label title5;
         private System.Windows.Forms.Label author5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private Guna.UI2.WinForms.Guna2Panel pnl6;
+        private System.Windows.Forms.Label bk6lbl1;
+        private System.Windows.Forms.Label bk6lbl3;
+        private System.Windows.Forms.Label bk6lbl8;
+        private System.Windows.Forms.Label bk6lbl4;
+        private System.Windows.Forms.Label bk6lbl7;
+        private System.Windows.Forms.Label bk6lbl2;
+        private System.Windows.Forms.Label bk6lbl5;
+        private System.Windows.Forms.Label bk6lbl6;
+        private System.Windows.Forms.Label author6;
+        private System.Windows.Forms.Label title6;
     }
 }

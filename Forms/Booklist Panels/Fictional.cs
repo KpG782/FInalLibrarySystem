@@ -47,10 +47,10 @@ namespace FInalLibrarySystem
             pnl5.Visible = false; 
             
             //pb6
-           /* pb6.MouseHover += pb6_MouseHover;
+            pb6.MouseHover += pb6_MouseHover;
             pb6.MouseLeave += pb6_MouseLeave;
             pnl6.Visible = false;
-
+            /*
             //pb7
             pb7.MouseHover += pb7_MouseHover;
             pb7.MouseLeave += pb7_MouseLeave;
@@ -186,6 +186,26 @@ namespace FInalLibrarySystem
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
+                else if (book.Title == "The Catcher in the Rye")
+                {
+                    // Set the cover image for "The Catcher in the Rye" in the PictureBox
+                    pb6.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk6lbl1.Text = book.Title;
+                    bk6lbl2.Text = book.ISBN;
+                    bk6lbl3.Text = book.Category;
+                    bk6lbl4.Text = book.Author;
+                    bk6lbl5.Text = book.Copyright.ToString();
+                    bk6lbl6.Text = book.Publisher;
+                    bk6lbl7.Text = book.Status;
+                    bk6lbl8.Text = book.Description;
+                    title6.Text = book.Title;
+                    author6.Text = book.Author;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                }
             }
             
 
@@ -316,7 +336,7 @@ namespace FInalLibrarySystem
         }
 
         //pb6
-     /* private void pb6_MouseHover(object sender, EventArgs e)
+      private void pb6_MouseHover(object sender, EventArgs e)
           {
               pnl6.Visible = true;
           }
@@ -326,8 +346,8 @@ namespace FInalLibrarySystem
               pnl6.Visible = false;
           }
 
-          //pb7
-          private void pb7_MouseHover(object sender, EventArgs e)
+        //pb7
+        /*  private void pb7_MouseHover(object sender, EventArgs e)
           {
               pnl7.Visible = true;
           }
@@ -441,6 +461,26 @@ namespace FInalLibrarySystem
         }
 
         private void pb5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void title6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void author6_Click(object sender, EventArgs e)
         {
 
         }
