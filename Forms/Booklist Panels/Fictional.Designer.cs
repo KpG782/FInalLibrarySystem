@@ -480,8 +480,8 @@
             // 
             // title9
             // 
-            this.title9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title9.Location = new System.Drawing.Point(594, 557);
+            this.title9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.title9.Location = new System.Drawing.Point(594, 562);
             this.title9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title9.Name = "title9";
             this.title9.Size = new System.Drawing.Size(100, 23);
@@ -491,7 +491,7 @@
             // author9
             // 
             this.author9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.author9.Location = new System.Drawing.Point(605, 576);
+            this.author9.Location = new System.Drawing.Point(605, 590);
             this.author9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author9.Name = "author9";
             this.author9.Size = new System.Drawing.Size(135, 28);
@@ -500,8 +500,8 @@
             // 
             // title10
             // 
-            this.title10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title10.Location = new System.Drawing.Point(745, 557);
+            this.title10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.title10.Location = new System.Drawing.Point(745, 562);
             this.title10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title10.Name = "title10";
             this.title10.Size = new System.Drawing.Size(100, 23);
@@ -511,7 +511,7 @@
             // author10
             // 
             this.author10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.author10.Location = new System.Drawing.Point(756, 576);
+            this.author10.Location = new System.Drawing.Point(756, 590);
             this.author10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author10.Name = "author10";
             this.author10.Size = new System.Drawing.Size(135, 28);
@@ -520,7 +520,7 @@
             // 
             // title7
             // 
-            this.title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.title7.Location = new System.Drawing.Point(303, 562);
             this.title7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title7.Name = "title7";
@@ -531,7 +531,7 @@
             // author7
             // 
             this.author7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.author7.Location = new System.Drawing.Point(314, 581);
+            this.author7.Location = new System.Drawing.Point(314, 590);
             this.author7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author7.Name = "author7";
             this.author7.Size = new System.Drawing.Size(135, 28);
@@ -541,7 +541,7 @@
             // 
             // title8
             // 
-            this.title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.title8.Location = new System.Drawing.Point(442, 562);
             this.title8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title8.Name = "title8";
@@ -552,7 +552,7 @@
             // author8
             // 
             this.author8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.author8.Location = new System.Drawing.Point(453, 581);
+            this.author8.Location = new System.Drawing.Point(453, 590);
             this.author8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author8.Name = "author8";
             this.author8.Size = new System.Drawing.Size(135, 28);
@@ -886,7 +886,7 @@
             // 
             // title5
             // 
-            this.title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.title5.Location = new System.Drawing.Point(4, 562);
             this.title5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title5.Name = "title5";
@@ -896,7 +896,7 @@
             // 
             // author5
             // 
-            this.author5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.author5.Location = new System.Drawing.Point(4, 590);
             this.author5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author5.Name = "author5";
@@ -1011,7 +1011,7 @@
             // 
             // author6
             // 
-            this.author6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.author6.Location = new System.Drawing.Point(150, 590);
             this.author6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.author6.Name = "author6";
@@ -1022,7 +1022,7 @@
             // 
             // title6
             // 
-            this.title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.title6.Location = new System.Drawing.Point(150, 562);
             this.title6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title6.Name = "title6";
