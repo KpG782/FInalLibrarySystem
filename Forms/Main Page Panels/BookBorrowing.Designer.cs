@@ -174,6 +174,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 41;
             this.guna2Button2.Text = "Borrow Book";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
             // 
             // label1
             // 
@@ -246,7 +247,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bookDetails1);
             this.Controls.Add(this.lblNote);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -265,6 +265,7 @@
             this.Controls.Add(this.nudBookID);
             this.Controls.Add(this.bk1lbl7);
             this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.bookDetails1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookBorrowing";
             this.Size = new System.Drawing.Size(936, 860);
