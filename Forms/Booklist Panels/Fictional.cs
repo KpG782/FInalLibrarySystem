@@ -50,26 +50,26 @@ namespace FInalLibrarySystem
             pb6.MouseHover += pb6_MouseHover;
             pb6.MouseLeave += pb6_MouseLeave;
             pnl6.Visible = false;
-            /*
-            //pb7
+          // pb7
             pb7.MouseHover += pb7_MouseHover;
             pb7.MouseLeave += pb7_MouseLeave;
             pnl7.Visible = false;
 
             //pb8
-            pb8.MouseHover += pb8_MouseHover;
-            pb8.MouseLeave += pb8_MouseLeave;
-            pnl8.Visible = false;
+            /*
+             //  pb8.MouseHover += pb8_MouseHover;
+             pb8.MouseLeave += pb8_MouseLeave;
+             pnl8.Visible = false;
 
-            //pb9
-            pb9.MouseHover += pb9_MouseHover;
-            pb9.MouseLeave += pb9_MouseLeave;
-            pnl9.Visible = false;
+             //pb9
+             pb9.MouseHover += pb9_MouseHover;
+             pb9.MouseLeave += pb9_MouseLeave;
+             pnl9.Visible = false;
 
-            //pb10
-            pb10.MouseHover += pb10_MouseHover;
-            pb10.MouseLeave += pb10_MouseLeave;
-            pnl10.Visible = false; */
+             //pb10
+             pb10.MouseHover += pb10_MouseHover;
+             pb10.MouseLeave += pb10_MouseLeave;
+             pnl10.Visible = false; */
 
 
         }
@@ -203,6 +203,26 @@ namespace FInalLibrarySystem
                     bk6lbl8.Text = book.Description;
                     title6.Text = book.Title;
                     author6.Text = book.Author;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                }
+                else if (book.Title == "The Lord of the Rings")
+                {
+                    // Set the cover image for "The Catcher in the Rye" in the PictureBox
+                    pb7.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk7lbl1.Text = book.Title;
+                    bk7lbl2.Text = book.ISBN;
+                    bk7lbl3.Text = book.Category;
+                    bk7lbl4.Text = book.Author;
+                    bk7lbl5.Text = book.Copyright.ToString();
+                    bk7lbl6.Text = book.Publisher;
+                    bk7lbl7.Text = book.Status;
+                    bk7lbl8.Text = book.Description;
+                    title7.Text = book.Title;
+                    author7.Text = book.Author;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
@@ -347,7 +367,7 @@ namespace FInalLibrarySystem
           }
 
         //pb7
-        /*  private void pb7_MouseHover(object sender, EventArgs e)
+         private void pb7_MouseHover(object sender, EventArgs e)
           {
               pnl7.Visible = true;
           }
@@ -357,38 +377,38 @@ namespace FInalLibrarySystem
               pnl7.Visible = false;
           }
 
-          //pb8
-          private void pb8_MouseHover(object sender, EventArgs e)
-          {
-              pnl8.Visible = true;
-          }
+        //pb8
+        /*private void pb8_MouseHover(object sender, EventArgs e)
+       {
+           pnl8.Visible = true;
+       }
 
-          private void pb8_MouseLeave(object sender, EventArgs e)
-          {
-              pnl8.Visible = false;
-          }
+       private void pb8_MouseLeave(object sender, EventArgs e)
+       {
+           pnl8.Visible = false;
+       }
 
-          //pb9
-          private void pb9_MouseHover(object sender, EventArgs e)
-          {
-              pnl9.Visible = true;
-          }
+       //pb9
+       private void pb9_MouseHover(object sender, EventArgs e)
+       {
+           pnl9.Visible = true;
+       }
 
-          private void pb9_MouseLeave(object sender, EventArgs e)
-          {
-              pnl9.Visible = false;
-          }
+       private void pb9_MouseLeave(object sender, EventArgs e)
+       {
+           pnl9.Visible = false;
+       }
 
-          //pb10
-          private void pb10_MouseHover(object sender, EventArgs e)
-          {
-              pnl10.Visible = true;
-          }
+       //pb10
+       private void pb10_MouseHover(object sender, EventArgs e)
+       {
+           pnl10.Visible = true;
+       }
 
-          private void pb10_MouseLeave(object sender, EventArgs e)
-          {
-              pnl10.Visible = false;
-          } */
+       private void pb10_MouseLeave(object sender, EventArgs e)
+       {
+           pnl10.Visible = false;
+       } */
 
         private void pb8_Click(object sender, EventArgs e)
         {
@@ -483,6 +503,11 @@ namespace FInalLibrarySystem
         private void author6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void author7_Click(object sender, EventArgs e)
+        {
+                
         }
     }
 }
