@@ -103,6 +103,15 @@
             this.title5 = new System.Windows.Forms.Label();
             this.author5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pnl7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bk7lbl1 = new System.Windows.Forms.Label();
+            this.bk7lbl3 = new System.Windows.Forms.Label();
+            this.bk7lbl8 = new System.Windows.Forms.Label();
+            this.bk7lbl4 = new System.Windows.Forms.Label();
+            this.bk7lbl7 = new System.Windows.Forms.Label();
+            this.bk7lbl2 = new System.Windows.Forms.Label();
+            this.bk7lbl5 = new System.Windows.Forms.Label();
+            this.bk7lbl6 = new System.Windows.Forms.Label();
             this.pnl6 = new Guna.UI2.WinForms.Guna2Panel();
             this.bk6lbl1 = new System.Windows.Forms.Label();
             this.bk6lbl3 = new System.Windows.Forms.Label();
@@ -114,15 +123,6 @@
             this.bk6lbl6 = new System.Windows.Forms.Label();
             this.author6 = new System.Windows.Forms.Label();
             this.title6 = new System.Windows.Forms.Label();
-            this.bk7lbl1 = new System.Windows.Forms.Label();
-            this.bk7lbl3 = new System.Windows.Forms.Label();
-            this.bk7lbl8 = new System.Windows.Forms.Label();
-            this.bk7lbl4 = new System.Windows.Forms.Label();
-            this.bk7lbl7 = new System.Windows.Forms.Label();
-            this.bk7lbl2 = new System.Windows.Forms.Label();
-            this.bk7lbl5 = new System.Windows.Forms.Label();
-            this.bk7lbl6 = new System.Windows.Forms.Label();
-            this.pnl7 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
@@ -139,8 +139,8 @@
             this.pnl3.SuspendLayout();
             this.pnl4.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.pnl6.SuspendLayout();
             this.pnl7.SuspendLayout();
+            this.pnl6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb6
@@ -921,6 +921,102 @@
             this.groupBox1.Text = "Book Details";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // pnl7
+            // 
+            this.pnl7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl7.Controls.Add(this.bk7lbl1);
+            this.pnl7.Controls.Add(this.bk7lbl3);
+            this.pnl7.Controls.Add(this.bk7lbl8);
+            this.pnl7.Controls.Add(this.bk7lbl4);
+            this.pnl7.Controls.Add(this.bk7lbl7);
+            this.pnl7.Controls.Add(this.bk7lbl2);
+            this.pnl7.Controls.Add(this.bk7lbl5);
+            this.pnl7.Controls.Add(this.bk7lbl6);
+            this.pnl7.Location = new System.Drawing.Point(3, 14);
+            this.pnl7.Name = "pnl7";
+            this.pnl7.Size = new System.Drawing.Size(315, 272);
+            this.pnl7.TabIndex = 83;
+            // 
+            // bk7lbl1
+            // 
+            this.bk7lbl1.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl1.Location = new System.Drawing.Point(12, 18);
+            this.bk7lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl1.Name = "bk7lbl1";
+            this.bk7lbl1.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl1.TabIndex = 34;
+            this.bk7lbl1.Text = "Title";
+            // 
+            // bk7lbl3
+            // 
+            this.bk7lbl3.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl3.Location = new System.Drawing.Point(12, 70);
+            this.bk7lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl3.Name = "bk7lbl3";
+            this.bk7lbl3.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl3.TabIndex = 36;
+            this.bk7lbl3.Text = "Category";
+            // 
+            // bk7lbl8
+            // 
+            this.bk7lbl8.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl8.Location = new System.Drawing.Point(149, 11);
+            this.bk7lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl8.Name = "bk7lbl8";
+            this.bk7lbl8.Size = new System.Drawing.Size(155, 200);
+            this.bk7lbl8.TabIndex = 41;
+            this.bk7lbl8.Text = "Description";
+            // 
+            // bk7lbl4
+            // 
+            this.bk7lbl4.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk7lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl4.Name = "bk7lbl4";
+            this.bk7lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl4.TabIndex = 37;
+            this.bk7lbl4.Text = "Author";
+            // 
+            // bk7lbl7
+            // 
+            this.bk7lbl7.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl7.Location = new System.Drawing.Point(12, 189);
+            this.bk7lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl7.Name = "bk7lbl7";
+            this.bk7lbl7.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl7.TabIndex = 40;
+            this.bk7lbl7.Text = "Status";
+            // 
+            // bk7lbl2
+            // 
+            this.bk7lbl2.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk7lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl2.Name = "bk7lbl2";
+            this.bk7lbl2.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl2.TabIndex = 35;
+            this.bk7lbl2.Text = "ISBN";
+            // 
+            // bk7lbl5
+            // 
+            this.bk7lbl5.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl5.Location = new System.Drawing.Point(12, 130);
+            this.bk7lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl5.Name = "bk7lbl5";
+            this.bk7lbl5.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl5.TabIndex = 38;
+            this.bk7lbl5.Text = "Copyright";
+            // 
+            // bk7lbl6
+            // 
+            this.bk7lbl6.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bk7lbl6.Location = new System.Drawing.Point(12, 161);
+            this.bk7lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bk7lbl6.Name = "bk7lbl6";
+            this.bk7lbl6.Size = new System.Drawing.Size(138, 19);
+            this.bk7lbl6.TabIndex = 39;
+            this.bk7lbl6.Text = "Publisher";
+            // 
             // pnl6
             // 
             this.pnl6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1031,102 +1127,6 @@
             this.title6.Text = "Title";
             this.title6.Click += new System.EventHandler(this.title6_Click);
             // 
-            // bk7lbl1
-            // 
-            this.bk7lbl1.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl1.Location = new System.Drawing.Point(12, 18);
-            this.bk7lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl1.Name = "bk7lbl1";
-            this.bk7lbl1.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl1.TabIndex = 34;
-            this.bk7lbl1.Text = "Title";
-            // 
-            // bk7lbl3
-            // 
-            this.bk7lbl3.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl3.Location = new System.Drawing.Point(12, 70);
-            this.bk7lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl3.Name = "bk7lbl3";
-            this.bk7lbl3.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl3.TabIndex = 36;
-            this.bk7lbl3.Text = "Category";
-            // 
-            // bk7lbl8
-            // 
-            this.bk7lbl8.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl8.Location = new System.Drawing.Point(149, 11);
-            this.bk7lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl8.Name = "bk7lbl8";
-            this.bk7lbl8.Size = new System.Drawing.Size(155, 200);
-            this.bk7lbl8.TabIndex = 41;
-            this.bk7lbl8.Text = "Description";
-            // 
-            // bk7lbl4
-            // 
-            this.bk7lbl4.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl4.Location = new System.Drawing.Point(12, 102);
-            this.bk7lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl4.Name = "bk7lbl4";
-            this.bk7lbl4.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl4.TabIndex = 37;
-            this.bk7lbl4.Text = "Author";
-            // 
-            // bk7lbl7
-            // 
-            this.bk7lbl7.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl7.Location = new System.Drawing.Point(12, 189);
-            this.bk7lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl7.Name = "bk7lbl7";
-            this.bk7lbl7.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl7.TabIndex = 40;
-            this.bk7lbl7.Text = "Status";
-            // 
-            // bk7lbl2
-            // 
-            this.bk7lbl2.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl2.Location = new System.Drawing.Point(12, 46);
-            this.bk7lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl2.Name = "bk7lbl2";
-            this.bk7lbl2.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl2.TabIndex = 35;
-            this.bk7lbl2.Text = "ISBN";
-            // 
-            // bk7lbl5
-            // 
-            this.bk7lbl5.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl5.Location = new System.Drawing.Point(12, 130);
-            this.bk7lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl5.Name = "bk7lbl5";
-            this.bk7lbl5.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl5.TabIndex = 38;
-            this.bk7lbl5.Text = "Copyright";
-            // 
-            // bk7lbl6
-            // 
-            this.bk7lbl6.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bk7lbl6.Location = new System.Drawing.Point(12, 161);
-            this.bk7lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bk7lbl6.Name = "bk7lbl6";
-            this.bk7lbl6.Size = new System.Drawing.Size(138, 19);
-            this.bk7lbl6.TabIndex = 39;
-            this.bk7lbl6.Text = "Publisher";
-            // 
-            // pnl7
-            // 
-            this.pnl7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl7.Controls.Add(this.bk7lbl1);
-            this.pnl7.Controls.Add(this.bk7lbl3);
-            this.pnl7.Controls.Add(this.bk7lbl8);
-            this.pnl7.Controls.Add(this.bk7lbl4);
-            this.pnl7.Controls.Add(this.bk7lbl7);
-            this.pnl7.Controls.Add(this.bk7lbl2);
-            this.pnl7.Controls.Add(this.bk7lbl5);
-            this.pnl7.Controls.Add(this.bk7lbl6);
-            this.pnl7.Location = new System.Drawing.Point(3, 14);
-            this.pnl7.Name = "pnl7";
-            this.pnl7.Size = new System.Drawing.Size(315, 272);
-            this.pnl7.TabIndex = 83;
-            // 
             // Fictional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1183,8 +1183,8 @@
             this.pnl3.ResumeLayout(false);
             this.pnl4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.pnl6.ResumeLayout(false);
             this.pnl7.ResumeLayout(false);
+            this.pnl6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

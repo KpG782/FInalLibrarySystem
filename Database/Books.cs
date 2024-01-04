@@ -8,14 +8,7 @@ using static FInalLibrarySystem.BookList;
 
 namespace FInalLibrarySystem.Database
 {
-    public class User
-    {
-        // Define properties for user information
-        public int UserID { get; set; }
-        public string Username { get; set; }
-        public string UserType { get; set; } // Add a property to store user type (e.g., "Student" or "Employee")
-                                             // Add other properties as needed
-    }
+
 
     //constructor
     public class Book
@@ -316,6 +309,9 @@ namespace FInalLibrarySystem.Database
                                     Id = reader.GetInt32("id"),
                                     Title = reader.GetString("title"),
                                     Author = reader.GetString("author"),
+                                    Cover = (byte[])reader["cover"],
+                                    Status = reader.GetString("status"),  // Include the status field
+
                                     // Add other properties as needed
                                 };
                             }
@@ -336,7 +332,9 @@ namespace FInalLibrarySystem.Database
             return null; // Return null if the book is not found or an error occurs
         }
 
-        public User GetUserDetailsById(int userID)
+
+
+        public bool UpdateBookStatus(int bookID, string newStatus)
         {
             try
             {
@@ -344,27 +342,66 @@ namespace FInalLibrarySystem.Database
                 {
                     db.openConnection(); // Open the database connection
 
-                    // Modify the query to retrieve user details and user type by ID
-                    string query = "SELECT userID, username, 'Student' AS userType FROM students WHERE studentID = @userID " +
-                                   "UNION " +
-                                   "SELECT userID, username, 'Employee' AS userType FROM employees WHERE employeeID = @userID";
+                    // Modify the query to update the book status by ID
+                    string updateQuery = "UPDATE books SET status = @newStatus WHERE id = @bookID";
 
+                    using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection))
+                    {
+                        updateCommand.Parameters.AddWithValue("@newStatus", newStatus);
+                        updateCommand.Parameters.AddWithValue("@bookID", bookID);
+
+                        // Execute the update query
+                        int rowsAffected = updateCommand.ExecuteNonQuery();
+
+                        // Return true if the operation is successful
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log or notify the user)
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+        }
+
+        public List<Book> GetReturnedBooks()
+        {
+            List<Book> returnedBooks = new List<Book>();
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to retrieve returned books
+                    string query = "SELECT * FROM books WHERE status = 'Returned'";
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@userID", userID);
-
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
-                            if (reader.Read())
+                            while (reader.Read())
                             {
-                                // Create a User object with retrieved details
-                                return new User
+                                Book book = new Book
                                 {
-                                    UserID = reader.GetInt32("userID"),
-                                    Username = reader.GetString("username"),
-                                    UserType = reader.GetString("userType"),
-                                    // Add other properties as needed
+                                    Id = reader.GetInt32("id"),
+                                    Title = reader.GetString("title"),
+                                    ISBN = reader.GetString("ISBN"),
+                                    Category = reader.GetString("category"),
+                                    Author = reader.GetString("author"),
+                                    Copyright = reader.GetInt32("copyright"),
+                                    Publisher = reader.GetString("publisher"),
+                                    Status = reader.GetString("status"),
+                                    Description = reader.GetString("description"),
+                                    Cover = (byte[])reader["cover"]
                                 };
+                                returnedBooks.Add(book);
                             }
                         }
                     }
@@ -380,7 +417,7 @@ namespace FInalLibrarySystem.Database
                 db.closeConnection(); // Close the database connection
             }
 
-            return null; // Return null if the user is not found or an error occurs
+            return returnedBooks;
         }
 
 
