@@ -95,7 +95,7 @@
             // 
             this.academic1.BackColor = System.Drawing.Color.White;
             this.academic1.Location = new System.Drawing.Point(2, 54);
-            this.academic1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.academic1.Margin = new System.Windows.Forms.Padding(2);
             this.academic1.Name = "academic1";
             this.academic1.Size = new System.Drawing.Size(936, 739);
             this.academic1.TabIndex = 30;
@@ -103,17 +103,17 @@
             // fictional1
             // 
             this.fictional1.BackColor = System.Drawing.Color.White;
-            this.fictional1.Location = new System.Drawing.Point(0, 80);
-            this.fictional1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fictional1.Location = new System.Drawing.Point(0, 54);
+            this.fictional1.Margin = new System.Windows.Forms.Padding(2);
             this.fictional1.Name = "fictional1";
-            this.fictional1.Size = new System.Drawing.Size(936, 739);
+            this.fictional1.Size = new System.Drawing.Size(936, 658);
             this.fictional1.TabIndex = 31;
             // 
             // nonFictional1
             // 
             this.nonFictional1.BackColor = System.Drawing.Color.White;
             this.nonFictional1.Location = new System.Drawing.Point(-2, 54);
-            this.nonFictional1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nonFictional1.Margin = new System.Windows.Forms.Padding(2);
             this.nonFictional1.Name = "nonFictional1";
             this.nonFictional1.Size = new System.Drawing.Size(936, 777);
             this.nonFictional1.TabIndex = 32;
@@ -124,13 +124,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.nonFictional1);
-            this.Controls.Add(this.fictional1);
             this.Controls.Add(this.academic1);
             this.Controls.Add(this.lblAcadBooks);
             this.Controls.Add(this.lblNFBooks);
             this.Controls.Add(this.lblFBooks);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.nonFictional1);
+            this.Controls.Add(this.fictional1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookList";
             this.Size = new System.Drawing.Size(936, 860);
             this.Load += new System.EventHandler(this.BookList_Load);

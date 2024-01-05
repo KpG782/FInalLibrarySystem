@@ -44,39 +44,39 @@ namespace FInalLibrarySystem
             //pb5
             pb5.MouseHover += pb5_MouseHover;
             pb5.MouseLeave += pb5_MouseLeave;
-            pnl5.Visible = false; 
-            
+            pnl5.Visible = false;
+
             //pb6
             pb6.MouseHover += pb6_MouseHover;
             pb6.MouseLeave += pb6_MouseLeave;
             pnl6.Visible = false;
-          // pb7
+            // pb7
             pb7.MouseHover += pb7_MouseHover;
             pb7.MouseLeave += pb7_MouseLeave;
             pnl7.Visible = false;
 
             //pb8
-            /*
-             //  pb8.MouseHover += pb8_MouseHover;
-             pb8.MouseLeave += pb8_MouseLeave;
-             pnl8.Visible = false;
 
-             //pb9
-             pb9.MouseHover += pb9_MouseHover;
-             pb9.MouseLeave += pb9_MouseLeave;
-             pnl9.Visible = false;
+            pb8.MouseHover += pb8_MouseHover;
+            pb8.MouseLeave += pb8_MouseLeave;
+            pnl8.Visible = false;
 
-             //pb10
-             pb10.MouseHover += pb10_MouseHover;
-             pb10.MouseLeave += pb10_MouseLeave;
-             pnl10.Visible = false; */
+            //pb9
+            pb9.MouseHover += pb9_MouseHover;
+            pb9.MouseLeave += pb9_MouseLeave;
+            pnl9.Visible = false;
+
+            //pb10
+            pb10.MouseHover += pb10_MouseHover;
+            pb10.MouseLeave += pb10_MouseLeave;
+            pnl10.Visible = false;
 
 
         }
 
         private void LoadFictionalData()
         {
-            
+
 
             List<Book> fictionalBooks = booksManager1.GetFictionalBooks();
 
@@ -106,7 +106,8 @@ namespace FInalLibrarySystem
                     author1.Text = book.Author;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
-                } else if (book.Title == "1984")
+                }
+                else if (book.Title == "1984")
                 {
                     // Set the cover image for "1984" in the PictureBox
                     pb2.Image = ByteArrayToImage(book.Cover);
@@ -146,7 +147,8 @@ namespace FInalLibrarySystem
                     author3.Text = book.Author;
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
-                } else if (book.Title == "The Great Gatsby")
+                }
+                else if (book.Title == "The Great Gatsby")
                 {
                     // Set the cover image for "The Great Gatsby" in the PictureBox
                     pb4.Image = ByteArrayToImage(book.Cover);
@@ -206,6 +208,66 @@ namespace FInalLibrarySystem
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
+                else if (book.Title == "Jane Eyre")
+                {
+                    // Set the cover image for "The Catcher in the Rye" in the PictureBox
+                    pb8.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk8lbl1.Text = book.Title;
+                    bk8lbl2.Text = book.ISBN;
+                    bk8lbl3.Text = book.Category;
+                    bk8lbl4.Text = book.Author;
+                    bk8lbl5.Text = book.Copyright.ToString();
+                    bk8lbl6.Text = book.Publisher;
+                    bk8lbl7.Text = book.Status;
+                    bk8lbl8.Text = book.Description;
+                    title8.Text = book.Title;
+                    author8.Text = book.Author;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                }
+                else if (book.Title == "Brave New World")
+                {
+                    // Set the cover image for "The Catcher in the Rye" in the PictureBox
+                    pb9.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk9lbl1.Text = book.Title;
+                    bk9lbl2.Text = book.ISBN;
+                    bk9lbl3.Text = book.Category;
+                    bk9lbl4.Text = book.Author;
+                    bk9lbl5.Text = book.Copyright.ToString();
+                    bk9lbl6.Text = book.Publisher;
+                    bk9lbl7.Text = book.Status;
+                    bk9lbl8.Text = book.Description;
+                    title9.Text = book.Title;
+                    author9.Text = book.Author;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                }
+                else if (book.Title == "The Hobbit")
+                {
+                    // Set the cover image for "The Catcher in the Rye" in the PictureBox
+                    pb10.Image = ByteArrayToImage(book.Cover);
+
+                    // Additional logic for displaying other book information
+                    // For example, you might set labels or other controls with book details
+                    bk10lbl1.Text = book.Title;
+                    bk10lbl2.Text = book.ISBN;
+                    bk10lbl3.Text = book.Category;
+                    bk10lbl4.Text = book.Author;
+                    bk10lbl5.Text = book.Copyright.ToString();
+                    bk10lbl6.Text = book.Publisher;
+                    bk10lbl7.Text = book.Status;
+                    bk10lbl8.Text = book.Description;
+                    title10.Text = book.Title;
+                    author10.Text = book.Author;
+
+                    // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
+                }
                 else if (book.Title == "The Lord of the Rings")
                 {
                     // Set the cover image for "The Catcher in the Rye" in the PictureBox
@@ -227,9 +289,9 @@ namespace FInalLibrarySystem
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
             }
-            
 
-            }
+
+        }
 
         // Helper method to convert byte array to Image
         private Image ByteArrayToImage(byte[] byteArray)
@@ -288,7 +350,7 @@ namespace FInalLibrarySystem
 
         }
 
-       
+
 
         private void bk1lbl7_Click(object sender, EventArgs e)
         {
@@ -356,59 +418,59 @@ namespace FInalLibrarySystem
         }
 
         //pb6
-      private void pb6_MouseHover(object sender, EventArgs e)
-          {
-              pnl6.Visible = true;
-          }
+        private void pb6_MouseHover(object sender, EventArgs e)
+        {
+            pnl6.Visible = true;
+        }
 
-          private void pb6_MouseLeave(object sender, EventArgs e)
-          {
-              pnl6.Visible = false;
-          }
+        private void pb6_MouseLeave(object sender, EventArgs e)
+        {
+            pnl6.Visible = false;
+        }
 
         //pb7
-         private void pb7_MouseHover(object sender, EventArgs e)
-          {
-              pnl7.Visible = true;
-          }
+        private void pb7_MouseHover(object sender, EventArgs e)
+        {
+            pnl7.Visible = true;
+        }
 
-          private void pb7_MouseLeave(object sender, EventArgs e)
-          {
-              pnl7.Visible = false;
-          }
+        private void pb7_MouseLeave(object sender, EventArgs e)
+        {
+            pnl7.Visible = false;
+        }
 
         //pb8
-        /*private void pb8_MouseHover(object sender, EventArgs e)
-       {
-           pnl8.Visible = true;
-       }
+        private void pb8_MouseHover(object sender, EventArgs e)
+        {
+            pnl8.Visible = true;
+        }
 
-       private void pb8_MouseLeave(object sender, EventArgs e)
-       {
-           pnl8.Visible = false;
-       }
+        private void pb8_MouseLeave(object sender, EventArgs e)
+        {
+            pnl8.Visible = false;
+        }
 
-       //pb9
-       private void pb9_MouseHover(object sender, EventArgs e)
-       {
-           pnl9.Visible = true;
-       }
+        //pb9
+        private void pb9_MouseHover(object sender, EventArgs e)
+        {
+            pnl9.Visible = true;
+        }
 
-       private void pb9_MouseLeave(object sender, EventArgs e)
-       {
-           pnl9.Visible = false;
-       }
+        private void pb9_MouseLeave(object sender, EventArgs e)
+        {
+            pnl9.Visible = false;
+        }
 
-       //pb10
-       private void pb10_MouseHover(object sender, EventArgs e)
-       {
-           pnl10.Visible = true;
-       }
+        //pb10
+        private void pb10_MouseHover(object sender, EventArgs e)
+        {
+            pnl10.Visible = true;
+        }
 
-       private void pb10_MouseLeave(object sender, EventArgs e)
-       {
-           pnl10.Visible = false;
-       } */
+        private void pb10_MouseLeave(object sender, EventArgs e)
+        {
+            pnl10.Visible = false;
+        }
 
         private void pb8_Click(object sender, EventArgs e)
         {
@@ -467,7 +529,7 @@ namespace FInalLibrarySystem
 
         private void label2_Click(object sender, EventArgs e)
         {
-      
+
         }
 
         private void author1_Click(object sender, EventArgs e)
@@ -507,7 +569,7 @@ namespace FInalLibrarySystem
 
         private void author7_Click(object sender, EventArgs e)
         {
-                
+
         }
     }
 }
