@@ -25,8 +25,8 @@ namespace FInalLibrarySystem
         private void BorrowerList_Load(object sender, EventArgs e)
         {
             LoadStudentData();
-            BorrowerList b1 = new BorrowerList();
-            b1.Visible = true;
+
+            dgvStudents.Visible = true;
             teacher1.Visible = false;
 
         }
@@ -52,8 +52,8 @@ namespace FInalLibrarySystem
                     student.Email,
                     student.StudentID,
                     student.Section,
-                    student.Year,
-                    studentImage
+                    student.Year
+
                 // Add more columns as neededa
                 ); ;
             }
@@ -98,11 +98,34 @@ namespace FInalLibrarySystem
             teacher1.Visible = true;
         }
 
-        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+
+        
+
+        private void teacher1_Load(object sender, EventArgs e)
         {
-            BorrowerList b1 = new BorrowerList();
-            b1.Visible = true;
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            dgvStudents.Visible = true;
             teacher1.Visible = false;
+        }
+
+        private void dgvStudents_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void teacher2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lnkTeacher_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            dgvStudents.Visible = false;
+            teacher1.Visible = true;
         }
     }
 }

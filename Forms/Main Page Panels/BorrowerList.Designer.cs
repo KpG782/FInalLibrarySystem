@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkTeacher = new System.Windows.Forms.LinkLabel();
+            this.lnkStudent = new System.Windows.Forms.LinkLabel();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,48 +45,73 @@
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Picture = new System.Windows.Forms.DataGridViewImageColumn();
             this.teacher1 = new FInalLibrarySystem.Teacher();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.Location = new System.Drawing.Point(41, 29);
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(349, 38);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(75, 19);
-            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Size = new System.Drawing.Size(194, 62);
+            this.lblTitle.TabIndex = 14;
             this.lblTitle.Text = "Borrower List";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel2
+            // lnkTeacher
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(24, 110);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(44, 13);
-            this.linkLabel2.TabIndex = 11;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Student";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked_1);
+            this.lnkTeacher.AutoSize = true;
+            this.lnkTeacher.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkTeacher.LinkColor = System.Drawing.Color.Black;
+            this.lnkTeacher.Location = new System.Drawing.Point(466, 109);
+            this.lnkTeacher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnkTeacher.Name = "lnkTeacher";
+            this.lnkTeacher.Size = new System.Drawing.Size(87, 30);
+            this.lnkTeacher.TabIndex = 16;
+            this.lnkTeacher.TabStop = true;
+            this.lnkTeacher.Text = "Teacher";
+            this.lnkTeacher.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkTeacher_LinkClicked);
             // 
-            // linkLabel1
+            // lnkStudent
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(81, 110);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(47, 13);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Teacher";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
+            this.lnkStudent.AutoSize = true;
+            this.lnkStudent.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkStudent.LinkColor = System.Drawing.Color.Black;
+            this.lnkStudent.Location = new System.Drawing.Point(340, 109);
+            this.lnkStudent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnkStudent.Name = "lnkStudent";
+            this.lnkStudent.Size = new System.Drawing.Size(90, 30);
+            this.lnkStudent.TabIndex = 17;
+            this.lnkStudent.TabStop = true;
+            this.lnkStudent.Text = "Student";
+            this.lnkStudent.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // dgvStudents
             // 
-            this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudents.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStudents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvStudents.BackgroundColor = System.Drawing.Color.Black;
+            this.dgvStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvStudents.ColumnHeadersHeight = 40;
             this.dgvStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Username,
@@ -92,102 +121,117 @@
             this.Email,
             this.StudentID,
             this.Section,
-            this.Year,
-            this.Picture});
-            this.dgvStudents.Location = new System.Drawing.Point(18, 153);
+            this.Year});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvStudents.EnableHeadersVisualStyles = false;
+            this.dgvStudents.Location = new System.Drawing.Point(21, 177);
             this.dgvStudents.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStudents.Name = "dgvStudents";
+            this.dgvStudents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudents.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvStudents.RowHeadersWidth = 51;
-            this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(874, 375);
-            this.dgvStudents.TabIndex = 9;
+            this.dgvStudents.RowTemplate.Height = 40;
+            this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStudents.Size = new System.Drawing.Size(879, 447);
+            this.dgvStudents.TabIndex = 21;
+            this.dgvStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellContentClick_1);
             // 
             // ID
             // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
-            this.ID.Width = 125;
+            this.ID.Width = 40;
             // 
             // Username
             // 
+            this.Username.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Username.HeaderText = "Username";
             this.Username.MinimumWidth = 6;
             this.Username.Name = "Username";
-            this.Username.Width = 125;
+            this.Username.Width = 110;
             // 
             // FirstName
             // 
+            this.FirstName.FillWeight = 61.4306F;
             this.FirstName.HeaderText = "FirstName";
             this.FirstName.MinimumWidth = 6;
             this.FirstName.Name = "FirstName";
-            this.FirstName.Width = 125;
             // 
             // LastName
             // 
+            this.LastName.FillWeight = 61.4306F;
             this.LastName.HeaderText = "LastName";
             this.LastName.MinimumWidth = 6;
             this.LastName.Name = "LastName";
-            this.LastName.Width = 125;
             // 
             // MI
             // 
+            this.MI.FillWeight = 32.05075F;
             this.MI.HeaderText = "MI";
             this.MI.MinimumWidth = 6;
             this.MI.Name = "MI";
-            this.MI.Width = 125;
             // 
             // Email
             // 
+            this.Email.FillWeight = 123.3468F;
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
-            this.Email.Width = 125;
             // 
             // StudentID
             // 
+            this.StudentID.FillWeight = 61.4306F;
             this.StudentID.HeaderText = "StudentID";
             this.StudentID.MinimumWidth = 6;
             this.StudentID.Name = "StudentID";
-            this.StudentID.Width = 125;
             // 
             // Section
             // 
+            this.Section.FillWeight = 61.4306F;
             this.Section.HeaderText = "Section";
             this.Section.MinimumWidth = 6;
             this.Section.Name = "Section";
-            this.Section.Width = 125;
             // 
             // Year
             // 
+            this.Year.FillWeight = 34.88F;
             this.Year.HeaderText = "Year";
             this.Year.MinimumWidth = 6;
             this.Year.Name = "Year";
-            this.Year.Width = 125;
-            // 
-            // Picture
-            // 
-            this.Picture.HeaderText = "Picture";
-            this.Picture.MinimumWidth = 6;
-            this.Picture.Name = "Picture";
-            this.Picture.Width = 125;
             // 
             // teacher1
             // 
-            this.teacher1.Location = new System.Drawing.Point(3, 137);
+            this.teacher1.Location = new System.Drawing.Point(21, 177);
             this.teacher1.Name = "teacher1";
-            this.teacher1.Size = new System.Drawing.Size(879, 456);
-            this.teacher1.TabIndex = 12;
+            this.teacher1.Size = new System.Drawing.Size(879, 447);
+            this.teacher1.TabIndex = 20;
+            this.teacher1.Load += new System.EventHandler(this.teacher2_Load);
             // 
             // BorrowerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.Controls.Add(this.teacher1);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dgvStudents);
+            this.Controls.Add(this.teacher1);
+            this.Controls.Add(this.lnkStudent);
+            this.Controls.Add(this.lnkTeacher);
             this.Controls.Add(this.lblTitle);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BorrowerList";
@@ -200,10 +244,10 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lnkTeacher;
+        private System.Windows.Forms.LinkLabel lnkStudent;
+        private Teacher teacher1;
         private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
@@ -214,7 +258,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn Year;
-        private System.Windows.Forms.DataGridViewImageColumn Picture;
-        private Teacher teacher1;
     }
 }

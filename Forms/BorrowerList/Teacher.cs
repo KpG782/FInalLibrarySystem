@@ -57,12 +57,16 @@ namespace FInalLibrarySystem
                     teacher.MiddleInitial,
                     teacher.Email,
                     teacher.EmployeeID, // Assuming this identifies a teacher uniquely like StudentID does for students
-                    teacher.Department,
-                    teacherImage
+                    teacher.Department
+
                 // Add more columns as needed
                 );
             }
         }
 
+        private void dgvTeachers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
