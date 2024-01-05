@@ -33,8 +33,8 @@
             this.lblNFBooks = new System.Windows.Forms.LinkLabel();
             this.lblAcadBooks = new System.Windows.Forms.LinkLabel();
             this.academic1 = new FInalLibrarySystem.Academic();
-            this.fictional1 = new FInalLibrarySystem.Fictional();
             this.nonFictional1 = new FInalLibrarySystem.Non_Fictional();
+            this.fictional1 = new FInalLibrarySystem.Fictional();
             this.SuspendLayout();
             // 
             // lblFBooks
@@ -100,15 +100,6 @@
             this.academic1.Size = new System.Drawing.Size(936, 739);
             this.academic1.TabIndex = 30;
             // 
-            // fictional1
-            // 
-            this.fictional1.BackColor = System.Drawing.Color.White;
-            this.fictional1.Location = new System.Drawing.Point(0, 54);
-            this.fictional1.Margin = new System.Windows.Forms.Padding(2);
-            this.fictional1.Name = "fictional1";
-            this.fictional1.Size = new System.Drawing.Size(936, 658);
-            this.fictional1.TabIndex = 31;
-            // 
             // nonFictional1
             // 
             this.nonFictional1.BackColor = System.Drawing.Color.White;
@@ -118,6 +109,15 @@
             this.nonFictional1.Size = new System.Drawing.Size(936, 777);
             this.nonFictional1.TabIndex = 32;
             this.nonFictional1.Load += new System.EventHandler(this.nonFictional1_Load);
+            // 
+            // fictional1
+            // 
+            this.fictional1.BackColor = System.Drawing.Color.White;
+            this.fictional1.Location = new System.Drawing.Point(0, 54);
+            this.fictional1.Margin = new System.Windows.Forms.Padding(2);
+            this.fictional1.Name = "fictional1";
+            this.fictional1.Size = new System.Drawing.Size(936, 658);
+            this.fictional1.TabIndex = 31;
             // 
             // BookList
             // 

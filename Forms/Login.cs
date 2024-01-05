@@ -11,11 +11,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MySql.Data; // don't forget this
 using MySql.Data.MySqlClient; //don't forget this
 using FInalLibrarySystem.Database; //don't forget this
+using System.Diagnostics;
 
 namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+        private Stopwatch loginTimer;
         private int loggedInUserId; // Add a variable to store the logged-in user ID
         public Point mouseLocation;
         //set global object
@@ -36,7 +38,8 @@ namespace FInalLibrarySystem
         public frmLogin()
         {
             InitializeComponent();
-           
+           loginTimer = new Stopwatch(); // Add this line to instantiate the Stopwatch
+
             
         }
 
@@ -218,84 +221,89 @@ namespace FInalLibrarySystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-           
+            DataTable table = new DataTable(); // Declare and initialize the DataTable outside the try block
 
-
-            //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            //creation of connection of database
-            Database.MyDB db = new Database.MyDB();
-
-            string username = txtEmail.Text;
-            string password = txtPass.Text;
-
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `app_users` WHERE `username` = @usn AND `password` = @pass", db.getConnection());
-
-
-            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            //check if this user exists or not 
-            if (table.Rows.Count > 0) //if exists
+            try
             {
+                // Start the timer before the database operation
+                loginTimer.Start();
 
-                loggedInUserId = Convert.ToInt32(table.Rows[0]["id"]);
+                //DATABASEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                //creation of connection of database
+                Database.MyDB db = new Database.MyDB();
 
+                string username = txtEmail.Text;
+                string password = txtPass.Text;
 
-                // Create an instance of the Users class
-                Users usersManager = new Users();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `app_users` WHERE `username` = @usn AND `password` = @pass", db.getConnection());
 
-                //
-                BookBorrowing bookBorrowingForm = new BookBorrowing();
-
-                // Set the logged-in user ID in the BookBorrowing class
- 
-
-
-                // Get the user data by ID
-                Users.User userProfile = usersManager.GetUserById(loggedInUserId);
-
-                mainPage.Enabled = true;
-                mainPage.Show();
-
-                //hides the frmlogin
-                this.Visible = false;
+                command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
+                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
 
 
-                if (loggedInUserId == 2)
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+
+                // Stop the timer after the database operation
+                loginTimer.Stop();
+
+                // Your existing code here...
+
+                // Show the elapsed time in decimals
+                MessageBox.Show($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Reset the timer for the next login attempt
+                loginTimer.Reset();
+
+                // Check the results of the database operation
+                if (table.Rows.Count > 0) //if exists
                 {
-                    // Display the UserId in a MessageBox
+                    loggedInUserId = Convert.ToInt32(table.Rows[0]["id"]);
 
-                    MessageBox.Show("Gumana yung no.2");
+                    // Create an instance of the Users class
+                    Users usersManager = new Users();
 
-                    this.Refresh();
+                    // Get the user data by ID
+                    Users.User userProfile = usersManager.GetUserById(loggedInUserId);
 
+                    mainPage.Enabled = true;
+                    mainPage.Show();
+
+                    //hides the frmlogin
+                    this.Visible = false;
+
+                    if (loggedInUserId == 2)
+                    {
+                        // Display the UserId in a MessageBox
+                        MessageBox.Show("Gumana yung no.2");
+                        this.Refresh();
+                    }
                 }
+                else //if not
+                {
+                    //check if username is empty
+                    if (username.Trim().Equals(""))
+                    {
+                        MessageBox.Show("Enter Your Username To Login", "Empty Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
 
+                    //check if password is empty
+                    else if (password.Trim().Equals(""))
+                    {
+                        MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    //check if data is exists
+                    else
+                    {
+                        MessageBox.Show("Wrong Username or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-            else //if not
+            catch (Exception ex)
             {
-                //check if username is empty
-                if (username.Trim().Equals(""))
-                {
-                    MessageBox.Show("Enter Your Username To Login", "Empty Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                //check if password is empty
-                else if (password.Trim().Equals(""))
-                {
-                    MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                //check if data is exists
-                else
-                {
-                    MessageBox.Show("Wrong Username or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
