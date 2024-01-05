@@ -105,7 +105,6 @@
   <ItemGroup>
     <Compile Include="Database\BookBorrows.cs" />
     <Compile Include="Database\Books.cs" />
-    <Compile Include="Database\BorrowedDetails.cs" />
     <Compile Include="Database\MyDB.cs" />
     <Compile Include="Database\Users.cs" />
     <Compile Include="Forms\Book Borrowing\bookDetails.cs">
@@ -174,11 +173,11 @@
     <Compile Include="Forms\Booklist Panels\Non-Fictional.Designer.cs">
       <DependentUpon>Non-Fictional.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main Page Panels\PenaltyPanel.cs">
+    <Compile Include="Forms\Main Page Panels\ReceiptForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Main Page Panels\PenaltyPanel.Designer.cs">
-      <DependentUpon>PenaltyPanel.cs</DependentUpon>
+    <Compile Include="Forms\Main Page Panels\ReceiptForm.Designer.cs">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SignUp Panels\StudentSignUp.cs">
       <SubType>UserControl</SubType>
@@ -245,8 +244,8 @@
     <EmbeddedResource Include="Forms\Booklist Panels\Non-Fictional.resx">
       <DependentUpon>Non-Fictional.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main Page Panels\PenaltyPanel.resx">
-      <DependentUpon>PenaltyPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Main Page Panels\ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUp Panels\StudentSignUp.resx">
       <DependentUpon>StudentSignUp.cs</DependentUpon>

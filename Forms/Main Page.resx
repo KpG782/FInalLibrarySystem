@@ -118,16 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="linkLabel3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAQhJREFUWEftls0NwjAMhXtihKpiE1ip3QPYDwELAGOEZ+cFpVVAJgmCQz7Javzz
-        HMu9pGs0XuGcW8EOsBusGLa1A83eS+vAtnaguXqp2zCUBXtkDaDQzYZtvjMAS4prklDXNtA28H8DIDTC
-        Bp4VngfYKOcYLQB07VA3E8KdfNSdYXJhQM4SEyaWK4xVGyC+KHyFOKbbCfhwpQEEhHrYUZNzLrA1y574
-        VMUBBISXQyQvF3y68gACUvI7TrTZ2mOQU+jaoe6tEGnZRE83iTYBdO1Q97lwAdvkDwDu/BbBtnaoqwbb
-        2qFO+NmLKDzJtgxlwR5ZA+y8tA5sawcaeZbLEGETRbBto7Gg6x6aScjRSVho5wAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="UProfileLinkList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

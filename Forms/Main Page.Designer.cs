@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.UProfileLinkList = new System.Windows.Forms.LinkLabel();
             this.SettingsLink = new System.Windows.Forms.LinkLabel();
             this.BookReservationLink = new System.Windows.Forms.LinkLabel();
@@ -38,33 +37,16 @@
             this.BorrowerListLink = new System.Windows.Forms.LinkLabel();
             this.BookListLink = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.bookReturning1 = new FInalLibrarySystem.BookReturning();
             this.bookBorrowing1 = new FInalLibrarySystem.BookBorrowing();
             this.borrowerList1 = new FInalLibrarySystem.BorrowerList();
             this.bookList1 = new FInalLibrarySystem.BookList();
             this.profile1 = new FInalLibrarySystem.Profile();
             this.bookReservation1 = new FInalLibrarySystem.BookReservation();
+            this.bookReservation2 = new FInalLibrarySystem.BookReservation();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.linkLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.Image = ((System.Drawing.Image)(resources.GetObject("linkLabel3.Image")));
-            this.linkLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel3.LinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Location = new System.Drawing.Point(21, 537);
-            this.linkLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(90, 52);
-            this.linkLabel3.TabIndex = 25;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Penalty";
-            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // UProfileLinkList
             // 
@@ -109,7 +91,7 @@
             this.BookReservationLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookReservationLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookReservationLink.LinkColor = System.Drawing.Color.White;
-            this.BookReservationLink.Location = new System.Drawing.Point(21, 472);
+            this.BookReservationLink.Location = new System.Drawing.Point(21, 399);
             this.BookReservationLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BookReservationLink.Name = "BookReservationLink";
             this.BookReservationLink.Size = new System.Drawing.Size(151, 52);
@@ -127,7 +109,7 @@
             this.BookReturningLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookReturningLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookReturningLink.LinkColor = System.Drawing.Color.White;
-            this.BookReturningLink.Location = new System.Drawing.Point(21, 408);
+            this.BookReturningLink.Location = new System.Drawing.Point(21, 468);
             this.BookReturningLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BookReturningLink.Name = "BookReturningLink";
             this.BookReturningLink.Size = new System.Drawing.Size(142, 52);
@@ -202,17 +184,17 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2ControlBox1
+            // closeButton
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1076, 4);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
-            this.guna2ControlBox1.TabIndex = 34;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.closeButton.IconColor = System.Drawing.Color.White;
+            this.closeButton.Location = new System.Drawing.Point(1076, 4);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(34, 24);
+            this.closeButton.TabIndex = 34;
+            this.closeButton.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // bookReturning1
             // 
@@ -270,15 +252,23 @@
             this.bookReservation1.Size = new System.Drawing.Size(926, 860);
             this.bookReservation1.TabIndex = 31;
             // 
+            // bookReservation2
+            // 
+            this.bookReservation2.BackColor = System.Drawing.Color.White;
+            this.bookReservation2.Location = new System.Drawing.Point(192, 4);
+            this.bookReservation2.Margin = new System.Windows.Forms.Padding(2);
+            this.bookReservation2.Name = "bookReservation2";
+            this.bookReservation2.Size = new System.Drawing.Size(917, 683);
+            this.bookReservation2.TabIndex = 36;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1112, 687);
-            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.UProfileLinkList);
             this.Controls.Add(this.SettingsLink);
             this.Controls.Add(this.BookReservationLink);
@@ -291,6 +281,7 @@
             this.Controls.Add(this.bookReturning1);
             this.Controls.Add(this.bookBorrowing1);
             this.Controls.Add(this.borrowerList1);
+            this.Controls.Add(this.bookReservation2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -305,8 +296,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel UProfileLinkList;
         private System.Windows.Forms.LinkLabel SettingsLink;
         private System.Windows.Forms.LinkLabel BookReservationLink;
@@ -321,7 +310,8 @@
         private BookReservation bookReservation1;
        
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox closeButton;
         private BookReturning bookReturning1;
+        private BookReservation bookReservation2;
     }
 }

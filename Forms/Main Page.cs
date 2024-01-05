@@ -31,7 +31,7 @@ namespace FInalLibrarySystem
             borrowerList1.Visible = false;
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
-            bookReservation1.Visible = false;
+            bookReservation2.Visible = false;
             
 
 
@@ -158,24 +158,12 @@ namespace FInalLibrarySystem
             borrowerList1.Visible = false;
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
-            bookReservation1.Visible = true;
+            bookReservation2.Visible = true;
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //set if visibile or not
-            profile1.Visible = false;
-            bookList1.Visible = false;
-            borrowerList1.Visible = false;
-            bookBorrowing1.Visible = false;
-            bookReturning1.Visible = false;
-            bookReservation1.Visible = false;
-        }
 
-        private void penalty1_Load_2(object sender, EventArgs e)
-        {
 
-        }
+     
 
         private void MainPage_Shown(object sender, EventArgs e)
         {
@@ -188,11 +176,6 @@ namespace FInalLibrarySystem
         }
 
 
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {

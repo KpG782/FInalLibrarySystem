@@ -340,7 +340,7 @@
             this.Column6.HeaderText = "Book_ID";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
+            this.Column6.Width = 40;
             // 
             // Column7
             // 

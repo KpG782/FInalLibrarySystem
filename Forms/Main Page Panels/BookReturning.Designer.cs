@@ -31,21 +31,6 @@
             this.MainPanel = new System.Windows.Forms.Panel();
             this.SecondaryPanel = new System.Windows.Forms.Panel();
             this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.PrimaryPanel = new System.Windows.Forms.Panel();
-            this.ConditionComboBox = new System.Windows.Forms.ComboBox();
-            this.ConditionLabel = new System.Windows.Forms.Label();
-            this.UpdateButton = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.DateLabel = new System.Windows.Forms.Label();
-            this.AuthorLabel = new System.Windows.Forms.Label();
-            this.TitleLabel = new System.Windows.Forms.Label();
-            this.SearchTextBox = new System.Windows.Forms.TextBox();
-            this.SearchByComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ClearButton = new System.Windows.Forms.Button();
-            this.TitleTextBox = new System.Windows.Forms.TextBox();
-            this.ReturnButton = new System.Windows.Forms.Button();
-            this.AuthorTextBox = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,8 +42,24 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrimaryPanel = new System.Windows.Forms.Panel();
+            this.ConditionComboBox = new System.Windows.Forms.ComboBox();
+            this.ConditionLabel = new System.Windows.Forms.Label();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateLabel = new System.Windows.Forms.Label();
+            this.AuthorLabel = new System.Windows.Forms.Label();
+            this.TitleLabel = new System.Windows.Forms.Label();
+            this.SearchTextBox = new System.Windows.Forms.TextBox();
+            this.SearchByComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.BookPictureBox = new System.Windows.Forms.PictureBox();
-            this.penaltyPanel1 = new FInalLibrarySystem.Forms.PenaltyPanel();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.TitleTextBox = new System.Windows.Forms.TextBox();
+            this.ReturnButton = new System.Windows.Forms.Button();
+            this.AuthorTextBox = new System.Windows.Forms.TextBox();
+            this.pnlReceiptForm = new FInalLibrarySystem.Forms.Main_Page_Panels.ReceiptForm();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
@@ -68,7 +69,7 @@
             // 
             // MainPanel
             // 
-            this.MainPanel.Controls.Add(this.penaltyPanel1);
+            this.MainPanel.Controls.Add(this.pnlReceiptForm);
             this.MainPanel.Controls.Add(this.SecondaryPanel);
             this.MainPanel.Controls.Add(this.PrimaryPanel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -119,6 +120,84 @@
             this.DataGridView.RowTemplate.Height = 24;
             this.DataGridView.Size = new System.Drawing.Size(501, 676);
             this.DataGridView.TabIndex = 0;
+            this.DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Issue_ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 30;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Student_ID";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 40;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Student_Name";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Student_Course";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Student_Email";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Book_ID";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Book_Title";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Book_Author";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Book_IssueDate";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 125;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Book_DueDate";
+            this.Column11.MinimumWidth = 6;
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 125;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Book_Status";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 125;
             // 
             // PrimaryPanel
             // 
@@ -126,6 +205,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PrimaryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PrimaryPanel.Controls.Add(this.lblTitle);
             this.PrimaryPanel.Controls.Add(this.ConditionComboBox);
             this.PrimaryPanel.Controls.Add(this.ConditionLabel);
             this.PrimaryPanel.Controls.Add(this.UpdateButton);
@@ -260,6 +340,17 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "label1";
             // 
+            // BookPictureBox
+            // 
+            this.BookPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BookPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BookPictureBox.Location = new System.Drawing.Point(86, 63);
+            this.BookPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.BookPictureBox.Name = "BookPictureBox";
+            this.BookPictureBox.Size = new System.Drawing.Size(194, 275);
+            this.BookPictureBox.TabIndex = 6;
+            this.BookPictureBox.TabStop = false;
+            // 
             // ClearButton
             // 
             this.ClearButton.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -295,6 +386,7 @@
             this.ReturnButton.TabIndex = 3;
             this.ReturnButton.Text = "RETURN";
             this.ReturnButton.UseVisualStyleBackColor = false;
+            this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click_1);
             // 
             // AuthorTextBox
             // 
@@ -305,100 +397,24 @@
             this.AuthorTextBox.Size = new System.Drawing.Size(237, 20);
             this.AuthorTextBox.TabIndex = 1;
             // 
-            // Column1
+            // pnlReceiptForm
             // 
-            this.Column1.HeaderText = "Issue_ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 30;
+            this.pnlReceiptForm.Location = new System.Drawing.Point(288, 92);
+            this.pnlReceiptForm.Name = "pnlReceiptForm";
+            this.pnlReceiptForm.Size = new System.Drawing.Size(295, 499);
+            this.pnlReceiptForm.TabIndex = 3;
+            this.pnlReceiptForm.Load += new System.EventHandler(this.pnlReceiptForm_Load);
             // 
-            // Column2
+            // lblTitle
             // 
-            this.Column2.HeaderText = "Student_ID";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 40;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Student_Name";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Student_Course";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Student_Email";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Book_ID";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Book_Title";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Book_Author";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Book_IssueDate";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Book_DueDate";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 125;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Book_Status";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 125;
-            // 
-            // BookPictureBox
-            // 
-            this.BookPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BookPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BookPictureBox.Location = new System.Drawing.Point(86, 63);
-            this.BookPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.BookPictureBox.Name = "BookPictureBox";
-            this.BookPictureBox.Size = new System.Drawing.Size(194, 275);
-            this.BookPictureBox.TabIndex = 6;
-            this.BookPictureBox.TabStop = false;
-            // 
-            // penaltyPanel1
-            // 
-            this.penaltyPanel1.Location = new System.Drawing.Point(230, 66);
-            this.penaltyPanel1.Name = "penaltyPanel1";
-            this.penaltyPanel1.Size = new System.Drawing.Size(440, 367);
-            this.penaltyPanel1.TabIndex = 3;
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.Location = new System.Drawing.Point(112, 20);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(151, 18);
+            this.lblTitle.TabIndex = 17;
+            this.lblTitle.Text = "Book Returning";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BookReturning
             // 
@@ -451,6 +467,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private Forms.PenaltyPanel penaltyPanel1;
+        private Forms.Main_Page_Panels.ReceiptForm pnlReceiptForm;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

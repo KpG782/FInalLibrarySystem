@@ -59,9 +59,23 @@ namespace FInalLibrarySystem
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
         {
-            penaltyPanel1.Visible = false;
+            //dito ko lagay yung load
+            pnlReceiptForm.Visible = false;
         }
 
+        private void DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
 
+        private void ReturnButton_Click_1(object sender, EventArgs e)
+        {
+            pnlReceiptForm.Visible=true;
+        }
+
+        private void pnlReceiptForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

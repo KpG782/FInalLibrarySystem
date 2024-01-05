@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FInalLibrarySystem.Forms
+namespace FInalLibrarySystem.Forms.Main_Page_Panels
 {
-    public partial class PenaltyPanel : UserControl
+    public partial class ReceiptForm : UserControl
     {
-        public PenaltyPanel()
+        public ReceiptForm()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
         }
     }
 }
