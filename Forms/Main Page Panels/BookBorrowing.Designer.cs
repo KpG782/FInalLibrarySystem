@@ -52,9 +52,9 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainPanel.SuspendLayout();
             this.SecondaryPanel.SuspendLayout();
@@ -176,9 +176,9 @@
             this.Column6,
             this.Column7,
             this.Category,
-            this.Column8,
-            this.Column10,
             this.ISBN,
+            this.Column10,
+            this.Column8,
             this.Copyright});
             this.dgvShow.Location = new System.Drawing.Point(3, 2);
             this.dgvShow.Margin = new System.Windows.Forms.Padding(2);
@@ -354,12 +354,10 @@
             this.Category.HeaderText = "Category";
             this.Category.Name = "Category";
             // 
-            // Column8
+            // ISBN
             // 
-            this.Column8.HeaderText = "Book_Author";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
+            this.ISBN.HeaderText = "ISBN";
+            this.ISBN.Name = "ISBN";
             // 
             // Column10
             // 
@@ -368,10 +366,12 @@
             this.Column10.Name = "Column10";
             this.Column10.Width = 125;
             // 
-            // ISBN
+            // Column8
             // 
-            this.ISBN.HeaderText = "ISBN";
-            this.ISBN.Name = "ISBN";
+            this.Column8.HeaderText = "Book_Author";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
             // 
             // Copyright
             // 
@@ -424,9 +424,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Copyright;
     }
 }
