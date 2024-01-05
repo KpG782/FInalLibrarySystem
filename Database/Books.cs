@@ -241,8 +241,10 @@ namespace FInalLibrarySystem.Database
             return allBooks;
         }
 
-        // Add a method to insert a borrowed book record
-        public bool BorrowBook(int bookID, int userID, DateTime borrowedDate, DateTime returnDate, string note)
+
+
+        // Get book details by ISBN
+        public Book GetBookDetailsByISBN(string isbn)
         {
             try
             {
@@ -250,54 +252,12 @@ namespace FInalLibrarySystem.Database
                 {
                     db.openConnection(); // Open the database connection
 
-                    // SQL query to insert borrowed book details
-                    string insertQuery = "INSERT INTO borrowedDetails (bookID, userID, borrowedDate, returnedDate, note) " +
-                                         "VALUES (@bookID, @userID, @borrowedDate, @returnedDate, @note)";
-
-                    using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection))
-                    {
-                        // Use parameters to prevent SQL injection
-                        insertCommand.Parameters.AddWithValue("@bookID", bookID);
-                        insertCommand.Parameters.AddWithValue("@userID", userID);
-                        insertCommand.Parameters.AddWithValue("@borrowedDate", borrowedDate);
-                        insertCommand.Parameters.AddWithValue("@returnedDate", returnDate);
-                        insertCommand.Parameters.AddWithValue("@note", note);
-
-                        // Execute the insert query
-                        int rowsAffected = insertCommand.ExecuteNonQuery();
-
-                        // Return true if the operation is successful
-                        return rowsAffected > 0;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                // Handle exceptions (log or notify the user)
-                Console.WriteLine($"Error: {ex.Message}");
-                return false;
-            }
-            finally
-            {
-                db.closeConnection(); // Close the database connection
-            }
-        }
-
-        //get book details by id
-        public Book GetBookDetailsById(int bookID)
-        {
-            try
-            {
-                using (MySqlConnection connection = db.getConnection())
-                {
-                    db.openConnection(); // Open the database connection
-
-                    // Modify the query to retrieve book details by ID
-                    string query = "SELECT * FROM books WHERE id = @bookID";
+                    // Modify the query to retrieve book details by ISBN
+                    string query = "SELECT * FROM books WHERE ISBN = @isbn";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@bookID", bookID);
+                        command.Parameters.AddWithValue("@isbn", isbn);
 
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
@@ -331,7 +291,6 @@ namespace FInalLibrarySystem.Database
 
             return null; // Return null if the book is not found or an error occurs
         }
-
 
 
         public bool UpdateBookStatus(int bookID, string newStatus)

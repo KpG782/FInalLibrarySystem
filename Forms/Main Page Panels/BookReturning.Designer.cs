@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.pnlReceiptForm = new FInalLibrarySystem.Forms.Main_Page_Panels.ReceiptForm();
             this.SecondaryPanel = new System.Windows.Forms.Panel();
             this.DataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +44,7 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrimaryPanel = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.ConditionComboBox = new System.Windows.Forms.ComboBox();
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.UpdateButton = new System.Windows.Forms.Button();
@@ -58,8 +60,6 @@
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.ReturnButton = new System.Windows.Forms.Button();
             this.AuthorTextBox = new System.Windows.Forms.TextBox();
-            this.pnlReceiptForm = new FInalLibrarySystem.Forms.Main_Page_Panels.ReceiptForm();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
@@ -79,6 +79,14 @@
             this.MainPanel.Size = new System.Drawing.Size(918, 687);
             this.MainPanel.TabIndex = 0;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // pnlReceiptForm
+            // 
+            this.pnlReceiptForm.Location = new System.Drawing.Point(288, 92);
+            this.pnlReceiptForm.Name = "pnlReceiptForm";
+            this.pnlReceiptForm.Size = new System.Drawing.Size(295, 499);
+            this.pnlReceiptForm.TabIndex = 3;
+            this.pnlReceiptForm.Load += new System.EventHandler(this.pnlReceiptForm_Load);
             // 
             // SecondaryPanel
             // 
@@ -226,6 +234,17 @@
             this.PrimaryPanel.Name = "PrimaryPanel";
             this.PrimaryPanel.Size = new System.Drawing.Size(398, 679);
             this.PrimaryPanel.TabIndex = 2;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.Location = new System.Drawing.Point(112, 20);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(151, 18);
+            this.lblTitle.TabIndex = 17;
+            this.lblTitle.Text = "Book Returning";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ConditionComboBox
             // 
@@ -396,25 +415,6 @@
             this.AuthorTextBox.Name = "AuthorTextBox";
             this.AuthorTextBox.Size = new System.Drawing.Size(237, 20);
             this.AuthorTextBox.TabIndex = 1;
-            // 
-            // pnlReceiptForm
-            // 
-            this.pnlReceiptForm.Location = new System.Drawing.Point(288, 92);
-            this.pnlReceiptForm.Name = "pnlReceiptForm";
-            this.pnlReceiptForm.Size = new System.Drawing.Size(295, 499);
-            this.pnlReceiptForm.TabIndex = 3;
-            this.pnlReceiptForm.Load += new System.EventHandler(this.pnlReceiptForm_Load);
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.Location = new System.Drawing.Point(112, 20);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(151, 18);
-            this.lblTitle.TabIndex = 17;
-            this.lblTitle.Text = "Book Returning";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BookReturning
             // 

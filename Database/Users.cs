@@ -332,6 +332,7 @@ namespace FInalLibrarySystem.Database
 
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
 
+
                         return count > 0;
                     }
                 }
@@ -413,6 +414,63 @@ namespace FInalLibrarySystem.Database
             }
         }
 
+        //checker for the borrowing system
+        public User GetUserByStudentOrEmployeeId(string studentOrEmployeeId)
+        {
+            User user = null;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT * FROM `app_users` WHERE `studentID` = @id OR `employeeID` = @id";
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
+                    {
+                        adapter.SelectCommand.Parameters.Add("@id", MySqlDbType.VarChar).Value = studentOrEmployeeId;
+
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+
+                        if (table.Rows.Count > 0)
+                        {
+                            DataRow row = table.Rows[0];
+
+                            user = new User
+                            {
+                                Id = Convert.ToInt32(row["id"]),
+                                Username = row["username"].ToString(),
+                                Password = row["password"].ToString(),
+                                Email = row["email"].ToString(),
+                                FirstName = row["first_name"].ToString(),
+                                LastName = row["last_name"].ToString(),
+                                MiddleInitial = row["middle_initial"].ToString(),
+                                Role = row["role"].ToString(),
+                                Department = row["department"].ToString(),
+                                StudentID = row["studentID"].ToString(),
+                                EmployeeID = row["employeeID"].ToString(),
+                                Section = row["section"].ToString(),
+                                Year = row["year"].ToString(),
+                                Picture = (byte[])row["picture"],
+                                Money = Convert.ToInt32(row["money"])
+                            };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return user;
+        }
 
     }
 }
