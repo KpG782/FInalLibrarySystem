@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -53,7 +54,7 @@ namespace FInalLibrarySystem.Database
 
                 if (user != null && user.Role == "Teacher" && CountUserBorrows(userID) >= 3)
                 {
-                    MessageBox.Show("Students can only borrow up to 2 books.");
+                    MessageBox.Show("Teachers can only borrow up to 3 books.");
                     return false; // Exit the method early
                 }
 
@@ -130,6 +131,186 @@ namespace FInalLibrarySystem.Database
             finally
             {
                 db.closeConnection();
+            }
+        }
+
+
+        public List<BorrowedBook> GetAllBorrowedBooks()
+        {
+            List<BorrowedBook> borrowedBooks = new List<BorrowedBook>();
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection();
+
+                    string query = "SELECT * FROM bookborrows";
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+
+                        foreach (DataRow row in table.Rows)
+                        {
+                            BorrowedBook borrowedBook = new BorrowedBook
+                            {
+                                ISBN = row["ISBN"].ToString(),
+                                UserID = row["userID"].ToString(),
+                                Username = row["username"].ToString(),
+                                BookTitle = row["bookTitle"].ToString(),
+                                BookAuthor = row["bookAuthor"].ToString(),
+                                Borrowed = Convert.ToDateTime(row["borrowed"]),
+                                Returned = Convert.ToDateTime(row["returned"]),
+                                Reserved = Convert.ToDateTime(row["reserved"]),
+                                Picture = (byte[])row["picture"]
+                            };
+
+                            borrowedBooks.Add(borrowedBook);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+
+            return borrowedBooks;
+        }
+
+        public BorrowedBook GetBorrowedBookByISBN(string isbn)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection();
+
+                    string query = "SELECT * FROM bookborrows WHERE ISBN = @ISBN";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ISBN", isbn);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new BorrowedBook
+                                {
+                                    ISBN = reader["ISBN"].ToString(),
+                                    UserID = reader["userID"].ToString(),
+                                    Username = reader["username"].ToString(),
+                                    BookTitle = reader["bookTitle"].ToString(),
+                                    BookAuthor = reader["bookAuthor"].ToString(),
+                                    Borrowed = Convert.ToDateTime(reader["borrowed"]),
+                                    Returned = Convert.ToDateTime(reader["returned"]),
+                                    Reserved = Convert.ToDateTime(reader["reserved"]),
+                                    Picture = (byte[])reader["picture"]
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+
+            return null;
+        }
+
+        public BorrowedBook GetBorrowedBookByUserID(string userID)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection();
+
+                    string query = "SELECT * FROM bookborrows WHERE userID = @UserID";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserID", userID);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new BorrowedBook
+                                {
+                                    ISBN = reader["ISBN"].ToString(),
+                                    UserID = reader["userID"].ToString(),
+                                    Username = reader["username"].ToString(),
+                                    BookTitle = reader["bookTitle"].ToString(),
+                                    BookAuthor = reader["bookAuthor"].ToString(),
+                                    Borrowed = Convert.ToDateTime(reader["borrowed"]),
+                                    Returned = Convert.ToDateTime(reader["returned"]),
+                                    Reserved = Convert.ToDateTime(reader["reserved"]),
+                                    Picture = (byte[])reader["picture"]
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+
+            return null;
+        }
+
+
+        // Method to remove returned book from bookborrows database
+        public bool RemoveReturnedBook(string isbn)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to delete the returned book by ISBN
+                    string deleteQuery = "DELETE FROM bookborrows WHERE ISBN = @isbn";
+
+                    using (MySqlCommand deleteCommand = new MySqlCommand(deleteQuery, connection))
+                    {
+                        deleteCommand.Parameters.AddWithValue("@isbn", isbn);
+
+                        // Execute the delete query
+                        int rowsAffected = deleteCommand.ExecuteNonQuery();
+
+                        // Return true if the operation is successful
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log or notify the user)
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
             }
         }
 

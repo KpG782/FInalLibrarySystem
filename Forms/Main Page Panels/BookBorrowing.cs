@@ -22,6 +22,8 @@ namespace FInalLibrarySystem
         private Users usersManager;
         private BookBorrows bookBorrowsManager;  // Instantiate BookBorrows
         private string studentOrEmployeeId;  // Add this line
+
+
         public BookBorrowing()
         {
             InitializeComponent();
@@ -252,6 +254,7 @@ namespace FInalLibrarySystem
                 dgvShow.Rows.Add(book.Id, book.Title, book.ISBN, book.Category, book.Author, book.Status,  book.Copyright);
             }
         }
+
 
 
 
