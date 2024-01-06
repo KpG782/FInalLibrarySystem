@@ -47,6 +47,7 @@
             this.Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrimaryPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtpBorrow = new System.Windows.Forms.DateTimePicker();
             this.lblBorrow = new System.Windows.Forms.Label();
             this.AuthorLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@
             this.pbPicture = new System.Windows.Forms.PictureBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBorrow = new System.Windows.Forms.Button();
-            this.dtpBorrow = new System.Windows.Forms.DateTimePicker();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShow)).BeginInit();
@@ -238,6 +239,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PrimaryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PrimaryPanel.Controls.Add(this.btnUpdate);
             this.PrimaryPanel.Controls.Add(this.lblUserName);
             this.PrimaryPanel.Controls.Add(this.label4);
             this.PrimaryPanel.Controls.Add(this.UserID);
@@ -272,6 +274,16 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "BOOK ID:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtpBorrow
+            // 
+            this.dtpBorrow.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpBorrow.Location = new System.Drawing.Point(138, 633);
+            this.dtpBorrow.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpBorrow.Name = "dtpBorrow";
+            this.dtpBorrow.Size = new System.Drawing.Size(151, 20);
+            this.dtpBorrow.TabIndex = 0;
+            this.dtpBorrow.ValueChanged += new System.EventHandler(this.dtpBorrow_ValueChanged);
             // 
             // lblBorrow
             // 
@@ -344,7 +356,7 @@
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Location = new System.Drawing.Point(226, 680);
+            this.btnClear.Location = new System.Drawing.Point(251, 680);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(79, 32);
@@ -359,7 +371,7 @@
             this.btnBorrow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnBorrow.BackColor = System.Drawing.Color.White;
             this.btnBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrow.Location = new System.Drawing.Point(126, 680);
+            this.btnBorrow.Location = new System.Drawing.Point(54, 680);
             this.btnBorrow.Margin = new System.Windows.Forms.Padding(2);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(79, 32);
@@ -368,15 +380,20 @@
             this.btnBorrow.UseVisualStyleBackColor = false;
             this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
-            // dtpBorrow
+            // btnUpdate
             // 
-            this.dtpBorrow.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpBorrow.Location = new System.Drawing.Point(138, 633);
-            this.dtpBorrow.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpBorrow.Name = "dtpBorrow";
-            this.dtpBorrow.Size = new System.Drawing.Size(151, 20);
-            this.dtpBorrow.TabIndex = 0;
-            this.dtpBorrow.ValueChanged += new System.EventHandler(this.dtpBorrow_ValueChanged);
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Location = new System.Drawing.Point(156, 680);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(79, 32);
+            this.btnUpdate.TabIndex = 25;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // BookBorrowing
             // 
@@ -428,5 +445,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Copyright;
         private System.Windows.Forms.DateTimePicker dtpBorrow;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

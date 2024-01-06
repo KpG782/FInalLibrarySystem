@@ -349,6 +349,69 @@ namespace FInalLibrarySystem.Database
             return DateTime.MinValue;
         }
 
+        // Add this method to check if a book is borrowed
+        public bool IsBookBorrowed(string isbn)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection();
+
+                    string query = "SELECT COUNT(*) FROM bookborrows WHERE ISBN = @ISBN";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ISBN", isbn);
+
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+
+                        // Return true if the book is borrowed (count > 0)
+                        return count > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return false; // Return false in case of an error
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+        }
+
+        // Add this method to check if a user has borrowed books
+        public bool IsUserBorrowed(string userID)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection();
+
+                    string query = "SELECT COUNT(*) FROM bookborrows WHERE userID = @UserID";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserID", userID);
+
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+
+                        // Return true if the user has borrowed books (count > 0)
+                        return count > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return false; // Return false in case of an error
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+        }
 
 
     }

@@ -252,6 +252,42 @@ namespace FInalLibrarySystem
 
         private void btnBorrow_Click(object sender, EventArgs e)
         {
+            // Check if both txtUserID and txtBookID are empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text) && string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("User ID and ISBN are required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtUserID is empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text))
+            {
+                MessageBox.Show("User ID is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtBookID is empty
+            if (string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("ISBN is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if the entered ISBN is not in the bookBorrows table
+            if (!bookBorrows.IsBookBorrowed(txtBookID.Text))
+            {
+                MessageBox.Show("Book with ISBN " + txtBookID.Text + " is not available for return.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if the entered UserID is not associated with any borrowed books
+            if (!bookBorrows.IsUserBorrowed(txtUserID.Text))
+            {
+                MessageBox.Show("User with ID " + txtUserID.Text + " has no borrowed books.");
+                return; // Exit the method without further processing
+            }
+
+
             // Retrieve necessary information from UI elements
             string bookID = txtBookID.Text.Trim();
             string userID = txtUserID.Text.Trim();

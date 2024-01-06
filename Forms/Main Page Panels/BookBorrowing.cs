@@ -135,6 +135,16 @@ namespace FInalLibrarySystem
                 return;
             }
 
+            // Check if the selected return date is valid
+            DateTime selectedReturnDate = dtpBorrow.Value.Date;
+            DateTime currentDate = DateTime.Now.Date;
+
+            if (selectedReturnDate < currentDate)
+            {
+                MessageBox.Show("Invalid return date. Please select a date on or after the current date.");
+                return; // Exit the method without further processing
+            }
+
             // Retrieve book details from the database
             FInalLibrarySystem.Database.Book book = booksManager1.GetBookDetailsByISBN(isbn);
 
@@ -212,6 +222,14 @@ namespace FInalLibrarySystem
                 if (updateSuccess)
                 {
                     DisplayReturnedBooks();
+                    // Clear the UI elements after borrowing
+                    txtBookID.Text = "";
+                    txtUserID.Text = "";
+                    lblUserName.Text = "";
+                    lblBookTitle.Text = "";
+                    lblAuthorName.Text = "";
+                    dtpBorrow.Value = DateTime.Now; // Reset the DateTimePicker value
+                    pbPicture.Image = null; // Clear the PictureBox image
                 }
                 // Optionally, you can perform additional actions after a successful borrow.
             }
@@ -278,6 +296,12 @@ namespace FInalLibrarySystem
         private void dgvShow_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Handle DataGridView cell content click if needed
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            LoadAllBooks();
+            DisplayReturnedBooks();
         }
     }
 }
