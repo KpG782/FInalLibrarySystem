@@ -28,6 +28,10 @@ namespace FInalLibrarySystem
             usersManager = new Users(); // Initialize the Users class
             DisplayBooks();
             DisplayBookBorrows();
+
+            // Hide the pnlReceipt when the form loads
+            pnlReceipt.Visible = false;
+            pnlPlay.Visible = false;
         }
 
         // Update the DisplayReturnedBooks method in the BookReturning class
@@ -114,7 +118,7 @@ namespace FInalLibrarySystem
         private void MainPanel_Paint(object sender, PaintEventArgs e)
         {
             //dito ko lagay yung load
-            //pnlReceiptForm.Visible = false;
+            //pnlReceipt.Visible = true; 
         }
 
         private void DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -146,6 +150,7 @@ namespace FInalLibrarySystem
         {
 
         }
+
 
         private void txtBookID_TextChanged(object sender, EventArgs e)
         {
@@ -180,6 +185,7 @@ namespace FInalLibrarySystem
                 // Clear labels and picture box if book is not found
                 lblAuthorName.Text = "Author Not Available";
                 lblBookTitle.Text = "Book Not Available";
+                lblUserName.Text = "Username Not Available";
                 pbPicture.Image = null;
             }
         }
@@ -229,6 +235,7 @@ namespace FInalLibrarySystem
                 // Clear labels and picture box if the user is not found or has no borrowed books
                 lblAuthorName.Text = "Author Not Available";
                 lblBookTitle.Text = "Book Not Available";
+                lblUserName.Text = "Username Not Available";
                 pbPicture.Image = null;
             }
         }
@@ -252,6 +259,70 @@ namespace FInalLibrarySystem
             // Check if both book ID and user ID are provided
             if (!string.IsNullOrEmpty(bookID) && !string.IsNullOrEmpty(userID))
             {
+                // Check if the selected return date is valid
+                DateTime selectedReturnDate = dtpReturn.Value.Date;
+                DateTime currentDate = DateTime.Now.Date;
+
+                if (selectedReturnDate < currentDate)
+                {
+                    MessageBox.Show("Invalid return date. Please select a date on or after the current date.");
+                    return; // Exit the method without further processing
+                }
+
+
+                // Check if the user is a student
+                bool isStudent = usersManager.IsStudent(userID);
+
+                // Display MessageBox based on the result
+                if (isStudent)
+                {
+                    MessageBox.Show("The user is a student.");
+                    // Retrieve the returned date of the book
+                    DateTime returnedDate = bookBorrows.GetReturnedDateByBookId(bookID);
+
+                    if (dtpReturn.Value > returnedDate)
+                    {
+
+
+                        // Calculate the days ahead
+                        int daysAhead = (int)(dtpReturn.Value - returnedDate).TotalDays;
+
+                        // Show the days ahead in a MessageBox
+                        MessageBox.Show($"The return date is {daysAhead} days ahead of the returned date.");
+
+
+                        // Retrieve borrowed books based on the entered student or employee ID
+                        BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
+
+                        //get user money
+                        int userMoney = usersManager.GetUserMoneyByUserId(studentOrEmployeeId);
+
+
+                        // Calculate deduction for late return (assuming $20 deduction per day)
+                        int lateReturnDeduction = daysAhead * 20;
+
+                        //for the receipt
+                        lblSAuthor.Text = borrowedBook.BookAuthor;
+                        lblSUserID.Text = borrowedBook.UserID;
+                        lblSUsername.Text = borrowedBook.Username;
+                        lblSBorrowedDate.Text = borrowedBook.Borrowed.ToString();
+                        lblSReturnedDate.Text = dtpReturn.Value.ToString();
+                        lblSDueDate.Text = borrowedBook.Returned.ToString();
+                        lblSBookID.Text = borrowedBook.ISBN.ToString();
+                        lblSBookTitle.Text = borrowedBook.BookTitle;
+                        lblSUserMoney.Text = userMoney.ToString();
+                        lblSPayDue.Text = lateReturnDeduction.ToString();
+                        lblNoDays.Text = daysAhead.ToString();
+
+
+                        //show the receipt
+                        pnlReceipt.Visible = true;
+                        return;
+                    }
+
+                    
+                }
+
                 // Update the book status to "Returned" in the Books class using ISBN
                 bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
 
@@ -262,8 +333,18 @@ namespace FInalLibrarySystem
 
                     if (isBookRemoved)
                     {
+                       
                         // Display a message indicating successful return and removal
                         MessageBox.Show("Book returned and removed successfully.");
+
+                        // Clear the UI elements after borrowing
+                        txtBookID.Text = "";
+                        txtUserID.Text = "";
+                        lblUserName.Text = "";
+                        lblBookTitle.Text = "";
+                        lblAuthorName.Text = "";
+                        dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+                        pbPicture.Image = null; // Clear the PictureBox image
 
                         // Refresh the DataGridView controls to reflect the changes
                         DisplayBooks();
@@ -290,7 +371,14 @@ namespace FInalLibrarySystem
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            // Clear the UI elements after borrowing
+            txtBookID.Text = "";
+            txtUserID.Text = "";
+            lblUserName.Text = "";
+            lblBookTitle.Text = "";
+            lblAuthorName.Text = "";
+            dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+            pbPicture.Image = null; // Clear the PictureBox image
         }
 
         private void dgvBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -312,6 +400,161 @@ namespace FInalLibrarySystem
         {
             DisplayBooks();
             DisplayBookBorrows();
+        }
+
+        private void dtpReturn_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSUserID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSBookID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSBookTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSAuthor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSBorrowedDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSReturnedDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUserMoney_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            string bookID = txtBookID.Text.Trim();
+            string userID = txtUserID.Text.Trim();
+
+            // Retrieve the returned date of the book
+            DateTime returnedDate = bookBorrows.GetReturnedDateByBookId(bookID);
+
+            // Calculate the days ahead
+            int daysAhead = (int)(dtpReturn.Value - returnedDate).TotalDays;
+
+
+            // Calculate deduction for late return (assuming PHP20 deduction per day)
+            int lateReturnDeduction = daysAhead * 20;
+
+
+            int currentMoney = usersManager.GetUserMoneyByUserId(userID);
+            // Deduct the entered amount from the user's money
+            int updatedMoney = currentMoney - lateReturnDeduction;
+
+            // Check if the updated money would be negative
+            if (updatedMoney < 0)
+            {
+                MessageBox.Show("Transaction failed. Insufficient funds.");
+                return; // Exit the method without further processing
+            }
+
+            // Update user money in the database
+            bool moneyUpdated = usersManager.UpdateUserMoneyByUserId(userID, updatedMoney);
+
+            if (moneyUpdated)
+            {
+                MessageBox.Show($"Deducted {lateReturnDeduction} from user's account. Updated money: {updatedMoney}");
+
+
+                // Update the book status to "Returned" in the Books class using ISBN
+                bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
+
+                if (isBookReturned)
+                {
+                    // Remove the returned book from the bookborrows database
+                    bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
+
+                    if (isBookRemoved)
+                    {
+
+                        // Display a message indicating successful return and removal
+                        MessageBox.Show("Book returned and removed successfully.");
+
+                        // Clear the UI elements after borrowing
+                        txtBookID.Text = "";
+                        txtUserID.Text = "";
+                        lblUserName.Text = "";
+                        lblBookTitle.Text = "";
+                        lblAuthorName.Text = "";
+                        dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+                        pbPicture.Image = null; // Clear the PictureBox image
+
+                        // Refresh the DataGridView controls to reflect the changes
+                        DisplayBooks();
+                        DisplayBookBorrows();
+
+
+                    }
+                    else
+                    {
+                        // Display a message if removing the book fails
+                        MessageBox.Show("Failed to remove the returned book from bookborrows database.");
+                    }
+                }
+
+                // Hide the receipt panel after the transaction is successfully finished
+                pnlReceipt.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Failed to update user money.");
+            }
+        }
+
+        private void pnlReceipt_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            pnlReceipt.Visible=false;
+        }
+
+        private void btnPlayGame_Click(object sender, EventArgs e)
+        {
+            pnlPlay.Visible = true;
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            pnlPlay.Visible = false;
         }
     }
 }

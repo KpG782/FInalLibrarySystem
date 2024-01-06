@@ -314,6 +314,42 @@ namespace FInalLibrarySystem.Database
             }
         }
 
+        public DateTime GetReturnedDateByBookId(string isbn)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection();
+
+                    string query = "SELECT returned FROM bookborrows WHERE ISBN = @ISBN";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ISBN", isbn);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return Convert.ToDateTime(result);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+
+            // Return DateTime.MinValue if no result or an error occurs
+            return DateTime.MinValue;
+        }
+
+
 
     }
 

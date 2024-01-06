@@ -472,5 +472,109 @@ namespace FInalLibrarySystem.Database
             return user;
         }
 
+        public bool IsStudent(string studentOrEmployeeId)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT role FROM `app_users` WHERE `studentID` = @id OR `employeeID` = @id";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = studentOrEmployeeId;
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            // Check if the role is 'Student'
+                            return result.ToString().Equals("Student", StringComparison.OrdinalIgnoreCase);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return false; // Default to false if there is an error or no matching user found
+        }
+
+
+        //get user money in bookreturning
+        public int GetUserMoneyByUserId(string userId)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT money FROM app_users WHERE studentID = @userId OR employeeID = @userId";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@userId", userId);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null && int.TryParse(result.ToString(), out int money))
+                        {
+                            return money;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return 0; // Default to 0 if there is an error or no matching user found
+        }
+
+        public bool UpdateUserMoneyByUserId(string userId, int updatedMoney)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string updateQuery = "UPDATE app_users SET money = @UpdatedMoney WHERE studentID = @UserId OR employeeID = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(updateQuery, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@UpdatedMoney", updatedMoney);
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log, show error message, etc.)
+                Console.WriteLine($"Error updating user money: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+        }
     }
 }
