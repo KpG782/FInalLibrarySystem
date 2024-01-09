@@ -8,14 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace FInalLibrarySystem.Forms.SignUp_Panels
 {
     public partial class TeacherSignUp : UserControl
     {
+        private Stopwatch loginTimer;
         public TeacherSignUp()
         {
             InitializeComponent();
+            loginTimer = new Stopwatch();
+
         }
 
 
@@ -69,6 +73,7 @@ namespace FInalLibrarySystem.Forms.SignUp_Panels
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            loginTimer.Start();
             if (txtbxPassword.Text != txtbxCPass.Text || txtbxPassword.Text == "")
             {
                 MessageBox.Show("Re-Enter Password");
@@ -125,6 +130,10 @@ namespace FInalLibrarySystem.Forms.SignUp_Panels
                     // Show the login form or perform other actions as needed
                     frmLogin f2 = new frmLogin();
                     f2.Show();
+
+                    MessageBox.Show($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    loginTimer.Stop();
+                    loginTimer.Reset();
 
                     this.Refresh();
                     this.ParentForm.Close();

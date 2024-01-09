@@ -38,14 +38,8 @@
             this.MainPanel = new System.Windows.Forms.Panel();
             this.SecondaryPanel = new System.Windows.Forms.Panel();
             this.dgvShow = new System.Windows.Forms.DataGridView();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrimaryPanel = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dtpBorrow = new System.Windows.Forms.DateTimePicker();
             this.lblBorrow = new System.Windows.Forms.Label();
@@ -56,7 +50,12 @@
             this.pbPicture = new System.Windows.Forms.PictureBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBorrow = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
+            this.Book_Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainPanel.SuspendLayout();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShow)).BeginInit();
@@ -174,12 +173,11 @@
             this.dgvShow.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgvShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvShow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column6,
-            this.Column7,
-            this.Category,
+            this.Book_Title,
             this.ISBN,
+            this.Category,
+            this.Book_Author,
             this.Column10,
-            this.Column8,
             this.Copyright});
             this.dgvShow.Location = new System.Drawing.Point(3, 2);
             this.dgvShow.Margin = new System.Windows.Forms.Padding(2);
@@ -189,49 +187,6 @@
             this.dgvShow.Size = new System.Drawing.Size(519, 849);
             this.dgvShow.TabIndex = 0;
             this.dgvShow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShow_CellContentClick);
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Book_ID";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 40;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Book_Title";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
-            // 
-            // Category
-            // 
-            this.Category.HeaderText = "Category";
-            this.Category.Name = "Category";
-            // 
-            // ISBN
-            // 
-            this.ISBN.HeaderText = "ISBN";
-            this.ISBN.Name = "ISBN";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Book_Status";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Book_Author";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
-            // Copyright
-            // 
-            this.Copyright.HeaderText = "Copyright";
-            this.Copyright.Name = "Copyright";
             // 
             // PrimaryPanel
             // 
@@ -263,6 +218,21 @@
             this.PrimaryPanel.Size = new System.Drawing.Size(416, 852);
             this.PrimaryPanel.TabIndex = 2;
             this.PrimaryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PrimaryPanel_Paint);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Location = new System.Drawing.Point(156, 680);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(79, 32);
+            this.btnUpdate.TabIndex = 25;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label2
             // 
@@ -380,20 +350,41 @@
             this.btnBorrow.UseVisualStyleBackColor = false;
             this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
-            // btnUpdate
+            // Book_Title
             // 
-            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnUpdate.BackColor = System.Drawing.Color.White;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(156, 680);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(79, 32);
-            this.btnUpdate.TabIndex = 25;
-            this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.Book_Title.HeaderText = "Book_Title";
+            this.Book_Title.MinimumWidth = 6;
+            this.Book_Title.Name = "Book_Title";
+            this.Book_Title.Width = 125;
+            // 
+            // ISBN
+            // 
+            this.ISBN.HeaderText = "ISBN";
+            this.ISBN.Name = "ISBN";
+            // 
+            // Category
+            // 
+            this.Category.HeaderText = "Category";
+            this.Category.Name = "Category";
+            // 
+            // Book_Author
+            // 
+            this.Book_Author.HeaderText = "Book_Author";
+            this.Book_Author.MinimumWidth = 6;
+            this.Book_Author.Name = "Book_Author";
+            this.Book_Author.Width = 125;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Book_Status";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 125;
+            // 
+            // Copyright
+            // 
+            this.Copyright.HeaderText = "Copyright";
+            this.Copyright.Name = "Copyright";
             // 
             // BookBorrowing
             // 
@@ -437,14 +428,13 @@
         private System.Windows.Forms.PictureBox pbPicture;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBorrow;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Copyright;
         private System.Windows.Forms.DateTimePicker dtpBorrow;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Book_Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Book_Author;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Copyright;
     }
 }

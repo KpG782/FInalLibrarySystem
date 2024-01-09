@@ -30,7 +30,11 @@ namespace FInalLibrarySystem
             booksManager1 = new Books();
             usersManager = new Users(); // Initialize the Users class
             bookBorrowsManager = new BookBorrows(new MyDB());  // Pass the appropriate database instance
+                                                               // Add the event handler for CellContentClick
+            dgvShow.CellContentClick += dgvShow_CellContentClick;
         }
+
+
 
         private void LoadAllBooks()
         {
@@ -269,7 +273,7 @@ namespace FInalLibrarySystem
             // Populate the DataGridView with returned books
             foreach (var book in returnedBooks)
             {
-                dgvShow.Rows.Add(book.Id, book.Title, book.ISBN, book.Category, book.Author, book.Status,  book.Copyright);
+                dgvShow.Rows.Add(book.Title, book.ISBN, book.Category, book.Author, book.Status,  book.Copyright);
             }
         }
 
@@ -295,7 +299,18 @@ namespace FInalLibrarySystem
 
         private void dgvShow_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Handle DataGridView cell content click if needed
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvShow.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+                string selectedTitle = dgvShow.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
+                string selectedAuthor = dgvShow.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
+
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

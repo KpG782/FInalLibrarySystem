@@ -46,7 +46,7 @@ namespace FInalLibrarySystem
             // Populate the DataGridView with returned books
             foreach (var book in borrowedBooks)
             {
-                dgvBooks.Rows.Add(book.Id, book.Title, book.ISBN, book.Category, book.Author, book.Status, book.Copyright);
+                dgvBooks.Rows.Add(book.Title, book.ISBN, book.Category, book.Author, book.Status, book.Copyright);
             }
         }
 
@@ -177,7 +177,7 @@ namespace FInalLibrarySystem
                 }
 
                 // Synchronize UserID and Username
-                txtUserID.Text = borrowedBook.UserID;
+                //txtUserID.Text = borrowedBook.UserID;
                 lblUserName.Text = borrowedBook.Username;
             }
             else
@@ -419,7 +419,18 @@ namespace FInalLibrarySystem
 
         private void dgvBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvBooks.Rows[e.RowIndex].Cells["SBN"].Value.ToString();
+                string selectedTitle = dgvBooks.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
+                string selectedAuthor = dgvBooks.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
 
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
         }
 
         private void dgvBookBorrow_CellContentClick(object sender, DataGridViewCellEventArgs e)

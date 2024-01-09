@@ -39,7 +39,6 @@
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +73,6 @@
             this.LastName,
             this.MI,
             this.Email,
-            this.EmployeeID,
             this.Department});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -146,13 +144,6 @@
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
             // 
-            // EmployeeID
-            // 
-            this.EmployeeID.FillWeight = 124.6007F;
-            this.EmployeeID.HeaderText = "EmployeeID";
-            this.EmployeeID.MinimumWidth = 6;
-            this.EmployeeID.Name = "EmployeeID";
-            // 
             // Department
             // 
             this.Department.FillWeight = 89.74532F;
@@ -182,7 +173,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MI;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Department;
     }
 }

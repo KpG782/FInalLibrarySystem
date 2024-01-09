@@ -50,7 +50,6 @@ namespace FInalLibrarySystem
                     student.LastName,
                     student.MiddleInitial,
                     student.Email,
-                    student.StudentID,
                     student.Section,
                     student.Year
 

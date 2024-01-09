@@ -55,8 +55,7 @@ namespace FInalLibrarySystem
                     teacher.FirstName,
                     teacher.LastName,
                     teacher.MiddleInitial,
-                    teacher.Email,
-                    teacher.EmployeeID, // Assuming this identifies a teacher uniquely like StudentID does for students
+                    teacher.Email,// Assuming this identifies a teacher uniquely like StudentID does for students
                     teacher.Department
 
                 // Add more columns as needed
