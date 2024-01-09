@@ -107,9 +107,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.pnlPlay = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.pnlPlay = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lblTtile = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PrimaryPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
@@ -135,7 +135,7 @@
             this.PrimaryPanel.Location = new System.Drawing.Point(2, 2);
             this.PrimaryPanel.Margin = new System.Windows.Forms.Padding(2);
             this.PrimaryPanel.Name = "PrimaryPanel";
-            this.PrimaryPanel.Size = new System.Drawing.Size(416, 679);
+            this.PrimaryPanel.Size = new System.Drawing.Size(406, 679);
             this.PrimaryPanel.TabIndex = 2;
             this.PrimaryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PrimaryPanel_Paint);
             // 
@@ -167,14 +167,14 @@
             this.panel1.Location = new System.Drawing.Point(-10, -88);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(422, 852);
+            this.panel1.Size = new System.Drawing.Size(412, 852);
             this.panel1.TabIndex = 18;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_2);
             // 
             // dtpReturn
             // 
             this.dtpReturn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpReturn.Location = new System.Drawing.Point(141, 630);
+            this.dtpReturn.Location = new System.Drawing.Point(136, 630);
             this.dtpReturn.Margin = new System.Windows.Forms.Padding(2);
             this.dtpReturn.Name = "dtpReturn";
             this.dtpReturn.Size = new System.Drawing.Size(151, 20);
@@ -187,7 +187,7 @@
             this.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(161, 680);
+            this.btnUpdate.Location = new System.Drawing.Point(156, 680);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 32);
@@ -208,7 +208,7 @@
             // lblUserName
             // 
             this.lblUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUserName.Location = new System.Drawing.Point(112, 590);
+            this.lblUserName.Location = new System.Drawing.Point(107, 590);
             this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(238, 18);
@@ -220,7 +220,7 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.Location = new System.Drawing.Point(41, 590);
+            this.label4.Location = new System.Drawing.Point(36, 590);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 18);
@@ -231,7 +231,7 @@
             // UserID
             // 
             this.UserID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.UserID.Location = new System.Drawing.Point(54, 557);
+            this.UserID.Location = new System.Drawing.Point(49, 557);
             this.UserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserID.Name = "UserID";
             this.UserID.Size = new System.Drawing.Size(71, 18);
@@ -242,7 +242,7 @@
             // txtUserID
             // 
             this.txtUserID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUserID.Location = new System.Drawing.Point(129, 557);
+            this.txtUserID.Location = new System.Drawing.Point(124, 557);
             this.txtUserID.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserID.Name = "txtUserID";
             this.txtUserID.Size = new System.Drawing.Size(221, 20);
@@ -252,7 +252,7 @@
             // lblBookTitle
             // 
             this.lblBookTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBookTitle.Location = new System.Drawing.Point(112, 498);
+            this.lblBookTitle.Location = new System.Drawing.Point(107, 498);
             this.lblBookTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBookTitle.Name = "lblBookTitle";
             this.lblBookTitle.Size = new System.Drawing.Size(238, 18);
@@ -264,7 +264,7 @@
             // lblAuthorName
             // 
             this.lblAuthorName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblAuthorName.Location = new System.Drawing.Point(112, 527);
+            this.lblAuthorName.Location = new System.Drawing.Point(107, 527);
             this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAuthorName.Name = "lblAuthorName";
             this.lblAuthorName.Size = new System.Drawing.Size(238, 18);
@@ -276,7 +276,7 @@
             // lblBookID
             // 
             this.lblBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBookID.Location = new System.Drawing.Point(54, 459);
+            this.lblBookID.Location = new System.Drawing.Point(49, 459);
             this.lblBookID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBookID.Name = "lblBookID";
             this.lblBookID.Size = new System.Drawing.Size(71, 18);
@@ -296,7 +296,7 @@
             // lblBorrow
             // 
             this.lblBorrow.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBorrow.Location = new System.Drawing.Point(55, 633);
+            this.lblBorrow.Location = new System.Drawing.Point(50, 633);
             this.lblBorrow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBorrow.Name = "lblBorrow";
             this.lblBorrow.Size = new System.Drawing.Size(81, 18);
@@ -307,7 +307,7 @@
             // AuthorLabel
             // 
             this.AuthorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AuthorLabel.Location = new System.Drawing.Point(55, 527);
+            this.AuthorLabel.Location = new System.Drawing.Point(50, 527);
             this.AuthorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Size = new System.Drawing.Size(53, 18);
@@ -318,7 +318,7 @@
             // TitleLabel
             // 
             this.TitleLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TitleLabel.Location = new System.Drawing.Point(24, 498);
+            this.TitleLabel.Location = new System.Drawing.Point(19, 498);
             this.TitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(112, 18);
@@ -329,7 +329,7 @@
             // txtBookID
             // 
             this.txtBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBookID.Location = new System.Drawing.Point(129, 459);
+            this.txtBookID.Location = new System.Drawing.Point(124, 459);
             this.txtBookID.Margin = new System.Windows.Forms.Padding(2);
             this.txtBookID.Name = "txtBookID";
             this.txtBookID.Size = new System.Drawing.Size(221, 20);
@@ -350,7 +350,7 @@
             // 
             this.pbPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbPicture.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pbPicture.Location = new System.Drawing.Point(98, 150);
+            this.pbPicture.Location = new System.Drawing.Point(93, 150);
             this.pbPicture.Margin = new System.Windows.Forms.Padding(2);
             this.pbPicture.Name = "pbPicture";
             this.pbPicture.Size = new System.Drawing.Size(194, 275);
@@ -364,7 +364,7 @@
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Location = new System.Drawing.Point(257, 680);
+            this.btnClear.Location = new System.Drawing.Point(252, 680);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(79, 32);
@@ -379,7 +379,7 @@
             this.btnReturn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnReturn.BackColor = System.Drawing.Color.White;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturn.Location = new System.Drawing.Point(68, 680);
+            this.btnReturn.Location = new System.Drawing.Point(63, 680);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(79, 32);
@@ -391,7 +391,7 @@
             // lblTitle
             // 
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.Location = new System.Drawing.Point(121, 20);
+            this.lblTitle.Location = new System.Drawing.Point(116, 20);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(151, 18);
@@ -413,7 +413,7 @@
             // 
             this.BookPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BookPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BookPictureBox.Location = new System.Drawing.Point(95, 63);
+            this.BookPictureBox.Location = new System.Drawing.Point(90, 63);
             this.BookPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.BookPictureBox.Name = "BookPictureBox";
             this.BookPictureBox.Size = new System.Drawing.Size(194, 275);
@@ -1015,35 +1015,36 @@
             this.MainPanel.TabIndex = 0;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
-            // pnlPlay
-            // 
-            this.pnlPlay.Controls.Add(this.lbl);
-            this.pnlPlay.Controls.Add(this.guna2ControlBox1);
-            this.pnlPlay.Location = new System.Drawing.Point(284, 66);
-            this.pnlPlay.Name = "pnlPlay";
-            this.pnlPlay.Size = new System.Drawing.Size(292, 431);
-            this.pnlPlay.TabIndex = 4;
-            // 
-            // lbl
-            // 
-            this.lbl.BackColor = System.Drawing.Color.Transparent;
-            this.lbl.Location = new System.Drawing.Point(54, 11);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(197, 15);
-            this.lbl.TabIndex = 77;
-            this.lbl.Text = "Answer the Following Questions Correctly";
-            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(256, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(549, 2);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
             this.guna2ControlBox1.TabIndex = 76;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // pnlPlay
+            // 
+            this.pnlPlay.Controls.Add(this.lblTtile);
+            this.pnlPlay.Controls.Add(this.guna2ControlBox1);
+            this.pnlPlay.Location = new System.Drawing.Point(221, 66);
+            this.pnlPlay.Name = "pnlPlay";
+            this.pnlPlay.Size = new System.Drawing.Size(585, 517);
+            this.pnlPlay.TabIndex = 4;
+            // 
+            // lblTtile
+            // 
+            this.lblTtile.BackColor = System.Drawing.Color.Transparent;
+            this.lblTtile.Location = new System.Drawing.Point(187, 16);
+            this.lblTtile.Name = "lblTtile";
+            this.lblTtile.Size = new System.Drawing.Size(197, 15);
+            this.lblTtile.TabIndex = 77;
+            this.lblTtile.Text = "Answer the Following Questions Correctly";
+            this.lblTtile.Click += new System.EventHandler(this.lbl_Click_1);
             // 
             // BookReturning
             // 
@@ -1136,16 +1137,16 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel MainPanel;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlPlay;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Button btnAddToDebt;
         private Guna.UI2.WinForms.Guna2Button btnPlayGame;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_TItle;
         private System.Windows.Forms.DataGridViewTextBoxColumn SBN;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Copyright;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlPlay;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTtile;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

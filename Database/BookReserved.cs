@@ -13,6 +13,8 @@ namespace FInalLibrarySystem.Database
         public string BookTitle { get; set; }
         public string BookAuthor { get; set; }
 
+        public string UserFullName { get; set; }
+
         public string Status { get; set; }
         public DateTime Reserved { get; set; }
         public byte[] Picture { get; set; }
@@ -28,7 +30,7 @@ namespace FInalLibrarySystem.Database
         }
 
         // New method to add reserved books
-        public bool AddReservedBook(string userId, string isbn, string title, string author,byte[] picture, DateTime Reserved, string Status )
+        public bool AddReservedBook(string userId, string isbn, string title, string author,byte[] picture, DateTime Reserved, string Status, string UserFullName )
         {
             try
             {
@@ -40,8 +42,8 @@ namespace FInalLibrarySystem.Database
                     //string username = GetUsername(userId);
 
                     // Insert the reserved book into the bookreserved table
-                    string query = "INSERT INTO bookreserved (username, status, isbn, title, author, picture, reservedate) " +
-                                   "VALUES (@username, @status, @isbn, @title, @author, @picture, @reservedate  )";
+                    string query = "INSERT INTO bookreserved (username, status, isbn, title, author, picture, reservedate, userFullName) " +
+                                   "VALUES (@username, @status, @isbn, @title, @author, @picture, @reservedate, @userFullName )";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
@@ -53,6 +55,7 @@ namespace FInalLibrarySystem.Database
                         cmd.Parameters.AddWithValue("@picture", picture);
                         cmd.Parameters.AddWithValue("@reservedate", Reserved);
                         cmd.Parameters.AddWithValue("@status", Status);
+                        cmd.Parameters.AddWithValue("@userFullName", UserFullName);
 
                         // Execute the query
                         int rowsAffected = cmd.ExecuteNonQuery();
@@ -302,6 +305,43 @@ namespace FInalLibrarySystem.Database
             {
                 db.closeConnection();
             }
+        }
+
+        public int CountUserReservations(string username)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Count the number of reservations for the specified username
+                    string query = "SELECT COUNT(*) FROM bookreserved WHERE username = @username";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@username", username);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            return Convert.ToInt32(result);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error counting user reservations: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return 0; // Return 0 if an error occurs or no reservations are found
         }
 
     }

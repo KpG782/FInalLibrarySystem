@@ -435,7 +435,15 @@ namespace FInalLibrarySystem
 
         private void dgvBookBorrow_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Get the values from the clicked row
+            string selectedISBN = dgvBookBorrow.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+            string selectedTitle = dgvBookBorrow.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+            string selectedAuthor = dgvBookBorrow.Rows[e.RowIndex].Cells["Author"].Value.ToString();
 
+            // Set the values in the respective TextBoxes and Labels
+            txtBookID.Text = selectedISBN;
+            lblBookTitle.Text = selectedTitle;
+            lblAuthorName.Text = selectedAuthor;
         }
 
         private void panel1_Paint_2(object sender, PaintEventArgs e)
@@ -602,6 +610,11 @@ namespace FInalLibrarySystem
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             pnlPlay.Visible = false;
+        }
+
+        private void lbl_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

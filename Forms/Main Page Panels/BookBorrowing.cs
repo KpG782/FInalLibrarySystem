@@ -22,7 +22,7 @@ namespace FInalLibrarySystem
         private Users usersManager;
         private BookBorrows bookBorrowsManager;  // Instantiate BookBorrows
         private string studentOrEmployeeId;  // Add this line
-
+        private BookReserved bookReserved;
 
         public BookBorrowing()
         {
@@ -30,7 +30,8 @@ namespace FInalLibrarySystem
             booksManager1 = new Books();
             usersManager = new Users(); // Initialize the Users class
             bookBorrowsManager = new BookBorrows(new MyDB());  // Pass the appropriate database instance
-                                                               // Add the event handler for CellContentClick
+            bookReserved = new BookReserved();
+            // Add the event handler for CellContentClick
             dgvShow.CellContentClick += dgvShow_CellContentClick;
         }
 
@@ -185,16 +186,16 @@ namespace FInalLibrarySystem
             }
 
             // Check if the user is a student and has already borrowed 2 books
-            if (user.Role == "Student" && bookBorrowsManager.CountUserBorrows(studentOrEmployeeId) >= 2)
+            if (user != null && user.Role == "Student" && (bookBorrowsManager.CountUserBorrows(studentOrEmployeeId) + bookReserved.CountUserReservations(studentOrEmployeeId)) >= 2)
             {
-                MessageBox.Show("Students can only borrow up to 2 books.");
+                MessageBox.Show("Students can only borrow/reserve up to 2 books.");
                 return; // Exit the method early
             }
 
             // Check if the user is a teacher and has already borrowed 3 books
-            if (user.Role == "Teacher" && bookBorrowsManager.CountUserBorrows(studentOrEmployeeId) >= 3)
+            if (user.Role == "Teacher" && (bookBorrowsManager.CountUserBorrows(studentOrEmployeeId) + bookReserved.CountUserReservations(studentOrEmployeeId)) >= 5)
             {
-                MessageBox.Show("Teachers can only borrow up to 3 books.");
+                MessageBox.Show("Teachers can only borrow/reserve up to 5 books.");
                 return; // Exit the method early
             }
 

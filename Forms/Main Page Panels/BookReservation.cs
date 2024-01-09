@@ -84,7 +84,7 @@ namespace FInalLibrarySystem
             {
                 dgvBookReserved.Rows.Add(
                     reservedBook.ISBN,
-                    reservedBook.Username,
+                    reservedBook.UserFullName,
                     reservedBook.BookTitle,
                     reservedBook.BookAuthor,
                     reservedBook.Status,
@@ -102,10 +102,12 @@ namespace FInalLibrarySystem
                 string selectedTitle = dgvBooks.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
                 string selectedAuthor = dgvBooks.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
 
+
                 // Set the values in the respective TextBoxes and Labels
                 txtBookID.Text = selectedISBN;
                 lblBookTitle.Text = selectedTitle;
                 lblAuthorName.Text = selectedAuthor;
+
             }
         }
 
@@ -190,6 +192,31 @@ namespace FInalLibrarySystem
             string userId = txtUserID.Text.Trim();
             string title = lblBookTitle.Text;
             string author = lblAuthorName.Text;
+            string userFullName = lblUserName.Text;
+
+
+
+            // Retrieve borrowed books based on the entered student or employee ID
+            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
+            // Retrieve user details based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(userId);
+            // Retrieve book details from the database
+            FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
+
+
+            // Check if the user is a student and has already borrowed 2 books
+            if (user.Role == "Student" && (bookReserved.CountUserReservations(userId) + bookBorrows.CountUserBorrows(userId)) >= 2)
+            {
+                MessageBox.Show("Students can only borrow/reserve up to 2 books.");
+                return; // Exit the method early
+            }
+
+            // Check if the user is a teacher and has already borrowed 3 books
+            if (user.Role == "Teacher" && ( bookReserved.CountUserReservations(userId) + bookBorrows.CountUserBorrows(userId)) >= 5)
+            {
+                MessageBox.Show("Teachers can only borrow/reserve up to 5 books.");
+                return; // Exit the method early
+            }
 
             bool isReserved = books.IsBookReserved(isbn);
 
@@ -201,15 +228,9 @@ namespace FInalLibrarySystem
 
 
 
-            // Retrieve borrowed books based on the entered student or employee ID
-            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
-            // Retrieve user details based on student or employee ID
-            Users.User user = usersManager.GetUserByStudentOrEmployeeId(userId);
 
 
 
-            // Retrieve book details from the database
-            FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
 
 
             // Check if both txtUserID and txtBookID are empty
@@ -256,7 +277,7 @@ namespace FInalLibrarySystem
                 bool updateSuccess = books.UpdateBookStatusByISBN(isbn, "Reserved");
 
                 // Add the reserved book to the bookreserved table
-                bool reservationSuccess = bookReserved.AddReservedBook(userId, isbn, title, author, picture, reservedDate, status);
+                bool reservationSuccess = bookReserved.AddReservedBook(userId, isbn, title, author, picture, reservedDate, status, userFullName);
 
 
                 if (reservationSuccess)
@@ -329,6 +350,9 @@ namespace FInalLibrarySystem
             string isbn = txtBookID.Text.Trim();
             string userId = txtUserID.Text.Trim();
 
+            // Retrieve user details from the database based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(userId);
+
             // Check if both txtUserID and txtBookID are empty
             if (string.IsNullOrWhiteSpace(txtUserID.Text) && string.IsNullOrWhiteSpace(txtBookID.Text))
             {
@@ -349,6 +373,8 @@ namespace FInalLibrarySystem
                 MessageBox.Show("ISBN is required for cancellation.");
                 return; // Exit the method without further processing
             }
+
+
 
             // Retrieve the reserved book by ISBN and User ID
             BookReservedModel reservedBook = bookReserved.GetReservedBookByISBNAndUsername(isbn, userId);
