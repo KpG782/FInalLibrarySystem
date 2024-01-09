@@ -47,6 +47,12 @@
             this.btnReserve = new System.Windows.Forms.Button();
             this.SecondaryPanel = new System.Windows.Forms.Panel();
             this.dgvBookReserved = new System.Windows.Forms.DataGridView();
+            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReservedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
             this.Book_TItle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +62,7 @@
             this.Book_Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.PrimaryPanel = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -65,13 +72,6 @@
             this.lblAuthorName = new System.Windows.Forms.Label();
             this.lbltitleBook = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnClear = new System.Windows.Forms.Button();
-            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReservedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookReserved)).BeginInit();
@@ -255,6 +255,36 @@
             this.dgvBookReserved.TabIndex = 25;
             this.dgvBookReserved.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookReserved_CellContentClick);
             // 
+            // ISBN
+            // 
+            this.ISBN.HeaderText = "ISBN";
+            this.ISBN.Name = "ISBN";
+            // 
+            // Username
+            // 
+            this.Username.HeaderText = "Username";
+            this.Username.Name = "Username";
+            // 
+            // Title
+            // 
+            this.Title.HeaderText = "Title";
+            this.Title.Name = "Title";
+            // 
+            // Author
+            // 
+            this.Author.HeaderText = "Author";
+            this.Author.Name = "Author";
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            // 
+            // ReservedDate
+            // 
+            this.ReservedDate.HeaderText = "ReservedDate";
+            this.ReservedDate.Name = "ReservedDate";
+            // 
             // dgvBooks
             // 
             this.dgvBooks.AllowUserToResizeRows = false;
@@ -386,6 +416,20 @@
             this.PrimaryPanel.TabIndex = 2;
             this.PrimaryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PrimaryPanel_Paint);
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Location = new System.Drawing.Point(195, 680);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(79, 32);
+            this.btnUpdate.TabIndex = 26;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // btnCancel
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -491,50 +535,6 @@
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // ISBN
-            // 
-            this.ISBN.HeaderText = "ISBN";
-            this.ISBN.Name = "ISBN";
-            // 
-            // Username
-            // 
-            this.Username.HeaderText = "Username";
-            this.Username.Name = "Username";
-            // 
-            // Title
-            // 
-            this.Title.HeaderText = "Title";
-            this.Title.Name = "Title";
-            // 
-            // Author
-            // 
-            this.Author.HeaderText = "Author";
-            this.Author.Name = "Author";
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            // 
-            // ReservedDate
-            // 
-            this.ReservedDate.HeaderText = "ReservedDate";
-            this.ReservedDate.Name = "ReservedDate";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(195, 680);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(79, 32);
-            this.btnUpdate.TabIndex = 26;
-            this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // BookReservation
             // 

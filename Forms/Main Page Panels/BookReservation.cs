@@ -33,6 +33,7 @@ namespace FInalLibrarySystem
 
 
             dgvBooks.CellContentClick += dgvBooks_CellContentClick;
+            dgvBookReserved.CellContentClick += dgvBookReserved_CellContentClick;
             DisplayReturnedBooks();
             DisplayReservedBooks();
         }
@@ -189,17 +190,16 @@ namespace FInalLibrarySystem
             string userId = txtUserID.Text.Trim();
             string title = lblBookTitle.Text;
             string author = lblAuthorName.Text;
- 
 
-            // Check if the book is already reserved
-            BookReservedModel existingReservation = bookReserved.GetReservedBookByISBNAndUsername(isbn, userId);
-            
+            bool isReserved = books.IsBookReserved(isbn);
 
-            if (existingReservation.Status == "Reserved")
+            if (isReserved)
             {
-               MessageBox.Show("This book is already reserved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               return; // Exit the method without further processing
+                MessageBox.Show("The Book is already borrowed/reserved");
+                return;
             }
+
+
 
             // Retrieve borrowed books based on the entered student or employee ID
             BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
@@ -309,7 +309,18 @@ namespace FInalLibrarySystem
 
         private void dgvBookReserved_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvBookReserved.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+                string selectedTitle = dgvBookReserved.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+                string selectedAuthor = dgvBookReserved.Rows[e.RowIndex].Cells["Author"].Value.ToString();
 
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

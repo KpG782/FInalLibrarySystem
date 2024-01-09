@@ -469,8 +469,50 @@ namespace FInalLibrarySystem.Database
             }
         }
 
+        // Function to check if a book with a given ISBN is reserved
+        public bool IsBookReserved(string isbn)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
 
+                    // Query to retrieve the status of the book with the given ISBN
+                    string query = "SELECT status FROM books WHERE ISBN = @isbn";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@isbn", isbn);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Check if the status is "Reserved"
+                                string status = reader.GetString("status");
+                                return status.Equals("Reserved", StringComparison.OrdinalIgnoreCase);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log or notify the user)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            // Return false if an error occurs or the book is not found
+            return false;
+        }
     }
 
-
 }
+
+
+
