@@ -44,8 +44,20 @@
             this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
             this.LBLTitle = new System.Windows.Forms.Label();
             this.dgvBookReserved = new System.Windows.Forms.DataGridView();
+            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReservedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SecondaryPanel = new System.Windows.Forms.Panel();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
+            this.Book_TItle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.PrimaryPanel = new System.Windows.Forms.Panel();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
@@ -60,18 +72,6 @@
             this.dtpReserve = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.LBLAuthor = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Book_TItle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReservedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookReserved)).BeginInit();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
@@ -239,6 +239,52 @@
             this.dgvBookReserved.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBookReserved.Size = new System.Drawing.Size(523, 351);
             this.dgvBookReserved.TabIndex = 26;
+            this.dgvBookReserved.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookReserved_CellContentClick_1);
+            // 
+            // ISBN
+            // 
+            this.ISBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ISBN.FillWeight = 73.73386F;
+            this.ISBN.HeaderText = "Book_ISBN";
+            this.ISBN.Name = "ISBN";
+            this.ISBN.Width = 96;
+            // 
+            // FullName
+            // 
+            this.FullName.HeaderText = "FullName";
+            this.FullName.Name = "FullName";
+            // 
+            // Title
+            // 
+            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Title.FillWeight = 58.17943F;
+            this.Title.HeaderText = "Book_TItle";
+            this.Title.Name = "Title";
+            this.Title.Width = 95;
+            // 
+            // Author
+            // 
+            this.Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Author.FillWeight = 117.2417F;
+            this.Author.HeaderText = "Book_Author";
+            this.Author.Name = "Author";
+            this.Author.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn6.FillWeight = 145.6994F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Book_Status";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 105;
+            // 
+            // ReservedDate
+            // 
+            this.ReservedDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ReservedDate.FillWeight = 177.665F;
+            this.ReservedDate.HeaderText = "ReservedDate";
+            this.ReservedDate.Name = "ReservedDate";
+            this.ReservedDate.Width = 116;
             // 
             // SecondaryPanel
             // 
@@ -311,6 +357,54 @@
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBooks.Size = new System.Drawing.Size(523, 330);
             this.dgvBooks.TabIndex = 25;
+            // 
+            // Book_TItle
+            // 
+            this.Book_TItle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_TItle.FillWeight = 58.17943F;
+            this.Book_TItle.HeaderText = "Book_TItle";
+            this.Book_TItle.Name = "Book_TItle";
+            this.Book_TItle.Width = 95;
+            // 
+            // SBN
+            // 
+            this.SBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SBN.FillWeight = 73.73386F;
+            this.SBN.HeaderText = "Book_ISBN";
+            this.SBN.Name = "SBN";
+            this.SBN.Width = 96;
+            // 
+            // Book_Category
+            // 
+            this.Book_Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Category.FillWeight = 93.26363F;
+            this.Book_Category.HeaderText = "Book_Category";
+            this.Book_Category.Name = "Book_Category";
+            this.Book_Category.Width = 123;
+            // 
+            // Book_Author
+            // 
+            this.Book_Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Author.FillWeight = 117.2417F;
+            this.Book_Author.HeaderText = "Book_Author";
+            this.Book_Author.Name = "Book_Author";
+            this.Book_Author.Width = 110;
+            // 
+            // Book_Status
+            // 
+            this.Book_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Status.FillWeight = 145.6994F;
+            this.Book_Status.HeaderText = "Book_Status";
+            this.Book_Status.Name = "Book_Status";
+            this.Book_Status.Width = 105;
+            // 
+            // Book_Copyright
+            // 
+            this.Book_Copyright.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Copyright.FillWeight = 177.665F;
+            this.Book_Copyright.HeaderText = "Book_Copyright";
+            this.Book_Copyright.Name = "Book_Copyright";
+            this.Book_Copyright.Width = 128;
             // 
             // MainPanel
             // 
@@ -520,99 +614,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "label1";
-            // 
-            // Book_TItle
-            // 
-            this.Book_TItle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_TItle.FillWeight = 58.17943F;
-            this.Book_TItle.HeaderText = "Book_TItle";
-            this.Book_TItle.Name = "Book_TItle";
-            this.Book_TItle.Width = 95;
-            // 
-            // SBN
-            // 
-            this.SBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.SBN.FillWeight = 73.73386F;
-            this.SBN.HeaderText = "Book_ISBN";
-            this.SBN.Name = "SBN";
-            this.SBN.Width = 96;
-            // 
-            // Book_Category
-            // 
-            this.Book_Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Category.FillWeight = 93.26363F;
-            this.Book_Category.HeaderText = "Book_Category";
-            this.Book_Category.Name = "Book_Category";
-            this.Book_Category.Width = 123;
-            // 
-            // Book_Author
-            // 
-            this.Book_Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Author.FillWeight = 117.2417F;
-            this.Book_Author.HeaderText = "Book_Author";
-            this.Book_Author.Name = "Book_Author";
-            this.Book_Author.Width = 110;
-            // 
-            // Book_Status
-            // 
-            this.Book_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Status.FillWeight = 145.6994F;
-            this.Book_Status.HeaderText = "Book_Status";
-            this.Book_Status.Name = "Book_Status";
-            this.Book_Status.Width = 105;
-            // 
-            // Book_Copyright
-            // 
-            this.Book_Copyright.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Copyright.FillWeight = 177.665F;
-            this.Book_Copyright.HeaderText = "Book_Copyright";
-            this.Book_Copyright.Name = "Book_Copyright";
-            this.Book_Copyright.Width = 128;
-            // 
-            // ISBN
-            // 
-            this.ISBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ISBN.FillWeight = 73.73386F;
-            this.ISBN.HeaderText = "Book_ISBN";
-            this.ISBN.Name = "ISBN";
-            this.ISBN.Width = 96;
-            // 
-            // FullName
-            // 
-            this.FullName.HeaderText = "FullName";
-            this.FullName.Name = "FullName";
-            // 
-            // Title
-            // 
-            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Title.FillWeight = 58.17943F;
-            this.Title.HeaderText = "Book_TItle";
-            this.Title.Name = "Title";
-            this.Title.Width = 95;
-            // 
-            // Author
-            // 
-            this.Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Author.FillWeight = 117.2417F;
-            this.Author.HeaderText = "Book_Author";
-            this.Author.Name = "Author";
-            this.Author.Width = 110;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn6.FillWeight = 145.6994F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Book_Status";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 105;
-            // 
-            // ReservedDate
-            // 
-            this.ReservedDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ReservedDate.FillWeight = 177.665F;
-            this.ReservedDate.HeaderText = "ReservedDate";
-            this.ReservedDate.Name = "ReservedDate";
-            this.ReservedDate.Width = 116;
             // 
             // BookReservation
             // 

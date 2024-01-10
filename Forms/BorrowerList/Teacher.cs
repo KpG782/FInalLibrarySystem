@@ -43,7 +43,7 @@ namespace FInalLibrarySystem
         {
             dgvTeachers.Rows.Clear();
 
-            List<Users.User> teachers = usersManager.GetAllTeachers();
+            List<Users.User> teachers = usersManager.GetAllTeachersOrderedByLatest(); // Fetch teachers ordered by latest
 
             foreach (var teacher in teachers)
             {

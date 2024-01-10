@@ -36,7 +36,6 @@
             this.lnkTeacher = new System.Windows.Forms.LinkLabel();
             this.lnkStudent = new System.Windows.Forms.LinkLabel();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
-            this.teacher1 = new FInalLibrarySystem.Teacher();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +44,8 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teacher1 = new FInalLibrarySystem.Teacher();
+            this.adminAll1 = new FInalLibrarySystem.Forms.BorrowerList.adminAll();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,14 +149,6 @@
             this.dgvStudents.TabIndex = 21;
             this.dgvStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellContentClick_1);
             // 
-            // teacher1
-            // 
-            this.teacher1.Location = new System.Drawing.Point(21, 177);
-            this.teacher1.Name = "teacher1";
-            this.teacher1.Size = new System.Drawing.Size(879, 447);
-            this.teacher1.TabIndex = 20;
-            this.teacher1.Load += new System.EventHandler(this.teacher2_Load);
-            // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -214,11 +207,27 @@
             this.Year.MinimumWidth = 6;
             this.Year.Name = "Year";
             // 
+            // teacher1
+            // 
+            this.teacher1.Location = new System.Drawing.Point(21, 177);
+            this.teacher1.Name = "teacher1";
+            this.teacher1.Size = new System.Drawing.Size(879, 447);
+            this.teacher1.TabIndex = 20;
+            this.teacher1.Load += new System.EventHandler(this.teacher2_Load);
+            // 
+            // adminAll1
+            // 
+            this.adminAll1.Location = new System.Drawing.Point(21, 109);
+            this.adminAll1.Name = "adminAll1";
+            this.adminAll1.Size = new System.Drawing.Size(879, 523);
+            this.adminAll1.TabIndex = 22;
+            // 
             // BorrowerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.adminAll1);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.teacher1);
             this.Controls.Add(this.lnkStudent);
@@ -248,5 +257,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn Year;
+        private Forms.BorrowerList.adminAll adminAll1;
     }
 }

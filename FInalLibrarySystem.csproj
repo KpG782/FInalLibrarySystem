@@ -120,6 +120,12 @@
     <Compile Include="Forms\Booklist Panels\Academic.Designer.cs">
       <DependentUpon>Academic.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BorrowerList\adminAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BorrowerList\adminAll.Designer.cs">
+      <DependentUpon>adminAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BorrowerList\Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Booklist Panels\Academic.resx">
       <DependentUpon>Academic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BorrowerList\adminAll.resx">
+      <DependentUpon>adminAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BorrowerList\Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>

@@ -34,7 +34,8 @@ namespace FInalLibrarySystem
             loginTimer = new Stopwatch();
 
             dgvBooks.CellContentClick += dgvBooks_CellContentClick;
-            dgvBookReserved.CellContentClick += dgvBookReserved_CellContentClick;
+            dgvBookReserved.CellContentClick += dgvBookReserved_CellContentClick_1;
+            
             DisplayReturnedBooks();
             DisplayReservedBooks();
         }
@@ -175,18 +176,7 @@ namespace FInalLibrarySystem
 
         private void dgvBookReserved_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                // Get the values from the clicked row
-                string selectedISBN = dgvBookReserved.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
-                string selectedTitle = dgvBookReserved.Rows[e.RowIndex].Cells["Title"].Value.ToString();
-                string selectedAuthor = dgvBookReserved.Rows[e.RowIndex].Cells["Author"].Value.ToString();
 
-                // Set the values in the respective TextBoxes and Labels
-                txtBookID.Text = selectedISBN;
-                lblBookTitle.Text = selectedTitle;
-                lblAuthorName.Text = selectedAuthor;
-            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -204,8 +194,14 @@ namespace FInalLibrarySystem
 
         private void txtBookID_TextChanged_1(object sender, EventArgs e)
         {
+
+
             // Ensure the user has entered a valid ISBN
             string isbn = txtBookID.Text.Trim();
+
+            // Retrieve the reserved book by ISBN and User ID
+            BookReservedModel reservedBook = bookReserved.GetReservedBookByISBN(isbn);
+
 
             // Retrieve book details from the database
             FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
@@ -216,6 +212,7 @@ namespace FInalLibrarySystem
                 lblBookTitle.Text = book.Title;
                 lblAuthorName.Text = book.Author;
                 pbPicture.Image = ByteArrayToImage(book.Cover);
+                
             }
             else
             {
@@ -300,12 +297,6 @@ namespace FInalLibrarySystem
                 MessageBox.Show("The Book is already borrowed/reserved");
                 return;
             }
-
-
-
-
-
-
 
 
             // Check if both txtUserID and txtBookID are empty
@@ -484,6 +475,22 @@ namespace FInalLibrarySystem
             lblBookTitle.Text = "";
             lblAuthorName.Text = "";
             pbPicture.Image = null; // Clear the PictureBox image
+        }
+
+        private void dgvBookReserved_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvBookReserved.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+                string selectedTitle = dgvBookReserved.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+                string selectedAuthor = dgvBookReserved.Rows[e.RowIndex].Cells["Author"].Value.ToString();
+
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
         }
     }
 }

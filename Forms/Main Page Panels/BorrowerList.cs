@@ -16,27 +16,34 @@ namespace FInalLibrarySystem
     {
         private Users usersManager;
 
+
+
         public BorrowerList()
         {
             InitializeComponent();
             usersManager = new Users();
         }
 
-        private void BorrowerList_Load(object sender, EventArgs e)
+       public void BorrowerList_Load(object sender, EventArgs e)
         {
             LoadStudentData();
 
             dgvStudents.Visible = true;
             teacher1.Visible = false;
+            adminAll1.Visible = false;
+
+            
 
         }
+
+
 
         //data of the students
         private void LoadStudentData()
         {
             dgvStudents.Rows.Clear();
 
-            List<Users.User> students = usersManager.GetAllStudents();
+            List<Users.User> students = usersManager.GetAllStudentsOrderedByLatest();
 
             foreach (var student in students)
             {
