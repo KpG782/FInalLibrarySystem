@@ -28,409 +28,220 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblTitleYear = new System.Windows.Forms.Label();
-            this.lblYear = new System.Windows.Forms.Label();
-            this.lblEmployeeID = new System.Windows.Forms.Label();
-            this.lblTitleEmployeeID = new System.Windows.Forms.Label();
-            this.lblDepartment = new System.Windows.Forms.Label();
-            this.lblTitleSection = new System.Windows.Forms.Label();
-            this.lblStudentID = new System.Windows.Forms.Label();
-            this.lblStudID = new System.Windows.Forms.Label();
-            this.lblSection = new System.Windows.Forms.Label();
-            this.lblTitleDepartment = new System.Windows.Forms.Label();
-            this.lblTitleMI = new System.Windows.Forms.Label();
-            this.lblTitleFirstName = new System.Windows.Forms.Label();
-            this.lblTitleLastName = new System.Windows.Forms.Label();
-            this.lblMI = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.pbUserPic = new System.Windows.Forms.PictureBox();
-            this.lblTitleFullName = new System.Windows.Forms.Label();
-            this.lblTItleEmail = new System.Windows.Forms.Label();
-            this.lblTitleRole = new System.Windows.Forms.Label();
-            this.lblTitlePassword = new System.Windows.Forms.Label();
-            this.lblTitleUsername = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblRole = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblTitleID = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUserPic)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.LBLRecommended = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.LBLUsername = new System.Windows.Forms.Label();
+            this.LBLHello = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.LBLCategories = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblTitle
+            // panel2
             // 
-            this.lblTitle.Location = new System.Drawing.Point(37, 24);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(75, 19);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Profile";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.LBLRecommended);
+            this.panel2.Location = new System.Drawing.Point(2, 111);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(914, 295);
+            this.panel2.TabIndex = 6;
             // 
-            // lblTitleYear
+            // panel7
             // 
-            this.lblTitleYear.Location = new System.Drawing.Point(44, 471);
-            this.lblTitleYear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleYear.Name = "lblTitleYear";
-            this.lblTitleYear.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleYear.TabIndex = 58;
-            this.lblTitleYear.Text = "Year";
-            this.lblTitleYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel7.Location = new System.Drawing.Point(672, 47);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(178, 234);
+            this.panel7.TabIndex = 2;
             // 
-            // lblYear
+            // panel6
             // 
-            this.lblYear.BackColor = System.Drawing.Color.White;
-            this.lblYear.Location = new System.Drawing.Point(145, 471);
-            this.lblYear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(97, 36);
-            this.lblYear.TabIndex = 57;
-            this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel6.Location = new System.Drawing.Point(466, 47);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(178, 234);
+            this.panel6.TabIndex = 2;
             // 
-            // lblEmployeeID
+            // panel5
             // 
-            this.lblEmployeeID.BackColor = System.Drawing.Color.White;
-            this.lblEmployeeID.Location = new System.Drawing.Point(673, 471);
-            this.lblEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEmployeeID.Name = "lblEmployeeID";
-            this.lblEmployeeID.Size = new System.Drawing.Size(97, 36);
-            this.lblEmployeeID.TabIndex = 56;
-            this.lblEmployeeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel5.Location = new System.Drawing.Point(263, 47);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(178, 234);
+            this.panel5.TabIndex = 2;
             // 
-            // lblTitleEmployeeID
+            // panel4
             // 
-            this.lblTitleEmployeeID.Location = new System.Drawing.Point(554, 471);
-            this.lblTitleEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleEmployeeID.Name = "lblTitleEmployeeID";
-            this.lblTitleEmployeeID.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleEmployeeID.TabIndex = 55;
-            this.lblTitleEmployeeID.Text = "Employee ID";
-            this.lblTitleEmployeeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel4.Location = new System.Drawing.Point(60, 47);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(178, 234);
+            this.panel4.TabIndex = 1;
             // 
-            // lblDepartment
+            // LBLRecommended
             // 
-            this.lblDepartment.BackColor = System.Drawing.Color.White;
-            this.lblDepartment.Location = new System.Drawing.Point(673, 427);
-            this.lblDepartment.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(97, 36);
-            this.lblDepartment.TabIndex = 54;
-            this.lblDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBLRecommended.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLRecommended.Location = new System.Drawing.Point(20, 15);
+            this.LBLRecommended.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLRecommended.Name = "LBLRecommended";
+            this.LBLRecommended.Size = new System.Drawing.Size(172, 29);
+            this.LBLRecommended.TabIndex = 0;
+            this.LBLRecommended.Text = "RECOMMENDED";
             // 
-            // lblTitleSection
+            // panel1
             // 
-            this.lblTitleSection.Location = new System.Drawing.Point(294, 427);
-            this.lblTitleSection.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleSection.Name = "lblTitleSection";
-            this.lblTitleSection.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleSection.TabIndex = 53;
-            this.lblTitleSection.Text = "Section";
-            this.lblTitleSection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.LBLUsername);
+            this.panel1.Controls.Add(this.LBLHello);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(932, 104);
+            this.panel1.TabIndex = 5;
             // 
-            // lblStudentID
+            // guna2Button1
             // 
-            this.lblStudentID.BackColor = System.Drawing.Color.White;
-            this.lblStudentID.Location = new System.Drawing.Point(412, 471);
-            this.lblStudentID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblStudentID.Name = "lblStudentID";
-            this.lblStudentID.Size = new System.Drawing.Size(97, 36);
-            this.lblStudentID.TabIndex = 52;
-            this.lblStudentID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(657, 38);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(214, 37);
+            this.guna2Button1.TabIndex = 4;
+            this.guna2Button1.Text = "SEARCH";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // lblStudID
+            // LBLUsername
             // 
-            this.lblStudID.Location = new System.Drawing.Point(294, 471);
-            this.lblStudID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblStudID.Name = "lblStudID";
-            this.lblStudID.Size = new System.Drawing.Size(97, 36);
-            this.lblStudID.TabIndex = 51;
-            this.lblStudID.Text = "Student ID";
-            this.lblStudID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBLUsername.BackColor = System.Drawing.Color.Transparent;
+            this.LBLUsername.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLUsername.Location = new System.Drawing.Point(157, 21);
+            this.LBLUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLUsername.Name = "LBLUsername";
+            this.LBLUsername.Size = new System.Drawing.Size(488, 65);
+            this.LBLUsername.TabIndex = 3;
+            this.LBLUsername.Text = "UserName!";
+            this.LBLUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblSection
+            // LBLHello
             // 
-            this.lblSection.BackColor = System.Drawing.Color.White;
-            this.lblSection.Location = new System.Drawing.Point(412, 427);
-            this.lblSection.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSection.Name = "lblSection";
-            this.lblSection.Size = new System.Drawing.Size(67, 36);
-            this.lblSection.TabIndex = 50;
-            this.lblSection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBLHello.BackColor = System.Drawing.Color.Transparent;
+            this.LBLHello.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLHello.Location = new System.Drawing.Point(12, 21);
+            this.LBLHello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLHello.Name = "LBLHello";
+            this.LBLHello.Size = new System.Drawing.Size(152, 65);
+            this.LBLHello.TabIndex = 2;
+            this.LBLHello.Text = "Hello,";
+            this.LBLHello.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblTitleDepartment
+            // panel3
             // 
-            this.lblTitleDepartment.Location = new System.Drawing.Point(554, 427);
-            this.lblTitleDepartment.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleDepartment.Name = "lblTitleDepartment";
-            this.lblTitleDepartment.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleDepartment.TabIndex = 49;
-            this.lblTitleDepartment.Text = "Department";
-            this.lblTitleDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel3.Controls.Add(this.panel10);
+            this.panel3.Controls.Add(this.panel9);
+            this.panel3.Controls.Add(this.panel8);
+            this.panel3.Controls.Add(this.LBLCategories);
+            this.panel3.Location = new System.Drawing.Point(2, 411);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(914, 270);
+            this.panel3.TabIndex = 7;
             // 
-            // lblTitleMI
+            // panel10
             // 
-            this.lblTitleMI.Location = new System.Drawing.Point(379, 383);
-            this.lblTitleMI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleMI.Name = "lblTitleMI";
-            this.lblTitleMI.Size = new System.Drawing.Size(37, 18);
-            this.lblTitleMI.TabIndex = 48;
-            this.lblTitleMI.Text = "M.I.";
-            this.lblTitleMI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel10.Location = new System.Drawing.Point(398, 46);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(140, 210);
+            this.panel10.TabIndex = 3;
             // 
-            // lblTitleFirstName
+            // panel9
             // 
-            this.lblTitleFirstName.Location = new System.Drawing.Point(279, 383);
-            this.lblTitleFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleFirstName.Name = "lblTitleFirstName";
-            this.lblTitleFirstName.Size = new System.Drawing.Size(71, 18);
-            this.lblTitleFirstName.TabIndex = 47;
-            this.lblTitleFirstName.Text = "FirstName";
-            this.lblTitleFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel9.Location = new System.Drawing.Point(228, 46);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(140, 210);
+            this.panel9.TabIndex = 3;
             // 
-            // lblTitleLastName
+            // panel8
             // 
-            this.lblTitleLastName.Location = new System.Drawing.Point(164, 383);
-            this.lblTitleLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleLastName.Name = "lblTitleLastName";
-            this.lblTitleLastName.Size = new System.Drawing.Size(71, 18);
-            this.lblTitleLastName.TabIndex = 46;
-            this.lblTitleLastName.Text = "Last Name";
-            this.lblTitleLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel8.Location = new System.Drawing.Point(60, 46);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(140, 210);
+            this.panel8.TabIndex = 2;
             // 
-            // lblMI
+            // LBLCategories
             // 
-            this.lblMI.BackColor = System.Drawing.Color.White;
-            this.lblMI.Location = new System.Drawing.Point(379, 347);
-            this.lblMI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMI.Name = "lblMI";
-            this.lblMI.Size = new System.Drawing.Size(37, 36);
-            this.lblMI.TabIndex = 45;
-            this.lblMI.Text = "Profile";
-            this.lblMI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.BackColor = System.Drawing.Color.White;
-            this.lblFirstName.Location = new System.Drawing.Point(262, 347);
-            this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(106, 36);
-            this.lblFirstName.TabIndex = 44;
-            this.lblFirstName.Text = "Profile";
-            this.lblFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pbUserPic
-            // 
-            this.pbUserPic.BackColor = System.Drawing.Color.Black;
-            this.pbUserPic.Location = new System.Drawing.Point(610, 122);
-            this.pbUserPic.Margin = new System.Windows.Forms.Padding(2);
-            this.pbUserPic.Name = "pbUserPic";
-            this.pbUserPic.Size = new System.Drawing.Size(160, 185);
-            this.pbUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUserPic.TabIndex = 43;
-            this.pbUserPic.TabStop = false;
-            // 
-            // lblTitleFullName
-            // 
-            this.lblTitleFullName.Location = new System.Drawing.Point(37, 347);
-            this.lblTitleFullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleFullName.Name = "lblTitleFullName";
-            this.lblTitleFullName.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleFullName.TabIndex = 42;
-            this.lblTitleFullName.Text = "Full Name";
-            this.lblTitleFullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTItleEmail
-            // 
-            this.lblTItleEmail.Location = new System.Drawing.Point(28, 300);
-            this.lblTItleEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTItleEmail.Name = "lblTItleEmail";
-            this.lblTItleEmail.Size = new System.Drawing.Size(97, 36);
-            this.lblTItleEmail.TabIndex = 41;
-            this.lblTItleEmail.Text = "Email";
-            this.lblTItleEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTitleRole
-            // 
-            this.lblTitleRole.Location = new System.Drawing.Point(44, 427);
-            this.lblTitleRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleRole.Name = "lblTitleRole";
-            this.lblTitleRole.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleRole.TabIndex = 40;
-            this.lblTitleRole.Text = "Role";
-            this.lblTitleRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTitlePassword
-            // 
-            this.lblTitlePassword.Location = new System.Drawing.Point(44, 254);
-            this.lblTitlePassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitlePassword.Name = "lblTitlePassword";
-            this.lblTitlePassword.Size = new System.Drawing.Size(97, 36);
-            this.lblTitlePassword.TabIndex = 39;
-            this.lblTitlePassword.Text = "Password";
-            this.lblTitlePassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTitleUsername
-            // 
-            this.lblTitleUsername.Location = new System.Drawing.Point(37, 198);
-            this.lblTitleUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleUsername.Name = "lblTitleUsername";
-            this.lblTitleUsername.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleUsername.TabIndex = 38;
-            this.lblTitleUsername.Text = "Username";
-            this.lblTitleUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblLastName
-            // 
-            this.lblLastName.BackColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(138, 347);
-            this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(119, 36);
-            this.lblLastName.TabIndex = 37;
-            this.lblLastName.Text = "Profile";
-            this.lblLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblRole
-            // 
-            this.lblRole.BackColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(145, 427);
-            this.lblRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(97, 36);
-            this.lblRole.TabIndex = 36;
-            this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.BackColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(138, 300);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(97, 36);
-            this.lblEmail.TabIndex = 35;
-            this.lblEmail.Text = "Profile";
-            this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.BackColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(138, 254);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(97, 36);
-            this.lblPassword.TabIndex = 34;
-            this.lblPassword.Text = "Profile";
-            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.BackColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(138, 198);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(97, 36);
-            this.lblUsername.TabIndex = 33;
-            this.lblUsername.Text = "Profile";
-            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTitleID
-            // 
-            this.lblTitleID.Location = new System.Drawing.Point(37, 154);
-            this.lblTitleID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitleID.Name = "lblTitleID";
-            this.lblTitleID.Size = new System.Drawing.Size(97, 36);
-            this.lblTitleID.TabIndex = 32;
-            this.lblTitleID.Text = "ID";
-            this.lblTitleID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblID
-            // 
-            this.lblID.BackColor = System.Drawing.Color.White;
-            this.lblID.Location = new System.Drawing.Point(138, 154);
-            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(97, 36);
-            this.lblID.TabIndex = 31;
-            this.lblID.Text = "Profile";
-            this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBLCategories.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLCategories.Location = new System.Drawing.Point(20, 15);
+            this.LBLCategories.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLCategories.Name = "LBLCategories";
+            this.LBLCategories.Size = new System.Drawing.Size(164, 28);
+            this.LBLCategories.TabIndex = 1;
+            this.LBLCategories.Text = "CATEGORIES";
             // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.lblTitleYear);
-            this.Controls.Add(this.lblYear);
-            this.Controls.Add(this.lblEmployeeID);
-            this.Controls.Add(this.lblTitleEmployeeID);
-            this.Controls.Add(this.lblDepartment);
-            this.Controls.Add(this.lblTitleSection);
-            this.Controls.Add(this.lblStudentID);
-            this.Controls.Add(this.lblStudID);
-            this.Controls.Add(this.lblSection);
-            this.Controls.Add(this.lblTitleDepartment);
-            this.Controls.Add(this.lblTitleMI);
-            this.Controls.Add(this.lblTitleFirstName);
-            this.Controls.Add(this.lblTitleLastName);
-            this.Controls.Add(this.lblMI);
-            this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.pbUserPic);
-            this.Controls.Add(this.lblTitleFullName);
-            this.Controls.Add(this.lblTItleEmail);
-            this.Controls.Add(this.lblTitleRole);
-            this.Controls.Add(this.lblTitlePassword);
-            this.Controls.Add(this.lblTitleUsername);
-            this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.lblRole);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblTitleID);
-            this.Controls.Add(this.lblID);
-            this.Controls.Add(this.lblTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Profile";
             this.Size = new System.Drawing.Size(936, 860);
             this.Load += new System.EventHandler(this.Profile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbUserPic)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblTitleYear;
-        private System.Windows.Forms.Label lblYear;
-        private System.Windows.Forms.Label lblEmployeeID;
-        private System.Windows.Forms.Label lblTitleEmployeeID;
-        private System.Windows.Forms.Label lblDepartment;
-        private System.Windows.Forms.Label lblTitleSection;
-        private System.Windows.Forms.Label lblStudentID;
-        private System.Windows.Forms.Label lblStudID;
-        private System.Windows.Forms.Label lblSection;
-        private System.Windows.Forms.Label lblTitleDepartment;
-        private System.Windows.Forms.Label lblTitleMI;
-        private System.Windows.Forms.Label lblTitleFirstName;
-        private System.Windows.Forms.Label lblTitleLastName;
-        private System.Windows.Forms.Label lblMI;
-        private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.PictureBox pbUserPic;
-        private System.Windows.Forms.Label lblTitleFullName;
-        private System.Windows.Forms.Label lblTItleEmail;
-        private System.Windows.Forms.Label lblTitleRole;
-        private System.Windows.Forms.Label lblTitlePassword;
-        private System.Windows.Forms.Label lblTitleUsername;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.Label lblRole;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblTitleID;
-        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label LBLRecommended;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label LBLUsername;
+        private System.Windows.Forms.Label LBLHello;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label LBLCategories;
     }
 }

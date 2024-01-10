@@ -14,8 +14,8 @@ namespace FInalLibrarySystem
 
     public partial class MainPage : Form
     {
-        
-       
+
+
 
 
         public MainPage()
@@ -181,6 +181,17 @@ namespace FInalLibrarySystem
         {
             Application.Exit();
 
+        }
+
+        private void btnDashboard_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //set if visibile or not
+            profile1.Visible = true;
+            bookList1.Visible = false;
+            borrowerList1.Visible = false;
+            bookBorrowing1.Visible = false;
+            bookReturning1.Visible = false;
+            bookReservation2.Visible = true;
         }
     }
 }

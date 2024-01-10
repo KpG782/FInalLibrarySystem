@@ -42,10 +42,10 @@
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teacher1 = new FInalLibrarySystem.Teacher();
+            this.adminAll1 = new FInalLibrarySystem.Forms.BorrowerList.adminAll();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,7 +119,6 @@
             this.LastName,
             this.MI,
             this.Email,
-            this.StudentID,
             this.Section,
             this.Year});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -194,13 +193,6 @@
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
             // 
-            // StudentID
-            // 
-            this.StudentID.FillWeight = 61.4306F;
-            this.StudentID.HeaderText = "StudentID";
-            this.StudentID.MinimumWidth = 6;
-            this.StudentID.Name = "StudentID";
-            // 
             // Section
             // 
             this.Section.FillWeight = 61.4306F;
@@ -223,11 +215,19 @@
             this.teacher1.TabIndex = 20;
             this.teacher1.Load += new System.EventHandler(this.teacher2_Load);
             // 
+            // adminAll1
+            // 
+            this.adminAll1.Location = new System.Drawing.Point(21, 109);
+            this.adminAll1.Name = "adminAll1";
+            this.adminAll1.Size = new System.Drawing.Size(879, 523);
+            this.adminAll1.TabIndex = 22;
+            // 
             // BorrowerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.adminAll1);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.teacher1);
             this.Controls.Add(this.lnkStudent);
@@ -255,8 +255,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MI;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn Year;
+        private Forms.BorrowerList.adminAll adminAll1;
     }
 }

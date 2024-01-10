@@ -17,6 +17,7 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+        BorrowerList borrowerList;
         private Stopwatch loginTimer;
         private int loggedInUserId; // Add a variable to store the logged-in user ID
         public Point mouseLocation;
@@ -39,8 +40,8 @@ namespace FInalLibrarySystem
         {
             InitializeComponent();
            loginTimer = new Stopwatch(); // Add this line to instantiate the Stopwatch
+            BorrowerList borrowerList = new BorrowerList();
 
-            
         }
 
   
@@ -251,7 +252,8 @@ namespace FInalLibrarySystem
                 // Your existing code here...
 
                 // Show the elapsed time in decimals
-                MessageBox.Show($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Console.WriteLine($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
 
                 // Reset the timer for the next login attempt
                 loginTimer.Reset();
@@ -267,18 +269,22 @@ namespace FInalLibrarySystem
                     // Get the user data by ID
                     Users.User userProfile = usersManager.GetUserById(loggedInUserId);
 
+                    // Display a personalized welcome message
+                    MessageBox.Show($"Welcome, {userProfile.FirstName} {userProfile.LastName}!");
+
+                    //if (userProfile.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    //{
+                    //    // Assuming borrowerList is an instance of the BorrowerList class
+                    //    borrowerList.adminAll1 = true;
+                    //    usersManager.SetAdminVisibility(borrowerList, true);
+                    //}
+
                     mainPage.Enabled = true;
                     mainPage.Show();
 
                     //hides the frmlogin
                     this.Visible = false;
 
-                    if (loggedInUserId == 2)
-                    {
-                        // Display the UserId in a MessageBox
-                        MessageBox.Show("Gumana yung no.2");
-                        this.Refresh();
-                    }
                 }
                 else //if not
                 {

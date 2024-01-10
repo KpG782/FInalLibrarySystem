@@ -21,6 +21,7 @@ namespace FInalLibrarySystem
             booksManager = new Books();
             InitializeComponent();
         }
+   
 
 
         private void Academic_Load(object sender, EventArgs e)
@@ -373,12 +374,21 @@ namespace FInalLibrarySystem
         private void pb1_MouseHover(object sender, EventArgs e)
         {
             pnl1.Visible = true;
+
         }
 
         private void pb1_MouseLeave(object sender, EventArgs e)
         {
+
+
+            // Hide the panel
             pnl1.Visible = false;
+
+            
+
         }
+
+
 
         //pb2
         private void pb2_MouseHover(object sender, EventArgs e)
@@ -468,6 +478,9 @@ namespace FInalLibrarySystem
             pnl9.Visible = false;
         }
 
+        private void pb1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

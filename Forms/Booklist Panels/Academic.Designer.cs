@@ -791,6 +791,7 @@
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1.TabIndex = 114;
             this.pb1.TabStop = false;
+            this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
             // pb2
             // 
@@ -1106,20 +1107,20 @@
             // bk10lbl8
             // 
             this.bk10lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.bk10lbl8.Location = new System.Drawing.Point(149, 11);
+            this.bk10lbl8.Location = new System.Drawing.Point(138, 70);
             this.bk10lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk10lbl8.Name = "bk10lbl8";
-            this.bk10lbl8.Size = new System.Drawing.Size(155, 200);
+            this.bk10lbl8.Size = new System.Drawing.Size(155, 154);
             this.bk10lbl8.TabIndex = 41;
             this.bk10lbl8.Text = "Description";
             // 
             // bk10lbl4
             // 
             this.bk10lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.bk10lbl4.Location = new System.Drawing.Point(12, 102);
+            this.bk10lbl4.Location = new System.Drawing.Point(6, 37);
             this.bk10lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk10lbl4.Name = "bk10lbl4";
-            this.bk10lbl4.Size = new System.Drawing.Size(138, 19);
+            this.bk10lbl4.Size = new System.Drawing.Size(231, 19);
             this.bk10lbl4.TabIndex = 37;
             this.bk10lbl4.Text = "Author";
             // 
@@ -1136,7 +1137,7 @@
             // bk10lbl2
             // 
             this.bk10lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.bk10lbl2.Location = new System.Drawing.Point(12, 46);
+            this.bk10lbl2.Location = new System.Drawing.Point(7, 101);
             this.bk10lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bk10lbl2.Name = "bk10lbl2";
             this.bk10lbl2.Size = new System.Drawing.Size(138, 19);

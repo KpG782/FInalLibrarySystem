@@ -432,12 +432,21 @@
             this.cmbCollegeDept.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCollegeDept.ItemHeight = 30;
             this.cmbCollegeDept.Items.AddRange(new object[] {
-            "CCIS",
-            "CTM",
-            "CTHM",
-            "IOS",
             "IOP",
-            "IOA"});
+            "ION",
+            "IIHS",
+            "CAS",
+            "CHK",
+            "CBFS",
+            "IOA",
+            "CCIS",
+            "CGPP",
+            "COS",
+            "CTM",
+            "CCSE",
+            "CITE",
+            "CTHM",
+            "SOL"});
             this.cmbCollegeDept.Location = new System.Drawing.Point(28, 180);
             this.cmbCollegeDept.Name = "cmbCollegeDept";
             this.cmbCollegeDept.Size = new System.Drawing.Size(265, 36);

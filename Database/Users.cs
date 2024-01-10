@@ -30,10 +30,32 @@ namespace FInalLibrarySystem.Database
             public byte[] Picture { get; set; }
 
             public int Money { get; set; }
+
+            public int Debt { get; set; }
        
         }
 
-        
+
+        public List<User> GetAllUsersOrderedByLatest()
+        {
+            List<User> users = GetAllUsers(); // Fetch all users
+
+            // Use the List.Sort method with a custom IComparer
+            users.Sort(new UserComparer());
+
+            return users;
+        }
+
+        // Custom comparer to sort users based on ID in descending order
+        public class UserComparer : IComparer<User>
+        {
+            public int Compare(User x, User y)
+            {
+                // Compare by ID in descending order
+                return y.Id.CompareTo(x.Id);
+            }
+        }
+
 
         // Add a method to retrieve user by ID
         public User GetUserById(int userId)
@@ -472,5 +494,276 @@ namespace FInalLibrarySystem.Database
             return user;
         }
 
+        public bool IsStudent(string studentOrEmployeeId)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT role FROM `app_users` WHERE `studentID` = @id OR `employeeID` = @id";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = studentOrEmployeeId;
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            // Check if the role is 'Student'
+                            return result.ToString().Equals("Student", StringComparison.OrdinalIgnoreCase);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return false; // Default to false if there is an error or no matching user found
+        }
+
+
+        //get user money in bookreturning
+        public int GetUserMoneyByUserId(string userId)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT money FROM app_users WHERE studentID = @userId OR employeeID = @userId";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@userId", userId);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null && int.TryParse(result.ToString(), out int money))
+                        {
+                            return money;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return 0; // Default to 0 if there is an error or no matching user found
+        }
+
+        public bool UpdateUserMoneyByUserId(string userId, int updatedMoney)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string updateQuery = "UPDATE app_users SET money = @UpdatedMoney WHERE studentID = @UserId OR employeeID = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(updateQuery, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@UpdatedMoney", updatedMoney);
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log, show error message, etc.)
+                Console.WriteLine($"Error updating user money: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+        }
+
+        public bool AddToDebt(string userId, int amount)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string updateQuery = "UPDATE app_users SET debt = debt + @Amount WHERE studentID = @UserId OR employeeID = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(updateQuery, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Amount", amount);
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log, show error message, etc.)
+                Console.WriteLine($"Error adding debt: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+        }
+
+        public bool HasDebt(string userId)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT debt FROM app_users WHERE studentID = @UserId OR employeeID = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null && int.TryParse(result.ToString(), out int debt))
+                        {
+                            return debt > 0;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log, show error message, etc.)
+                Console.WriteLine($"Error checking debt status: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return false; // Default to false if there is an error or no matching user found
+        }
+
+        //bubble sorting algorithm
+        public List<User> GetAllTeachersOrderedByLatest()
+        {
+            List<User> teachers = GetAllTeachers();
+
+            // Bubble Sort
+            for (int i = 0; i < teachers.Count - 1; i++)
+            {
+                for (int j = 0; j < teachers.Count - i - 1; j++)
+                {
+                    // Compare teachers based on ID (you can change this to another criterion if needed)
+                    if (teachers[j].Id < teachers[j + 1].Id)
+                    {
+                        // Swap teachers
+                        User temp = teachers[j];
+                        teachers[j] = teachers[j + 1];
+                        teachers[j + 1] = temp;
+                    }
+                }
+            }
+
+            return teachers;
+        }
+
+        //using mergesort
+        public List<User> GetAllStudentsOrderedByLatest()
+        {
+            List<User> students = GetAllStudents();
+
+            // Use Merge Sort
+            students = MergeSort(students);
+
+            return students;
+        }
+
+        private List<User> MergeSort(List<User> userList)
+        {
+            if (userList.Count <= 1)
+                return userList;
+
+            int middle = userList.Count / 2;
+            List<User> left = userList.GetRange(0, middle);
+            List<User> right = userList.GetRange(middle, userList.Count - middle);
+
+            left = MergeSort(left);
+            right = MergeSort(right);
+
+            return Merge(left, right);
+        }
+
+        private List<User> Merge(List<User> left, List<User> right)
+        {
+            List<User> result = new List<User>();
+            int leftIndex = 0;
+            int rightIndex = 0;
+
+            while (leftIndex < left.Count && rightIndex < right.Count)
+            {
+                // Compare students based on ID (you can change this to another criterion if needed)
+                if (left[leftIndex].Id >= right[rightIndex].Id)
+                {
+                    result.Add(left[leftIndex]);
+                    leftIndex++;
+                }
+                else
+                {
+                    result.Add(right[rightIndex]);
+                    rightIndex++;
+                }
+            }
+
+            // Add remaining elements from left and right lists
+            while (leftIndex < left.Count)
+            {
+                result.Add(left[leftIndex]);
+                leftIndex++;
+            }
+
+            while (rightIndex < right.Count)
+            {
+                result.Add(right[rightIndex]);
+                rightIndex++;
+            }
+
+            return result;
+        }
+
+        //try to continue
+        //public void SetAdminVisibility(BorrowerList borrowerList, bool isAdmin)
+        //{
+        //    if (isAdmin)
+        //    {
+        //        borrowerList.adminAll1 = true;
+        //    }
+        //    else
+        //    {
+        //        borrowerList.adminAll1 = false;
+        //    }
+        //}
     }
 }
