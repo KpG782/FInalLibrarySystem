@@ -132,6 +132,78 @@ namespace FInalLibrarySystem
         }
         private void btnBorrow_Click(object sender, EventArgs e)
         {
+            
+        }
+
+
+        private void PrimaryPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private byte[] ImageToByteArray(Image image)
+        {
+            if (image == null)
+                return null;
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert the Image to a byte array without using Image.Save
+                image.Save(ms, image.RawFormat);
+                return ms.ToArray();
+            }
+        }
+
+        private void DisplayReturnedBooks()
+        {
+            // Assuming dgvShow is the DataGridView control where you want to display the books
+            dgvShow.Rows.Clear();
+
+            // Retrieve returned books from the Books class
+            List<DatabaseBook> returnedBooks = booksManager1.GetReturnedBooks();
+
+            // Populate the DataGridView with returned books
+            foreach (var book in returnedBooks)
+            {
+                dgvShow.Rows.Add(book.Title, book.ISBN, book.Category, book.Author, book.Status,  book.Copyright);
+            }
+        }
+
+
+
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbPicture_Click(object sender, EventArgs e)
+        {
+            // Handle PictureBox click if needed
+        }
+
+        private void dgvShow_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvShow.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+                string selectedTitle = dgvShow.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
+                string selectedAuthor = dgvShow.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
+
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBorrow_Click_1(object sender, EventArgs e)
+        {
             // Retrieve necessary data from UI elements
             string isbn = txtBookID.Text.Trim();
             if (string.IsNullOrEmpty(isbn))
@@ -245,43 +317,13 @@ namespace FInalLibrarySystem
             }
         }
 
-
-        private void PrimaryPanel_Paint(object sender, PaintEventArgs e)
+        private void btnUpdate_Click_1(object sender, EventArgs e)
         {
-
-        }
-        private byte[] ImageToByteArray(Image image)
-        {
-            if (image == null)
-                return null;
-
-            using (MemoryStream ms = new MemoryStream())
-            {
-                // Convert the Image to a byte array without using Image.Save
-                image.Save(ms, image.RawFormat);
-                return ms.ToArray();
-            }
+            LoadAllBooks();
+            DisplayReturnedBooks();
         }
 
-        private void DisplayReturnedBooks()
-        {
-            // Assuming dgvShow is the DataGridView control where you want to display the books
-            dgvShow.Rows.Clear();
-
-            // Retrieve returned books from the Books class
-            List<DatabaseBook> returnedBooks = booksManager1.GetReturnedBooks();
-
-            // Populate the DataGridView with returned books
-            foreach (var book in returnedBooks)
-            {
-                dgvShow.Rows.Add(book.Title, book.ISBN, book.Category, book.Author, book.Status,  book.Copyright);
-            }
-        }
-
-
-
-
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnClear_Click_1(object sender, EventArgs e)
         {
             // Clear the UI elements after borrowing
             txtBookID.Text = "";
@@ -293,31 +335,47 @@ namespace FInalLibrarySystem
             pbPicture.Image = null; // Clear the PictureBox image
         }
 
-        private void pbPicture_Click(object sender, EventArgs e)
+        private void txtUserID_TextChanged_1(object sender, EventArgs e)
         {
-            // Handle PictureBox click if needed
-        }
+            studentOrEmployeeId = txtUserID.Text.Trim();  // Update the class-level variable
 
-        private void dgvShow_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
+            // Retrieve user details from the database based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(studentOrEmployeeId);
+
+            // Update labels with user details or show not available
+            if (user != null)
             {
-                // Get the values from the clicked row
-                string selectedISBN = dgvShow.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
-                string selectedTitle = dgvShow.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
-                string selectedAuthor = dgvShow.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
-
-                // Set the values in the respective TextBoxes and Labels
-                txtBookID.Text = selectedISBN;
-                lblBookTitle.Text = selectedTitle;
-                lblAuthorName.Text = selectedAuthor;
+                lblUserName.Text = $"{user.FirstName} {user.LastName}";
+            }
+            else
+            {
+                // Clear labels if the user is not found
+                lblUserName.Text = "User not available";
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void txtBookID_TextChanged_1(object sender, EventArgs e)
         {
-            LoadAllBooks();
-            DisplayReturnedBooks();
+            // Ensure the user has entered a valid ISBN
+            string isbn = txtBookID.Text.Trim();
+
+            // Retrieve book details from the database
+            FInalLibrarySystem.Database.Book book = booksManager1.GetBookDetailsByISBN(isbn);
+
+            // Update labels with book details or show not available
+            if (book != null)
+            {
+                lblBookTitle.Text = book.Title;
+                lblAuthorName.Text = book.Author;
+                pbPicture.Image = ByteArrayToImage(book.Cover);
+            }
+            else
+            {
+                // Clear labels if the book is not found
+                lblBookTitle.Text = "Book not available";
+                lblAuthorName.Text = "Author not available";
+                pbPicture.Image = null;
+            }
         }
     }
 }
