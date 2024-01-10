@@ -308,8 +308,8 @@ namespace FInalLibrarySystem
                 this.Refresh();
                 MessageBox.Show("Book borrowed successfully!");
                 bool updateSuccess = booksManager1.UpdateBookStatus(book.Id, "Borrowed");
+                    Console.WriteLine($"Borrowing took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
 
-                    MessageBox.Show($"Borrowing took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loginTimer.Stop();
                     loginTimer.Reset();
 
@@ -403,6 +403,11 @@ private void btnUpdate_Click_1(object sender, EventArgs e)
                 lblAuthorName.Text = "Author not available";
                 pbPicture.Image = null;
             }
+        }
+
+        private void PrimaryPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

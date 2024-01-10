@@ -363,7 +363,9 @@ namespace FInalLibrarySystem
                     DisplayReservedBooks();
                     DisplayReturnedBooks();
 
-                        MessageBox.Show($"Reservation took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Console.WriteLine($"Reservation took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
+
                         loginTimer.Stop();
                         loginTimer.Reset();
 

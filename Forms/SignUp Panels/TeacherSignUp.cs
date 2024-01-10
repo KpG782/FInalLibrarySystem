@@ -131,7 +131,8 @@ namespace FInalLibrarySystem.Forms.SignUp_Panels
                     frmLogin f2 = new frmLogin();
                     f2.Show();
 
-                    MessageBox.Show($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Console.WriteLine($"Signup took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
                     loginTimer.Stop();
                     loginTimer.Reset();
 

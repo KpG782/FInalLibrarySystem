@@ -44,6 +44,7 @@
             this.profile1 = new FInalLibrarySystem.Profile();
             this.bookReservation1 = new FInalLibrarySystem.BookReservation();
             this.bookReservation2 = new FInalLibrarySystem.BookReservation();
+            this.btnDashboard = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -242,12 +243,31 @@
             this.bookReservation2.Size = new System.Drawing.Size(917, 683);
             this.bookReservation2.TabIndex = 36;
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnDashboard.LinkColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(21, 147);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(108, 52);
+            this.btnDashboard.TabIndex = 37;
+            this.btnDashboard.TabStop = true;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDashboard_LinkClicked);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1112, 687);
+            this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SettingsLink);
@@ -292,5 +312,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox closeButton;
         private BookReturning bookReturning1;
         private BookReservation bookReservation2;
+        private System.Windows.Forms.LinkLabel btnDashboard;
     }
 }

@@ -232,31 +232,12 @@ private void btnClear_Click(object sender, EventArgs e)
 
         private void dgvBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                // Get the values from the clicked row
-                string selectedISBN = dgvBooks.Rows[e.RowIndex].Cells["SBN"].Value.ToString();
-                string selectedTitle = dgvBooks.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
-                string selectedAuthor = dgvBooks.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
 
-                // Set the values in the respective TextBoxes and Labels
-                txtBookID.Text = selectedISBN;
-                lblBookTitle.Text = selectedTitle;
-                lblAuthorName.Text = selectedAuthor;
-            }
         }
 
         private void dgvBookBorrow_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Get the values from the clicked row
-            string selectedISBN = dgvBookBorrow.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
-            string selectedTitle = dgvBookBorrow.Rows[e.RowIndex].Cells["Title"].Value.ToString();
-            string selectedAuthor = dgvBookBorrow.Rows[e.RowIndex].Cells["Author"].Value.ToString();
 
-            // Set the values in the respective TextBoxes and Labels
-            txtBookID.Text = selectedISBN;
-            lblBookTitle.Text = selectedTitle;
-            lblAuthorName.Text = selectedAuthor;
         }
 
         private void panel1_Paint_2(object sender, PaintEventArgs e)
@@ -505,8 +486,8 @@ private void btnClear_Click(object sender, EventArgs e)
                             // Refresh the DataGridView controls to reflect the changes
                             DisplayBooks();
                             DisplayBookBorrows();
+                            Console.WriteLine($"Returning took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
 
-                            MessageBox.Show($"Returning took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             loginTimer.Stop();
                             loginTimer.Reset();
                         }
@@ -777,6 +758,35 @@ private void btnClear_Click(object sender, EventArgs e)
         private void btnAddToDebt_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvBookBorrow_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            // Get the values from the clicked row
+            string selectedISBN = dgvBookBorrow.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+            string selectedTitle = dgvBookBorrow.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+            string selectedAuthor = dgvBookBorrow.Rows[e.RowIndex].Cells["Author"].Value.ToString();
+
+            // Set the values in the respective TextBoxes and Labels
+            txtBookID.Text = selectedISBN;
+            lblBookTitle.Text = selectedTitle;
+            lblAuthorName.Text = selectedAuthor;
+        }
+
+        private void dgvBooks_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvBooks.Rows[e.RowIndex].Cells["SBN"].Value.ToString();
+                string selectedTitle = dgvBooks.Rows[e.RowIndex].Cells["Book_Title"].Value.ToString();
+                string selectedAuthor = dgvBooks.Rows[e.RowIndex].Cells["Book_Author"].Value.ToString();
+
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
         }
     }
 }

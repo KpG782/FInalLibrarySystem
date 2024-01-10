@@ -510,6 +510,45 @@ namespace FInalLibrarySystem.Database
             // Return false if an error occurs or the book is not found
             return false;
         }
+
+        // Method to get the book category by ISBN
+        public string GetBookCategoryByISBN(string isbn)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to retrieve the category of the book by ISBN
+                    string query = "SELECT category FROM books WHERE ISBN = @isbn";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@isbn", isbn);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return result.ToString();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log or notify the user)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            // Return null if the category is not found or an error occurs
+            return null;
+        }
     }
 
 }

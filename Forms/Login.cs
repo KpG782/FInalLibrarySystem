@@ -251,7 +251,8 @@ namespace FInalLibrarySystem
                 // Your existing code here...
 
                 // Show the elapsed time in decimals
-                MessageBox.Show($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Console.WriteLine($"Login took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
 
                 // Reset the timer for the next login attempt
                 loginTimer.Reset();
@@ -267,18 +268,15 @@ namespace FInalLibrarySystem
                     // Get the user data by ID
                     Users.User userProfile = usersManager.GetUserById(loggedInUserId);
 
+                    // Display a personalized welcome message
+                    MessageBox.Show($"Welcome, {userProfile.FirstName} {userProfile.LastName}!");
+
                     mainPage.Enabled = true;
                     mainPage.Show();
 
                     //hides the frmlogin
                     this.Visible = false;
 
-                    if (loggedInUserId == 2)
-                    {
-                        // Display the UserId in a MessageBox
-                        MessageBox.Show("Gumana yung no.2");
-                        this.Refresh();
-                    }
                 }
                 else //if not
                 {
