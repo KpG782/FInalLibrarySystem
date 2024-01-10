@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PrimaryPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltitleBook = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -60,39 +61,8 @@
             this.Book_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Book_Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlReceipt = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.btnAddToDebt = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPlayGame = new Guna.UI2.WinForms.Guna2Button();
             this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.lblNoDays = new System.Windows.Forms.Label();
-            this.lblSReturnedDate = new System.Windows.Forms.Label();
-            this.lblAmount = new System.Windows.Forms.Label();
-            this.lblTimes = new System.Windows.Forms.Label();
-            this.LBLDays = new System.Windows.Forms.Label();
-            this.LBLMoney = new System.Windows.Forms.Label();
-            this.lblSUserMoney = new System.Windows.Forms.Label();
-            this.LBLDueDate = new System.Windows.Forms.Label();
-            this.LBLReturnedDate = new System.Windows.Forms.Label();
-            this.lblSDueDate = new System.Windows.Forms.Label();
-            this.lblSBorrowedDate = new System.Windows.Forms.Label();
-            this.lblSAuthor = new System.Windows.Forms.Label();
-            this.lblSBookTitle = new System.Windows.Forms.Label();
-            this.lblSBookID = new System.Windows.Forms.Label();
-            this.lblSUsername = new System.Windows.Forms.Label();
-            this.lblSUserID = new System.Windows.Forms.Label();
-            this.lblSPayDue = new System.Windows.Forms.Label();
-            this.LBLPenalty = new System.Windows.Forms.Label();
-            this.LBLIssueDate = new System.Windows.Forms.Label();
-            this.LBLBookAuthor = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.LBLUserID = new System.Windows.Forms.Label();
-            this.LBLReceipt = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.pnlPlay = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.lblTtile = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.dtpReturn = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.LBLDate = new System.Windows.Forms.Label();
             this.lblUserName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -110,6 +80,37 @@
             this.pbPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btnAddToDebt = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPlayGame = new Guna.UI2.WinForms.Guna2Button();
+            this.lblSUserMoney = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTimes = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblNoDays = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSPayDue = new Guna.UI2.WinForms.Guna2TextBox();
+            this.LBLDays = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSReturnedDate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSDueDate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSBorrowedDate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSAuthor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSBookTitle = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSBookID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblSUserID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.LBLCharge = new System.Windows.Forms.Label();
+            this.LBLPenalty = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.LBLReturnDate = new System.Windows.Forms.Label();
+            this.LBLDueDate = new System.Windows.Forms.Label();
+            this.LBLIssueDate = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.LBLName = new System.Windows.Forms.Label();
+            this.LBLUserID = new System.Windows.Forms.Label();
+            this.PBLogo = new System.Windows.Forms.PictureBox();
             this.PrimaryPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookPictureBox)).BeginInit();
@@ -118,8 +119,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             this.pnlReceipt.SuspendLayout();
             this.MainPanel.SuspendLayout();
-            this.pnlPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // PrimaryPanel
@@ -240,25 +241,25 @@
             // dgvBookBorrow
             // 
             this.dgvBookBorrow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle57.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvBookBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle89.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle89.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle89.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle89.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle89.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvBookBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle89;
             this.dgvBookBorrow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBookBorrow.BackgroundColor = System.Drawing.Color.Black;
             this.dgvBookBorrow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBookBorrow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvBookBorrow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle58.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBookBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle90.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle90.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle90.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle90.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle90.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle90.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBookBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle90;
             this.dgvBookBorrow.ColumnHeadersHeight = 40;
             this.dgvBookBorrow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
@@ -268,27 +269,27 @@
             this.Borrowed_Date,
             this.Returned_Date,
             this.Reserved_Date});
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle91.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle91.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle91.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle91.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle91.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle91.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle91;
             this.dgvBookBorrow.EnableHeadersVisualStyles = false;
             this.dgvBookBorrow.Location = new System.Drawing.Point(-5, 337);
             this.dgvBookBorrow.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBookBorrow.Name = "dgvBookBorrow";
             this.dgvBookBorrow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle60.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBookBorrow.RowHeadersDefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle92.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle92.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle92.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle92.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle92.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle92.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBookBorrow.RowHeadersDefaultCellStyle = dataGridViewCellStyle92;
             this.dgvBookBorrow.RowHeadersWidth = 51;
             this.dgvBookBorrow.RowTemplate.Height = 40;
             this.dgvBookBorrow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -334,25 +335,25 @@
             // dgvBooks
             // 
             this.dgvBooks.AllowUserToResizeRows = false;
-            dataGridViewCellStyle61.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle93.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle93.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle93.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle93.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle93.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle93;
             this.dgvBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBooks.BackgroundColor = System.Drawing.Color.Black;
             this.dgvBooks.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBooks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvBooks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle62.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle94.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle94.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle94.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle94.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle94.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle94.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle94;
             this.dgvBooks.ColumnHeadersHeight = 40;
             this.dgvBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Book_TItle,
@@ -361,27 +362,27 @@
             this.Book_Author,
             this.Book_Status,
             this.Book_Copyright});
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle95.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle95.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle95.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle95.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle95.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle95.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle95;
             this.dgvBooks.EnableHeadersVisualStyles = false;
             this.dgvBooks.Location = new System.Drawing.Point(-1, -3);
             this.dgvBooks.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBooks.Name = "dgvBooks";
             this.dgvBooks.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle64.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle96.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle96.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle96.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle96.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle96;
             this.dgvBooks.RowHeadersWidth = 51;
             this.dgvBooks.RowTemplate.Height = 40;
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -424,16 +425,13 @@
             this.pnlReceipt.BackColor = System.Drawing.Color.Transparent;
             this.pnlReceipt.Controls.Add(this.btnAddToDebt);
             this.pnlReceipt.Controls.Add(this.btnPlayGame);
-            this.pnlReceipt.Controls.Add(this.closeButton);
-            this.pnlReceipt.Controls.Add(this.lblNoDays);
-            this.pnlReceipt.Controls.Add(this.lblSReturnedDate);
-            this.pnlReceipt.Controls.Add(this.lblAmount);
-            this.pnlReceipt.Controls.Add(this.lblTimes);
-            this.pnlReceipt.Controls.Add(this.LBLDays);
-            this.pnlReceipt.Controls.Add(this.LBLMoney);
             this.pnlReceipt.Controls.Add(this.lblSUserMoney);
-            this.pnlReceipt.Controls.Add(this.LBLDueDate);
-            this.pnlReceipt.Controls.Add(this.LBLReturnedDate);
+            this.pnlReceipt.Controls.Add(this.label2);
+            this.pnlReceipt.Controls.Add(this.lblTimes);
+            this.pnlReceipt.Controls.Add(this.lblNoDays);
+            this.pnlReceipt.Controls.Add(this.lblSPayDue);
+            this.pnlReceipt.Controls.Add(this.LBLDays);
+            this.pnlReceipt.Controls.Add(this.lblSReturnedDate);
             this.pnlReceipt.Controls.Add(this.lblSDueDate);
             this.pnlReceipt.Controls.Add(this.lblSBorrowedDate);
             this.pnlReceipt.Controls.Add(this.lblSAuthor);
@@ -441,16 +439,21 @@
             this.pnlReceipt.Controls.Add(this.lblSBookID);
             this.pnlReceipt.Controls.Add(this.lblSUsername);
             this.pnlReceipt.Controls.Add(this.lblSUserID);
-            this.pnlReceipt.Controls.Add(this.lblSPayDue);
-            this.pnlReceipt.Controls.Add(this.LBLPenalty);
-            this.pnlReceipt.Controls.Add(this.LBLIssueDate);
-            this.pnlReceipt.Controls.Add(this.LBLBookAuthor);
-            this.pnlReceipt.Controls.Add(this.label2);
-            this.pnlReceipt.Controls.Add(this.label5);
-            this.pnlReceipt.Controls.Add(this.LBLUserID);
-            this.pnlReceipt.Controls.Add(this.LBLReceipt);
-            this.pnlReceipt.Controls.Add(this.label6);
             this.pnlReceipt.Controls.Add(this.guna2Button1);
+            this.pnlReceipt.Controls.Add(this.LBLCharge);
+            this.pnlReceipt.Controls.Add(this.LBLPenalty);
+            this.pnlReceipt.Controls.Add(this.label11);
+            this.pnlReceipt.Controls.Add(this.LBLReturnDate);
+            this.pnlReceipt.Controls.Add(this.LBLDueDate);
+            this.pnlReceipt.Controls.Add(this.LBLIssueDate);
+            this.pnlReceipt.Controls.Add(this.label5);
+            this.pnlReceipt.Controls.Add(this.label6);
+            this.pnlReceipt.Controls.Add(this.label9);
+            this.pnlReceipt.Controls.Add(this.label10);
+            this.pnlReceipt.Controls.Add(this.LBLName);
+            this.pnlReceipt.Controls.Add(this.LBLUserID);
+            this.pnlReceipt.Controls.Add(this.PBLogo);
+            this.pnlReceipt.Controls.Add(this.closeButton);
             this.pnlReceipt.FillColor = System.Drawing.Color.White;
             this.pnlReceipt.Location = new System.Drawing.Point(283, 84);
             this.pnlReceipt.Name = "pnlReceipt";
@@ -458,35 +461,6 @@
             this.pnlReceipt.Size = new System.Drawing.Size(295, 499);
             this.pnlReceipt.TabIndex = 3;
             this.pnlReceipt.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReceipt_Paint);
-            // 
-            // btnAddToDebt
-            // 
-            this.btnAddToDebt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddToDebt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddToDebt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddToDebt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddToDebt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddToDebt.ForeColor = System.Drawing.Color.White;
-            this.btnAddToDebt.Location = new System.Drawing.Point(172, 400);
-            this.btnAddToDebt.Name = "btnAddToDebt";
-            this.btnAddToDebt.Size = new System.Drawing.Size(108, 30);
-            this.btnAddToDebt.TabIndex = 77;
-            this.btnAddToDebt.Text = "Add to Debt";
-            // 
-            // btnPlayGame
-            // 
-            this.btnPlayGame.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPlayGame.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPlayGame.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPlayGame.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPlayGame.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPlayGame.ForeColor = System.Drawing.Color.White;
-            this.btnPlayGame.Location = new System.Drawing.Point(16, 400);
-            this.btnPlayGame.Name = "btnPlayGame";
-            this.btnPlayGame.Size = new System.Drawing.Size(108, 30);
-            this.btnPlayGame.TabIndex = 76;
-            this.btnPlayGame.Text = "Play Game";
-            this.btnPlayGame.Click += new System.EventHandler(this.btnPlayGame_Click);
             // 
             // closeButton
             // 
@@ -500,312 +474,8 @@
             this.closeButton.TabIndex = 75;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // lblNoDays
-            // 
-            this.lblNoDays.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoDays.Location = new System.Drawing.Point(74, 311);
-            this.lblNoDays.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNoDays.Name = "lblNoDays";
-            this.lblNoDays.Size = new System.Drawing.Size(19, 19);
-            this.lblNoDays.TabIndex = 74;
-            this.lblNoDays.Text = "1";
-            this.lblNoDays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblSReturnedDate
-            // 
-            this.lblSReturnedDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSReturnedDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSReturnedDate.Location = new System.Drawing.Point(104, 219);
-            this.lblSReturnedDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSReturnedDate.Name = "lblSReturnedDate";
-            this.lblSReturnedDate.Size = new System.Drawing.Size(176, 22);
-            this.lblSReturnedDate.TabIndex = 62;
-            this.lblSReturnedDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSReturnedDate.Click += new System.EventHandler(this.lblSReturnedDate_Click);
-            // 
-            // lblAmount
-            // 
-            this.lblAmount.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.lblAmount.Location = new System.Drawing.Point(17, 353);
-            this.lblAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(99, 19);
-            this.lblAmount.TabIndex = 72;
-            this.lblAmount.Text = "Amount Due :";
-            this.lblAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblTimes
-            // 
-            this.lblTimes.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimes.Location = new System.Drawing.Point(226, 311);
-            this.lblTimes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTimes.Name = "lblTimes";
-            this.lblTimes.Size = new System.Drawing.Size(67, 19);
-            this.lblTimes.TabIndex = 69;
-            this.lblTimes.Text = "* 20 Peso";
-            this.lblTimes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LBLDays
-            // 
-            this.LBLDays.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLDays.Location = new System.Drawing.Point(86, 311);
-            this.LBLDays.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLDays.Name = "LBLDays";
-            this.LBLDays.Size = new System.Drawing.Size(157, 19);
-            this.LBLDays.TabIndex = 68;
-            this.LBLDays.Text = " Day Late Submission";
-            this.LBLDays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LBLMoney
-            // 
-            this.LBLMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LBLMoney.Location = new System.Drawing.Point(5, 280);
-            this.LBLMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLMoney.Name = "LBLMoney";
-            this.LBLMoney.Size = new System.Drawing.Size(92, 20);
-            this.LBLMoney.TabIndex = 67;
-            this.LBLMoney.Text = "User\'s Money : ";
-            this.LBLMoney.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSUserMoney
-            // 
-            this.lblSUserMoney.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSUserMoney.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSUserMoney.Location = new System.Drawing.Point(104, 278);
-            this.lblSUserMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSUserMoney.Name = "lblSUserMoney";
-            this.lblSUserMoney.Size = new System.Drawing.Size(176, 22);
-            this.lblSUserMoney.TabIndex = 66;
-            this.lblSUserMoney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSUserMoney.Click += new System.EventHandler(this.lblUserMoney_Click);
-            // 
-            // LBLDueDate
-            // 
-            this.LBLDueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LBLDueDate.Location = new System.Drawing.Point(5, 248);
-            this.LBLDueDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLDueDate.Name = "LBLDueDate";
-            this.LBLDueDate.Size = new System.Drawing.Size(92, 20);
-            this.LBLDueDate.TabIndex = 65;
-            this.LBLDueDate.Text = "Due Date : ";
-            this.LBLDueDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LBLReturnedDate
-            // 
-            this.LBLReturnedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LBLReturnedDate.Location = new System.Drawing.Point(5, 219);
-            this.LBLReturnedDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLReturnedDate.Name = "LBLReturnedDate";
-            this.LBLReturnedDate.Size = new System.Drawing.Size(92, 20);
-            this.LBLReturnedDate.TabIndex = 64;
-            this.LBLReturnedDate.Text = "Returned Date : ";
-            this.LBLReturnedDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSDueDate
-            // 
-            this.lblSDueDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSDueDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSDueDate.Location = new System.Drawing.Point(104, 246);
-            this.lblSDueDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSDueDate.Name = "lblSDueDate";
-            this.lblSDueDate.Size = new System.Drawing.Size(176, 22);
-            this.lblSDueDate.TabIndex = 63;
-            this.lblSDueDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSDueDate.Click += new System.EventHandler(this.lbl_Click);
-            // 
-            // lblSBorrowedDate
-            // 
-            this.lblSBorrowedDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSBorrowedDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSBorrowedDate.Location = new System.Drawing.Point(104, 188);
-            this.lblSBorrowedDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSBorrowedDate.Name = "lblSBorrowedDate";
-            this.lblSBorrowedDate.Size = new System.Drawing.Size(176, 22);
-            this.lblSBorrowedDate.TabIndex = 61;
-            this.lblSBorrowedDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSBorrowedDate.Click += new System.EventHandler(this.lblSBorrowedDate_Click);
-            // 
-            // lblSAuthor
-            // 
-            this.lblSAuthor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSAuthor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSAuthor.Location = new System.Drawing.Point(104, 162);
-            this.lblSAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSAuthor.Name = "lblSAuthor";
-            this.lblSAuthor.Size = new System.Drawing.Size(176, 22);
-            this.lblSAuthor.TabIndex = 60;
-            this.lblSAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSAuthor.Click += new System.EventHandler(this.lblSAuthor_Click);
-            // 
-            // lblSBookTitle
-            // 
-            this.lblSBookTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSBookTitle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSBookTitle.Location = new System.Drawing.Point(104, 133);
-            this.lblSBookTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSBookTitle.Name = "lblSBookTitle";
-            this.lblSBookTitle.Size = new System.Drawing.Size(176, 22);
-            this.lblSBookTitle.TabIndex = 59;
-            this.lblSBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSBookTitle.Click += new System.EventHandler(this.lblSBookTitle_Click);
-            // 
-            // lblSBookID
-            // 
-            this.lblSBookID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSBookID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSBookID.Location = new System.Drawing.Point(104, 103);
-            this.lblSBookID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSBookID.Name = "lblSBookID";
-            this.lblSBookID.Size = new System.Drawing.Size(176, 22);
-            this.lblSBookID.TabIndex = 58;
-            this.lblSBookID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSBookID.Click += new System.EventHandler(this.lblSBookID_Click);
-            // 
-            // lblSUsername
-            // 
-            this.lblSUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSUsername.Location = new System.Drawing.Point(104, 73);
-            this.lblSUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSUsername.Name = "lblSUsername";
-            this.lblSUsername.Size = new System.Drawing.Size(176, 22);
-            this.lblSUsername.TabIndex = 57;
-            this.lblSUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSUsername.Click += new System.EventHandler(this.lblSUsername_Click);
-            // 
-            // lblSUserID
-            // 
-            this.lblSUserID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSUserID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSUserID.Location = new System.Drawing.Point(104, 45);
-            this.lblSUserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSUserID.Name = "lblSUserID";
-            this.lblSUserID.Size = new System.Drawing.Size(176, 22);
-            this.lblSUserID.TabIndex = 56;
-            this.lblSUserID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSUserID.Click += new System.EventHandler(this.lblSUserID_Click);
-            // 
-            // lblSPayDue
-            // 
-            this.lblSPayDue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSPayDue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSPayDue.Location = new System.Drawing.Point(119, 345);
-            this.lblSPayDue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSPayDue.Name = "lblSPayDue";
-            this.lblSPayDue.Size = new System.Drawing.Size(161, 32);
-            this.lblSPayDue.TabIndex = 55;
-            this.lblSPayDue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LBLPenalty
-            // 
-            this.LBLPenalty.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLPenalty.Location = new System.Drawing.Point(13, 311);
-            this.LBLPenalty.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLPenalty.Name = "LBLPenalty";
-            this.LBLPenalty.Size = new System.Drawing.Size(69, 19);
-            this.LBLPenalty.TabIndex = 54;
-            this.LBLPenalty.Text = "Penalty : ";
-            this.LBLPenalty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LBLIssueDate
-            // 
-            this.LBLIssueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LBLIssueDate.Location = new System.Drawing.Point(5, 190);
-            this.LBLIssueDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLIssueDate.Name = "LBLIssueDate";
-            this.LBLIssueDate.Size = new System.Drawing.Size(92, 20);
-            this.LBLIssueDate.TabIndex = 53;
-            this.LBLIssueDate.Text = "Borrowed Date :";
-            this.LBLIssueDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LBLBookAuthor
-            // 
-            this.LBLBookAuthor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLBookAuthor.Location = new System.Drawing.Point(2, 162);
-            this.LBLBookAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLBookAuthor.Name = "LBLBookAuthor";
-            this.LBLBookAuthor.Size = new System.Drawing.Size(95, 19);
-            this.LBLBookAuthor.TabIndex = 52;
-            this.LBLBookAuthor.Text = "Book Author:";
-            this.LBLBookAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 133);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 19);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Book Title:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 103);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 19);
-            this.label5.TabIndex = 50;
-            this.label5.Text = "Book_ID:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LBLUserID
-            // 
-            this.LBLUserID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLUserID.Location = new System.Drawing.Point(12, 45);
-            this.LBLUserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLUserID.Name = "LBLUserID";
-            this.LBLUserID.Size = new System.Drawing.Size(69, 19);
-            this.LBLUserID.TabIndex = 49;
-            this.LBLUserID.Text = "User_ID:";
-            this.LBLUserID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LBLReceipt
-            // 
-            this.LBLReceipt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLReceipt.Location = new System.Drawing.Point(74, 16);
-            this.LBLReceipt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLReceipt.Name = "LBLReceipt";
-            this.LBLReceipt.Size = new System.Drawing.Size(138, 19);
-            this.LBLReceipt.TabIndex = 48;
-            this.LBLReceipt.Text = "PENALTY FORM";
-            this.LBLReceipt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 73);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 19);
-            this.label6.TabIndex = 47;
-            this.label6.Text = "Username";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 30;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkSeaGreen;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(77, 446);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(135, 37);
-            this.guna2Button1.TabIndex = 46;
-            this.guna2Button1.Text = "CONFIRM";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
-            // 
             // MainPanel
             // 
-            this.MainPanel.Controls.Add(this.pnlPlay);
             this.MainPanel.Controls.Add(this.pnlReceipt);
             this.MainPanel.Controls.Add(this.SecondaryPanel);
             this.MainPanel.Controls.Add(this.PrimaryPanel);
@@ -816,37 +486,6 @@
             this.MainPanel.Size = new System.Drawing.Size(918, 687);
             this.MainPanel.TabIndex = 0;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
-            // 
-            // pnlPlay
-            // 
-            this.pnlPlay.Controls.Add(this.lblTtile);
-            this.pnlPlay.Controls.Add(this.guna2ControlBox1);
-            this.pnlPlay.Location = new System.Drawing.Point(221, 66);
-            this.pnlPlay.Name = "pnlPlay";
-            this.pnlPlay.Size = new System.Drawing.Size(585, 517);
-            this.pnlPlay.TabIndex = 4;
-            // 
-            // lblTtile
-            // 
-            this.lblTtile.BackColor = System.Drawing.Color.Transparent;
-            this.lblTtile.Location = new System.Drawing.Point(187, 16);
-            this.lblTtile.Name = "lblTtile";
-            this.lblTtile.Size = new System.Drawing.Size(197, 15);
-            this.lblTtile.TabIndex = 77;
-            this.lblTtile.Text = "Answer the Following Questions Correctly";
-            this.lblTtile.Click += new System.EventHandler(this.lbl_Click_1);
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(549, 2);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
-            this.guna2ControlBox1.TabIndex = 76;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // dtpReturn
             // 
@@ -1132,6 +771,532 @@
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // btnAddToDebt
+            // 
+            this.btnAddToDebt.BorderRadius = 20;
+            this.btnAddToDebt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddToDebt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddToDebt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddToDebt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddToDebt.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnAddToDebt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddToDebt.ForeColor = System.Drawing.Color.Black;
+            this.btnAddToDebt.Location = new System.Drawing.Point(164, 387);
+            this.btnAddToDebt.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddToDebt.Name = "btnAddToDebt";
+            this.btnAddToDebt.Size = new System.Drawing.Size(115, 36);
+            this.btnAddToDebt.TabIndex = 105;
+            this.btnAddToDebt.Text = "Add to Debt";
+            // 
+            // btnPlayGame
+            // 
+            this.btnPlayGame.BorderRadius = 20;
+            this.btnPlayGame.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPlayGame.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPlayGame.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPlayGame.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPlayGame.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnPlayGame.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayGame.ForeColor = System.Drawing.Color.Black;
+            this.btnPlayGame.Location = new System.Drawing.Point(22, 387);
+            this.btnPlayGame.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPlayGame.Name = "btnPlayGame";
+            this.btnPlayGame.Size = new System.Drawing.Size(102, 36);
+            this.btnPlayGame.TabIndex = 104;
+            this.btnPlayGame.Text = "Play Game";
+            // 
+            // lblSUserMoney
+            // 
+            this.lblSUserMoney.BorderThickness = 0;
+            this.lblSUserMoney.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSUserMoney.DefaultText = "Money";
+            this.lblSUserMoney.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSUserMoney.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSUserMoney.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSUserMoney.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSUserMoney.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSUserMoney.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSUserMoney.ForeColor = System.Drawing.Color.Black;
+            this.lblSUserMoney.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSUserMoney.Location = new System.Drawing.Point(191, 199);
+            this.lblSUserMoney.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSUserMoney.Name = "lblSUserMoney";
+            this.lblSUserMoney.PasswordChar = '\0';
+            this.lblSUserMoney.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSUserMoney.PlaceholderText = "";
+            this.lblSUserMoney.SelectedText = "";
+            this.lblSUserMoney.Size = new System.Drawing.Size(75, 19);
+            this.lblSUserMoney.TabIndex = 103;
+            this.lblSUserMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 199);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 19);
+            this.label2.TabIndex = 102;
+            this.label2.Text = "USER\'S MONEY";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTimes
+            // 
+            this.lblTimes.BorderThickness = 0;
+            this.lblTimes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblTimes.DefaultText = "* 20 Pesos";
+            this.lblTimes.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblTimes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblTimes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblTimes.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblTimes.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblTimes.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblTimes.ForeColor = System.Drawing.Color.Black;
+            this.lblTimes.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblTimes.Location = new System.Drawing.Point(191, 329);
+            this.lblTimes.Margin = new System.Windows.Forms.Padding(2);
+            this.lblTimes.Name = "lblTimes";
+            this.lblTimes.PasswordChar = '\0';
+            this.lblTimes.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblTimes.PlaceholderText = "";
+            this.lblTimes.SelectedText = "";
+            this.lblTimes.Size = new System.Drawing.Size(75, 19);
+            this.lblTimes.TabIndex = 101;
+            this.lblTimes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblNoDays
+            // 
+            this.lblNoDays.BorderThickness = 0;
+            this.lblNoDays.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblNoDays.DefaultText = "1";
+            this.lblNoDays.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblNoDays.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblNoDays.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblNoDays.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblNoDays.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblNoDays.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblNoDays.ForeColor = System.Drawing.Color.Black;
+            this.lblNoDays.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblNoDays.Location = new System.Drawing.Point(69, 329);
+            this.lblNoDays.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNoDays.Name = "lblNoDays";
+            this.lblNoDays.PasswordChar = '\0';
+            this.lblNoDays.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblNoDays.PlaceholderText = "";
+            this.lblNoDays.SelectedText = "";
+            this.lblNoDays.Size = new System.Drawing.Size(27, 19);
+            this.lblNoDays.TabIndex = 100;
+            this.lblNoDays.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSPayDue
+            // 
+            this.lblSPayDue.BorderThickness = 0;
+            this.lblSPayDue.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSPayDue.DefaultText = "CHARGE";
+            this.lblSPayDue.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSPayDue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSPayDue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSPayDue.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSPayDue.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSPayDue.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSPayDue.ForeColor = System.Drawing.Color.Black;
+            this.lblSPayDue.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSPayDue.Location = new System.Drawing.Point(191, 354);
+            this.lblSPayDue.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSPayDue.Name = "lblSPayDue";
+            this.lblSPayDue.PasswordChar = '\0';
+            this.lblSPayDue.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSPayDue.PlaceholderText = "";
+            this.lblSPayDue.SelectedText = "";
+            this.lblSPayDue.Size = new System.Drawing.Size(75, 19);
+            this.lblSPayDue.TabIndex = 99;
+            this.lblSPayDue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // LBLDays
+            // 
+            this.LBLDays.BorderThickness = 0;
+            this.LBLDays.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LBLDays.DefaultText = " Day Late Submission";
+            this.LBLDays.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LBLDays.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LBLDays.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LBLDays.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LBLDays.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LBLDays.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.LBLDays.ForeColor = System.Drawing.Color.Black;
+            this.LBLDays.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LBLDays.Location = new System.Drawing.Point(82, 329);
+            this.LBLDays.Margin = new System.Windows.Forms.Padding(2);
+            this.LBLDays.Name = "LBLDays";
+            this.LBLDays.PasswordChar = '\0';
+            this.LBLDays.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.LBLDays.PlaceholderText = "";
+            this.LBLDays.SelectedText = "";
+            this.LBLDays.Size = new System.Drawing.Size(119, 19);
+            this.LBLDays.TabIndex = 98;
+            this.LBLDays.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblSReturnedDate
+            // 
+            this.lblSReturnedDate.BorderThickness = 0;
+            this.lblSReturnedDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSReturnedDate.DefaultText = "RETURN DATE";
+            this.lblSReturnedDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSReturnedDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSReturnedDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSReturnedDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSReturnedDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSReturnedDate.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSReturnedDate.ForeColor = System.Drawing.Color.Black;
+            this.lblSReturnedDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSReturnedDate.Location = new System.Drawing.Point(175, 285);
+            this.lblSReturnedDate.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSReturnedDate.Name = "lblSReturnedDate";
+            this.lblSReturnedDate.PasswordChar = '\0';
+            this.lblSReturnedDate.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSReturnedDate.PlaceholderText = "";
+            this.lblSReturnedDate.SelectedText = "";
+            this.lblSReturnedDate.Size = new System.Drawing.Size(91, 19);
+            this.lblSReturnedDate.TabIndex = 97;
+            this.lblSReturnedDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSDueDate
+            // 
+            this.lblSDueDate.BorderThickness = 0;
+            this.lblSDueDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSDueDate.DefaultText = "DUE DATE";
+            this.lblSDueDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSDueDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSDueDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSDueDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSDueDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSDueDate.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSDueDate.ForeColor = System.Drawing.Color.Black;
+            this.lblSDueDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSDueDate.Location = new System.Drawing.Point(191, 263);
+            this.lblSDueDate.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSDueDate.Name = "lblSDueDate";
+            this.lblSDueDate.PasswordChar = '\0';
+            this.lblSDueDate.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSDueDate.PlaceholderText = "";
+            this.lblSDueDate.SelectedText = "";
+            this.lblSDueDate.Size = new System.Drawing.Size(75, 19);
+            this.lblSDueDate.TabIndex = 96;
+            this.lblSDueDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSBorrowedDate
+            // 
+            this.lblSBorrowedDate.BorderThickness = 0;
+            this.lblSBorrowedDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSBorrowedDate.DefaultText = "ISSUE DATE";
+            this.lblSBorrowedDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSBorrowedDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSBorrowedDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSBorrowedDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSBorrowedDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSBorrowedDate.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSBorrowedDate.ForeColor = System.Drawing.Color.Black;
+            this.lblSBorrowedDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSBorrowedDate.Location = new System.Drawing.Point(191, 240);
+            this.lblSBorrowedDate.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSBorrowedDate.Name = "lblSBorrowedDate";
+            this.lblSBorrowedDate.PasswordChar = '\0';
+            this.lblSBorrowedDate.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSBorrowedDate.PlaceholderText = "";
+            this.lblSBorrowedDate.SelectedText = "";
+            this.lblSBorrowedDate.Size = new System.Drawing.Size(75, 19);
+            this.lblSBorrowedDate.TabIndex = 95;
+            this.lblSBorrowedDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSAuthor
+            // 
+            this.lblSAuthor.BorderThickness = 0;
+            this.lblSAuthor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSAuthor.DefaultText = "AUTHOR";
+            this.lblSAuthor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSAuthor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSAuthor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSAuthor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSAuthor.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSAuthor.ForeColor = System.Drawing.Color.Black;
+            this.lblSAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSAuthor.Location = new System.Drawing.Point(191, 180);
+            this.lblSAuthor.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSAuthor.Name = "lblSAuthor";
+            this.lblSAuthor.PasswordChar = '\0';
+            this.lblSAuthor.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSAuthor.PlaceholderText = "";
+            this.lblSAuthor.SelectedText = "";
+            this.lblSAuthor.Size = new System.Drawing.Size(75, 19);
+            this.lblSAuthor.TabIndex = 94;
+            this.lblSAuthor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSBookTitle
+            // 
+            this.lblSBookTitle.BorderThickness = 0;
+            this.lblSBookTitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSBookTitle.DefaultText = "TITLE";
+            this.lblSBookTitle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSBookTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSBookTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSBookTitle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSBookTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSBookTitle.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSBookTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblSBookTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSBookTitle.Location = new System.Drawing.Point(191, 157);
+            this.lblSBookTitle.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSBookTitle.Name = "lblSBookTitle";
+            this.lblSBookTitle.PasswordChar = '\0';
+            this.lblSBookTitle.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSBookTitle.PlaceholderText = "";
+            this.lblSBookTitle.SelectedText = "";
+            this.lblSBookTitle.Size = new System.Drawing.Size(75, 19);
+            this.lblSBookTitle.TabIndex = 93;
+            this.lblSBookTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSBookID
+            // 
+            this.lblSBookID.BorderThickness = 0;
+            this.lblSBookID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSBookID.DefaultText = "BOOK_ID";
+            this.lblSBookID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSBookID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSBookID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSBookID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSBookID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSBookID.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSBookID.ForeColor = System.Drawing.Color.Black;
+            this.lblSBookID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSBookID.Location = new System.Drawing.Point(191, 135);
+            this.lblSBookID.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSBookID.Name = "lblSBookID";
+            this.lblSBookID.PasswordChar = '\0';
+            this.lblSBookID.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSBookID.PlaceholderText = "";
+            this.lblSBookID.SelectedText = "";
+            this.lblSBookID.Size = new System.Drawing.Size(75, 19);
+            this.lblSBookID.TabIndex = 92;
+            this.lblSBookID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSUsername
+            // 
+            this.lblSUsername.BorderThickness = 0;
+            this.lblSUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSUsername.DefaultText = "NAME";
+            this.lblSUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSUsername.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblSUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSUsername.Location = new System.Drawing.Point(191, 112);
+            this.lblSUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSUsername.Name = "lblSUsername";
+            this.lblSUsername.PasswordChar = '\0';
+            this.lblSUsername.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSUsername.PlaceholderText = "";
+            this.lblSUsername.SelectedText = "";
+            this.lblSUsername.Size = new System.Drawing.Size(75, 19);
+            this.lblSUsername.TabIndex = 91;
+            this.lblSUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblSUserID
+            // 
+            this.lblSUserID.BorderThickness = 0;
+            this.lblSUserID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblSUserID.DefaultText = "USER_ID";
+            this.lblSUserID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lblSUserID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lblSUserID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSUserID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblSUserID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSUserID.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblSUserID.ForeColor = System.Drawing.Color.Black;
+            this.lblSUserID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lblSUserID.Location = new System.Drawing.Point(191, 89);
+            this.lblSUserID.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSUserID.Name = "lblSUserID";
+            this.lblSUserID.PasswordChar = '\0';
+            this.lblSUserID.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lblSUserID.PlaceholderText = "";
+            this.lblSUserID.SelectedText = "";
+            this.lblSUserID.Size = new System.Drawing.Size(75, 19);
+            this.lblSUserID.TabIndex = 90;
+            this.lblSUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(81, 438);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(135, 37);
+            this.guna2Button1.TabIndex = 89;
+            this.guna2Button1.Text = "CONFIRM";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_2);
+            // 
+            // LBLCharge
+            // 
+            this.LBLCharge.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLCharge.Location = new System.Drawing.Point(11, 354);
+            this.LBLCharge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLCharge.Name = "LBLCharge";
+            this.LBLCharge.Size = new System.Drawing.Size(75, 19);
+            this.LBLCharge.TabIndex = 88;
+            this.LBLCharge.Text = "CHARGE";
+            this.LBLCharge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LBLPenalty
+            // 
+            this.LBLPenalty.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLPenalty.Location = new System.Drawing.Point(11, 331);
+            this.LBLPenalty.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLPenalty.Name = "LBLPenalty";
+            this.LBLPenalty.Size = new System.Drawing.Size(75, 19);
+            this.LBLPenalty.TabIndex = 87;
+            this.LBLPenalty.Text = "PENALTY";
+            this.LBLPenalty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(11, 308);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(283, 19);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" +
+    " _ _";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LBLReturnDate
+            // 
+            this.LBLReturnDate.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLReturnDate.Location = new System.Drawing.Point(11, 285);
+            this.LBLReturnDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLReturnDate.Name = "LBLReturnDate";
+            this.LBLReturnDate.Size = new System.Drawing.Size(86, 19);
+            this.LBLReturnDate.TabIndex = 85;
+            this.LBLReturnDate.Text = "RETURN DATE";
+            this.LBLReturnDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LBLDueDate
+            // 
+            this.LBLDueDate.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLDueDate.Location = new System.Drawing.Point(11, 263);
+            this.LBLDueDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLDueDate.Name = "LBLDueDate";
+            this.LBLDueDate.Size = new System.Drawing.Size(75, 19);
+            this.LBLDueDate.TabIndex = 84;
+            this.LBLDueDate.Text = "DUE DATE";
+            this.LBLDueDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LBLIssueDate
+            // 
+            this.LBLIssueDate.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLIssueDate.Location = new System.Drawing.Point(11, 240);
+            this.LBLIssueDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLIssueDate.Name = "LBLIssueDate";
+            this.LBLIssueDate.Size = new System.Drawing.Size(113, 19);
+            this.LBLIssueDate.TabIndex = 83;
+            this.LBLIssueDate.Text = "BORROWED DATE";
+            this.LBLIssueDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(11, 214);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(283, 19);
+            this.label5.TabIndex = 82;
+            this.label5.Text = "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" +
+    " _ _";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(11, 180);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 19);
+            this.label6.TabIndex = 81;
+            this.label6.Text = "AUTHOR";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(11, 157);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 19);
+            this.label9.TabIndex = 80;
+            this.label9.Text = "TITLE";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(11, 135);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 19);
+            this.label10.TabIndex = 79;
+            this.label10.Text = "BOOK_ID";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LBLName
+            // 
+            this.LBLName.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLName.Location = new System.Drawing.Point(11, 112);
+            this.LBLName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLName.Name = "LBLName";
+            this.LBLName.Size = new System.Drawing.Size(75, 19);
+            this.LBLName.TabIndex = 78;
+            this.LBLName.Text = "NAME";
+            this.LBLName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LBLUserID
+            // 
+            this.LBLUserID.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLUserID.Location = new System.Drawing.Point(11, 89);
+            this.LBLUserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLUserID.Name = "LBLUserID";
+            this.LBLUserID.Size = new System.Drawing.Size(75, 19);
+            this.LBLUserID.TabIndex = 77;
+            this.LBLUserID.Text = "USER_ID";
+            this.LBLUserID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PBLogo
+            // 
+            this.PBLogo.Image = global::FInalLibrarySystem.Properties.Resources.Add_a_heading__3_;
+            this.PBLogo.Location = new System.Drawing.Point(58, 18);
+            this.PBLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.PBLogo.Name = "PBLogo";
+            this.PBLogo.Size = new System.Drawing.Size(182, 55);
+            this.PBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBLogo.TabIndex = 76;
+            this.PBLogo.TabStop = false;
+            // 
             // BookReturning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1151,9 +1316,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
             this.pnlReceipt.ResumeLayout(false);
             this.MainPanel.ResumeLayout(false);
-            this.pnlPlay.ResumeLayout(false);
-            this.pnlPlay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1179,44 +1343,13 @@
         private System.Windows.Forms.DataGridView dgvBooks;
         private Guna.UI2.WinForms.Guna2ShadowPanel pnlReceipt;
         private Guna.UI2.WinForms.Guna2ControlBox closeButton;
-        private System.Windows.Forms.Label lblNoDays;
-        private System.Windows.Forms.Label lblSReturnedDate;
-        private System.Windows.Forms.Label lblAmount;
-        private System.Windows.Forms.Label lblTimes;
-        private System.Windows.Forms.Label LBLDays;
-        private System.Windows.Forms.Label LBLMoney;
-        private System.Windows.Forms.Label lblSUserMoney;
-        private System.Windows.Forms.Label LBLDueDate;
-        private System.Windows.Forms.Label LBLReturnedDate;
-        private System.Windows.Forms.Label lblSDueDate;
-        private System.Windows.Forms.Label lblSBorrowedDate;
-        private System.Windows.Forms.Label lblSAuthor;
-        private System.Windows.Forms.Label lblSBookTitle;
-        private System.Windows.Forms.Label lblSBookID;
-        private System.Windows.Forms.Label lblSUsername;
-        private System.Windows.Forms.Label lblSUserID;
-        private System.Windows.Forms.Label lblSPayDue;
-        private System.Windows.Forms.Label LBLPenalty;
-        private System.Windows.Forms.Label LBLIssueDate;
-        private System.Windows.Forms.Label LBLBookAuthor;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label LBLUserID;
-        private System.Windows.Forms.Label LBLReceipt;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel MainPanel;
-        private Guna.UI2.WinForms.Guna2Button btnAddToDebt;
-        private Guna.UI2.WinForms.Guna2Button btnPlayGame;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_TItle;
         private System.Windows.Forms.DataGridViewTextBoxColumn SBN;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Copyright;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlPlay;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTtile;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpReturn;
         private System.Windows.Forms.Label LBLDate;
@@ -1234,5 +1367,36 @@
         private Guna.UI2.WinForms.Guna2Button btnReturn;
         private Guna.UI2.WinForms.Guna2PictureBox pbPicture;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2Button btnAddToDebt;
+        private Guna.UI2.WinForms.Guna2Button btnPlayGame;
+        private Guna.UI2.WinForms.Guna2TextBox lblSUserMoney;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox lblTimes;
+        private Guna.UI2.WinForms.Guna2TextBox lblNoDays;
+        private Guna.UI2.WinForms.Guna2TextBox lblSPayDue;
+        private Guna.UI2.WinForms.Guna2TextBox LBLDays;
+        private Guna.UI2.WinForms.Guna2TextBox lblSReturnedDate;
+        private Guna.UI2.WinForms.Guna2TextBox lblSDueDate;
+        private Guna.UI2.WinForms.Guna2TextBox lblSBorrowedDate;
+        private Guna.UI2.WinForms.Guna2TextBox lblSAuthor;
+        private Guna.UI2.WinForms.Guna2TextBox lblSBookTitle;
+        private Guna.UI2.WinForms.Guna2TextBox lblSBookID;
+        private Guna.UI2.WinForms.Guna2TextBox lblSUsername;
+        private Guna.UI2.WinForms.Guna2TextBox lblSUserID;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label LBLCharge;
+        private System.Windows.Forms.Label LBLPenalty;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LBLReturnDate;
+        private System.Windows.Forms.Label LBLDueDate;
+        private System.Windows.Forms.Label LBLIssueDate;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label LBLName;
+        private System.Windows.Forms.Label LBLUserID;
+        private System.Windows.Forms.PictureBox PBLogo;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

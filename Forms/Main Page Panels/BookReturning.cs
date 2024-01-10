@@ -34,7 +34,7 @@ namespace FInalLibrarySystem
 
             // Hide the pnlReceipt when the form loads
             pnlReceipt.Visible = false;
-            pnlPlay.Visible = false;
+            //pnlPlay.Visible = false;
         }
 
         // Update the DisplayReturnedBooks method in the BookReturning class
@@ -326,82 +326,7 @@ private void btnClear_Click(object sender, EventArgs e)
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            string bookID = txtBookID.Text.Trim();
-            string userID = txtUserID.Text.Trim();
-
-            // Retrieve the returned date of the book
-            DateTime returnedDate = bookBorrows.GetReturnedDateByBookId(bookID);
-
-            // Calculate the days ahead
-            int daysAhead = (int)(dtpReturn.Value - returnedDate).TotalDays;
-
-
-            // Calculate deduction for late return (assuming PHP20 deduction per day)
-            int lateReturnDeduction = daysAhead * 20;
-
-
-            int currentMoney = usersManager.GetUserMoneyByUserId(userID);
-            // Deduct the entered amount from the user's money
-            int updatedMoney = currentMoney - lateReturnDeduction;
-
-            // Check if the updated money would be negative
-            if (updatedMoney < 0)
-            {
-                MessageBox.Show("Transaction failed. Insufficient funds.");
-                return; // Exit the method without further processing
-            }
-
-            // Update user money in the database
-            bool moneyUpdated = usersManager.UpdateUserMoneyByUserId(userID, updatedMoney);
-
-            if (moneyUpdated)
-            {
-                MessageBox.Show($"Deducted {lateReturnDeduction} from user's account. Updated money: {updatedMoney}");
-
-
-                // Update the book status to "Returned" in the Books class using ISBN
-                bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
-
-                if (isBookReturned)
-                {
-                    // Remove the returned book from the bookborrows database
-                    bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
-
-                    if (isBookRemoved)
-                    {
-
-                        // Display a message indicating successful return and removal
-                        MessageBox.Show("Book returned and removed successfully.");
-
-                        // Clear the UI elements after borrowing
-                        txtBookID.Text = "";
-                        txtUserID.Text = "";
-                        lblUserName.Text = "";
-                        lblBookTitle.Text = "";
-                        lblAuthorName.Text = "";
-                        dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
-                        pbPicture.Image = null; // Clear the PictureBox image
-
-                        // Refresh the DataGridView controls to reflect the changes
-                        DisplayBooks();
-                        DisplayBookBorrows();
-
-
-                    }
-                    else
-                    {
-                        // Display a message if removing the book fails
-                        MessageBox.Show("Failed to remove the returned book from bookborrows database.");
-                    }
-                }
-
-                // Hide the receipt panel after the transaction is successfully finished
-                pnlReceipt.Visible = false;
-            }
-            else
-            {
-                MessageBox.Show("Failed to update user money.");
-            }
+           
         }
 
         private void pnlReceipt_Paint(object sender, PaintEventArgs e)
@@ -416,12 +341,12 @@ private void btnClear_Click(object sender, EventArgs e)
 
         private void btnPlayGame_Click(object sender, EventArgs e)
         {
-            pnlPlay.Visible = true;
+            //pnlPlay.Visible = true;
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            pnlPlay.Visible = false;
+            //pnlPlay.Visible = false;
         }
 
         private void lbl_Click_1(object sender, EventArgs e)
@@ -696,6 +621,86 @@ private void btnClear_Click(object sender, EventArgs e)
         {
             DisplayBooks();
             DisplayBookBorrows();
+        }
+
+        private void guna2Button1_Click_2(object sender, EventArgs e)
+        {
+            string bookID = txtBookID.Text.Trim();
+            string userID = txtUserID.Text.Trim();
+
+            // Retrieve the returned date of the book
+            DateTime returnedDate = bookBorrows.GetReturnedDateByBookId(bookID);
+
+            // Calculate the days ahead
+            int daysAhead = (int)(dtpReturn.Value - returnedDate).TotalDays;
+
+
+            // Calculate deduction for late return (assuming PHP20 deduction per day)
+            int lateReturnDeduction = daysAhead * 20;
+
+
+            int currentMoney = usersManager.GetUserMoneyByUserId(userID);
+            // Deduct the entered amount from the user's money
+            int updatedMoney = currentMoney - lateReturnDeduction;
+
+            // Check if the updated money would be negative
+            if (updatedMoney < 0)
+            {
+                MessageBox.Show("Transaction failed. Insufficient funds.");
+                return; // Exit the method without further processing
+            }
+
+            // Update user money in the database
+            bool moneyUpdated = usersManager.UpdateUserMoneyByUserId(userID, updatedMoney);
+
+            if (moneyUpdated)
+            {
+                MessageBox.Show($"Deducted {lateReturnDeduction} from user's account. Updated money: {updatedMoney}");
+
+
+                // Update the book status to "Returned" in the Books class using ISBN
+                bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
+
+                if (isBookReturned)
+                {
+                    // Remove the returned book from the bookborrows database
+                    bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
+
+                    if (isBookRemoved)
+                    {
+
+                        // Display a message indicating successful return and removal
+                        MessageBox.Show("Book returned and removed successfully.");
+
+                        // Clear the UI elements after borrowing
+                        txtBookID.Text = "";
+                        txtUserID.Text = "";
+                        lblUserName.Text = "";
+                        lblBookTitle.Text = "";
+                        lblAuthorName.Text = "";
+                        dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+                        pbPicture.Image = null; // Clear the PictureBox image
+
+                        // Refresh the DataGridView controls to reflect the changes
+                        DisplayBooks();
+                        DisplayBookBorrows();
+
+
+                    }
+                    else
+                    {
+                        // Display a message if removing the book fails
+                        MessageBox.Show("Failed to remove the returned book from bookborrows database.");
+                    }
+                }
+
+                // Hide the receipt panel after the transaction is successfully finished
+                pnlReceipt.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Failed to update user money.");
+            }
         }
     }
 }
