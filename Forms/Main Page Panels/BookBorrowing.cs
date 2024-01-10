@@ -209,8 +209,10 @@ namespace FInalLibrarySystem
         private void btnBorrow_Click_1(object sender, EventArgs e)
         {
 
-          
-                string isbn = txtBookID.Text.Trim();
+            // Retrieve user details from the database based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(studentOrEmployeeId);
+            string isbn = txtBookID.Text.Trim();
+
             if (string.IsNullOrEmpty(isbn))
             {
                 MessageBox.Show("Invalid ISBN. Please enter a valid ISBN.");
@@ -242,8 +244,13 @@ namespace FInalLibrarySystem
                 return; // Exit the method early
             }
 
-            // Retrieve user details from the database based on student or employee ID
-            Users.User user = usersManager.GetUserByStudentOrEmployeeId(studentOrEmployeeId);
+            // Check if the user has a debt
+            if (user != null && usersManager.HasDebt(studentOrEmployeeId))
+            {
+                MessageBox.Show("You cannot borrow a book as you have an existing debt.", "Debt Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Exit the method early
+            }
+
 
             // Update labels with user details or show not available
             if (user == null)

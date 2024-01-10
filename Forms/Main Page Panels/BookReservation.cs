@@ -262,6 +262,8 @@ namespace FInalLibrarySystem
 
 
 
+
+
             // Retrieve borrowed books based on the entered student or employee ID
             BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
             // Retrieve user details based on student or employee ID
@@ -269,6 +271,13 @@ namespace FInalLibrarySystem
             // Retrieve book details from the database
             FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
 
+
+            // Check if the user has a debt
+            if (user != null && usersManager.HasDebt(userId))
+            {
+                MessageBox.Show("You cannot borrow/reserve a book as you have an existing debt.", "Debt Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Exit the method early
+            }
 
             // Check if the user is a student and has already borrowed 2 books
             if (user.Role == "Student" && (bookReserved.CountUserReservations(userId) + bookBorrows.CountUserBorrows(userId)) >= 2)

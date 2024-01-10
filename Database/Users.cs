@@ -30,6 +30,8 @@ namespace FInalLibrarySystem.Database
             public byte[] Picture { get; set; }
 
             public int Money { get; set; }
+
+            public int Debt { get; set; }
        
         }
 
@@ -575,6 +577,73 @@ namespace FInalLibrarySystem.Database
             {
                 db.closeConnection(); // Close the database connection
             }
+        }
+
+        public bool AddToDebt(string userId, int amount)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string updateQuery = "UPDATE app_users SET debt = debt + @Amount WHERE studentID = @UserId OR employeeID = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(updateQuery, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Amount", amount);
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log, show error message, etc.)
+                Console.WriteLine($"Error adding debt: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+        }
+
+        public bool HasDebt(string userId)
+        {
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT debt FROM app_users WHERE studentID = @UserId OR employeeID = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null && int.TryParse(result.ToString(), out int debt))
+                        {
+                            return debt > 0;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (log, show error message, etc.)
+                Console.WriteLine($"Error checking debt status: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return false; // Default to false if there is an error or no matching user found
         }
     }
 }

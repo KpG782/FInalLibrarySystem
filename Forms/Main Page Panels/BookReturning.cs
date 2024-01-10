@@ -643,12 +643,42 @@ private void btnClear_Click(object sender, EventArgs e)
             // Deduct the entered amount from the user's money
             int updatedMoney = currentMoney - lateReturnDeduction;
 
-            // Check if the updated money would be negative
             if (updatedMoney < 0)
+    {
+        DialogResult result = MessageBox.Show(
+            $"Transaction failed. Insufficient funds. Do you want to add the amount to your debt?",
+            "Insufficient Funds",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+        );
+
+        if (result == DialogResult.Yes)
+        {
+            // Calculate the remaining amount after deducting the user's money
+            int remainingAmount = Math.Abs(updatedMoney);
+
+            // Pass the remaining amount to the AddToDebt method
+            bool debtAdded = usersManager.AddToDebt(userID, remainingAmount);
+
+            if (debtAdded)
             {
-                MessageBox.Show("Transaction failed. Insufficient funds.");
-                return; // Exit the method without further processing
+                MessageBox.Show($"Added {remainingAmount} to your debt. You can return the book.");
+                // Proceed with the book return process (update book status, remove from database, etc.)
+                ProcessBookReturn(bookID);
             }
+            else
+            {
+                MessageBox.Show("Failed to add the amount to your debt.");
+            }
+        }
+        else
+        {
+            MessageBox.Show("Transaction canceled.");
+        }
+
+        return; // Exit the method without further processing
+    }
+
 
             // Update user money in the database
             bool moneyUpdated = usersManager.UpdateUserMoneyByUserId(userID, updatedMoney);
@@ -701,6 +731,52 @@ private void btnClear_Click(object sender, EventArgs e)
             {
                 MessageBox.Show("Failed to update user money.");
             }
+        }
+
+        private void ProcessBookReturn(string bookID)
+        {
+            // Update the book status to "Returned" in the Books class using ISBN
+            bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
+
+            if (isBookReturned)
+            {
+                bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
+
+                if (isBookRemoved)
+                {
+                    // Display success message
+                    MessageBox.Show("Book returned and removed successfully.");
+
+                    // Clear the UI elements after borrowing
+                    txtBookID.Text = "";
+                    txtUserID.Text = "";
+                    lblUserName.Text = "";
+                    lblBookTitle.Text = "";
+                    lblAuthorName.Text = "";
+                    dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+                    pbPicture.Image = null; // Clear the PictureBox image
+
+                    // Refresh the DataGridView controls to reflect the changes
+                    DisplayBooks();
+                    DisplayBookBorrows();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to remove the returned book from bookborrows database.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Failed to update book status.");
+            }
+
+            // Hide the receipt panel after the transaction is successfully finished
+            pnlReceipt.Visible = false;
+        }
+
+        private void btnAddToDebt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
