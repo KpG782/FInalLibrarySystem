@@ -26,8 +26,8 @@ namespace FInalLibrarySystem
         private void Main_Page_Load(object sender, EventArgs e)
         {
             //set if visibile or not
-            profile1.Visible = true;
-            bookList1.Visible = false;
+            profile1.Visible = false;
+            bookList1.Visible = true;
             borrowerList1.Visible = false;
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;

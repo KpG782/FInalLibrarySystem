@@ -1,5 +1,6 @@
 ﻿using FInalLibrarySystem.Database;
 using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,7 @@ namespace FInalLibrarySystem
 {
     public partial class BookReservation : UserControl
     {
-
+        private Stopwatch loginTimer;
         private Books books; // Assuming you have an instance of the Books class
         private BookBorrows bookBorrows;
         private Users usersManager;
@@ -30,7 +31,7 @@ namespace FInalLibrarySystem
             bookBorrows = new BookBorrows(new MyDB());
             usersManager = new Users(); // Initialize the Users class
             bookReserved = new BookReserved();
-
+            loginTimer = new Stopwatch();
 
             dgvBooks.CellContentClick += dgvBooks_CellContentClick;
             dgvBookReserved.CellContentClick += dgvBookReserved_CellContentClick;
@@ -113,26 +114,7 @@ namespace FInalLibrarySystem
 
         private void txtBookID_TextChanged(object sender, EventArgs e)
         {
-            // Ensure the user has entered a valid ISBN
-            string isbn = txtBookID.Text.Trim();
-
-            // Retrieve book details from the database
-            FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
-
-            // Update labels with book details or show not available
-            if (book != null)
-            {
-                lblBookTitle.Text = book.Title;
-                lblAuthorName.Text = book.Author;
-                pbPicture.Image = ByteArrayToImage(book.Cover);
-            }
-            else
-            {
-                // Clear labels if the book is not found
-                lblBookTitle.Text = "Book not available";
-                lblAuthorName.Text = "Author not available";
-                pbPicture.Image = null;
-            }
+            
         }
 
         private void lblBookTitle_Click(object sender, EventArgs e)
@@ -147,21 +129,7 @@ namespace FInalLibrarySystem
 
         private void txtUserID_TextChanged(object sender, EventArgs e)
         {
-            studentOrEmployeeId = txtUserID.Text.Trim();  // Update the class-level variable
-
-            // Retrieve user details from the database based on student or employee ID
-            Users.User user = usersManager.GetUserByStudentOrEmployeeId(studentOrEmployeeId);
-
-            // Update labels with user details or show not available
-            if (user != null)
-            {
-                lblUserName.Text = $"{user.FirstName} {user.LastName}";
-            }
-            else
-            {
-                // Clear labels if the user is not found
-                lblUserName.Text = "User not available";
-            }
+           
         }
 
         private void lblUserName_Click(object sender, EventArgs e)
@@ -187,8 +155,106 @@ namespace FInalLibrarySystem
         private void btnReserve_Click(object sender, EventArgs e)
         {
 
-            // Get values from UI elements
+           
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbPicture_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpReserve_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvBookReserved_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Get the values from the clicked row
+                string selectedISBN = dgvBookReserved.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
+                string selectedTitle = dgvBookReserved.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+                string selectedAuthor = dgvBookReserved.Rows[e.RowIndex].Cells["Author"].Value.ToString();
+
+                // Set the values in the respective TextBoxes and Labels
+                txtBookID.Text = selectedISBN;
+                lblBookTitle.Text = selectedTitle;
+                lblAuthorName.Text = selectedAuthor;
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+           
+
+
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBookID_TextChanged_1(object sender, EventArgs e)
+        {
+            // Ensure the user has entered a valid ISBN
             string isbn = txtBookID.Text.Trim();
+
+            // Retrieve book details from the database
+            FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
+
+            // Update labels with book details or show not available
+            if (book != null)
+            {
+                lblBookTitle.Text = book.Title;
+                lblAuthorName.Text = book.Author;
+                pbPicture.Image = ByteArrayToImage(book.Cover);
+            }
+            else
+            {
+                // Clear labels if the book is not found
+                lblBookTitle.Text = "Book not available";
+                lblAuthorName.Text = "Author not available";
+                pbPicture.Image = null;
+            }
+        }
+
+        private void PrimaryPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUserID_TextChanged_1(object sender, EventArgs e)
+        {
+            studentOrEmployeeId = txtUserID.Text.Trim();  // Update the class-level variable
+
+            // Retrieve user details from the database based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(studentOrEmployeeId);
+
+            // Update labels with user details or show not available
+            if (user != null)
+            {
+                lblUserName.Text = $"{user.FirstName} {user.LastName}";
+            }
+            else
+            {
+                // Clear labels if the user is not found
+                lblUserName.Text = "User not available";
+            }
+        }
+
+        private void btnReserve_Click_1(object sender, EventArgs e)
+        {
+
+                // Get values from UI elements
+                string isbn = txtBookID.Text.Trim();
             string userId = txtUserID.Text.Trim();
             string title = lblBookTitle.Text;
             string author = lblAuthorName.Text;
@@ -212,7 +278,7 @@ namespace FInalLibrarySystem
             }
 
             // Check if the user is a teacher and has already borrowed 3 books
-            if (user.Role == "Teacher" && ( bookReserved.CountUserReservations(userId) + bookBorrows.CountUserBorrows(userId)) >= 5)
+            if (user.Role == "Teacher" && (bookReserved.CountUserReservations(userId) + bookBorrows.CountUserBorrows(userId)) >= 5)
             {
                 MessageBox.Show("Teachers can only borrow/reserve up to 5 books.");
                 return; // Exit the method early
@@ -262,10 +328,12 @@ namespace FInalLibrarySystem
             DateTime selectedReturnDate = dtpReserve.Value.Date;
             DateTime currentDate = DateTime.Now.Date;
             byte[] picture = book.Cover; // Declare the picture variable = problem to
-            
 
+            try
+            {
+                loginTimer.Start();
 
-            DateTime reservedDate = dtpReserve.Value;
+                DateTime reservedDate = dtpReserve.Value;
             string status = "Reserved";
 
             if (user != null)
@@ -286,8 +354,12 @@ namespace FInalLibrarySystem
                     DisplayReservedBooks();
                     DisplayReturnedBooks();
 
-                    // Clear the UI elements after reserving
-                    txtBookID.Text = "";
+                        MessageBox.Show($"Reservation took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        loginTimer.Stop();
+                        loginTimer.Reset();
+
+                        // Clear the UI elements after reserving
+                        txtBookID.Text = "";
                     txtUserID.Text = "";
                     lblUserName.Text = "";
                     lblBookTitle.Text = "";
@@ -301,50 +373,26 @@ namespace FInalLibrarySystem
                 // Handle the case where the user is not found
                 MessageBox.Show("User not found. Please enter a valid student or employee ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            string isbn = txtBookID.Text.Trim();
-            string userId = txtUserID.Text.Trim();
 
 
-            // Clear the UI elements after borrowing
-            txtBookID.Text = "";
-            txtUserID.Text = "";
-            lblUserName.Text = "";
-            lblBookTitle.Text = "";
-            lblAuthorName.Text = "";
-            pbPicture.Image = null; // Clear the PictureBox image
-        }
 
-        private void pbPicture_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpReserve_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvBookReserved_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
+            }
+                
+    
+            catch (Exception ex)
             {
-                // Get the values from the clicked row
-                string selectedISBN = dgvBookReserved.Rows[e.RowIndex].Cells["ISBN"].Value.ToString();
-                string selectedTitle = dgvBookReserved.Rows[e.RowIndex].Cells["Title"].Value.ToString();
-                string selectedAuthor = dgvBookReserved.Rows[e.RowIndex].Cells["Author"].Value.ToString();
-
-                // Set the values in the respective TextBoxes and Labels
-                txtBookID.Text = selectedISBN;
-                lblBookTitle.Text = selectedTitle;
-                lblAuthorName.Text = selectedAuthor;
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+            DisplayReservedBooks();
+            DisplayReturnedBooks();
+        }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
         {
             // Get values from UI elements
             string isbn = txtBookID.Text.Trim();
@@ -379,14 +427,14 @@ namespace FInalLibrarySystem
             // Retrieve the reserved book by ISBN and User ID
             BookReservedModel reservedBook = bookReserved.GetReservedBookByISBNAndUsername(isbn, userId);
 
-            
+
             // Display a confirmation dialog before cancellation
             DialogResult result = MessageBox.Show("Are you sure you want to cancel the reservation?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
                 // Delete the reserved book from the database
-                bool cancelSuccess = bookReserved.CancelReservedBook(isbn,userId);
+                bool cancelSuccess = bookReserved.CancelReservedBook(isbn, userId);
 
                 if (cancelSuccess)
                 {
@@ -410,15 +458,21 @@ namespace FInalLibrarySystem
                 lblAuthorName.Text = "";
                 pbPicture.Image = null; // Clear the PictureBox image
             }
-
-
-
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnClear_Click_1(object sender, EventArgs e)
         {
-            DisplayReservedBooks();
-            DisplayReturnedBooks();
+            string isbn = txtBookID.Text.Trim();
+            string userId = txtUserID.Text.Trim();
+
+
+            // Clear the UI elements after borrowing
+            txtBookID.Text = "";
+            txtUserID.Text = "";
+            lblUserName.Text = "";
+            lblBookTitle.Text = "";
+            lblAuthorName.Text = "";
+            pbPicture.Image = null; // Clear the PictureBox image
         }
     }
 }

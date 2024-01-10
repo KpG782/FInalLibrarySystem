@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ using DatabaseBook = FInalLibrarySystem.Database.Book;
 
 namespace FInalLibrarySystem
 {
+    
     public partial class BookBorrowing : UserControl
     {
         private Books booksManager1;
@@ -23,7 +25,8 @@ namespace FInalLibrarySystem
         private BookBorrows bookBorrowsManager;  // Instantiate BookBorrows
         private string studentOrEmployeeId;  // Add this line
         private BookReserved bookReserved;
-
+        
+        private Stopwatch loginTimer;
         public BookBorrowing()
         {
             InitializeComponent();
@@ -33,6 +36,7 @@ namespace FInalLibrarySystem
             bookReserved = new BookReserved();
             // Add the event handler for CellContentClick
             dgvShow.CellContentClick += dgvShow_CellContentClick;
+            loginTimer = new Stopwatch();
         }
 
 
@@ -204,8 +208,9 @@ namespace FInalLibrarySystem
 
         private void btnBorrow_Click_1(object sender, EventArgs e)
         {
-            // Retrieve necessary data from UI elements
-            string isbn = txtBookID.Text.Trim();
+
+          
+                string isbn = txtBookID.Text.Trim();
             if (string.IsNullOrEmpty(isbn))
             {
                 MessageBox.Show("Invalid ISBN. Please enter a valid ISBN.");
@@ -280,9 +285,11 @@ namespace FInalLibrarySystem
             // Set returnedDate based on the user's role
             DateTime returnedDate = user.Role == "Student" ? borrowedDate.AddDays(3) : DateTime.MinValue;
 
+            try
+            {
+                loginTimer.Start();// Retrieve necessary data from UI elements
 
-
-            DateTime reservedDate = DateTime.MinValue;  // You might need to update this based on your logic
+                DateTime reservedDate = DateTime.MinValue;  // You might need to update this based on your logic
             byte[] picture = book.Cover;
 
             // Call the BorrowBook function in BookBorrows
@@ -295,8 +302,12 @@ namespace FInalLibrarySystem
                 MessageBox.Show("Book borrowed successfully!");
                 bool updateSuccess = booksManager1.UpdateBookStatus(book.Id, "Borrowed");
 
-                // Refresh the DataGridView
-                if (updateSuccess)
+                    MessageBox.Show($"Borrowing took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.", "Login Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    loginTimer.Stop();
+                    loginTimer.Reset();
+
+                    // Refresh the DataGridView
+                    if (updateSuccess)
                 {
                     DisplayReturnedBooks();
                     // Clear the UI elements after borrowing
@@ -315,9 +326,18 @@ namespace FInalLibrarySystem
                 MessageBox.Show("Failed to borrow the book. Please try again.");
                 // Optionally, you can handle the failure scenario.
             }
-        }
 
-        private void btnUpdate_Click_1(object sender, EventArgs e)
+
+            }
+    
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+}
+
+
+private void btnUpdate_Click_1(object sender, EventArgs e)
         {
             LoadAllBooks();
             DisplayReturnedBooks();

@@ -22,9 +22,7 @@ namespace FInalLibrarySystem
             InitializeComponent();
         }
    
-        private Image originalImage; // Store the original image for reverting
-        private Size originalSize;   // Store the original size for reverting
-        private Timer zoomTimer;     // Timer for smooth zoom-out effect
+
 
         private void Academic_Load(object sender, EventArgs e)
         {
@@ -376,62 +374,21 @@ namespace FInalLibrarySystem
         private void pb1_MouseHover(object sender, EventArgs e)
         {
             pnl1.Visible = true;
-            // Store the original image and size if not stored already
-            if (originalImage == null)
-            {
-                originalImage = pb1.Image;
-                originalSize = pb1.Size;
-            }
 
-            // Set up the timer for smooth zoom-out effect
-            if (zoomTimer == null)
-            {
-                zoomTimer = new Timer();
-                zoomTimer.Interval = 10; // Adjust the interval for smoother animation
-                zoomTimer.Tick += ZoomOutTick;
-            }
-
-            // Start the timer
-            zoomTimer.Start();
         }
 
         private void pb1_MouseLeave(object sender, EventArgs e)
         {
-            // Revert to the original image and size
-            pb1.Image = originalImage;
-            pb1.Size = new Size(120, 225);
+
 
             // Hide the panel
             pnl1.Visible = false;
 
-            // Stop the timer if it's still running
-            if (zoomTimer != null && zoomTimer.Enabled)
-            {
-                zoomTimer.Stop();
-            }
+            
 
         }
 
-        private void ZoomOutTick(object sender, EventArgs e)
-        {
-            // Zoom-out factor for a subtle effect
-            float zoomOutFactor = .95f;
 
-            // Calculate the new size
-            Size newSize = new Size((int)(pb1.Width * zoomOutFactor), (int)(pb1.Height * zoomOutFactor));
-
-            // Set the PictureBox image to the original image
-            pb1.Image = originalImage;
-
-            // Adjust the PictureBox size to the new size
-            pb1.Size = newSize;
-
-            // Stop the timer if the size is close to the original size
-            if (pb1.Width < originalSize.Width)
-            {
-                zoomTimer.Stop();
-            }
-        }
 
         //pb2
         private void pb2_MouseHover(object sender, EventArgs e)
