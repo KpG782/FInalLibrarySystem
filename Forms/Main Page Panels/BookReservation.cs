@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static FInalLibrarySystem.Database.Users;
+using FInalLibrarySystem.Forms.BorrowerList;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace FInalLibrarySystem
 {
@@ -35,6 +37,10 @@ namespace FInalLibrarySystem
 
             dgvBooks.CellContentClick += dgvBooks_CellContentClick;
             dgvBookReserved.CellContentClick += dgvBookReserved_CellContentClick_1;
+
+            //admin
+            btnACancel.Visible = false;
+            btnAReserve.Visible = false;
             
             DisplayReturnedBooks();
             DisplayReservedBooks();
@@ -153,44 +159,10 @@ namespace FInalLibrarySystem
             }
         }
 
-        private void btnReserve_Click(object sender, EventArgs e)
-        {
-
-           
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbPicture_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpReserve_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvBookReserved_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-           
 
 
 
-        }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtBookID_TextChanged_1(object sender, EventArgs e)
         {
@@ -490,6 +462,208 @@ namespace FInalLibrarySystem
                 txtBookID.Text = selectedISBN;
                 lblBookTitle.Text = selectedTitle;
                 lblAuthorName.Text = selectedAuthor;
+            }
+        }
+
+        private void btnACancel_Click(object sender, EventArgs e)
+        {
+            // Get values from UI elements
+            string isbn = txtBookID.Text.Trim();
+            string userId = txtUserID.Text.Trim();
+
+            // Retrieve the reserved book by ISBN and User ID
+            BookReservedModel reservedBook = bookReserved.GetReservedBookByISBNAndUsername(isbn, userId);
+
+
+            // Display a confirmation dialog before cancellation
+            DialogResult result = MessageBox.Show("Are you sure you want to cancel the reservation?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Delete the reserved book from the database
+                bool cancelSuccess = bookReserved.CancelReservedBook(isbn, userId);
+
+                if (cancelSuccess)
+                {
+                    //update the status of that book to returned
+                    bool updateSuccess = books.UpdateBookStatusByISBN(isbn, "Returned");
+
+
+                    MessageBox.Show("Reservation canceled successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DisplayReservedBooks(); // Refresh the DataGridView
+                }
+                else
+                {
+                    MessageBox.Show("Failed to cancel the reservation. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                // Clear the UI elements after cancellation
+                txtBookID.Text = "";
+                txtUserID.Text = "";
+                lblUserName.Text = "";
+                lblBookTitle.Text = "";
+                lblAuthorName.Text = "";
+                pbPicture.Image = null; // Clear the PictureBox image
+            }
+        }
+
+        private void btnAReserve_Click(object sender, EventArgs e)
+        {
+
+            // Get values from UI elements
+            string isbn = txtBookID.Text.Trim();
+            string userId = txtUserID.Text.Trim();
+            string title = lblBookTitle.Text;
+            string author = lblAuthorName.Text;
+            string userFullName = lblUserName.Text;
+
+
+
+
+
+            // Retrieve borrowed books based on the entered student or employee ID
+            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
+            // Retrieve user details based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(userId);
+            // Retrieve book details from the database
+            FInalLibrarySystem.Database.Book book = books.GetBookDetailsByISBN(isbn);
+
+
+            bool isReserved = books.IsBookReserved(isbn);
+
+            if (isReserved)
+            {
+                MessageBox.Show("The Book is already borrowed/reserved");
+                return;
+            }
+
+
+            // Check if both txtUserID and txtBookID are empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text) && string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("User ID and ISBN are required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtUserID is empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text))
+            {
+                MessageBox.Show("User ID is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtBookID is empty
+            if (string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("ISBN is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            studentOrEmployeeId = txtUserID.Text.Trim();  // Update the class-level variable
+
+
+
+            // Check if the selected return date is valid
+            DateTime selectedReturnDate = dtpReserve.Value.Date;
+            DateTime currentDate = DateTime.Now.Date;
+            byte[] picture = book.Cover; // Declare the picture variable = problem to
+
+            try
+            {
+                loginTimer.Start();
+
+                DateTime reservedDate = dtpReserve.Value;
+                string status = "Reserved";
+
+                if (user != null)
+                {
+
+
+                    // Now 'user' object contains details like username, department, etc.
+
+                    bool updateSuccess = books.UpdateBookStatusByISBN(isbn, "Reserved");
+
+                    // Add the reserved book to the bookreserved table
+                    bool reservationSuccess = bookReserved.AddReservedBook(userId, isbn, title, author, picture, reservedDate, status, userFullName);
+
+
+                    if (reservationSuccess)
+                    {
+                        MessageBox.Show("Book reserved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DisplayReservedBooks();
+                        DisplayReturnedBooks();
+
+                        Console.WriteLine($"Reservation took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
+
+                        loginTimer.Stop();
+                        loginTimer.Reset();
+
+                        // Clear the UI elements after reserving
+                        txtBookID.Text = "";
+                        txtUserID.Text = "";
+                        lblUserName.Text = "";
+                        lblBookTitle.Text = "";
+                        lblAuthorName.Text = "";
+                        pbPicture.Image = null; // Clear the PictureBox image
+                    }
+                    // No need for an else block; the AddReservedBook method handles showing error messages
+                }
+                else
+                {
+                    // Handle the case where the user is not found
+                    MessageBox.Show("User not found. Please enter a valid student or employee ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void lbltitleBook_Click(object sender, EventArgs e)
+        {
+            // Replace 'userIdToLookup' with the actual user ID you want to look up
+            int userIdToLookup = 21; // Replace with the actual user ID
+
+            // Call GetUserById to get the user by ID
+            Users.User user = usersManager.GetUserById(userIdToLookup);
+
+            string password = user.Password;
+
+            // Ask the user if they are an admin
+            DialogResult result = MessageBox.Show("Are you an admin?", "Admin Verification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // Check the user's response
+            if (result == DialogResult.Yes)
+            {
+                // Prompt the user for the admin password
+                string enteredPassword = Microsoft.VisualBasic.Interaction.InputBox("Enter admin password:", "Admin Password", "");
+
+                // Check if the entered password matches the stored password
+                if (enteredPassword == user.Password)
+                {
+                    // Password is correct, update visibility
+                    btnACancel.Visible = true;
+                    btnAReserve.Visible = true;
+                }
+                else
+                {
+                    // Password is incorrect, handle accordingly
+                    MessageBox.Show("Incorrect admin password. Access denied.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Optionally, you can perform additional actions, such as logging the attempt or blocking access.
+                }
+            }
+            else
+            {
+                // User is not an admin, handle accordingly
+                // For example, you might want to hide admin-related controls
+                btnACancel.Visible = false;
+                btnAReserve.Visible = false;
             }
         }
     }

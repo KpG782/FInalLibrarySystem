@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Windows.Forms;
 using static FInalLibrarySystem.Database.Users;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace FInalLibrarySystem
 {
@@ -34,7 +35,8 @@ namespace FInalLibrarySystem
 
             // Hide the pnlReceipt when the form loads
             pnlReceipt.Visible = false;
-            //pnlPlay.Visible = false;
+            pnlPlay1.Visible = false;
+
         }
 
         // Update the DisplayReturnedBooks method in the BookReturning class
@@ -172,83 +174,17 @@ namespace FInalLibrarySystem
 
         private void txtUserID_TextChanged(object sender, EventArgs e)
         {
-            studentOrEmployeeId = txtUserID.Text.Trim();  // Update the class-level variable
-
-            // Retrieve borrowed books based on the entered student or employee ID
-            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
-
-            // Update labels with user details or show not available
-            if (borrowedBook != null)
-            {
-                // Display book information in the corresponding labels and picture box
-                lblAuthorName.Text = borrowedBook.BookAuthor;
-                lblBookTitle.Text = borrowedBook.BookTitle;
-
-                // Check if the Cover property is not null before assigning to the PictureBox
-                if (borrowedBook.Picture != null && borrowedBook.Picture.Length > 0)
-                {
-                    using (MemoryStream ms = new MemoryStream(borrowedBook.Picture))
-                    {
-                        pbPicture.Image = Image.FromStream(ms);
-                    }
-                }
-                else
-                {
-                    // Set a default image or handle the case where the cover is not available
-                }
-
-                // Synchronize ISBN
-                txtBookID.Text = borrowedBook.ISBN;
-            }
-            else
-            {
-                // Clear labels and picture box if the user is not found or has no borrowed books
-                lblAuthorName.Text = "Author Not Available";
-                lblBookTitle.Text = "Book Not Available";
-                lblUserName.Text = "Username Not Available";
-                pbPicture.Image = null;
-            }
+            
         }
 
-        private void lblUserName_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void dtpBorrow_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBorrow_Click(object sender, EventArgs e)
-        {
-
-}
-
-private void btnClear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvBookBorrow_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void panel1_Paint_2(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
- 
-        }
+
 
         private void dtpReturn_ValueChanged(object sender, EventArgs e)
         {
@@ -320,242 +256,16 @@ private void btnClear_Click(object sender, EventArgs e)
             pnlReceipt.Visible=false;
         }
 
-        private void btnPlayGame_Click(object sender, EventArgs e)
-        {
-            //pnlPlay.Visible = true;
-        }
-
-        private void guna2ControlBox1_Click(object sender, EventArgs e)
-        {
-            //pnlPlay.Visible = false;
-        }
-
-        private void lbl_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BTNClear_Click_1(object sender, EventArgs e)
-        {
-            // Clear the UI elements after borrowing
-            txtBookID.Text = "";
-            txtUserID.Text = "";
-            lblUserName.Text = "";
-            lblBookTitle.Text = "";
-            lblAuthorName.Text = "";
-            dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
-            pbPicture.Image = null; // Clear the PictureBox image
-        }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
 
-            // Check if both txtUserID and txtBookID are empty
-            if (string.IsNullOrWhiteSpace(txtUserID.Text) && string.IsNullOrWhiteSpace(txtBookID.Text))
-            {
-                MessageBox.Show("User ID and ISBN are required for the update.");
-                return; // Exit the method without further processing
-            }
-
-            // Check if txtUserID is empty
-            if (string.IsNullOrWhiteSpace(txtUserID.Text))
-            {
-                MessageBox.Show("User ID is required for the update.");
-                return; // Exit the method without further processing
-            }
-
-            // Check if txtBookID is empty
-            if (string.IsNullOrWhiteSpace(txtBookID.Text))
-            {
-                MessageBox.Show("ISBN is required for the update.");
-                return; // Exit the method without further processing
-            }
-
-            // Check if the entered ISBN is not in the bookBorrows table
-            if (!bookBorrows.IsBookBorrowed(txtBookID.Text))
-            {
-                MessageBox.Show("Book with ISBN " + txtBookID.Text + " is not available for return.");
-                return; // Exit the method without further processing
-            }
-
-            // Check if the entered UserID is not associated with any borrowed books
-            if (!bookBorrows.IsUserBorrowed(txtUserID.Text))
-            {
-                MessageBox.Show("User with ID " + txtUserID.Text + " has no borrowed books.");
-                return; // Exit the method without further processing
-            }
-
-
-            // Retrieve necessary information from UI elements
-            string bookID = txtBookID.Text.Trim();
-            string userID = txtUserID.Text.Trim();
-            try
-            {
-                loginTimer.Start();
-
-                // Check if both book ID and user ID are provided
-                if (!string.IsNullOrEmpty(bookID) && !string.IsNullOrEmpty(userID))
-                {
-                    // Check if the selected return date is valid
-                    DateTime selectedReturnDate = dtpReturn.Value.Date;
-                    DateTime currentDate = DateTime.Now.Date;
-
-                    if (selectedReturnDate < currentDate)
-                    {
-                        MessageBox.Show("Invalid return date. Please select a date on or after the current date.");
-                        return; // Exit the method without further processing
-                    }
-
-
-                    // Check if the user is a student
-                    bool isStudent = usersManager.IsStudent(userID);
-
-                    // Display MessageBox based on the result
-                    if (isStudent)
-                    {
-                        MessageBox.Show("The user is a student.");
-                        // Retrieve the returned date of the book
-                        DateTime returnedDate = bookBorrows.GetReturnedDateByBookId(bookID);
-
-                        if (dtpReturn.Value > returnedDate)
-                        {
-
-
-                            // Calculate the days ahead
-                            int daysAhead = (int)(dtpReturn.Value - returnedDate).TotalDays;
-
-                            // Show the days ahead in a MessageBox
-                            MessageBox.Show($"The return date is {daysAhead} days ahead of the returned date.");
-
-
-                            // Retrieve borrowed books based on the entered student or employee ID
-                            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
-
-                            //get user money
-                            int userMoney = usersManager.GetUserMoneyByUserId(studentOrEmployeeId);
-
-
-                            // Calculate deduction for late return (assuming $20 deduction per day)
-                            int lateReturnDeduction = daysAhead * 20;
-
-                            //for the receipt
-                            lblSAuthor.Text = borrowedBook.BookAuthor;
-                            lblSUserID.Text = borrowedBook.UserID;
-                            lblSUsername.Text = borrowedBook.Username;
-                            lblSBorrowedDate.Text = borrowedBook.Borrowed.ToString();
-                            lblSReturnedDate.Text = dtpReturn.Value.ToString();
-                            lblSDueDate.Text = borrowedBook.Returned.ToString();
-                            lblSBookID.Text = borrowedBook.ISBN.ToString();
-                            lblSBookTitle.Text = borrowedBook.BookTitle;
-                            lblSUserMoney.Text = userMoney.ToString();
-                            lblSPayDue.Text = lateReturnDeduction.ToString();
-                            lblNoDays.Text = daysAhead.ToString();
-
-
-                            //show the receipt
-                            pnlReceipt.Visible = true;
-                            return;
-                        }
-
-
-                    }
-
-                    // Update the book status to "Returned" in the Books class using ISBN
-                    bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
-
-                    if (isBookReturned)
-                    {
-                        // Remove the returned book from the bookborrows database
-                        bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
-
-                        if (isBookRemoved)
-                        {
-
-                            // Display a message indicating successful return and removal
-                            MessageBox.Show("Book returned and removed successfully.");
-
-                            // Clear the UI elements after borrowing
-                            txtBookID.Text = "";
-                            txtUserID.Text = "";
-                            lblUserName.Text = "";
-                            lblBookTitle.Text = "";
-                            lblAuthorName.Text = "";
-                            dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
-                            pbPicture.Image = null; // Clear the PictureBox image
-
-                            // Refresh the DataGridView controls to reflect the changes
-                            DisplayBooks();
-                            DisplayBookBorrows();
-                            Console.WriteLine($"Returning took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
-
-                            loginTimer.Stop();
-                            loginTimer.Reset();
-                        }
-                        else
-                        {
-                            // Display a message if removing the book fails
-                            MessageBox.Show("Failed to remove the returned book from bookborrows database.");
-                        }
-                    }
-                    else
-                    {
-                        // Display a message if updating the book status fails
-                        MessageBox.Show("Failed to update book status.");
-                    }
-                }
-
-                else
-                {
-                    // Display a message if book ID or user ID is missing
-                    MessageBox.Show("Please provide both Book ID and User ID.");
-                }
-
-
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           
         }
 
         private void txtBookID_TextChanged_1(object sender, EventArgs e)
         {
-            string isbn = txtBookID.Text.Trim();
-            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByISBN(isbn);
-
-            if (borrowedBook != null)
-            {
-                // Display book information in the corresponding labels and picture box
-                lblAuthorName.Text = borrowedBook.BookAuthor;
-                lblBookTitle.Text = borrowedBook.BookTitle;
-
-                // Check if the Cover property is not null before assigning to the PictureBox
-                if (borrowedBook.Picture != null && borrowedBook.Picture.Length > 0)
-                {
-                    using (MemoryStream ms = new MemoryStream(borrowedBook.Picture))
-                    {
-                        pbPicture.Image = Image.FromStream(ms);
-                    }
-                }
-                else
-                {
-                    // Set a default image or handle the case where the cover is not available
-                }
-
-                // Synchronize UserID and Username
-                //txtUserID.Text = borrowedBook.UserID;
-                lblUserName.Text = borrowedBook.Username;
-            }
-            else
-            {
-                // Clear labels and picture box if book is not found
-                lblAuthorName.Text = "Author Not Available";
-                lblBookTitle.Text = "Book Not Available";
-                lblUserName.Text = "Username Not Available";
-                pbPicture.Image = null;
-            }
+            
         }
 
         private void txtUserID_TextChanged_1(object sender, EventArgs e)
@@ -598,12 +308,8 @@ private void btnClear_Click(object sender, EventArgs e)
             }
         }
 
-        private void btnUpdate_Click_1(object sender, EventArgs e)
-        {
-            DisplayBooks();
-            DisplayBookBorrows();
-        }
-
+       
+        //confirm button
         private void guna2Button1_Click_2(object sender, EventArgs e)
         {
             string bookID = txtBookID.Text.Trim();
@@ -787,6 +493,368 @@ private void btnClear_Click(object sender, EventArgs e)
                 lblBookTitle.Text = selectedTitle;
                 lblAuthorName.Text = selectedAuthor;
             }
+        }
+
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+            pnlPlay1.Visible = false;
+        }
+
+        private void btnPlayGame_Click(object sender, EventArgs e)
+        {
+            pnlPlay1.Visible = true;
+            pnlPlay1.BringToFront();
+        }
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
+        {
+            // Check if both txtUserID and txtBookID are empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text) && string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("User ID and ISBN are required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtUserID is empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text))
+            {
+                MessageBox.Show("User ID is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtBookID is empty
+            if (string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("ISBN is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if the entered ISBN is not in the bookBorrows table
+            if (!bookBorrows.IsBookBorrowed(txtBookID.Text))
+            {
+                MessageBox.Show("Book with ISBN " + txtBookID.Text + " is not available for return.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if the entered UserID is not associated with any borrowed books
+            if (!bookBorrows.IsUserBorrowed(txtUserID.Text))
+            {
+                MessageBox.Show("User with ID " + txtUserID.Text + " has no borrowed books.");
+                return; // Exit the method without further processing
+            }
+
+
+            // Retrieve necessary information from UI elements
+            string bookID = txtBookID.Text.Trim();
+            string userID = txtUserID.Text.Trim();
+            try
+            {
+                loginTimer.Start();
+
+                // Check if both book ID and user ID are provided
+                if (!string.IsNullOrEmpty(bookID) && !string.IsNullOrEmpty(userID))
+                {
+                    // Check if the selected return date is valid
+                    DateTime selectedReturnDate = dtpReturn.Value.Date;
+                    DateTime currentDate = DateTime.Now.Date;
+
+                    if (selectedReturnDate < currentDate)
+                    {
+                        MessageBox.Show("Invalid return date. Please select a date on or after the current date.");
+                        return; // Exit the method without further processing
+                    }
+
+
+                    // Check if the user is a student
+                    bool isStudent = usersManager.IsStudent(userID);
+
+                    // Display MessageBox based on the result
+                    if (isStudent)
+                    {
+                        MessageBox.Show("The user is a student.");
+                        // Retrieve the returned date of the book
+                        DateTime returnedDate = bookBorrows.GetReturnedDateByBookId(bookID);
+
+                        if (dtpReturn.Value > returnedDate)
+                        {
+
+
+                            // Calculate the days ahead
+                            int daysAhead = (int)(dtpReturn.Value - returnedDate).TotalDays;
+
+                            // Show the days ahead in a MessageBox
+                            MessageBox.Show($"The return date is {daysAhead} days ahead of the returned date.");
+
+
+                            // Retrieve borrowed books based on the entered student or employee ID
+                            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
+
+                            //get user money
+                            int userMoney = usersManager.GetUserMoneyByUserId(studentOrEmployeeId);
+
+
+                            // Calculate deduction for late return (assuming $20 deduction per day)
+                            int lateReturnDeduction = daysAhead * 20;
+
+                            //for the receipt
+                            lblSAuthor.Text = borrowedBook.BookAuthor;
+                            lblSUserID.Text = borrowedBook.UserID;
+                            lblSUsername.Text = borrowedBook.Username;
+                            lblSBorrowedDate.Text = borrowedBook.Borrowed.ToString();
+                            lblSReturnedDate.Text = dtpReturn.Value.ToString();
+                            lblSDueDate.Text = borrowedBook.Returned.ToString();
+                            lblSBookID.Text = borrowedBook.ISBN.ToString();
+                            lblSBookTitle.Text = borrowedBook.BookTitle;
+                            lblSUserMoney.Text = userMoney.ToString();
+                            lblSPayDue.Text = lateReturnDeduction.ToString();
+                            lblNoDays.Text = daysAhead.ToString();
+
+
+                            //show the receipt
+                            pnlReceipt.Visible = true;
+                            return;
+                        }
+
+
+                    }
+
+                    // Update the book status to "Returned" in the Books class using ISBN
+                    bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
+
+                    if (isBookReturned)
+                    {
+                        // Remove the returned book from the bookborrows database
+                        bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
+
+                        if (isBookRemoved)
+                        {
+
+                            // Display a message indicating successful return and removal
+                            MessageBox.Show("Book returned and removed successfully.");
+
+                            // Clear the UI elements after borrowing
+                            txtBookID.Text = "";
+                            txtUserID.Text = "";
+                            lblUserName.Text = "";
+                            lblBookTitle.Text = "";
+                            lblAuthorName.Text = "";
+                            dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+                            pbPicture.Image = null; // Clear the PictureBox image
+
+                            // Refresh the DataGridView controls to reflect the changes
+                            DisplayBooks();
+                            DisplayBookBorrows();
+                            Console.WriteLine($"Returning took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
+                            loginTimer.Stop();
+                            loginTimer.Reset();
+                        }
+                        else
+                        {
+                            // Display a message if removing the book fails
+                            MessageBox.Show("Failed to remove the returned book from bookborrows database.");
+                        }
+                    }
+                    else
+                    {
+                        // Display a message if updating the book status fails
+                        MessageBox.Show("Failed to update book status.");
+                    }
+                }
+
+                else
+                {
+                    // Display a message if book ID or user ID is missing
+                    MessageBox.Show("Please provide both Book ID and User ID.");
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnUpdate_Click_2(object sender, EventArgs e)
+        {
+            DisplayBooks();
+            DisplayBookBorrows();
+        }
+
+        private void btnClear_Click_2(object sender, EventArgs e)
+        {
+            // Clear the UI elements after borrowing
+            txtBookID.Text = "";
+            txtUserID.Text = "";
+            lblUserName.Text = "";
+            lblBookTitle.Text = "";
+            lblAuthorName.Text = "";
+            dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+            pbPicture.Image = null; // Clear the PictureBox image
+        }
+
+        private void txtBookID_TextChanged_2(object sender, EventArgs e)
+        {
+            string isbn = txtBookID.Text.Trim();
+            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByISBN(isbn);
+
+            if (borrowedBook != null)
+            {
+                // Display book information in the corresponding labels and picture box
+                lblAuthorName.Text = borrowedBook.BookAuthor;
+                lblBookTitle.Text = borrowedBook.BookTitle;
+
+                // Check if the Cover property is not null before assigning to the PictureBox
+                if (borrowedBook.Picture != null && borrowedBook.Picture.Length > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream(borrowedBook.Picture))
+                    {
+                        pbPicture.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    // Set a default image or handle the case where the cover is not available
+                }
+
+                // Synchronize UserID and Username
+                //txtUserID.Text = borrowedBook.UserID;
+                lblUserName.Text = borrowedBook.Username;
+            }
+            else
+            {
+                // Clear labels and picture box if book is not found
+                lblAuthorName.Text = "Author Not Available";
+                lblBookTitle.Text = "Book Not Available";
+                lblUserName.Text = "Username Not Available";
+                pbPicture.Image = null;
+            }
+        }
+
+        private void txtUserID_TextChanged_2(object sender, EventArgs e)
+        {
+            studentOrEmployeeId = txtUserID.Text.Trim();  // Update the class-level variable
+
+            // Retrieve borrowed books based on the entered student or employee ID
+            BorrowedBook borrowedBook = bookBorrows.GetBorrowedBookByUserID(studentOrEmployeeId);
+
+            // Update labels with user details or show not available
+            if (borrowedBook != null)
+            {
+                // Display book information in the corresponding labels and picture box
+                lblAuthorName.Text = borrowedBook.BookAuthor;
+                lblBookTitle.Text = borrowedBook.BookTitle;
+
+                // Check if the Cover property is not null before assigning to the PictureBox
+                if (borrowedBook.Picture != null && borrowedBook.Picture.Length > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream(borrowedBook.Picture))
+                    {
+                        pbPicture.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    // Set a default image or handle the case where the cover is not available
+                }
+
+                // Synchronize ISBN
+                txtBookID.Text = borrowedBook.ISBN;
+            }
+            else
+            {
+                // Clear labels and picture box if the user is not found or has no borrowed books
+                lblAuthorName.Text = "Author Not Available";
+                lblBookTitle.Text = "Book Not Available";
+                lblUserName.Text = "Username Not Available";
+                pbPicture.Image = null;
+            }
+        }
+
+        private void dtpReturn_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlPlay1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            pnlPlay1.Visible = false;
+        }
+
+        private void rdAnswer1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+            string answer1 = "Jomariss Baccay Ganda";
+            string answer2 = "Lester Gwapo Diampoc";
+            string answer3 = "Daniel Idolo";
+
+            if(answer1 == txtNamePlan.Text && answer2 ==  txtNameLester.Text && answer3 == txtNameDellosa.Text)
+            {
+                string userID = txtUserID.Text.Trim();
+
+                // Assuming you have a method to retrieve the user's current money based on user ID
+                int currentMoney = usersManager.GetUserMoneyByUserId(userID);
+
+                // Assuming you have a variable named 'amountToAdd' with the amount to be added
+                int amountToAdd = 100;  // You can replace this with the actual amount
+
+                // Calculate the updated money
+                int updatedMoney = currentMoney + amountToAdd;
+
+                // Update the user's money in the database
+                bool moneyUpdated = usersManager.UpdateUserMoneyByUserId(userID, updatedMoney);
+
+
+                if (moneyUpdated)
+                {
+
+                    // Display a success message
+                    MessageBox.Show($"Added {amountToAdd} to the user's account. Updated money: {updatedMoney}");
+                    pnlPlay1.Visible = false;
+
+                }
+                else
+                {
+                    // Display a message if the update fails
+                    MessageBox.Show("Failed to update user money.");
+                }
+            }
+            else
+            {
+                // Display a message if the update fails
+                MessageBox.Show("Answer is not Correct.");
+            }
+
+
+          
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNameLester_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlPlay1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -37,6 +37,10 @@ namespace FInalLibrarySystem
             // Add the event handler for CellContentClick
             dgvShow.CellContentClick += dgvShow_CellContentClick;
             loginTimer = new Stopwatch();
+
+            //admin
+            btnABorrow.Visible = false;
+
         }
 
 
@@ -408,6 +412,162 @@ private void btnUpdate_Click_1(object sender, EventArgs e)
         private void PrimaryPanel_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lbltitleBook_Click(object sender, EventArgs e)
+        {
+            // Replace 'userIdToLookup' with the actual user ID you want to look up
+            int userIdToLookup = 21; // Replace with the actual user ID
+
+            // Call GetUserById to get the user by ID
+            Users.User user = usersManager.GetUserById(userIdToLookup);
+
+            string password = user.Password;
+
+            // Ask the user if they are an admin
+            DialogResult result = MessageBox.Show("Are you an admin?", "Admin Verification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // Check the user's response
+            if (result == DialogResult.Yes)
+            {
+                // Prompt the user for the admin password
+                string enteredPassword = Microsoft.VisualBasic.Interaction.InputBox("Enter admin password:", "Admin Password", "");
+
+                // Check if the entered password matches the stored password
+                if (enteredPassword == user.Password)
+                {
+                    // Password is correct, update visibility
+                    btnABorrow.Visible = true;
+
+                }
+                else
+                {
+                    // Password is incorrect, handle accordingly
+                    MessageBox.Show("Incorrect admin password. Access denied.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Optionally, you can perform additional actions, such as logging the attempt or blocking access.
+                }
+            }
+            else
+            {
+                // User is not an admin, handle accordingly
+                // For example, you might want to hide admin-related controls
+                btnABorrow.Visible = false;
+            }
+        }
+
+        private void btnABorrow_Click(object sender, EventArgs e)
+        {
+            // Retrieve user details from the database based on student or employee ID
+            Users.User user = usersManager.GetUserByStudentOrEmployeeId(studentOrEmployeeId);
+            string isbn = txtBookID.Text.Trim();
+
+            if (string.IsNullOrEmpty(isbn))
+            {
+                MessageBox.Show("Invalid ISBN. Please enter a valid ISBN.");
+                return;
+            }
+
+            // Check if the selected return date is valid
+            DateTime selectedReturnDate = dtpBorrow.Value.Date;
+            DateTime currentDate = DateTime.Now.Date;
+
+            if (selectedReturnDate < currentDate)
+            {
+                MessageBox.Show("Invalid return date. Please select a date on or after the current date.");
+                return; // Exit the method without further processing
+            }
+
+            // Retrieve book details from the database
+            FInalLibrarySystem.Database.Book book = booksManager1.GetBookDetailsByISBN(isbn);
+
+            // Update labels with book details
+            if (book == null)
+            {
+                // Clear labels if the book is not found
+                lblBookTitle.Text = "Book not available";
+                lblAuthorName.Text = "Author not available";
+                pbPicture.Image = null;
+
+                MessageBox.Show("Book not found. Please enter a valid ISBN.");
+                return; // Exit the method early
+            }
+
+
+            // Update labels with user details or show not available
+            if (user == null)
+            {
+                // Clear labels if the user is not found
+                lblUserName.Text = "User not available";
+
+                MessageBox.Show("User not found. Please enter a valid Student ID or Employee ID.");
+                return; // Exit the method early
+            }
+
+            // Check if the book is already borrowed
+            if (book.Status.Equals("Borrowed", StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("Sorry, this book is already borrowed.");
+                return; // Exit the method early
+            }
+
+
+            // Continue with the borrow process
+            string username = lblUserName.Text;
+            string bookTitle = lblBookTitle.Text;
+            string bookAuthor = lblAuthorName.Text;
+            DateTime borrowedDate = dtpBorrow.Value;
+
+            // Set returnedDate based on the user's role
+            DateTime returnedDate = user.Role == "Student" ? borrowedDate.AddDays(3) : DateTime.MinValue;
+
+            try
+            {
+                loginTimer.Start();// Retrieve necessary data from UI elements
+
+                DateTime reservedDate = DateTime.MinValue;  // You might need to update this based on your logic
+                byte[] picture = book.Cover;
+
+                // Call the BorrowBook function in BookBorrows
+                bool success = bookBorrowsManager.BorrowBook(isbn, studentOrEmployeeId, username, bookTitle, bookAuthor, borrowedDate, returnedDate, reservedDate, picture);
+
+                // Handle the result
+                if (success)
+                {
+                    this.Refresh();
+                    MessageBox.Show("Book borrowed successfully!");
+                    bool updateSuccess = booksManager1.UpdateBookStatus(book.Id, "Borrowed");
+                    Console.WriteLine($"Borrowing took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
+                    loginTimer.Stop();
+                    loginTimer.Reset();
+
+                    // Refresh the DataGridView
+                    if (updateSuccess)
+                    {
+                        DisplayReturnedBooks();
+                        // Clear the UI elements after borrowing
+                        txtBookID.Text = "";
+                        txtUserID.Text = "";
+                        lblUserName.Text = "";
+                        lblBookTitle.Text = "";
+                        lblAuthorName.Text = "";
+                        dtpBorrow.Value = DateTime.Now; // Reset the DateTimePicker value
+                        pbPicture.Image = null; // Clear the PictureBox image
+                    }
+                    // Optionally, you can perform additional actions after a successful borrow.
+                }
+                else
+                {
+                    MessageBox.Show("Failed to borrow the book. Please try again.");
+                    // Optionally, you can handle the failure scenario.
+                }
+
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

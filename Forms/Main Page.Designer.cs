@@ -37,14 +37,14 @@
             this.BookListLink = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btnDashboard = new System.Windows.Forms.LinkLabel();
+            this.profile1 = new FInalLibrarySystem.Profile();
+            this.bookList1 = new FInalLibrarySystem.BookList();
             this.bookReturning1 = new FInalLibrarySystem.BookReturning();
             this.bookBorrowing1 = new FInalLibrarySystem.BookBorrowing();
             this.borrowerList1 = new FInalLibrarySystem.BorrowerList();
-            this.bookList1 = new FInalLibrarySystem.BookList();
-            this.profile1 = new FInalLibrarySystem.Profile();
-            this.bookReservation1 = new FInalLibrarySystem.BookReservation();
             this.bookReservation2 = new FInalLibrarySystem.BookReservation();
-            this.btnDashboard = new System.Windows.Forms.LinkLabel();
+            this.bookReservation1 = new FInalLibrarySystem.BookReservation();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,6 +178,45 @@
             this.closeButton.TabIndex = 34;
             this.closeButton.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.ActiveLinkColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnDashboard.LinkColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(21, 147);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(108, 52);
+            this.btnDashboard.TabIndex = 37;
+            this.btnDashboard.TabStop = true;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDashboard_LinkClicked);
+            // 
+            // profile1
+            // 
+            this.profile1.BackColor = System.Drawing.Color.White;
+            this.profile1.Location = new System.Drawing.Point(193, 4);
+            this.profile1.Margin = new System.Windows.Forms.Padding(2);
+            this.profile1.Name = "profile1";
+            this.profile1.Size = new System.Drawing.Size(917, 860);
+            this.profile1.TabIndex = 26;
+            this.profile1.UserId = 1;
+            this.profile1.Load += new System.EventHandler(this.profile1_Load_1);
+            // 
+            // bookList1
+            // 
+            this.bookList1.BackColor = System.Drawing.Color.White;
+            this.bookList1.Location = new System.Drawing.Point(192, 4);
+            this.bookList1.Margin = new System.Windows.Forms.Padding(2);
+            this.bookList1.Name = "bookList1";
+            this.bookList1.Size = new System.Drawing.Size(918, 683);
+            this.bookList1.TabIndex = 27;
+            this.bookList1.Load += new System.EventHandler(this.bookList1_Load);
+            // 
             // bookReturning1
             // 
             this.bookReturning1.BackColor = System.Drawing.Color.White;
@@ -205,25 +244,14 @@
             this.borrowerList1.Size = new System.Drawing.Size(918, 683);
             this.borrowerList1.TabIndex = 28;
             // 
-            // bookList1
+            // bookReservation2
             // 
-            this.bookList1.BackColor = System.Drawing.Color.White;
-            this.bookList1.Location = new System.Drawing.Point(192, 4);
-            this.bookList1.Margin = new System.Windows.Forms.Padding(2);
-            this.bookList1.Name = "bookList1";
-            this.bookList1.Size = new System.Drawing.Size(918, 683);
-            this.bookList1.TabIndex = 27;
-            this.bookList1.Load += new System.EventHandler(this.bookList1_Load);
-            // 
-            // profile1
-            // 
-            this.profile1.BackColor = System.Drawing.Color.White;
-            this.profile1.Location = new System.Drawing.Point(192, 4);
-            this.profile1.Margin = new System.Windows.Forms.Padding(2);
-            this.profile1.Name = "profile1";
-            this.profile1.Size = new System.Drawing.Size(917, 860);
-            this.profile1.TabIndex = 26;
-            this.profile1.UserId = 1;
+            this.bookReservation2.BackColor = System.Drawing.Color.White;
+            this.bookReservation2.Location = new System.Drawing.Point(192, 4);
+            this.bookReservation2.Margin = new System.Windows.Forms.Padding(2);
+            this.bookReservation2.Name = "bookReservation2";
+            this.bookReservation2.Size = new System.Drawing.Size(917, 683);
+            this.bookReservation2.TabIndex = 36;
             // 
             // bookReservation1
             // 
@@ -234,39 +262,13 @@
             this.bookReservation1.Size = new System.Drawing.Size(926, 860);
             this.bookReservation1.TabIndex = 31;
             // 
-            // bookReservation2
-            // 
-            this.bookReservation2.BackColor = System.Drawing.Color.White;
-            this.bookReservation2.Location = new System.Drawing.Point(192, 4);
-            this.bookReservation2.Margin = new System.Windows.Forms.Padding(2);
-            this.bookReservation2.Name = "bookReservation2";
-            this.bookReservation2.Size = new System.Drawing.Size(917, 683);
-            this.bookReservation2.TabIndex = 36;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnDashboard.LinkColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(21, 147);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(108, 52);
-            this.btnDashboard.TabIndex = 37;
-            this.btnDashboard.TabStop = true;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDashboard_LinkClicked);
-            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1112, 687);
+            this.Controls.Add(this.profile1);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.pictureBox1);
@@ -277,7 +279,6 @@
             this.Controls.Add(this.BorrowerListLink);
             this.Controls.Add(this.BookListLink);
             this.Controls.Add(this.bookList1);
-            this.Controls.Add(this.profile1);
             this.Controls.Add(this.bookReturning1);
             this.Controls.Add(this.bookBorrowing1);
             this.Controls.Add(this.borrowerList1);

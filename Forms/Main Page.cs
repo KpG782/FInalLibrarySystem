@@ -193,5 +193,27 @@ namespace FInalLibrarySystem
             bookReturning1.Visible = false;
             bookReservation2.Visible = true;
         }
+
+        private void profile1_Load_1(object sender, EventArgs e)
+        {
+            //set if visibile or not
+            profile1.Visible = false;
+            bookList1.Visible = true;
+            borrowerList1.Visible = false;
+            bookBorrowing1.Visible = false;
+            bookReturning1.Visible = false;
+            bookReservation2.Visible = true;
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            //set if visibile or not
+            profile1.Visible = false;
+            bookList1.Visible = true;
+            borrowerList1.Visible = false;
+            bookBorrowing1.Visible = false;
+            bookReturning1.Visible = false;
+            bookReservation2.Visible = true;
+        }
     }
 }

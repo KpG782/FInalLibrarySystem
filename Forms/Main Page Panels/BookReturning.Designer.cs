@@ -29,39 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.PrimaryPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbltitleBook = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BookPictureBox = new System.Windows.Forms.PictureBox();
-            this.SecondaryPanel = new System.Windows.Forms.Panel();
-            this.pnlReceipt = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.MainPanel = new System.Windows.Forms.Panel();
-            this.dtpReturn = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.LBLDate = new System.Windows.Forms.Label();
-            this.LBLTitleUserName = new System.Windows.Forms.Label();
-            this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.LBLAuthor = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtBookID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.LBLBookID = new System.Windows.Forms.Label();
-            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.btnReturn = new Guna.UI2.WinForms.Guna2Button();
-            this.pbPicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.SecondaryPanel = new System.Windows.Forms.Panel();
+            this.dgvBookBorrow = new System.Windows.Forms.DataGridView();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BorrowedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Due_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvBooks = new System.Windows.Forms.DataGridView();
+            this.Book_TItle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlReceipt = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.btnPlayGame = new Guna.UI2.WinForms.Guna2Button();
             this.lblSUserMoney = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -91,135 +83,61 @@
             this.LBLName = new System.Windows.Forms.Label();
             this.LBLUserID = new System.Windows.Forms.Label();
             this.PBLogo = new System.Windows.Forms.PictureBox();
+            this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.MainPanel = new System.Windows.Forms.Panel();
+            this.pnlPlay1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblq4 = new System.Windows.Forms.Label();
+            this.lblh1 = new System.Windows.Forms.Label();
+            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.rdAnswer = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lblq3 = new System.Windows.Forms.Label();
+            this.rdAnswer2 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lblq2 = new System.Windows.Forms.Label();
+            this.rdAnswer1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblq1 = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBookTitle = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblAuthorName = new System.Windows.Forms.Label();
-            this.lblBookTitle = new System.Windows.Forms.Label();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dgvBookBorrow = new System.Windows.Forms.DataGridView();
-            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReservedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvBooks = new System.Windows.Forms.DataGridView();
-            this.Book_TItle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Book_Copyright = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrimaryPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BookPictureBox)).BeginInit();
+            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.dtpReturn = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.LBLDate = new System.Windows.Forms.Label();
+            this.LBLTitleUserName = new System.Windows.Forms.Label();
+            this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LBLAuthor = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBookID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.LBLBookID = new System.Windows.Forms.Label();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReturn = new Guna.UI2.WinForms.Guna2Button();
+            this.pbPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.txtNamePlan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNameLester = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblq5 = new System.Windows.Forms.Label();
+            this.txtNameDellosa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblq6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SecondaryPanel.SuspendLayout();
-            this.pnlReceipt.SuspendLayout();
-            this.MainPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookBorrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
+            this.pnlReceipt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
+            this.MainPanel.SuspendLayout();
+            this.pnlPlay1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // PrimaryPanel
+            // guna2BorderlessForm1
             // 
-            this.PrimaryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PrimaryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PrimaryPanel.Controls.Add(this.panel1);
-            this.PrimaryPanel.Controls.Add(this.lblTitle);
-            this.PrimaryPanel.Controls.Add(this.label1);
-            this.PrimaryPanel.Controls.Add(this.BookPictureBox);
-            this.PrimaryPanel.Location = new System.Drawing.Point(2, 2);
-            this.PrimaryPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.PrimaryPanel.Name = "PrimaryPanel";
-            this.PrimaryPanel.Size = new System.Drawing.Size(406, 679);
-            this.PrimaryPanel.TabIndex = 2;
-            this.PrimaryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PrimaryPanel_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.panel1.Controls.Add(this.lblBookTitle);
-            this.panel1.Controls.Add(this.lblUserName);
-            this.panel1.Controls.Add(this.lblAuthorName);
-            this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.dtpReturn);
-            this.panel1.Controls.Add(this.LBLDate);
-            this.panel1.Controls.Add(this.LBLTitleUserName);
-            this.panel1.Controls.Add(this.txtUserID);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.LBLAuthor);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtBookID);
-            this.panel1.Controls.Add(this.LBLBookID);
-            this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Controls.Add(this.btnReturn);
-            this.panel1.Controls.Add(this.pbPicture);
-            this.panel1.Controls.Add(this.lbltitleBook);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(-10, -88);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(412, 852);
-            this.panel1.TabIndex = 18;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_2);
-            // 
-            // lbltitleBook
-            // 
-            this.lbltitleBook.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitleBook.Location = new System.Drawing.Point(101, 19);
-            this.lbltitleBook.Name = "lbltitleBook";
-            this.lbltitleBook.Size = new System.Drawing.Size(78, 15);
-            this.lbltitleBook.TabIndex = 17;
-            this.lbltitleBook.Text = "Book Borrowing";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(-98, 82);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.Location = new System.Drawing.Point(116, 20);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(151, 18);
-            this.lblTitle.TabIndex = 17;
-            this.lblTitle.Text = "Book Returning";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-98, 82);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
-            // 
-            // BookPictureBox
-            // 
-            this.BookPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BookPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BookPictureBox.Location = new System.Drawing.Point(90, 63);
-            this.BookPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.BookPictureBox.Name = "BookPictureBox";
-            this.BookPictureBox.Size = new System.Drawing.Size(194, 275);
-            this.BookPictureBox.TabIndex = 6;
-            this.BookPictureBox.TabStop = false;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // SecondaryPanel
             // 
@@ -235,6 +153,209 @@
             this.SecondaryPanel.Name = "SecondaryPanel";
             this.SecondaryPanel.Size = new System.Drawing.Size(508, 687);
             this.SecondaryPanel.TabIndex = 1;
+            // 
+            // dgvBookBorrow
+            // 
+            this.dgvBookBorrow.AllowUserToResizeRows = false;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvBookBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            this.dgvBookBorrow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBookBorrow.BackgroundColor = System.Drawing.Color.Black;
+            this.dgvBookBorrow.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvBookBorrow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvBookBorrow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBookBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            this.dgvBookBorrow.ColumnHeadersHeight = 40;
+            this.dgvBookBorrow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Username,
+            this.ISBN,
+            this.Title,
+            this.Author,
+            this.BorrowedDate,
+            this.Due_Date});
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle27;
+            this.dgvBookBorrow.EnableHeadersVisualStyles = false;
+            this.dgvBookBorrow.Location = new System.Drawing.Point(-7, 334);
+            this.dgvBookBorrow.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvBookBorrow.Name = "dgvBookBorrow";
+            this.dgvBookBorrow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBookBorrow.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            this.dgvBookBorrow.RowHeadersWidth = 51;
+            this.dgvBookBorrow.RowTemplate.Height = 40;
+            this.dgvBookBorrow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvBookBorrow.Size = new System.Drawing.Size(511, 351);
+            this.dgvBookBorrow.TabIndex = 28;
+            this.dgvBookBorrow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookBorrow_CellContentClick_1);
+            // 
+            // Username
+            // 
+            this.Username.HeaderText = "Username";
+            this.Username.Name = "Username";
+            // 
+            // ISBN
+            // 
+            this.ISBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ISBN.FillWeight = 73.73386F;
+            this.ISBN.HeaderText = "Book_ISBN";
+            this.ISBN.Name = "ISBN";
+            this.ISBN.Width = 96;
+            // 
+            // Title
+            // 
+            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Title.FillWeight = 58.17943F;
+            this.Title.HeaderText = "Book_TItle";
+            this.Title.Name = "Title";
+            this.Title.Width = 95;
+            // 
+            // Author
+            // 
+            this.Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Author.FillWeight = 117.2417F;
+            this.Author.HeaderText = "Book_Author";
+            this.Author.Name = "Author";
+            this.Author.Width = 110;
+            // 
+            // BorrowedDate
+            // 
+            this.BorrowedDate.HeaderText = "BorrowedDate";
+            this.BorrowedDate.Name = "BorrowedDate";
+            // 
+            // Due_Date
+            // 
+            this.Due_Date.HeaderText = "Due_Date";
+            this.Due_Date.Name = "Due_Date";
+            // 
+            // dgvBooks
+            // 
+            this.dgvBooks.AllowUserToResizeRows = false;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            this.dgvBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBooks.BackgroundColor = System.Drawing.Color.Black;
+            this.dgvBooks.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvBooks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvBooks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            this.dgvBooks.ColumnHeadersHeight = 40;
+            this.dgvBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Book_TItle,
+            this.SBN,
+            this.Book_Category,
+            this.Book_Author,
+            this.Book_Status,
+            this.Book_Copyright});
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle31;
+            this.dgvBooks.EnableHeadersVisualStyles = false;
+            this.dgvBooks.Location = new System.Drawing.Point(-10, 0);
+            this.dgvBooks.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvBooks.Name = "dgvBooks";
+            this.dgvBooks.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.dgvBooks.RowHeadersWidth = 51;
+            this.dgvBooks.RowTemplate.Height = 40;
+            this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvBooks.Size = new System.Drawing.Size(523, 330);
+            this.dgvBooks.TabIndex = 27;
+            this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick_1);
+            // 
+            // Book_TItle
+            // 
+            this.Book_TItle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_TItle.FillWeight = 58.17943F;
+            this.Book_TItle.HeaderText = "Book_TItle";
+            this.Book_TItle.Name = "Book_TItle";
+            this.Book_TItle.Width = 95;
+            // 
+            // SBN
+            // 
+            this.SBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SBN.FillWeight = 73.73386F;
+            this.SBN.HeaderText = "Book_ISBN";
+            this.SBN.Name = "SBN";
+            this.SBN.Width = 96;
+            // 
+            // Book_Category
+            // 
+            this.Book_Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Category.FillWeight = 93.26363F;
+            this.Book_Category.HeaderText = "Book_Category";
+            this.Book_Category.Name = "Book_Category";
+            this.Book_Category.Width = 123;
+            // 
+            // Book_Author
+            // 
+            this.Book_Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Author.FillWeight = 117.2417F;
+            this.Book_Author.HeaderText = "Book_Author";
+            this.Book_Author.Name = "Book_Author";
+            this.Book_Author.Width = 110;
+            // 
+            // Book_Status
+            // 
+            this.Book_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Status.FillWeight = 145.6994F;
+            this.Book_Status.HeaderText = "Book_Status";
+            this.Book_Status.Name = "Book_Status";
+            this.Book_Status.Width = 105;
+            // 
+            // Book_Copyright
+            // 
+            this.Book_Copyright.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Book_Copyright.FillWeight = 177.665F;
+            this.Book_Copyright.HeaderText = "Book_Copyright";
+            this.Book_Copyright.Name = "Book_Copyright";
+            this.Book_Copyright.Width = 128;
             // 
             // pnlReceipt
             // 
@@ -277,241 +398,6 @@
             this.pnlReceipt.TabIndex = 3;
             this.pnlReceipt.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReceipt_Paint);
             // 
-            // closeButton
-            // 
-            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.closeButton.IconColor = System.Drawing.Color.White;
-            this.closeButton.Location = new System.Drawing.Point(259, 2);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(34, 24);
-            this.closeButton.TabIndex = 75;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.Controls.Add(this.pnlReceipt);
-            this.MainPanel.Controls.Add(this.SecondaryPanel);
-            this.MainPanel.Controls.Add(this.PrimaryPanel);
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(918, 687);
-            this.MainPanel.TabIndex = 0;
-            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
-            // 
-            // dtpReturn
-            // 
-            this.dtpReturn.BorderRadius = 10;
-            this.dtpReturn.BorderThickness = 1;
-            this.dtpReturn.Checked = true;
-            this.dtpReturn.FillColor = System.Drawing.Color.White;
-            this.dtpReturn.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpReturn.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpReturn.Location = new System.Drawing.Point(119, 631);
-            this.dtpReturn.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpReturn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpReturn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpReturn.Name = "dtpReturn";
-            this.dtpReturn.Size = new System.Drawing.Size(182, 25);
-            this.dtpReturn.TabIndex = 59;
-            this.dtpReturn.Value = new System.DateTime(2024, 1, 10, 0, 0, 0, 0);
-            // 
-            // LBLDate
-            // 
-            this.LBLDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LBLDate.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLDate.Location = new System.Drawing.Point(63, 633);
-            this.LBLDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLDate.Name = "LBLDate";
-            this.LBLDate.Size = new System.Drawing.Size(86, 18);
-            this.LBLDate.TabIndex = 58;
-            this.LBLDate.Text = "DATE:";
-            this.LBLDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LBLTitleUserName
-            // 
-            this.LBLTitleUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LBLTitleUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLTitleUserName.Location = new System.Drawing.Point(57, 595);
-            this.LBLTitleUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLTitleUserName.Name = "LBLTitleUserName";
-            this.LBLTitleUserName.Size = new System.Drawing.Size(93, 18);
-            this.LBLTitleUserName.TabIndex = 56;
-            this.LBLTitleUserName.Text = "NAME:";
-            this.LBLTitleUserName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtUserID
-            // 
-            this.txtUserID.BorderColor = System.Drawing.Color.Black;
-            this.txtUserID.BorderRadius = 10;
-            this.txtUserID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserID.DefaultText = "";
-            this.txtUserID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUserID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUserID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUserID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUserID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserID.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.txtUserID.ForeColor = System.Drawing.Color.Black;
-            this.txtUserID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserID.Location = new System.Drawing.Point(119, 555);
-            this.txtUserID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUserID.Name = "txtUserID";
-            this.txtUserID.PasswordChar = '\0';
-            this.txtUserID.PlaceholderText = "";
-            this.txtUserID.SelectedText = "";
-            this.txtUserID.Size = new System.Drawing.Size(244, 24);
-            this.txtUserID.TabIndex = 55;
-            this.txtUserID.TextChanged += new System.EventHandler(this.txtUserID_TextChanged_1);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 558);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 18);
-            this.label4.TabIndex = 54;
-            this.label4.Text = "USER ID:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LBLAuthor
-            // 
-            this.LBLAuthor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LBLAuthor.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLAuthor.Location = new System.Drawing.Point(47, 521);
-            this.LBLAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLAuthor.Name = "LBLAuthor";
-            this.LBLAuthor.Size = new System.Drawing.Size(103, 18);
-            this.LBLAuthor.TabIndex = 52;
-            this.LBLAuthor.Text = "AUTHOR:";
-            this.LBLAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(63, 483);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 18);
-            this.label7.TabIndex = 50;
-            this.label7.Text = "TITLE:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtBookID
-            // 
-            this.txtBookID.BorderColor = System.Drawing.Color.Black;
-            this.txtBookID.BorderRadius = 10;
-            this.txtBookID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBookID.DefaultText = "";
-            this.txtBookID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBookID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBookID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBookID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBookID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBookID.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.txtBookID.ForeColor = System.Drawing.Color.Black;
-            this.txtBookID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBookID.Location = new System.Drawing.Point(119, 443);
-            this.txtBookID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBookID.Name = "txtBookID";
-            this.txtBookID.PasswordChar = '\0';
-            this.txtBookID.PlaceholderText = "";
-            this.txtBookID.SelectedText = "";
-            this.txtBookID.Size = new System.Drawing.Size(244, 24);
-            this.txtBookID.TabIndex = 47;
-            this.txtBookID.TextChanged += new System.EventHandler(this.txtBookID_TextChanged_1);
-            // 
-            // LBLBookID
-            // 
-            this.LBLBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LBLBookID.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLBookID.Location = new System.Drawing.Point(47, 446);
-            this.LBLBookID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBLBookID.Name = "LBLBookID";
-            this.LBLBookID.Size = new System.Drawing.Size(103, 18);
-            this.LBLBookID.TabIndex = 46;
-            this.LBLBookID.Text = "BOOK ID:";
-            this.LBLBookID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BorderRadius = 15;
-            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClear.FillColor = System.Drawing.Color.IndianRed;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(264, 684);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(106, 30);
-            this.btnClear.TabIndex = 49;
-            this.btnClear.Text = "CLEAR";
-            this.btnClear.Click += new System.EventHandler(this.BTNClear_Click_1);
-            // 
-            // btnReturn
-            // 
-            this.btnReturn.BorderRadius = 15;
-            this.btnReturn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReturn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReturn.FillColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.ForeColor = System.Drawing.Color.Black;
-            this.btnReturn.Location = new System.Drawing.Point(34, 684);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(106, 30);
-            this.btnReturn.TabIndex = 48;
-            this.btnReturn.Text = "RETURN";
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-            // 
-            // pbPicture
-            // 
-            this.pbPicture.BorderRadius = 20;
-            this.pbPicture.FillColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pbPicture.ImageRotate = 0F;
-            this.pbPicture.Location = new System.Drawing.Point(107, 137);
-            this.pbPicture.Margin = new System.Windows.Forms.Padding(2);
-            this.pbPicture.Name = "pbPicture";
-            this.pbPicture.Size = new System.Drawing.Size(194, 275);
-            this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPicture.TabIndex = 45;
-            this.pbPicture.TabStop = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BorderRadius = 15;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(144, 684);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(106, 30);
-            this.btnUpdate.TabIndex = 61;
-            this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
             // btnPlayGame
             // 
             this.btnPlayGame.BorderRadius = 20;
@@ -528,6 +414,7 @@
             this.btnPlayGame.Size = new System.Drawing.Size(101, 36);
             this.btnPlayGame.TabIndex = 104;
             this.btnPlayGame.Text = "Play Game";
+            this.btnPlayGame.Click += new System.EventHandler(this.btnPlayGame_Click);
             // 
             // lblSUserMoney
             // 
@@ -1004,257 +891,606 @@
             this.PBLogo.TabIndex = 76;
             this.PBLogo.TabStop = false;
             // 
+            // closeButton
+            // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.closeButton.IconColor = System.Drawing.Color.White;
+            this.closeButton.Location = new System.Drawing.Point(259, 2);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(34, 24);
+            this.closeButton.TabIndex = 75;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Controls.Add(this.pnlPlay1);
+            this.MainPanel.Controls.Add(this.pnlReceipt);
+            this.MainPanel.Controls.Add(this.guna2HtmlLabel1);
+            this.MainPanel.Controls.Add(this.lblBookTitle);
+            this.MainPanel.Controls.Add(this.lblUserName);
+            this.MainPanel.Controls.Add(this.lblAuthorName);
+            this.MainPanel.Controls.Add(this.btnUpdate);
+            this.MainPanel.Controls.Add(this.dtpReturn);
+            this.MainPanel.Controls.Add(this.LBLDate);
+            this.MainPanel.Controls.Add(this.LBLTitleUserName);
+            this.MainPanel.Controls.Add(this.txtUserID);
+            this.MainPanel.Controls.Add(this.label4);
+            this.MainPanel.Controls.Add(this.LBLAuthor);
+            this.MainPanel.Controls.Add(this.label7);
+            this.MainPanel.Controls.Add(this.txtBookID);
+            this.MainPanel.Controls.Add(this.LBLBookID);
+            this.MainPanel.Controls.Add(this.btnClear);
+            this.MainPanel.Controls.Add(this.btnReturn);
+            this.MainPanel.Controls.Add(this.pbPicture);
+            this.MainPanel.Controls.Add(this.SecondaryPanel);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(918, 687);
+            this.MainPanel.TabIndex = 0;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // pnlPlay1
+            // 
+            this.pnlPlay1.Controls.Add(this.label12);
+            this.pnlPlay1.Controls.Add(this.label8);
+            this.pnlPlay1.Controls.Add(this.label3);
+            this.pnlPlay1.Controls.Add(this.txtNameDellosa);
+            this.pnlPlay1.Controls.Add(this.lblq6);
+            this.pnlPlay1.Controls.Add(this.txtNameLester);
+            this.pnlPlay1.Controls.Add(this.lblq5);
+            this.pnlPlay1.Controls.Add(this.txtNamePlan);
+            this.pnlPlay1.Controls.Add(this.label1);
+            this.pnlPlay1.Controls.Add(this.lblq4);
+            this.pnlPlay1.Controls.Add(this.lblh1);
+            this.pnlPlay1.Controls.Add(this.btnSubmit);
+            this.pnlPlay1.Controls.Add(this.rdAnswer);
+            this.pnlPlay1.Controls.Add(this.lblq3);
+            this.pnlPlay1.Controls.Add(this.rdAnswer2);
+            this.pnlPlay1.Controls.Add(this.lblq2);
+            this.pnlPlay1.Controls.Add(this.rdAnswer1);
+            this.pnlPlay1.Controls.Add(this.lblTitle);
+            this.pnlPlay1.Controls.Add(this.lblq1);
+            this.pnlPlay1.Controls.Add(this.guna2ControlBox1);
+            this.pnlPlay1.Location = new System.Drawing.Point(199, 37);
+            this.pnlPlay1.Name = "pnlPlay1";
+            this.pnlPlay1.Size = new System.Drawing.Size(507, 603);
+            this.pnlPlay1.TabIndex = 89;
+            this.pnlPlay1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPlay1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(65, 178);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 18);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "(hint: pasok ka lng sa lang sa klase para sa attendance)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblq4
+            // 
+            this.lblq4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq4.Location = new System.Drawing.Point(48, 287);
+            this.lblq4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq4.Name = "lblq4";
+            this.lblq4.Size = new System.Drawing.Size(441, 18);
+            this.lblq4.TabIndex = 98;
+            this.lblq4.Text = "4. Full Name ni Miss Plan.";
+            this.lblq4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblh1
+            // 
+            this.lblh1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblh1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblh1.Location = new System.Drawing.Point(65, 73);
+            this.lblh1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblh1.Name = "lblh1";
+            this.lblh1.Size = new System.Drawing.Size(344, 18);
+            this.lblh1.TabIndex = 97;
+            this.lblh1.Text = "(hint: masipag magturo, interactive mga session kaso may anger issues)";
+            this.lblh1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(165, 536);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(180, 45);
+            this.btnSubmit.TabIndex = 96;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // rdAnswer
+            // 
+            this.rdAnswer.AutoSize = true;
+            this.rdAnswer.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdAnswer.CheckedState.BorderThickness = 0;
+            this.rdAnswer.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdAnswer.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdAnswer.CheckedState.InnerOffset = -4;
+            this.rdAnswer.Location = new System.Drawing.Point(87, 254);
+            this.rdAnswer.Name = "rdAnswer";
+            this.rdAnswer.Size = new System.Drawing.Size(64, 17);
+            this.rdAnswer.TabIndex = 95;
+            this.rdAnswer.Text = "Maam P";
+            this.rdAnswer.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdAnswer.UncheckedState.BorderThickness = 2;
+            this.rdAnswer.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdAnswer.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // lblq3
+            // 
+            this.lblq3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblq3.Location = new System.Drawing.Point(48, 228);
+            this.lblq3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq3.Name = "lblq3";
+            this.lblq3.Size = new System.Drawing.Size(441, 18);
+            this.lblq3.TabIndex = 94;
+            this.lblq3.Text = "3. Pinaka-mabait na teacher, daming matutunan, baby ni mars.";
+            this.lblq3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // rdAnswer2
+            // 
+            this.rdAnswer2.AutoSize = true;
+            this.rdAnswer2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdAnswer2.CheckedState.BorderThickness = 0;
+            this.rdAnswer2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdAnswer2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdAnswer2.CheckedState.InnerOffset = -4;
+            this.rdAnswer2.Location = new System.Drawing.Point(87, 206);
+            this.rdAnswer2.Name = "rdAnswer2";
+            this.rdAnswer2.Size = new System.Drawing.Size(59, 17);
+            this.rdAnswer2.TabIndex = 93;
+            this.rdAnswer2.Text = "Boss D";
+            this.rdAnswer2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdAnswer2.UncheckedState.BorderThickness = 2;
+            this.rdAnswer2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdAnswer2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // lblq2
+            // 
+            this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq2.Location = new System.Drawing.Point(48, 136);
+            this.lblq2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq2.Name = "lblq2";
+            this.lblq2.Size = new System.Drawing.Size(422, 42);
+            this.lblq2.TabIndex = 92;
+            this.lblq2.Text = "2. Pinaka-Stoic na teacher, tumatawa sa gedli magisa habang nanonood sa laptop?";
+            this.lblq2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // rdAnswer1
+            // 
+            this.rdAnswer1.AutoSize = true;
+            this.rdAnswer1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdAnswer1.CheckedState.BorderThickness = 0;
+            this.rdAnswer1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdAnswer1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdAnswer1.CheckedState.InnerOffset = -4;
+            this.rdAnswer1.Location = new System.Drawing.Point(91, 103);
+            this.rdAnswer1.Name = "rdAnswer1";
+            this.rdAnswer1.Size = new System.Drawing.Size(46, 17);
+            this.rdAnswer1.TabIndex = 91;
+            this.rdAnswer1.Text = "Sir L";
+            this.rdAnswer1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdAnswer1.UncheckedState.BorderThickness = 2;
+            this.rdAnswer1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdAnswer1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdAnswer1.CheckedChanged += new System.EventHandler(this.rdAnswer1_CheckedChanged);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Location = new System.Drawing.Point(75, 14);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(391, 30);
+            this.lblTitle.TabIndex = 90;
+            this.lblTitle.Text = "Answer these Questions TRUTHFULLY :";
+            // 
+            // lblq1
+            // 
+            this.lblq1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq1.Location = new System.Drawing.Point(48, 55);
+            this.lblq1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq1.Name = "lblq1";
+            this.lblq1.Size = new System.Drawing.Size(329, 18);
+            this.lblq1.TabIndex = 90;
+            this.lblq1.Text = "1. Sino ang palaging pinakadilat na teacher sa classroom?";
+            this.lblq1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(471, 2);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
+            this.guna2ControlBox1.TabIndex = 35;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(136, 18);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(126, 23);
+            this.guna2HtmlLabel1.TabIndex = 88;
+            this.guna2HtmlLabel1.Text = "Book Returning";
+            // 
+            // lblBookTitle
+            // 
+            this.lblBookTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookTitle.Location = new System.Drawing.Point(103, 399);
+            this.lblBookTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBookTitle.Name = "lblBookTitle";
+            this.lblBookTitle.Size = new System.Drawing.Size(238, 18);
+            this.lblBookTitle.TabIndex = 87;
+            this.lblBookTitle.Text = "Book Title";
+            this.lblBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblUserName
             // 
             this.lblUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(116, 594);
+            this.lblUserName.Location = new System.Drawing.Point(103, 510);
             this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(238, 18);
-            this.lblUserName.TabIndex = 69;
+            this.lblUserName.TabIndex = 86;
             this.lblUserName.Text = "Username";
             this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAuthorName
             // 
             this.lblAuthorName.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorName.Location = new System.Drawing.Point(116, 523);
+            this.lblAuthorName.Location = new System.Drawing.Point(103, 439);
             this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAuthorName.Name = "lblAuthorName";
             this.lblAuthorName.Size = new System.Drawing.Size(238, 18);
-            this.lblAuthorName.TabIndex = 68;
+            this.lblAuthorName.TabIndex = 85;
             this.lblAuthorName.Text = "AuthorName";
             this.lblAuthorName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblBookTitle
+            // btnUpdate
             // 
-            this.lblBookTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBookTitle.Location = new System.Drawing.Point(116, 483);
-            this.lblBookTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBookTitle.Name = "lblBookTitle";
-            this.lblBookTitle.Size = new System.Drawing.Size(238, 18);
-            this.lblBookTitle.TabIndex = 70;
-            this.lblBookTitle.Text = "Book Title";
-            this.lblBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.BorderRadius = 15;
+            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdate.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(131, 600);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(106, 30);
+            this.btnUpdate.TabIndex = 84;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_2);
             // 
-            // guna2HtmlLabel1
+            // dtpReturn
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(144, 102);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(126, 23);
-            this.guna2HtmlLabel1.TabIndex = 71;
-            this.guna2HtmlLabel1.Text = "Book Returning";
+            this.dtpReturn.BorderRadius = 10;
+            this.dtpReturn.BorderThickness = 1;
+            this.dtpReturn.Checked = true;
+            this.dtpReturn.FillColor = System.Drawing.Color.White;
+            this.dtpReturn.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpReturn.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpReturn.Location = new System.Drawing.Point(106, 547);
+            this.dtpReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpReturn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpReturn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpReturn.Name = "dtpReturn";
+            this.dtpReturn.Size = new System.Drawing.Size(182, 25);
+            this.dtpReturn.TabIndex = 83;
+            this.dtpReturn.Value = new System.DateTime(2024, 1, 10, 0, 0, 0, 0);
+            this.dtpReturn.ValueChanged += new System.EventHandler(this.dtpReturn_ValueChanged_1);
             // 
-            // dgvBookBorrow
+            // LBLDate
             // 
-            this.dgvBookBorrow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvBookBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvBookBorrow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBookBorrow.BackgroundColor = System.Drawing.Color.Black;
-            this.dgvBookBorrow.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvBookBorrow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvBookBorrow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBookBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvBookBorrow.ColumnHeadersHeight = 40;
-            this.dgvBookBorrow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ISBN,
-            this.FullName,
-            this.Title,
-            this.Author,
-            this.dataGridViewTextBoxColumn6,
-            this.ReservedDate});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvBookBorrow.EnableHeadersVisualStyles = false;
-            this.dgvBookBorrow.Location = new System.Drawing.Point(-7, 334);
-            this.dgvBookBorrow.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvBookBorrow.Name = "dgvBookBorrow";
-            this.dgvBookBorrow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBookBorrow.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvBookBorrow.RowHeadersWidth = 51;
-            this.dgvBookBorrow.RowTemplate.Height = 40;
-            this.dgvBookBorrow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBookBorrow.Size = new System.Drawing.Size(523, 351);
-            this.dgvBookBorrow.TabIndex = 28;
-            this.dgvBookBorrow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookBorrow_CellContentClick_1);
+            this.LBLDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LBLDate.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLDate.Location = new System.Drawing.Point(49, 549);
+            this.LBLDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLDate.Name = "LBLDate";
+            this.LBLDate.Size = new System.Drawing.Size(86, 18);
+            this.LBLDate.TabIndex = 82;
+            this.LBLDate.Text = "DATE:";
+            this.LBLDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ISBN
+            // LBLTitleUserName
             // 
-            this.ISBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ISBN.FillWeight = 73.73386F;
-            this.ISBN.HeaderText = "Book_ISBN";
-            this.ISBN.Name = "ISBN";
-            this.ISBN.Width = 96;
+            this.LBLTitleUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LBLTitleUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLTitleUserName.Location = new System.Drawing.Point(43, 511);
+            this.LBLTitleUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLTitleUserName.Name = "LBLTitleUserName";
+            this.LBLTitleUserName.Size = new System.Drawing.Size(93, 18);
+            this.LBLTitleUserName.TabIndex = 81;
+            this.LBLTitleUserName.Text = "NAME:";
+            this.LBLTitleUserName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // FullName
+            // txtUserID
             // 
-            this.FullName.HeaderText = "FullName";
-            this.FullName.Name = "FullName";
+            this.txtUserID.BorderColor = System.Drawing.Color.Black;
+            this.txtUserID.BorderRadius = 10;
+            this.txtUserID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserID.DefaultText = "";
+            this.txtUserID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserID.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.txtUserID.ForeColor = System.Drawing.Color.Black;
+            this.txtUserID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserID.Location = new System.Drawing.Point(106, 471);
+            this.txtUserID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.PasswordChar = '\0';
+            this.txtUserID.PlaceholderText = "";
+            this.txtUserID.SelectedText = "";
+            this.txtUserID.Size = new System.Drawing.Size(244, 24);
+            this.txtUserID.TabIndex = 80;
+            this.txtUserID.TextChanged += new System.EventHandler(this.txtUserID_TextChanged_2);
             // 
-            // Title
+            // label4
             // 
-            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Title.FillWeight = 58.17943F;
-            this.Title.HeaderText = "Book_TItle";
-            this.Title.Name = "Title";
-            this.Title.Width = 95;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(36, 474);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 18);
+            this.label4.TabIndex = 79;
+            this.label4.Text = "USER ID:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Author
+            // LBLAuthor
             // 
-            this.Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Author.FillWeight = 117.2417F;
-            this.Author.HeaderText = "Book_Author";
-            this.Author.Name = "Author";
-            this.Author.Width = 110;
+            this.LBLAuthor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LBLAuthor.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLAuthor.Location = new System.Drawing.Point(33, 437);
+            this.LBLAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLAuthor.Name = "LBLAuthor";
+            this.LBLAuthor.Size = new System.Drawing.Size(103, 18);
+            this.LBLAuthor.TabIndex = 78;
+            this.LBLAuthor.Text = "AUTHOR:";
+            this.LBLAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // dataGridViewTextBoxColumn6
+            // label7
             // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn6.FillWeight = 145.6994F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Book_Status";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 105;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(49, 399);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 18);
+            this.label7.TabIndex = 77;
+            this.label7.Text = "TITLE:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ReservedDate
+            // txtBookID
             // 
-            this.ReservedDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ReservedDate.FillWeight = 177.665F;
-            this.ReservedDate.HeaderText = "ReservedDate";
-            this.ReservedDate.Name = "ReservedDate";
-            this.ReservedDate.Width = 116;
+            this.txtBookID.BorderColor = System.Drawing.Color.Black;
+            this.txtBookID.BorderRadius = 10;
+            this.txtBookID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBookID.DefaultText = "";
+            this.txtBookID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBookID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBookID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBookID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBookID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBookID.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.txtBookID.ForeColor = System.Drawing.Color.Black;
+            this.txtBookID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBookID.Location = new System.Drawing.Point(106, 359);
+            this.txtBookID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBookID.Name = "txtBookID";
+            this.txtBookID.PasswordChar = '\0';
+            this.txtBookID.PlaceholderText = "";
+            this.txtBookID.SelectedText = "";
+            this.txtBookID.Size = new System.Drawing.Size(244, 24);
+            this.txtBookID.TabIndex = 74;
+            this.txtBookID.TextChanged += new System.EventHandler(this.txtBookID_TextChanged_2);
             // 
-            // dgvBooks
+            // LBLBookID
             // 
-            this.dgvBooks.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBooks.BackgroundColor = System.Drawing.Color.Black;
-            this.dgvBooks.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvBooks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvBooks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvBooks.ColumnHeadersHeight = 40;
-            this.dgvBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Book_TItle,
-            this.SBN,
-            this.Book_Category,
-            this.Book_Author,
-            this.Book_Status,
-            this.Book_Copyright});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvBooks.EnableHeadersVisualStyles = false;
-            this.dgvBooks.Location = new System.Drawing.Point(-10, 0);
-            this.dgvBooks.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvBooks.Name = "dgvBooks";
-            this.dgvBooks.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvBooks.RowHeadersWidth = 51;
-            this.dgvBooks.RowTemplate.Height = 40;
-            this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBooks.Size = new System.Drawing.Size(523, 330);
-            this.dgvBooks.TabIndex = 27;
-            this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick_1);
+            this.LBLBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LBLBookID.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLBookID.Location = new System.Drawing.Point(33, 362);
+            this.LBLBookID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LBLBookID.Name = "LBLBookID";
+            this.LBLBookID.Size = new System.Drawing.Size(103, 18);
+            this.LBLBookID.TabIndex = 73;
+            this.LBLBookID.Text = "BOOK ID:";
+            this.LBLBookID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Book_TItle
+            // btnClear
             // 
-            this.Book_TItle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_TItle.FillWeight = 58.17943F;
-            this.Book_TItle.HeaderText = "Book_TItle";
-            this.Book_TItle.Name = "Book_TItle";
-            this.Book_TItle.Width = 95;
+            this.btnClear.BorderRadius = 15;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.FillColor = System.Drawing.Color.IndianRed;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(251, 600);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(106, 30);
+            this.btnClear.TabIndex = 76;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_2);
             // 
-            // SBN
+            // btnReturn
             // 
-            this.SBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.SBN.FillWeight = 73.73386F;
-            this.SBN.HeaderText = "Book_ISBN";
-            this.SBN.Name = "SBN";
-            this.SBN.Width = 96;
+            this.btnReturn.BorderRadius = 15;
+            this.btnReturn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReturn.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.Black;
+            this.btnReturn.Location = new System.Drawing.Point(21, 600);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(106, 30);
+            this.btnReturn.TabIndex = 75;
+            this.btnReturn.Text = "RETURN";
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click_1);
             // 
-            // Book_Category
+            // pbPicture
             // 
-            this.Book_Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Category.FillWeight = 93.26363F;
-            this.Book_Category.HeaderText = "Book_Category";
-            this.Book_Category.Name = "Book_Category";
-            this.Book_Category.Width = 123;
+            this.pbPicture.BorderRadius = 20;
+            this.pbPicture.FillColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pbPicture.ImageRotate = 0F;
+            this.pbPicture.Location = new System.Drawing.Point(106, 58);
+            this.pbPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(194, 275);
+            this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPicture.TabIndex = 72;
+            this.pbPicture.TabStop = false;
             // 
-            // Book_Author
+            // txtNamePlan
             // 
-            this.Book_Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Author.FillWeight = 117.2417F;
-            this.Book_Author.HeaderText = "Book_Author";
-            this.Book_Author.Name = "Book_Author";
-            this.Book_Author.Width = 110;
+            this.txtNamePlan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNamePlan.DefaultText = "";
+            this.txtNamePlan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNamePlan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNamePlan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNamePlan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNamePlan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNamePlan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNamePlan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNamePlan.Location = new System.Drawing.Point(67, 326);
+            this.txtNamePlan.Name = "txtNamePlan";
+            this.txtNamePlan.PasswordChar = '\0';
+            this.txtNamePlan.PlaceholderText = "";
+            this.txtNamePlan.SelectedText = "";
+            this.txtNamePlan.Size = new System.Drawing.Size(309, 26);
+            this.txtNamePlan.TabIndex = 100;
             // 
-            // Book_Status
+            // txtNameLester
             // 
-            this.Book_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Status.FillWeight = 145.6994F;
-            this.Book_Status.HeaderText = "Book_Status";
-            this.Book_Status.Name = "Book_Status";
-            this.Book_Status.Width = 105;
+            this.txtNameLester.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNameLester.DefaultText = "";
+            this.txtNameLester.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNameLester.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNameLester.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameLester.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameLester.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameLester.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNameLester.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameLester.Location = new System.Drawing.Point(67, 405);
+            this.txtNameLester.Name = "txtNameLester";
+            this.txtNameLester.PasswordChar = '\0';
+            this.txtNameLester.PlaceholderText = "";
+            this.txtNameLester.SelectedText = "";
+            this.txtNameLester.Size = new System.Drawing.Size(309, 26);
+            this.txtNameLester.TabIndex = 102;
+            this.txtNameLester.TextChanged += new System.EventHandler(this.txtNameLester_TextChanged);
             // 
-            // Book_Copyright
+            // lblq5
             // 
-            this.Book_Copyright.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Book_Copyright.FillWeight = 177.665F;
-            this.Book_Copyright.HeaderText = "Book_Copyright";
-            this.Book_Copyright.Name = "Book_Copyright";
-            this.Book_Copyright.Width = 128;
+            this.lblq5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq5.Location = new System.Drawing.Point(48, 367);
+            this.lblq5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq5.Name = "lblq5";
+            this.lblq5.Size = new System.Drawing.Size(441, 18);
+            this.lblq5.TabIndex = 101;
+            this.lblq5.Text = "5. Full Name ni Mr. Lester";
+            this.lblq5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtNameDellosa
+            // 
+            this.txtNameDellosa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNameDellosa.DefaultText = "";
+            this.txtNameDellosa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNameDellosa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNameDellosa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameDellosa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameDellosa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameDellosa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNameDellosa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameDellosa.Location = new System.Drawing.Point(68, 491);
+            this.txtNameDellosa.Name = "txtNameDellosa";
+            this.txtNameDellosa.PasswordChar = '\0';
+            this.txtNameDellosa.PlaceholderText = "";
+            this.txtNameDellosa.SelectedText = "";
+            this.txtNameDellosa.Size = new System.Drawing.Size(309, 26);
+            this.txtNameDellosa.TabIndex = 104;
+            // 
+            // lblq6
+            // 
+            this.lblq6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq6.Location = new System.Drawing.Point(48, 452);
+            this.lblq6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq6.Name = "lblq6";
+            this.lblq6.Size = new System.Drawing.Size(441, 18);
+            this.lblq6.TabIndex = 103;
+            this.lblq6.Text = "6. Full Name ni Mr. Dellosa";
+            this.lblq6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(82, 302);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(344, 18);
+            this.label3.TabIndex = 105;
+            this.label3.Text = "(hint: Last Name ay Ganda)";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(82, 384);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(188, 18);
+            this.label8.TabIndex = 106;
+            this.label8.Text = "(hint: Middle Name ay Gwapo)";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(82, 471);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(188, 18);
+            this.label12.TabIndex = 107;
+            this.label12.Text = "(hint: last name ay Idol)";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BookReturning
             // 
@@ -1265,48 +1501,24 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookReturning";
             this.Size = new System.Drawing.Size(918, 687);
-            this.PrimaryPanel.ResumeLayout(false);
-            this.PrimaryPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BookPictureBox)).EndInit();
             this.SecondaryPanel.ResumeLayout(false);
-            this.pnlReceipt.ResumeLayout(false);
-            this.MainPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookBorrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
+            this.pnlReceipt.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).EndInit();
+            this.MainPanel.ResumeLayout(false);
+            this.MainPanel.PerformLayout();
+            this.pnlPlay1.ResumeLayout(false);
+            this.pnlPlay1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel PrimaryPanel;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbltitleBook;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox BookPictureBox;
-        private System.Windows.Forms.Panel SecondaryPanel;
-        private Guna.UI2.WinForms.Guna2ShadowPanel pnlReceipt;
-        private Guna.UI2.WinForms.Guna2ControlBox closeButton;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Panel MainPanel;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpReturn;
-        private System.Windows.Forms.Label LBLDate;
-        private System.Windows.Forms.Label LBLTitleUserName;
-        private Guna.UI2.WinForms.Guna2TextBox txtUserID;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label LBLAuthor;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox txtBookID;
-        private System.Windows.Forms.Label LBLBookID;
-        private Guna.UI2.WinForms.Guna2Button btnClear;
-        private Guna.UI2.WinForms.Guna2Button btnReturn;
-        private Guna.UI2.WinForms.Guna2PictureBox pbPicture;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnlReceipt;
         private Guna.UI2.WinForms.Guna2Button btnPlayGame;
         private Guna.UI2.WinForms.Guna2TextBox lblSUserMoney;
         private System.Windows.Forms.Label label2;
@@ -1336,18 +1548,9 @@
         private System.Windows.Forms.Label LBLName;
         private System.Windows.Forms.Label LBLUserID;
         private System.Windows.Forms.PictureBox PBLogo;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Label lblAuthorName;
-        private System.Windows.Forms.Label lblBookTitle;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2ControlBox closeButton;
+        private System.Windows.Forms.Panel SecondaryPanel;
         private System.Windows.Forms.DataGridView dgvBookBorrow;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Author;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReservedDate;
         private System.Windows.Forms.DataGridView dgvBooks;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_TItle;
         private System.Windows.Forms.DataGridViewTextBoxColumn SBN;
@@ -1355,5 +1558,49 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Book_Copyright;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Author;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BorrowedDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Due_Date;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.Label lblBookTitle;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblAuthorName;
+        private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpReturn;
+        private System.Windows.Forms.Label LBLDate;
+        private System.Windows.Forms.Label LBLTitleUserName;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LBLAuthor;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2TextBox txtBookID;
+        private System.Windows.Forms.Label LBLBookID;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
+        private Guna.UI2.WinForms.Guna2Button btnReturn;
+        private Guna.UI2.WinForms.Guna2PictureBox pbPicture;
+        private Guna.UI2.WinForms.Guna2Panel pnlPlay1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitle;
+        private System.Windows.Forms.Label lblq1;
+        private System.Windows.Forms.Label lblq2;
+        private Guna.UI2.WinForms.Guna2RadioButton rdAnswer1;
+        private Guna.UI2.WinForms.Guna2Button btnSubmit;
+        private Guna.UI2.WinForms.Guna2RadioButton rdAnswer;
+        private System.Windows.Forms.Label lblq3;
+        private Guna.UI2.WinForms.Guna2RadioButton rdAnswer2;
+        private System.Windows.Forms.Label lblh1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblq4;
+        private Guna.UI2.WinForms.Guna2TextBox txtNameLester;
+        private System.Windows.Forms.Label lblq5;
+        private Guna.UI2.WinForms.Guna2TextBox txtNamePlan;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtNameDellosa;
+        private System.Windows.Forms.Label lblq6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -756,18 +756,7 @@ namespace FInalLibrarySystem.Database
             return result;
         }
 
-        //try to continue
-        //public void SetAdminVisibility(BorrowerList borrowerList, bool isAdmin)
-        //{
-        //    if (isAdmin)
-        //    {
-        //        borrowerList.adminAll1 = true;
-        //    }
-        //    else
-        //    {
-        //        borrowerList.adminAll1 = false;
-        //    }
-        //}
+
 
         public void SetAdminVisibility(BorrowerList borrowerList, bool isVisible)
         {
