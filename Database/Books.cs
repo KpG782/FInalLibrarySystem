@@ -549,6 +549,213 @@ namespace FInalLibrarySystem.Database
             // Return null if the category is not found or an error occurs
             return null;
         }
+
+
+        //-----------------------------------------------------
+        //counters
+        public int CountReturnedBooks()
+        {
+            int returnedBooksCount = 0;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to count returned books
+                    string query = "SELECT COUNT(*) FROM books WHERE status = 'Returned'";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Execute the query and get the count
+                        returnedBooksCount = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return returnedBooksCount;
+        }
+
+
+        //counter
+        public int CountBorrowedBooks()
+        {
+            int borrowedBooksCount = 0;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to count borrowed books
+                    string query = "SELECT COUNT(*) FROM books WHERE status = 'Borrowed'";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Execute the query and get the count
+                        borrowedBooksCount = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return borrowedBooksCount;
+        }
+
+
+        //counter
+        public int CountReservedBooks()
+        {
+            int reservedBooksCount = 0;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to count reserved books
+                    string query = "SELECT COUNT(*) FROM books WHERE status = 'Reserved'";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Execute the query and get the count
+                        reservedBooksCount = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return reservedBooksCount;
+        }
+
+
+
+
+        //count-------------------------------------
+        public int CountFictionalBooks()
+        {
+            int fictionalBooksCount = 0;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to count fictional books
+                    string query = "SELECT COUNT(*) FROM books WHERE category = 'Fiction'";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Execute the query and get the count
+                        fictionalBooksCount = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return fictionalBooksCount;
+        }
+
+        //
+        public int CountNonFictionalBooks()
+        {
+            int nonFictionalBooksCount = 0;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to count non-fictional books
+                    string query = "SELECT COUNT(*) FROM books WHERE category = 'Non-Fiction'";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Execute the query and get the count
+                        nonFictionalBooksCount = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return nonFictionalBooksCount;
+        }
+
+        //academic
+        public int CountAcademicBooks()
+        {
+            int academicBooksCount = 0;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    // Modify the query to count academic books
+                    string query = "SELECT COUNT(*) FROM books WHERE category = 'Academic'";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Execute the query and get the count
+                        academicBooksCount = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return academicBooksCount;
+        }
+
+
     }
 
 }
