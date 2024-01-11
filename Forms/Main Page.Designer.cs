@@ -52,15 +52,15 @@
             // BookReservationLink
             // 
             this.BookReservationLink.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.BookReservationLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookReservationLink.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookReservationLink.Image = ((System.Drawing.Image)(resources.GetObject("BookReservationLink.Image")));
             this.BookReservationLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookReservationLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookReservationLink.LinkColor = System.Drawing.Color.White;
-            this.BookReservationLink.Location = new System.Drawing.Point(31, 448);
+            this.BookReservationLink.Location = new System.Drawing.Point(11, 448);
             this.BookReservationLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BookReservationLink.Name = "BookReservationLink";
-            this.BookReservationLink.Size = new System.Drawing.Size(151, 52);
+            this.BookReservationLink.Size = new System.Drawing.Size(201, 52);
             this.BookReservationLink.TabIndex = 22;
             this.BookReservationLink.TabStop = true;
             this.BookReservationLink.Text = "Book Reservation";
@@ -70,15 +70,15 @@
             // BookReturningLink
             // 
             this.BookReturningLink.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.BookReturningLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookReturningLink.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookReturningLink.Image = ((System.Drawing.Image)(resources.GetObject("BookReturningLink.Image")));
             this.BookReturningLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookReturningLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookReturningLink.LinkColor = System.Drawing.Color.White;
-            this.BookReturningLink.Location = new System.Drawing.Point(31, 517);
+            this.BookReturningLink.Location = new System.Drawing.Point(11, 517);
             this.BookReturningLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BookReturningLink.Name = "BookReturningLink";
-            this.BookReturningLink.Size = new System.Drawing.Size(142, 52);
+            this.BookReturningLink.Size = new System.Drawing.Size(186, 52);
             this.BookReturningLink.TabIndex = 21;
             this.BookReturningLink.TabStop = true;
             this.BookReturningLink.Text = "Book Returning";
@@ -88,15 +88,15 @@
             // BookBorrowingLink
             // 
             this.BookBorrowingLink.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.BookBorrowingLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookBorrowingLink.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookBorrowingLink.Image = ((System.Drawing.Image)(resources.GetObject("BookBorrowingLink.Image")));
             this.BookBorrowingLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookBorrowingLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookBorrowingLink.LinkColor = System.Drawing.Color.White;
-            this.BookBorrowingLink.Location = new System.Drawing.Point(31, 387);
+            this.BookBorrowingLink.Location = new System.Drawing.Point(11, 387);
             this.BookBorrowingLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BookBorrowingLink.Name = "BookBorrowingLink";
-            this.BookBorrowingLink.Size = new System.Drawing.Size(142, 52);
+            this.BookBorrowingLink.Size = new System.Drawing.Size(186, 52);
             this.BookBorrowingLink.TabIndex = 20;
             this.BookBorrowingLink.TabStop = true;
             this.BookBorrowingLink.Text = "Book Borrowing";
@@ -106,15 +106,15 @@
             // BorrowerListLink
             // 
             this.BorrowerListLink.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.BorrowerListLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorrowerListLink.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BorrowerListLink.Image = ((System.Drawing.Image)(resources.GetObject("BorrowerListLink.Image")));
             this.BorrowerListLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrowerListLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BorrowerListLink.LinkColor = System.Drawing.Color.White;
-            this.BorrowerListLink.Location = new System.Drawing.Point(31, 327);
+            this.BorrowerListLink.Location = new System.Drawing.Point(11, 327);
             this.BorrowerListLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BorrowerListLink.Name = "BorrowerListLink";
-            this.BorrowerListLink.Size = new System.Drawing.Size(122, 52);
+            this.BorrowerListLink.Size = new System.Drawing.Size(166, 52);
             this.BorrowerListLink.TabIndex = 19;
             this.BorrowerListLink.TabStop = true;
             this.BorrowerListLink.Text = "Borrower List";
@@ -124,15 +124,15 @@
             // BookListLink
             // 
             this.BookListLink.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.BookListLink.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookListLink.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookListLink.Image = ((System.Drawing.Image)(resources.GetObject("BookListLink.Image")));
             this.BookListLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookListLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookListLink.LinkColor = System.Drawing.Color.White;
-            this.BookListLink.Location = new System.Drawing.Point(31, 262);
+            this.BookListLink.Location = new System.Drawing.Point(11, 262);
             this.BookListLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BookListLink.Name = "BookListLink";
-            this.BookListLink.Size = new System.Drawing.Size(100, 52);
+            this.BookListLink.Size = new System.Drawing.Size(132, 52);
             this.BookListLink.TabIndex = 18;
             this.BookListLink.TabStop = true;
             this.BookListLink.Text = "Book List";
@@ -142,10 +142,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FInalLibrarySystem.Properties.Resources.logo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 49);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -165,15 +165,15 @@
             // btnDashboard
             // 
             this.btnDashboard.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnDashboard.LinkColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(31, 196);
+            this.btnDashboard.Location = new System.Drawing.Point(11, 196);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(108, 52);
+            this.btnDashboard.Size = new System.Drawing.Size(142, 52);
             this.btnDashboard.TabIndex = 37;
             this.btnDashboard.TabStop = true;
             this.btnDashboard.Text = "Dashboard";
@@ -200,7 +200,6 @@
             this.profile1.Name = "profile1";
             this.profile1.Size = new System.Drawing.Size(1184, 890);
             this.profile1.TabIndex = 26;
-            this.profile1.UserId = 1;
             this.profile1.Load += new System.EventHandler(this.profile1_Load_1);
             // 
             // bookList1
