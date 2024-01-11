@@ -763,6 +763,8 @@ namespace FInalLibrarySystem
 
                 // Synchronize ISBN
                 txtBookID.Text = borrowedBook.ISBN;
+                //may prob ata dito
+                lblUserName.Text = borrowedBook.Username;
             }
             else
             {
@@ -797,10 +799,59 @@ namespace FInalLibrarySystem
         private void btnSubmit_Click(object sender, EventArgs e)
         {
 
+            
+
+          
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNameLester_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlPlay1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbq1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void q2Choice1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void q2Choice2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chk1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chk2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click_1(object sender, EventArgs e)
+        {
             string answer1 = "Jomariss Baccay Ganda";
             string answer2 = "Lester Gwapo Diampoc";
 
-            if(answer1 == txtNamePlan.Text && answer2 ==  txtNameLester.Text)
+            // get the response from the qChoice1 and qchoice2
+
+            if (answer1 == txtNamePlan.Text && answer2 == txtNameLester.Text)
             {
                 string userID = txtUserID.Text.Trim();
 
@@ -838,28 +889,6 @@ namespace FInalLibrarySystem
                 // Display a message if the update fails
                 MessageBox.Show("Answer is not Correct.");
             }
-
-
-          
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNameLester_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlPlay1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cbq1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }

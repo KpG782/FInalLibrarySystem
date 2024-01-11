@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SecondaryPanel = new System.Windows.Forms.Panel();
             this.dgvBookBorrow = new System.Windows.Forms.DataGridView();
@@ -108,20 +108,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.chk2 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chk1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.q2Choice2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.q2Choice1 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.txtNameLester = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblq5 = new System.Windows.Forms.Label();
             this.txtNamePlan = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblq4 = new System.Windows.Forms.Label();
             this.lblh1 = new System.Windows.Forms.Label();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.lblq3 = new System.Windows.Forms.Label();
-            this.lblq2 = new System.Windows.Forms.Label();
             this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblq1 = new System.Windows.Forms.Label();
             this.cbq1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblq2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.q2Choice1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.q2Choice2 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lblq5 = new System.Windows.Forms.Label();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookBorrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
@@ -157,25 +157,25 @@
             // dgvBookBorrow
             // 
             this.dgvBookBorrow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvBookBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle81.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle81.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle81.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle81.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle81.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvBookBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle81;
             this.dgvBookBorrow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBookBorrow.BackgroundColor = System.Drawing.Color.Black;
             this.dgvBookBorrow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBookBorrow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvBookBorrow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBookBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle82.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle82.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle82.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle82.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBookBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle82;
             this.dgvBookBorrow.ColumnHeadersHeight = 40;
             this.dgvBookBorrow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
@@ -184,27 +184,27 @@
             this.Author,
             this.BorrowedDate,
             this.Due_Date});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle83.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle83;
             this.dgvBookBorrow.EnableHeadersVisualStyles = false;
             this.dgvBookBorrow.Location = new System.Drawing.Point(2, 458);
             this.dgvBookBorrow.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBookBorrow.Name = "dgvBookBorrow";
             this.dgvBookBorrow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBookBorrow.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle84.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle84.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle84.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle84.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBookBorrow.RowHeadersDefaultCellStyle = dataGridViewCellStyle84;
             this.dgvBookBorrow.RowHeadersWidth = 51;
             this.dgvBookBorrow.RowTemplate.Height = 40;
             this.dgvBookBorrow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -254,25 +254,25 @@
             // dgvBooks
             // 
             this.dgvBooks.AllowUserToResizeRows = false;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle85.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle85.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle85.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle85.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle85;
             this.dgvBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBooks.BackgroundColor = System.Drawing.Color.Black;
             this.dgvBooks.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBooks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvBooks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle86.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle86.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle86.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle86.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle86.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle86.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle86;
             this.dgvBooks.ColumnHeadersHeight = 40;
             this.dgvBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Book_TItle,
@@ -281,27 +281,27 @@
             this.Book_Author,
             this.Book_Status,
             this.Book_Copyright});
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle87.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle87.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle87.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle87.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle87.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle87.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle87;
             this.dgvBooks.EnableHeadersVisualStyles = false;
             this.dgvBooks.Location = new System.Drawing.Point(-1, 21);
             this.dgvBooks.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBooks.Name = "dgvBooks";
             this.dgvBooks.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle88.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle88.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle88.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle88.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle88.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle88;
             this.dgvBooks.RowHeadersWidth = 51;
             this.dgvBooks.RowTemplate.Height = 40;
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1209,18 +1209,18 @@
             this.grpQuiz.Controls.Add(this.chk2);
             this.grpQuiz.Controls.Add(this.chk1);
             this.grpQuiz.Controls.Add(this.q2Choice2);
-            this.grpQuiz.Controls.Add(this.q2Choice1);
             this.grpQuiz.Controls.Add(this.txtNameLester);
             this.grpQuiz.Controls.Add(this.lblq5);
+            this.grpQuiz.Controls.Add(this.q2Choice1);
             this.grpQuiz.Controls.Add(this.txtNamePlan);
-            this.grpQuiz.Controls.Add(this.label1);
             this.grpQuiz.Controls.Add(this.lblq4);
             this.grpQuiz.Controls.Add(this.lblh1);
             this.grpQuiz.Controls.Add(this.btnSubmit);
             this.grpQuiz.Controls.Add(this.lblq3);
-            this.grpQuiz.Controls.Add(this.lblq2);
+            this.grpQuiz.Controls.Add(this.label1);
             this.grpQuiz.Controls.Add(this.lblTitle);
             this.grpQuiz.Controls.Add(this.lblq1);
+            this.grpQuiz.Controls.Add(this.lblq2);
             this.grpQuiz.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.grpQuiz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.grpQuiz.Location = new System.Drawing.Point(3, 3);
@@ -1251,7 +1251,7 @@
             this.chk2.CheckedState.BorderThickness = 0;
             this.chk2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chk2.ForeColor = System.Drawing.Color.Black;
-            this.chk2.Location = new System.Drawing.Point(204, 310);
+            this.chk2.Location = new System.Drawing.Point(204, 216);
             this.chk2.Name = "chk2";
             this.chk2.Size = new System.Drawing.Size(71, 19);
             this.chk2.TabIndex = 125;
@@ -1260,6 +1260,7 @@
             this.chk2.UncheckedState.BorderRadius = 0;
             this.chk2.UncheckedState.BorderThickness = 0;
             this.chk2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chk2.CheckedChanged += new System.EventHandler(this.chk2_CheckedChanged);
             // 
             // chk1
             // 
@@ -1269,7 +1270,7 @@
             this.chk1.CheckedState.BorderThickness = 0;
             this.chk1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chk1.ForeColor = System.Drawing.Color.Black;
-            this.chk1.Location = new System.Drawing.Point(71, 310);
+            this.chk1.Location = new System.Drawing.Point(71, 216);
             this.chk1.Name = "chk1";
             this.chk1.Size = new System.Drawing.Size(95, 19);
             this.chk1.TabIndex = 124;
@@ -1278,44 +1279,7 @@
             this.chk1.UncheckedState.BorderRadius = 0;
             this.chk1.UncheckedState.BorderThickness = 0;
             this.chk1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // q2Choice2
-            // 
-            this.q2Choice2.AutoSize = true;
-            this.q2Choice2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.q2Choice2.CheckedState.BorderThickness = 0;
-            this.q2Choice2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.q2Choice2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.q2Choice2.CheckedState.InnerOffset = -4;
-            this.q2Choice2.ForeColor = System.Drawing.Color.Black;
-            this.q2Choice2.Location = new System.Drawing.Point(206, 239);
-            this.q2Choice2.Name = "q2Choice2";
-            this.q2Choice2.Size = new System.Drawing.Size(91, 19);
-            this.q2Choice2.TabIndex = 123;
-            this.q2Choice2.Text = "Itlog na Pula";
-            this.q2Choice2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.q2Choice2.UncheckedState.BorderThickness = 2;
-            this.q2Choice2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.q2Choice2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // q2Choice1
-            // 
-            this.q2Choice1.AutoSize = true;
-            this.q2Choice1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.q2Choice1.CheckedState.BorderThickness = 0;
-            this.q2Choice1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.q2Choice1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.q2Choice1.CheckedState.InnerOffset = -4;
-            this.q2Choice1.ForeColor = System.Drawing.Color.Black;
-            this.q2Choice1.Location = new System.Drawing.Point(73, 239);
-            this.q2Choice1.Name = "q2Choice1";
-            this.q2Choice1.Size = new System.Drawing.Size(106, 19);
-            this.q2Choice1.TabIndex = 122;
-            this.q2Choice1.Text = "Manok Na Pula";
-            this.q2Choice1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.q2Choice1.UncheckedState.BorderThickness = 2;
-            this.q2Choice1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.q2Choice1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.chk1.CheckedChanged += new System.EventHandler(this.chk1_CheckedChanged);
             // 
             // txtNameLester
             // 
@@ -1329,26 +1293,13 @@
             this.txtNameLester.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNameLester.ForeColor = System.Drawing.Color.Black;
             this.txtNameLester.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameLester.Location = new System.Drawing.Point(51, 463);
+            this.txtNameLester.Location = new System.Drawing.Point(51, 372);
             this.txtNameLester.Name = "txtNameLester";
             this.txtNameLester.PasswordChar = '\0';
             this.txtNameLester.PlaceholderText = "(hint: Middle Name ay \"Gwapo\")";
             this.txtNameLester.SelectedText = "";
             this.txtNameLester.Size = new System.Drawing.Size(309, 26);
             this.txtNameLester.TabIndex = 121;
-            // 
-            // lblq5
-            // 
-            this.lblq5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq5.ForeColor = System.Drawing.Color.Black;
-            this.lblq5.Location = new System.Drawing.Point(32, 425);
-            this.lblq5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq5.Name = "lblq5";
-            this.lblq5.Size = new System.Drawing.Size(441, 18);
-            this.lblq5.TabIndex = 120;
-            this.lblq5.Text = "5. Full Name ni Mr. Lester";
-            this.lblq5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtNamePlan
             // 
@@ -1362,7 +1313,7 @@
             this.txtNamePlan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNamePlan.ForeColor = System.Drawing.Color.Black;
             this.txtNamePlan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamePlan.Location = new System.Drawing.Point(51, 384);
+            this.txtNamePlan.Location = new System.Drawing.Point(51, 293);
             this.txtNamePlan.Name = "txtNamePlan";
             this.txtNamePlan.PasswordChar = '\0';
             this.txtNamePlan.PlaceholderText = "(hint: Last Name ay \"Ganda\")";
@@ -1370,30 +1321,17 @@
             this.txtNamePlan.Size = new System.Drawing.Size(309, 26);
             this.txtNamePlan.TabIndex = 119;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(49, 208);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 18);
-            this.label1.TabIndex = 118;
-            this.label1.Text = "(hint: parehas pula)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // lblq4
             // 
             this.lblq4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.lblq4.ForeColor = System.Drawing.Color.Black;
-            this.lblq4.Location = new System.Drawing.Point(32, 345);
+            this.lblq4.Location = new System.Drawing.Point(32, 254);
             this.lblq4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblq4.Name = "lblq4";
             this.lblq4.Size = new System.Drawing.Size(441, 18);
             this.lblq4.TabIndex = 117;
-            this.lblq4.Text = "4. Full Name ni Miss Plan.";
+            this.lblq4.Text = "3. Full Name ni Prof. Plan.";
             this.lblq4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblh1
@@ -1423,37 +1361,26 @@
             this.btnSubmit.Size = new System.Drawing.Size(180, 45);
             this.btnSubmit.TabIndex = 115;
             this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click_1);
             // 
             // lblq3
             // 
             this.lblq3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblq3.ForeColor = System.Drawing.Color.Black;
-            this.lblq3.Location = new System.Drawing.Point(32, 275);
+            this.lblq3.Location = new System.Drawing.Point(32, 181);
             this.lblq3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblq3.Name = "lblq3";
             this.lblq3.Size = new System.Drawing.Size(441, 18);
             this.lblq3.TabIndex = 113;
-            this.lblq3.Text = "3. Pinaka-mabait na teacher, daming matutunan";
+            this.lblq3.Text = "2. Pinaka-mabait na teacher, daming matutunan";
             this.lblq3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblq2
-            // 
-            this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq2.ForeColor = System.Drawing.Color.Black;
-            this.lblq2.Location = new System.Drawing.Point(32, 181);
-            this.lblq2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq2.Name = "lblq2";
-            this.lblq2.Size = new System.Drawing.Size(395, 23);
-            this.lblq2.TabIndex = 111;
-            this.lblq2.Text = "2. Anong mas mapula, manok na pula o itlog na kinamot?";
-            this.lblq2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(71, 43);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(391, 30);
@@ -1493,6 +1420,85 @@
             this.cbq1.Size = new System.Drawing.Size(174, 36);
             this.cbq1.TabIndex = 127;
             this.cbq1.SelectedIndexChanged += new System.EventHandler(this.cbq1_SelectedIndexChanged);
+            // 
+            // lblq2
+            // 
+            this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq2.ForeColor = System.Drawing.Color.Black;
+            this.lblq2.Location = new System.Drawing.Point(14, 411);
+            this.lblq2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq2.Name = "lblq2";
+            this.lblq2.Size = new System.Drawing.Size(470, 27);
+            this.lblq2.TabIndex = 111;
+            this.lblq2.Text = "Bonus Question :  Anong mas mapula, manok na pula o itlog na kinamot?";
+            this.lblq2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(31, 438);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 18);
+            this.label1.TabIndex = 118;
+            this.label1.Text = "(hint: parehas pula)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // q2Choice1
+            // 
+            this.q2Choice1.AutoSize = true;
+            this.q2Choice1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice1.CheckedState.BorderThickness = 0;
+            this.q2Choice1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.q2Choice1.CheckedState.InnerOffset = -4;
+            this.q2Choice1.ForeColor = System.Drawing.Color.Black;
+            this.q2Choice1.Location = new System.Drawing.Point(55, 469);
+            this.q2Choice1.Name = "q2Choice1";
+            this.q2Choice1.Size = new System.Drawing.Size(106, 19);
+            this.q2Choice1.TabIndex = 122;
+            this.q2Choice1.Text = "Manok Na Pula";
+            this.q2Choice1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.q2Choice1.UncheckedState.BorderThickness = 2;
+            this.q2Choice1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.q2Choice1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.q2Choice1.CheckedChanged += new System.EventHandler(this.q2Choice1_CheckedChanged);
+            // 
+            // q2Choice2
+            // 
+            this.q2Choice2.AutoSize = true;
+            this.q2Choice2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice2.CheckedState.BorderThickness = 0;
+            this.q2Choice2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.q2Choice2.CheckedState.InnerOffset = -4;
+            this.q2Choice2.ForeColor = System.Drawing.Color.Black;
+            this.q2Choice2.Location = new System.Drawing.Point(188, 469);
+            this.q2Choice2.Name = "q2Choice2";
+            this.q2Choice2.Size = new System.Drawing.Size(91, 19);
+            this.q2Choice2.TabIndex = 123;
+            this.q2Choice2.Text = "Itlog na Pula";
+            this.q2Choice2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.q2Choice2.UncheckedState.BorderThickness = 2;
+            this.q2Choice2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.q2Choice2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.q2Choice2.CheckedChanged += new System.EventHandler(this.q2Choice2_CheckedChanged);
+            // 
+            // lblq5
+            // 
+            this.lblq5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq5.ForeColor = System.Drawing.Color.Black;
+            this.lblq5.Location = new System.Drawing.Point(32, 334);
+            this.lblq5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq5.Name = "lblq5";
+            this.lblq5.Size = new System.Drawing.Size(441, 18);
+            this.lblq5.TabIndex = 120;
+            this.lblq5.Text = "4. Full Name ni Prof. Diampoc";
+            this.lblq5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BookReturning
             // 
@@ -1590,19 +1596,19 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2CheckBox chk2;
         private Guna.UI2.WinForms.Guna2CheckBox chk1;
-        private Guna.UI2.WinForms.Guna2RadioButton q2Choice2;
-        private Guna.UI2.WinForms.Guna2RadioButton q2Choice1;
         private Guna.UI2.WinForms.Guna2TextBox txtNameLester;
-        private System.Windows.Forms.Label lblq5;
         private Guna.UI2.WinForms.Guna2TextBox txtNamePlan;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblq4;
         private System.Windows.Forms.Label lblh1;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private System.Windows.Forms.Label lblq3;
-        private System.Windows.Forms.Label lblq2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitle;
         private System.Windows.Forms.Label lblq1;
         private Guna.UI2.WinForms.Guna2ComboBox cbq1;
+        private Guna.UI2.WinForms.Guna2RadioButton q2Choice2;
+        private System.Windows.Forms.Label lblq5;
+        private Guna.UI2.WinForms.Guna2RadioButton q2Choice1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblq2;
     }
 }
