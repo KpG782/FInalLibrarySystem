@@ -17,7 +17,8 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
-        BorrowerList borrowerList;
+        private BorrowerList borrowerList = new BorrowerList();
+
         private Stopwatch loginTimer;
         private int loggedInUserId; // Add a variable to store the logged-in user ID
         public Point mouseLocation;
@@ -40,7 +41,6 @@ namespace FInalLibrarySystem
         {
             InitializeComponent();
            loginTimer = new Stopwatch(); // Add this line to instantiate the Stopwatch
-            BorrowerList borrowerList = new BorrowerList();
 
         }
 
@@ -271,6 +271,15 @@ namespace FInalLibrarySystem
 
                     // Display a personalized welcome message
                     MessageBox.Show($"Welcome, {userProfile.FirstName} {userProfile.LastName}!");
+
+
+
+                    //// Check if the user role is Admin
+                    //if (userProfile.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    //{
+                    //    // Assuming borrowerList is an instance of BorrowerList
+                    //    usersManager.SetAdminVisibility(borrowerList, true);
+                    //}
 
                     //if (userProfile.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
                     //{

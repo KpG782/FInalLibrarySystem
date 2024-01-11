@@ -37,6 +37,7 @@
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAll)).BeginInit();
@@ -70,6 +71,7 @@
             this.Role,
             this.StudentID,
             this.EmployeeID,
+            this.Password,
             this.FirstName,
             this.LastName});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -124,6 +126,11 @@
             this.EmployeeID.HeaderText = "EmployeeID";
             this.EmployeeID.Name = "EmployeeID";
             // 
+            // Password
+            // 
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            // 
             // FirstName
             // 
             this.FirstName.FillWeight = 124.6007F;
@@ -158,6 +165,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
         private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
     }

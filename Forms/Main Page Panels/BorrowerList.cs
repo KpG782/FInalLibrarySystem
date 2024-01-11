@@ -9,12 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static FInalLibrarySystem.Database.Users;
 
 namespace FInalLibrarySystem
 {
     public partial class BorrowerList : UserControl
     {
         private Users usersManager;
+
+
+        // ... (existing code)
 
 
 
@@ -31,8 +35,8 @@ namespace FInalLibrarySystem
             dgvStudents.Visible = true;
             teacher1.Visible = false;
             adminAll1.Visible = false;
+ 
 
-            
 
         }
 
@@ -132,6 +136,51 @@ namespace FInalLibrarySystem
         {
             dgvStudents.Visible = false;
             teacher1.Visible = true;
+        }
+
+
+        public void SetAdminVisibility(bool isVisible)
+        {
+            adminAll1.Visible = isVisible;
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+            // Replace 'userIdToLookup' with the actual user ID you want to look up
+            int userIdToLookup = 21; // Replace with the actual user ID
+
+            // Call GetUserById to get the user by ID
+            User user = usersManager.GetUserById(userIdToLookup);
+
+            string password = user.Password;
+
+            // Ask the user if they are an admin
+            DialogResult result = MessageBox.Show("Are you an admin?", "Admin Verification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // Check the user's response
+            if (result == DialogResult.Yes)
+            {
+                // Prompt the user for the admin password
+                string enteredPassword = Microsoft.VisualBasic.Interaction.InputBox("Enter admin password:", "Admin Password", "");
+
+                // Check if the entered password matches the stored password
+                if (enteredPassword == user.Password)
+                {
+                    // Password is correct, update visibility
+                    adminAll1.Visible = true;
+                }
+                else
+                {
+                    // Password is incorrect, handle accordingly
+                    MessageBox.Show("Incorrect admin password. Access denied.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Optionally, you can perform additional actions, such as logging the attempt or blocking access.
+                }
+            }
+            else
+            {
+                // User is not an admin, handle accordingly
+                // For example, you might want to hide admin-related controls
+                adminAll1.Visible = false;
+            }
         }
     }
 }

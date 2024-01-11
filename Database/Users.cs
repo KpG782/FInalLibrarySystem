@@ -32,7 +32,7 @@ namespace FInalLibrarySystem.Database
             public int Money { get; set; }
 
             public int Debt { get; set; }
-       
+
         }
 
 
@@ -68,6 +68,7 @@ namespace FInalLibrarySystem.Database
                 {
                     db.openConnection(); // Open the database connection
 
+                    
                     string query = "SELECT * FROM `app_users` WHERE `id` = @userId";
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
                     {
@@ -78,12 +79,14 @@ namespace FInalLibrarySystem.Database
 
                         if (table.Rows.Count > 0)
                         {
-//                            MessageBox.Show("The user id should be : " + userId);
+                            //                            MessageBox.Show("The user id should be : " + userId);
 
                             DataRow row = table.Rows[0];
 
+                           
                             user = new User
                             {
+                                
                                 Id = Convert.ToInt32(row["id"]),
                                 Username = row["username"].ToString(),
                                 Password = row["password"].ToString(),
@@ -98,7 +101,7 @@ namespace FInalLibrarySystem.Database
                                 Section = row["section"].ToString(),
                                 Year = row["year"].ToString(),
                                 Picture = (byte[])row["picture"],
-                                Money = Convert.ToInt32( row["money"])
+                                Money = Convert.ToInt32(row["money"])
 
                             };
                         }
@@ -765,5 +768,77 @@ namespace FInalLibrarySystem.Database
         //        borrowerList.adminAll1 = false;
         //    }
         //}
+
+        public void SetAdminVisibility(BorrowerList borrowerList, bool isVisible)
+        {
+            if (borrowerList != null)
+            {
+                // Assuming adminAll1 is a control in BorrowerList
+                borrowerList.SetAdminVisibility(isVisible);
+            }
+            else
+            {
+                MessageBox.Show("Error in Setting Admin Visibility to true");
+                // Handle the case where borrowerList is null (optional)
+            }
+
+        }
+
+        public User GetUserByStatus(int userId)
+        {
+            User user = null;
+
+            try
+            {
+                using (MySqlConnection connection = db.getConnection())
+                {
+                    db.openConnection(); // Open the database connection
+
+                    string query = "SELECT * FROM `app_users` WHERE `id` = @userId";
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
+                    {
+                        adapter.SelectCommand.Parameters.Add("@userId", MySqlDbType.Int32).Value = userId;
+
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+
+                        if (table.Rows.Count > 0)
+                        {
+                            DataRow row = table.Rows[0];
+
+                            user = new User
+                            {
+                                Id = Convert.ToInt32(row["id"]),
+                                Username = row["username"].ToString(),
+                                Password = row["password"].ToString(),
+                                Email = row["email"].ToString(),
+                                FirstName = row["first_name"].ToString(),
+                                LastName = row["last_name"].ToString(),
+                                MiddleInitial = row["middle_initial"].ToString(),
+                                Role = row["role"].ToString(),
+                                Department = row["department"].ToString(),
+                                StudentID = row["studentID"].ToString(),
+                                EmployeeID = row["employeeID"].ToString(),
+                                Section = row["section"].ToString(),
+                                Year = row["year"].ToString(),
+                                Picture = (byte[])row["picture"],
+                                Money = Convert.ToInt32(row["money"])
+                            };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                db.closeConnection(); // Close the database connection
+            }
+
+            return user;
+        }
     }
 }

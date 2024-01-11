@@ -44,8 +44,8 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teacher1 = new FInalLibrarySystem.Teacher();
             this.adminAll1 = new FInalLibrarySystem.Forms.BorrowerList.adminAll();
+            this.teacher1 = new FInalLibrarySystem.Teacher();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +60,7 @@
             this.lblTitle.TabIndex = 14;
             this.lblTitle.Text = "Borrower List";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // lnkTeacher
             // 
@@ -207,6 +208,13 @@
             this.Year.MinimumWidth = 6;
             this.Year.Name = "Year";
             // 
+            // adminAll1
+            // 
+            this.adminAll1.Location = new System.Drawing.Point(21, 109);
+            this.adminAll1.Name = "adminAll1";
+            this.adminAll1.Size = new System.Drawing.Size(879, 523);
+            this.adminAll1.TabIndex = 22;
+            // 
             // teacher1
             // 
             this.teacher1.Location = new System.Drawing.Point(21, 177);
@@ -214,13 +222,6 @@
             this.teacher1.Size = new System.Drawing.Size(879, 447);
             this.teacher1.TabIndex = 20;
             this.teacher1.Load += new System.EventHandler(this.teacher2_Load);
-            // 
-            // adminAll1
-            // 
-            this.adminAll1.Location = new System.Drawing.Point(21, 109);
-            this.adminAll1.Name = "adminAll1";
-            this.adminAll1.Size = new System.Drawing.Size(879, 523);
-            this.adminAll1.TabIndex = 22;
             // 
             // BorrowerList
             // 

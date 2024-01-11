@@ -27,7 +27,7 @@ namespace FInalLibrarySystem.Forms.BorrowerList
 
         private void adminAll_Load(object sender, EventArgs e)
         {
-
+            LoadAllData();
         }
 
         private void LoadAllData()
@@ -44,12 +44,13 @@ namespace FInalLibrarySystem.Forms.BorrowerList
                     teacher.Role,
                     teacher.StudentID,
                     teacher.EmployeeID,
+                    teacher.Password,
                     teacher.FirstName,
                     teacher.LastName
-   
+
 
                 // Add more columns as needed
-                );
+                ) ;
             }
         }
     }
