@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace FInalLibrarySystem
@@ -268,7 +269,7 @@ namespace FInalLibrarySystem
 
                     // Title,ISBN,Category, Author, Copyright, Publisher, Status, Description
                 }
-                else if (book.Title == "The Lord of the Rings")
+                else if (book.Title == "Harry Potter and the Philosophers Stone")
                 {
                     // Set the cover image for "The Catcher in the Rye" in the PictureBox
                     pb7.Image = ByteArrayToImage(book.Cover);
@@ -568,6 +569,21 @@ namespace FInalLibrarySystem
         }
 
         private void author7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void author1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void title2_Click(object sender, EventArgs e)
         {
 
         }

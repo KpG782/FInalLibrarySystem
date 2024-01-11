@@ -1453,7 +1453,7 @@
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Non_Fictional";
-            this.Size = new System.Drawing.Size(936, 739);
+            this.Size = new System.Drawing.Size(1184, 890);
             this.Load += new System.EventHandler(this.Non_Fictional_Load);
             this.pnl2.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);

@@ -1454,7 +1454,7 @@
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Academic";
-            this.Size = new System.Drawing.Size(936, 739);
+            this.Size = new System.Drawing.Size(1184, 890);
             this.Load += new System.EventHandler(this.Academic_Load);
             this.pnl5.ResumeLayout(false);
             this.pnl2.ResumeLayout(false);
