@@ -628,6 +628,11 @@ namespace FInalLibrarySystem
 
         private void lbltitleBook_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void lbltitleBook_Click_1(object sender, EventArgs e)
+        {
             // Replace 'userIdToLookup' with the actual user ID you want to look up
             int userIdToLookup = 21; // Replace with the actual user ID
 

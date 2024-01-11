@@ -86,22 +86,6 @@
             this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.pnlPlay1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtNameDellosa = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblq6 = new System.Windows.Forms.Label();
-            this.txtNameLester = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblq5 = new System.Windows.Forms.Label();
-            this.txtNamePlan = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblq4 = new System.Windows.Forms.Label();
-            this.lblh1 = new System.Windows.Forms.Label();
-            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.rdAnswer = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.lblq3 = new System.Windows.Forms.Label();
-            this.rdAnswer2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.lblq2 = new System.Windows.Forms.Label();
-            this.rdAnswer1 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblq1 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lblBookTitle = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
@@ -120,6 +104,24 @@
             this.btnReturn = new Guna.UI2.WinForms.Guna2Button();
             this.pbPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbltitleBook = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.grpQuiz = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chk2 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chk1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.q2Choice2 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.q2Choice1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txtNameLester = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblq5 = new System.Windows.Forms.Label();
+            this.txtNamePlan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblq4 = new System.Windows.Forms.Label();
+            this.lblh1 = new System.Windows.Forms.Label();
+            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.lblq3 = new System.Windows.Forms.Label();
+            this.lblq2 = new System.Windows.Forms.Label();
+            this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblq1 = new System.Windows.Forms.Label();
+            this.cbq1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SecondaryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookBorrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
@@ -128,6 +130,7 @@
             this.MainPanel.SuspendLayout();
             this.pnlPlay1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
+            this.grpQuiz.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -190,7 +193,7 @@
             dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBookBorrow.DefaultCellStyle = dataGridViewCellStyle27;
             this.dgvBookBorrow.EnableHeadersVisualStyles = false;
-            this.dgvBookBorrow.Location = new System.Drawing.Point(-2, 468);
+            this.dgvBookBorrow.Location = new System.Drawing.Point(2, 458);
             this.dgvBookBorrow.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBookBorrow.Name = "dgvBookBorrow";
             this.dgvBookBorrow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -205,7 +208,7 @@
             this.dgvBookBorrow.RowHeadersWidth = 51;
             this.dgvBookBorrow.RowTemplate.Height = 40;
             this.dgvBookBorrow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBookBorrow.Size = new System.Drawing.Size(696, 445);
+            this.dgvBookBorrow.Size = new System.Drawing.Size(696, 426);
             this.dgvBookBorrow.TabIndex = 28;
             this.dgvBookBorrow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookBorrow_CellContentClick_1);
             // 
@@ -287,7 +290,7 @@
             dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBooks.DefaultCellStyle = dataGridViewCellStyle31;
             this.dgvBooks.EnableHeadersVisualStyles = false;
-            this.dgvBooks.Location = new System.Drawing.Point(-2, 0);
+            this.dgvBooks.Location = new System.Drawing.Point(-1, 21);
             this.dgvBooks.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBooks.Name = "dgvBooks";
             this.dgvBooks.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -302,7 +305,7 @@
             this.dgvBooks.RowHeadersWidth = 51;
             this.dgvBooks.RowTemplate.Height = 40;
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBooks.Size = new System.Drawing.Size(712, 445);
+            this.dgvBooks.Size = new System.Drawing.Size(695, 437);
             this.dgvBooks.TabIndex = 27;
             this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick_1);
             // 
@@ -931,272 +934,22 @@
             // 
             // pnlPlay1
             // 
-            this.pnlPlay1.Controls.Add(this.txtNameDellosa);
-            this.pnlPlay1.Controls.Add(this.lblq6);
-            this.pnlPlay1.Controls.Add(this.txtNameLester);
-            this.pnlPlay1.Controls.Add(this.lblq5);
-            this.pnlPlay1.Controls.Add(this.txtNamePlan);
-            this.pnlPlay1.Controls.Add(this.label1);
-            this.pnlPlay1.Controls.Add(this.lblq4);
-            this.pnlPlay1.Controls.Add(this.lblh1);
-            this.pnlPlay1.Controls.Add(this.btnSubmit);
-            this.pnlPlay1.Controls.Add(this.rdAnswer);
-            this.pnlPlay1.Controls.Add(this.lblq3);
-            this.pnlPlay1.Controls.Add(this.rdAnswer2);
-            this.pnlPlay1.Controls.Add(this.lblq2);
-            this.pnlPlay1.Controls.Add(this.rdAnswer1);
-            this.pnlPlay1.Controls.Add(this.lblTitle);
-            this.pnlPlay1.Controls.Add(this.lblq1);
-            this.pnlPlay1.Controls.Add(this.guna2ControlBox1);
+            this.pnlPlay1.Controls.Add(this.grpQuiz);
             this.pnlPlay1.Location = new System.Drawing.Point(286, 108);
             this.pnlPlay1.Name = "pnlPlay1";
             this.pnlPlay1.Size = new System.Drawing.Size(507, 603);
             this.pnlPlay1.TabIndex = 89;
             this.pnlPlay1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPlay1_Paint);
             // 
-            // txtNameDellosa
-            // 
-            this.txtNameDellosa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNameDellosa.DefaultText = "";
-            this.txtNameDellosa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNameDellosa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNameDellosa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameDellosa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameDellosa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameDellosa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNameDellosa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameDellosa.Location = new System.Drawing.Point(68, 491);
-            this.txtNameDellosa.Name = "txtNameDellosa";
-            this.txtNameDellosa.PasswordChar = '\0';
-            this.txtNameDellosa.PlaceholderText = "";
-            this.txtNameDellosa.SelectedText = "";
-            this.txtNameDellosa.Size = new System.Drawing.Size(309, 26);
-            this.txtNameDellosa.TabIndex = 104;
-            // 
-            // lblq6
-            // 
-            this.lblq6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq6.Location = new System.Drawing.Point(48, 452);
-            this.lblq6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq6.Name = "lblq6";
-            this.lblq6.Size = new System.Drawing.Size(441, 18);
-            this.lblq6.TabIndex = 103;
-            this.lblq6.Text = "6. Full Name ni Mr. Dellosa";
-            this.lblq6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtNameLester
-            // 
-            this.txtNameLester.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNameLester.DefaultText = "";
-            this.txtNameLester.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNameLester.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNameLester.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameLester.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameLester.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameLester.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNameLester.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameLester.Location = new System.Drawing.Point(67, 405);
-            this.txtNameLester.Name = "txtNameLester";
-            this.txtNameLester.PasswordChar = '\0';
-            this.txtNameLester.PlaceholderText = "(hint: Middle Name ay \"Gwapo\")";
-            this.txtNameLester.SelectedText = "";
-            this.txtNameLester.Size = new System.Drawing.Size(309, 26);
-            this.txtNameLester.TabIndex = 102;
-            this.txtNameLester.TextChanged += new System.EventHandler(this.txtNameLester_TextChanged);
-            // 
-            // lblq5
-            // 
-            this.lblq5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq5.Location = new System.Drawing.Point(48, 367);
-            this.lblq5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq5.Name = "lblq5";
-            this.lblq5.Size = new System.Drawing.Size(441, 18);
-            this.lblq5.TabIndex = 101;
-            this.lblq5.Text = "5. Full Name ni Mr. Lester";
-            this.lblq5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtNamePlan
-            // 
-            this.txtNamePlan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNamePlan.DefaultText = "";
-            this.txtNamePlan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNamePlan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNamePlan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNamePlan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNamePlan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamePlan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNamePlan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamePlan.Location = new System.Drawing.Point(67, 326);
-            this.txtNamePlan.Name = "txtNamePlan";
-            this.txtNamePlan.PasswordChar = '\0';
-            this.txtNamePlan.PlaceholderText = "(hint: Last Name ay \"Ganda\")";
-            this.txtNamePlan.SelectedText = "";
-            this.txtNamePlan.Size = new System.Drawing.Size(309, 26);
-            this.txtNamePlan.TabIndex = 100;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 178);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 18);
-            this.label1.TabIndex = 99;
-            this.label1.Text = "(hint: pasok ka lng sa lang sa klase para sa attendance)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblq4
-            // 
-            this.lblq4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq4.Location = new System.Drawing.Point(48, 287);
-            this.lblq4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq4.Name = "lblq4";
-            this.lblq4.Size = new System.Drawing.Size(441, 18);
-            this.lblq4.TabIndex = 98;
-            this.lblq4.Text = "4. Full Name ni Miss Plan.";
-            this.lblq4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblh1
-            // 
-            this.lblh1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblh1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblh1.Location = new System.Drawing.Point(65, 73);
-            this.lblh1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblh1.Name = "lblh1";
-            this.lblh1.Size = new System.Drawing.Size(344, 18);
-            this.lblh1.TabIndex = 97;
-            this.lblh1.Text = "(hint: masipag magturo, interactive mga session kaso may anger issues)";
-            this.lblh1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(165, 536);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(180, 45);
-            this.btnSubmit.TabIndex = 96;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // rdAnswer
-            // 
-            this.rdAnswer.AutoSize = true;
-            this.rdAnswer.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdAnswer.CheckedState.BorderThickness = 0;
-            this.rdAnswer.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdAnswer.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdAnswer.CheckedState.InnerOffset = -4;
-            this.rdAnswer.Location = new System.Drawing.Point(87, 254);
-            this.rdAnswer.Name = "rdAnswer";
-            this.rdAnswer.Size = new System.Drawing.Size(64, 17);
-            this.rdAnswer.TabIndex = 95;
-            this.rdAnswer.Text = "Maam P";
-            this.rdAnswer.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdAnswer.UncheckedState.BorderThickness = 2;
-            this.rdAnswer.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdAnswer.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // lblq3
-            // 
-            this.lblq3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblq3.Location = new System.Drawing.Point(48, 228);
-            this.lblq3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq3.Name = "lblq3";
-            this.lblq3.Size = new System.Drawing.Size(441, 18);
-            this.lblq3.TabIndex = 94;
-            this.lblq3.Text = "3. Pinaka-mabait na teacher, daming matutunan, baby ni mars.";
-            this.lblq3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // rdAnswer2
-            // 
-            this.rdAnswer2.AutoSize = true;
-            this.rdAnswer2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdAnswer2.CheckedState.BorderThickness = 0;
-            this.rdAnswer2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdAnswer2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdAnswer2.CheckedState.InnerOffset = -4;
-            this.rdAnswer2.Location = new System.Drawing.Point(87, 206);
-            this.rdAnswer2.Name = "rdAnswer2";
-            this.rdAnswer2.Size = new System.Drawing.Size(59, 17);
-            this.rdAnswer2.TabIndex = 93;
-            this.rdAnswer2.Text = "Boss D";
-            this.rdAnswer2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdAnswer2.UncheckedState.BorderThickness = 2;
-            this.rdAnswer2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdAnswer2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // lblq2
-            // 
-            this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq2.Location = new System.Drawing.Point(48, 136);
-            this.lblq2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq2.Name = "lblq2";
-            this.lblq2.Size = new System.Drawing.Size(422, 42);
-            this.lblq2.TabIndex = 92;
-            this.lblq2.Text = "2. Pinaka-Stoic na teacher, tumatawa sa gedli magisa habang nanonood sa laptop?";
-            this.lblq2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // rdAnswer1
-            // 
-            this.rdAnswer1.AutoSize = true;
-            this.rdAnswer1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdAnswer1.CheckedState.BorderThickness = 0;
-            this.rdAnswer1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdAnswer1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdAnswer1.CheckedState.InnerOffset = -4;
-            this.rdAnswer1.Location = new System.Drawing.Point(91, 103);
-            this.rdAnswer1.Name = "rdAnswer1";
-            this.rdAnswer1.Size = new System.Drawing.Size(46, 17);
-            this.rdAnswer1.TabIndex = 91;
-            this.rdAnswer1.Text = "Sir L";
-            this.rdAnswer1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdAnswer1.UncheckedState.BorderThickness = 2;
-            this.rdAnswer1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdAnswer1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdAnswer1.CheckedChanged += new System.EventHandler(this.rdAnswer1_CheckedChanged);
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(75, 14);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(391, 30);
-            this.lblTitle.TabIndex = 90;
-            this.lblTitle.Text = "Answer these Questions TRUTHFULLY :";
-            // 
-            // lblq1
-            // 
-            this.lblq1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblq1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblq1.Location = new System.Drawing.Point(48, 55);
-            this.lblq1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblq1.Name = "lblq1";
-            this.lblq1.Size = new System.Drawing.Size(395, 18);
-            this.lblq1.TabIndex = 90;
-            this.lblq1.Text = "1. Sino ang palaging pinakadilat na teacher sa classroom?";
-            this.lblq1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(471, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(459, 0);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 38);
             this.guna2ControlBox1.TabIndex = 35;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
@@ -1243,7 +996,7 @@
             this.btnUpdate.FillColor = System.Drawing.Color.DarkSeaGreen;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(152, 806);
+            this.btnUpdate.Location = new System.Drawing.Point(176, 806);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(106, 46);
@@ -1266,7 +1019,7 @@
             this.dtpReturn.Name = "dtpReturn";
             this.dtpReturn.Size = new System.Drawing.Size(285, 25);
             this.dtpReturn.TabIndex = 83;
-            this.dtpReturn.Value = new System.DateTime(2024, 1, 10, 0, 0, 0, 0);
+            this.dtpReturn.Value = new System.DateTime(2024, 1, 12, 0, 0, 0, 0);
             this.dtpReturn.ValueChanged += new System.EventHandler(this.dtpReturn_ValueChanged_1);
             // 
             // LBLDate
@@ -1399,7 +1152,7 @@
             this.btnClear.FillColor = System.Drawing.Color.IndianRed;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(286, 806);
+            this.btnClear.Location = new System.Drawing.Point(307, 806);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(106, 46);
@@ -1417,7 +1170,7 @@
             this.btnReturn.FillColor = System.Drawing.Color.DarkSeaGreen;
             this.btnReturn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.ForeColor = System.Drawing.Color.Black;
-            this.btnReturn.Location = new System.Drawing.Point(20, 806);
+            this.btnReturn.Location = new System.Drawing.Point(44, 806);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(106, 46);
@@ -1442,11 +1195,304 @@
             // 
             this.lbltitleBook.BackColor = System.Drawing.Color.Transparent;
             this.lbltitleBook.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold);
-            this.lbltitleBook.Location = new System.Drawing.Point(163, 43);
+            this.lbltitleBook.Location = new System.Drawing.Point(168, 24);
             this.lbltitleBook.Name = "lbltitleBook";
             this.lbltitleBook.Size = new System.Drawing.Size(187, 34);
             this.lbltitleBook.TabIndex = 90;
             this.lbltitleBook.Text = "Book Returning";
+            // 
+            // grpQuiz
+            // 
+            this.grpQuiz.Controls.Add(this.cbq1);
+            this.grpQuiz.Controls.Add(this.guna2ControlBox1);
+            this.grpQuiz.Controls.Add(this.label3);
+            this.grpQuiz.Controls.Add(this.chk2);
+            this.grpQuiz.Controls.Add(this.chk1);
+            this.grpQuiz.Controls.Add(this.q2Choice2);
+            this.grpQuiz.Controls.Add(this.q2Choice1);
+            this.grpQuiz.Controls.Add(this.txtNameLester);
+            this.grpQuiz.Controls.Add(this.lblq5);
+            this.grpQuiz.Controls.Add(this.txtNamePlan);
+            this.grpQuiz.Controls.Add(this.label1);
+            this.grpQuiz.Controls.Add(this.lblq4);
+            this.grpQuiz.Controls.Add(this.lblh1);
+            this.grpQuiz.Controls.Add(this.btnSubmit);
+            this.grpQuiz.Controls.Add(this.lblq3);
+            this.grpQuiz.Controls.Add(this.lblq2);
+            this.grpQuiz.Controls.Add(this.lblTitle);
+            this.grpQuiz.Controls.Add(this.lblq1);
+            this.grpQuiz.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.grpQuiz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.grpQuiz.Location = new System.Drawing.Point(3, 3);
+            this.grpQuiz.Name = "grpQuiz";
+            this.grpQuiz.Size = new System.Drawing.Size(504, 600);
+            this.grpQuiz.TabIndex = 108;
+            this.grpQuiz.Text = "Short Quiz";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(115, 71);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(278, 18);
+            this.label3.TabIndex = 126;
+            this.label3.Text = "(1.00  Grade = 100 Peso) if all answers are correct";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // chk2
+            // 
+            this.chk2.AutoSize = true;
+            this.chk2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chk2.CheckedState.BorderRadius = 0;
+            this.chk2.CheckedState.BorderThickness = 0;
+            this.chk2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chk2.ForeColor = System.Drawing.Color.Black;
+            this.chk2.Location = new System.Drawing.Point(204, 310);
+            this.chk2.Name = "chk2";
+            this.chk2.Size = new System.Drawing.Size(71, 19);
+            this.chk2.TabIndex = 125;
+            this.chk2.Text = "Ms. Plan";
+            this.chk2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chk2.UncheckedState.BorderRadius = 0;
+            this.chk2.UncheckedState.BorderThickness = 0;
+            this.chk2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // chk1
+            // 
+            this.chk1.AutoSize = true;
+            this.chk1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chk1.CheckedState.BorderRadius = 0;
+            this.chk1.CheckedState.BorderThickness = 0;
+            this.chk1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chk1.ForeColor = System.Drawing.Color.Black;
+            this.chk1.Location = new System.Drawing.Point(71, 310);
+            this.chk1.Name = "chk1";
+            this.chk1.Size = new System.Drawing.Size(95, 19);
+            this.chk1.TabIndex = 124;
+            this.chk1.Text = "Mr. Diampoc";
+            this.chk1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chk1.UncheckedState.BorderRadius = 0;
+            this.chk1.UncheckedState.BorderThickness = 0;
+            this.chk1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // q2Choice2
+            // 
+            this.q2Choice2.AutoSize = true;
+            this.q2Choice2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice2.CheckedState.BorderThickness = 0;
+            this.q2Choice2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.q2Choice2.CheckedState.InnerOffset = -4;
+            this.q2Choice2.ForeColor = System.Drawing.Color.Black;
+            this.q2Choice2.Location = new System.Drawing.Point(206, 239);
+            this.q2Choice2.Name = "q2Choice2";
+            this.q2Choice2.Size = new System.Drawing.Size(91, 19);
+            this.q2Choice2.TabIndex = 123;
+            this.q2Choice2.Text = "Itlog na Pula";
+            this.q2Choice2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.q2Choice2.UncheckedState.BorderThickness = 2;
+            this.q2Choice2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.q2Choice2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // q2Choice1
+            // 
+            this.q2Choice1.AutoSize = true;
+            this.q2Choice1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice1.CheckedState.BorderThickness = 0;
+            this.q2Choice1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.q2Choice1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.q2Choice1.CheckedState.InnerOffset = -4;
+            this.q2Choice1.ForeColor = System.Drawing.Color.Black;
+            this.q2Choice1.Location = new System.Drawing.Point(73, 239);
+            this.q2Choice1.Name = "q2Choice1";
+            this.q2Choice1.Size = new System.Drawing.Size(106, 19);
+            this.q2Choice1.TabIndex = 122;
+            this.q2Choice1.Text = "Manok Na Pula";
+            this.q2Choice1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.q2Choice1.UncheckedState.BorderThickness = 2;
+            this.q2Choice1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.q2Choice1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // txtNameLester
+            // 
+            this.txtNameLester.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNameLester.DefaultText = "";
+            this.txtNameLester.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNameLester.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNameLester.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameLester.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameLester.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameLester.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNameLester.ForeColor = System.Drawing.Color.Black;
+            this.txtNameLester.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameLester.Location = new System.Drawing.Point(51, 463);
+            this.txtNameLester.Name = "txtNameLester";
+            this.txtNameLester.PasswordChar = '\0';
+            this.txtNameLester.PlaceholderText = "(hint: Middle Name ay \"Gwapo\")";
+            this.txtNameLester.SelectedText = "";
+            this.txtNameLester.Size = new System.Drawing.Size(309, 26);
+            this.txtNameLester.TabIndex = 121;
+            // 
+            // lblq5
+            // 
+            this.lblq5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq5.ForeColor = System.Drawing.Color.Black;
+            this.lblq5.Location = new System.Drawing.Point(32, 425);
+            this.lblq5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq5.Name = "lblq5";
+            this.lblq5.Size = new System.Drawing.Size(441, 18);
+            this.lblq5.TabIndex = 120;
+            this.lblq5.Text = "5. Full Name ni Mr. Lester";
+            this.lblq5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtNamePlan
+            // 
+            this.txtNamePlan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNamePlan.DefaultText = "";
+            this.txtNamePlan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNamePlan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNamePlan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNamePlan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNamePlan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNamePlan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNamePlan.ForeColor = System.Drawing.Color.Black;
+            this.txtNamePlan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNamePlan.Location = new System.Drawing.Point(51, 384);
+            this.txtNamePlan.Name = "txtNamePlan";
+            this.txtNamePlan.PasswordChar = '\0';
+            this.txtNamePlan.PlaceholderText = "(hint: Last Name ay \"Ganda\")";
+            this.txtNamePlan.SelectedText = "";
+            this.txtNamePlan.Size = new System.Drawing.Size(309, 26);
+            this.txtNamePlan.TabIndex = 119;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(49, 208);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 18);
+            this.label1.TabIndex = 118;
+            this.label1.Text = "(hint: parehas pula)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblq4
+            // 
+            this.lblq4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq4.ForeColor = System.Drawing.Color.Black;
+            this.lblq4.Location = new System.Drawing.Point(32, 345);
+            this.lblq4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq4.Name = "lblq4";
+            this.lblq4.Size = new System.Drawing.Size(441, 18);
+            this.lblq4.TabIndex = 117;
+            this.lblq4.Text = "4. Full Name ni Miss Plan.";
+            this.lblq4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblh1
+            // 
+            this.lblh1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblh1.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblh1.ForeColor = System.Drawing.Color.Black;
+            this.lblh1.Location = new System.Drawing.Point(49, 129);
+            this.lblh1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblh1.Name = "lblh1";
+            this.lblh1.Size = new System.Drawing.Size(108, 18);
+            this.lblh1.TabIndex = 116;
+            this.lblh1.Text = "(hint: hindi si mars)";
+            this.lblh1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BorderRadius = 5;
+            this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(156, 523);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(180, 45);
+            this.btnSubmit.TabIndex = 115;
+            this.btnSubmit.Text = "Submit";
+            // 
+            // lblq3
+            // 
+            this.lblq3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblq3.ForeColor = System.Drawing.Color.Black;
+            this.lblq3.Location = new System.Drawing.Point(32, 275);
+            this.lblq3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq3.Name = "lblq3";
+            this.lblq3.Size = new System.Drawing.Size(441, 18);
+            this.lblq3.TabIndex = 113;
+            this.lblq3.Text = "3. Pinaka-mabait na teacher, daming matutunan";
+            this.lblq3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblq2
+            // 
+            this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq2.ForeColor = System.Drawing.Color.Black;
+            this.lblq2.Location = new System.Drawing.Point(32, 181);
+            this.lblq2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq2.Name = "lblq2";
+            this.lblq2.Size = new System.Drawing.Size(395, 23);
+            this.lblq2.TabIndex = 111;
+            this.lblq2.Text = "2. Anong mas mapula, manok na pula o itlog na kinamot?";
+            this.lblq2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Location = new System.Drawing.Point(71, 43);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(391, 30);
+            this.lblTitle.TabIndex = 109;
+            this.lblTitle.Text = "Answer these Questions TRUTHFULLY :";
+            // 
+            // lblq1
+            // 
+            this.lblq1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblq1.BackColor = System.Drawing.Color.Transparent;
+            this.lblq1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblq1.ForeColor = System.Drawing.Color.Black;
+            this.lblq1.Location = new System.Drawing.Point(32, 111);
+            this.lblq1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblq1.Name = "lblq1";
+            this.lblq1.Size = new System.Drawing.Size(395, 18);
+            this.lblq1.TabIndex = 108;
+            this.lblq1.Text = "1. Who discovered gravity?";
+            this.lblq1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cbq1
+            // 
+            this.cbq1.BackColor = System.Drawing.Color.Transparent;
+            this.cbq1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbq1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbq1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbq1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbq1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbq1.ForeColor = System.Drawing.Color.Black;
+            this.cbq1.ItemHeight = 30;
+            this.cbq1.Items.AddRange(new object[] {
+            "Mars",
+            "Newton",
+            "Papa"});
+            this.cbq1.Location = new System.Drawing.Point(162, 139);
+            this.cbq1.Name = "cbq1";
+            this.cbq1.Size = new System.Drawing.Size(174, 36);
+            this.cbq1.TabIndex = 127;
+            this.cbq1.SelectedIndexChanged += new System.EventHandler(this.cbq1_SelectedIndexChanged);
             // 
             // BookReturning
             // 
@@ -1465,8 +1511,9 @@
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             this.pnlPlay1.ResumeLayout(false);
-            this.pnlPlay1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
+            this.grpQuiz.ResumeLayout(false);
+            this.grpQuiz.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1538,22 +1585,24 @@
         private Guna.UI2.WinForms.Guna2PictureBox pbPicture;
         private Guna.UI2.WinForms.Guna2Panel pnlPlay1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitle;
-        private System.Windows.Forms.Label lblq1;
-        private System.Windows.Forms.Label lblq2;
-        private Guna.UI2.WinForms.Guna2RadioButton rdAnswer1;
-        private Guna.UI2.WinForms.Guna2Button btnSubmit;
-        private Guna.UI2.WinForms.Guna2RadioButton rdAnswer;
-        private System.Windows.Forms.Label lblq3;
-        private Guna.UI2.WinForms.Guna2RadioButton rdAnswer2;
-        private System.Windows.Forms.Label lblh1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblq4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbltitleBook;
+        private Guna.UI2.WinForms.Guna2GroupBox grpQuiz;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2CheckBox chk2;
+        private Guna.UI2.WinForms.Guna2CheckBox chk1;
+        private Guna.UI2.WinForms.Guna2RadioButton q2Choice2;
+        private Guna.UI2.WinForms.Guna2RadioButton q2Choice1;
         private Guna.UI2.WinForms.Guna2TextBox txtNameLester;
         private System.Windows.Forms.Label lblq5;
         private Guna.UI2.WinForms.Guna2TextBox txtNamePlan;
-        private Guna.UI2.WinForms.Guna2TextBox txtNameDellosa;
-        private System.Windows.Forms.Label lblq6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbltitleBook;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblq4;
+        private System.Windows.Forms.Label lblh1;
+        private Guna.UI2.WinForms.Guna2Button btnSubmit;
+        private System.Windows.Forms.Label lblq3;
+        private System.Windows.Forms.Label lblq2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitle;
+        private System.Windows.Forms.Label lblq1;
+        private Guna.UI2.WinForms.Guna2ComboBox cbq1;
     }
 }

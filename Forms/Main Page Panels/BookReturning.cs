@@ -799,9 +799,8 @@ namespace FInalLibrarySystem
 
             string answer1 = "Jomariss Baccay Ganda";
             string answer2 = "Lester Gwapo Diampoc";
-            string answer3 = "Daniel Idolo";
 
-            if(answer1 == txtNamePlan.Text && answer2 ==  txtNameLester.Text && answer3 == txtNameDellosa.Text)
+            if(answer1 == txtNamePlan.Text && answer2 ==  txtNameLester.Text)
             {
                 string userID = txtUserID.Text.Trim();
 
@@ -823,6 +822,8 @@ namespace FInalLibrarySystem
 
                     // Display a success message
                     MessageBox.Show($"Added {amountToAdd} to the user's account. Updated money: {updatedMoney}");
+
+                    MessageBox.Show($"Sana Maka-Uno ang Kampon ni Pedro Basuraman");
                     pnlPlay1.Visible = false;
 
                 }
@@ -853,6 +854,11 @@ namespace FInalLibrarySystem
         }
 
         private void pnlPlay1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbq1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
