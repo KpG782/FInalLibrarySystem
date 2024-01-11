@@ -153,12 +153,12 @@
             // closeButton
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.closeButton.FillColor = System.Drawing.Color.Black;
             this.closeButton.IconColor = System.Drawing.Color.White;
-            this.closeButton.Location = new System.Drawing.Point(1364, 7);
+            this.closeButton.Location = new System.Drawing.Point(1349, 2);
             this.closeButton.Margin = new System.Windows.Forms.Padding(2);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(34, 24);
+            this.closeButton.Size = new System.Drawing.Size(48, 29);
             this.closeButton.TabIndex = 34;
             this.closeButton.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 

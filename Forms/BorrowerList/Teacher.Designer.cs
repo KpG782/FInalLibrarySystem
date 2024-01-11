@@ -98,7 +98,7 @@
             this.dgvTeachers.RowHeadersWidth = 51;
             this.dgvTeachers.RowTemplate.Height = 40;
             this.dgvTeachers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTeachers.Size = new System.Drawing.Size(879, 523);
+            this.dgvTeachers.Size = new System.Drawing.Size(879, 641);
             this.dgvTeachers.TabIndex = 2;
             this.dgvTeachers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTeachers_CellContentClick);
             // 
@@ -157,7 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvTeachers);
             this.Name = "Teacher";
-            this.Size = new System.Drawing.Size(879, 523);
+            this.Size = new System.Drawing.Size(879, 641);
             this.Load += new System.EventHandler(this.Teacher_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).EndInit();
             this.ResumeLayout(false);

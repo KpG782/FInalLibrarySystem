@@ -98,7 +98,7 @@
             this.dgvAll.RowHeadersWidth = 51;
             this.dgvAll.RowTemplate.Height = 40;
             this.dgvAll.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAll.Size = new System.Drawing.Size(879, 523);
+            this.dgvAll.Size = new System.Drawing.Size(879, 641);
             this.dgvAll.TabIndex = 3;
             this.dgvAll.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTeachers_CellContentClick);
             // 
@@ -151,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvAll);
             this.Name = "adminAll";
-            this.Size = new System.Drawing.Size(879, 523);
+            this.Size = new System.Drawing.Size(879, 641);
             this.Load += new System.EventHandler(this.adminAll_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAll)).EndInit();
             this.ResumeLayout(false);
