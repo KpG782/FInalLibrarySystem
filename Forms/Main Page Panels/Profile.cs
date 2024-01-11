@@ -38,12 +38,19 @@ namespace FInalLibrarySystem
 
         }
 
+        private void PBAcademics_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void PBFictional_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void PBNonFictional_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
