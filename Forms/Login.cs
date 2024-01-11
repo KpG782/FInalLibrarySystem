@@ -272,11 +272,10 @@ namespace FInalLibrarySystem
                     // Display a personalized welcome message
                     MessageBox.Show($"Welcome, {userProfile.FirstName} {userProfile.LastName}!");
 
-                    // Open the Profile form and pass the user data
                     Profile profileForm = new Profile();
                     profileForm.FirstName = userProfile.FirstName;
                     profileForm.LastName = userProfile.LastName;
-                    profileForm.UserId = loggedInUserId;  // Assuming you want to pass the user ID as well
+                    profileForm.UserId = loggedInUserId; 
                     profileForm.Show();
 
                     //if (userProfile.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
