@@ -28,7 +28,27 @@ namespace FInalLibrarySystem
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            LBLHello.Text = $"Hello, {FirstName} {LastName}!";
+            Users usersManager = new Users();
+            Users.User userProfile = usersManager.GetUserById(UserId);
+            LBLHello.Text = $"Hello, {userProfile.FirstName} {userProfile.LastName}!";
+
+            try
+            {
+                var result = GetBorrowedBooks();
+                List<Book> borrowedBooks = result.borrowedBooks;
+                int borrowCount = result.borrowCount;
+
+                // Display borrow count in your label
+                LBLBorrowed.Text = borrowCount.ToString();
+
+                // Optionally, you can use borrowedBooks for further processing or display.
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log the error)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
 
         }
 

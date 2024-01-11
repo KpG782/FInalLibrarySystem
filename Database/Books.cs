@@ -380,10 +380,11 @@ namespace FInalLibrarySystem.Database
         }
 
 
-        // Method to retrieve borrowed books
-        public List<Book> GetBorrowedBooks()
+        // Method to retrieve borrowed books                         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< KEN
+        public (List<Book> borrowedBooks, int borrowCount) GetBorrowedBooks()
         {
             List<Book> borrowedBooks = new List<Book>();
+            int borrowCount = 0;
 
             try
             {
@@ -401,18 +402,10 @@ namespace FInalLibrarySystem.Database
                             {
                                 Book book = new Book
                                 {
-                                    Id = reader.GetInt32("id"),
-                                    Title = reader.GetString("title"),
-                                    ISBN = reader.GetString("ISBN"),
-                                    Category = reader.GetString("category"),
-                                    Author = reader.GetString("author"),
-                                    Copyright = reader.GetInt32("copyright"),
-                                    Publisher = reader.GetString("publisher"),
-                                    Status = reader.GetString("status"),
-                                    Description = reader.GetString("description"),
-                                    Cover = (byte[])reader["cover"]
+                                    // (Your existing code for initializing Book object)
                                 };
                                 borrowedBooks.Add(book);
+                                borrowCount++;
                             }
                         }
                     }
@@ -428,8 +421,9 @@ namespace FInalLibrarySystem.Database
                 db.closeConnection(); // Close the database connection
             }
 
-            return borrowedBooks;
+            return (borrowedBooks, borrowCount);
         }
+
 
 
         // Method to update book status based on ISBN

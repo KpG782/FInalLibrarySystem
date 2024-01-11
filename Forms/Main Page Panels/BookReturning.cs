@@ -38,13 +38,14 @@ namespace FInalLibrarySystem
         }
 
         // Update the DisplayReturnedBooks method in the BookReturning class
-        private void DisplayBooks()
+        private void DisplayBooks()                       //  <<<<<<<<<<<<<<<<<KEN 
         {
             // Assuming dgvShow is the DataGridView control where you want to display the books
             dgvBooks.Rows.Clear();
 
-            // Retrieve returned books from the Books class
-            List<Book> borrowedBooks = books.GetBorrowedBooks();
+            // Retrieve returned books and borrow count from the Books class
+            var result = books.GetBorrowedBooks();
+            List<Book> borrowedBooks = result.borrowedBooks;
 
             // Populate the DataGridView with returned books
             foreach (var book in borrowedBooks)
@@ -52,6 +53,7 @@ namespace FInalLibrarySystem
                 dgvBooks.Rows.Add(book.Title, book.ISBN, book.Category, book.Author, book.Status, book.Copyright);
             }
         }
+
 
         private void DisplayBookBorrows()
         {
