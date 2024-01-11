@@ -547,9 +547,9 @@ namespace FInalLibrarySystem.Database
 
                         object result = cmd.ExecuteScalar();
 
-                        if (result != null && int.TryParse(result.ToString(), out int money))
+             //           if (result != null && int.TryParse(result.ToString(), out int money))
                         {
-                            return money;
+                //            return money;
                         }
                     }
                 }
@@ -646,9 +646,9 @@ namespace FInalLibrarySystem.Database
 
                         object result = cmd.ExecuteScalar();
 
-                        if (result != null && int.TryParse(result.ToString(), out int debt))
+                //        if (result != null && int.TryParse(result.ToString(), out int debt))
                         {
-                            return debt > 0;
+                 //           return debt > 0;
                         }
                     }
                 }

@@ -19,7 +19,7 @@ namespace FInalLibrarySystem
     {
         BorrowerList borrowerList;
         private Stopwatch loginTimer;
-        private int loggedInUserId; // Add a variable to store the logged-in user ID
+        public int loggedInUserId; // Add a variable to store the logged-in user ID
         public Point mouseLocation;
         //set global object
         MainPage mainPage = new MainPage();
