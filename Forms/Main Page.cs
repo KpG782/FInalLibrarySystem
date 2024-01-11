@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FInalLibrarySystem
-{   
-
+{
+    
 
     public partial class MainPage : Form
     {
 
-
+        public Point mouseLocation;
 
 
         public MainPage()
@@ -214,6 +214,28 @@ namespace FInalLibrarySystem
             bookBorrowing1.Visible = false;
             bookReturning1.Visible = false;
             bookReservation2.Visible = true;
+        }
+
+        private void mouse_Down(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mouse_Move(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
+
         }
     }
 }

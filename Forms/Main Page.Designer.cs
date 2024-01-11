@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.closeButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnDashboard = new System.Windows.Forms.LinkLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.profile1 = new FInalLibrarySystem.Profile();
             this.bookList1 = new FInalLibrarySystem.BookList();
             this.bookReturning1 = new FInalLibrarySystem.BookReturning();
@@ -196,6 +197,17 @@
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDashboard_LinkClicked);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1112, 14);
+            this.panel1.TabIndex = 38;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse_Down);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouse_Move);
+            // 
             // profile1
             // 
             this.profile1.BackColor = System.Drawing.Color.White;
@@ -268,6 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1112, 687);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.profile1);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.closeButton);
@@ -314,5 +327,6 @@
         private BookReturning bookReturning1;
         private BookReservation bookReservation2;
         private System.Windows.Forms.LinkLabel btnDashboard;
+        private System.Windows.Forms.Panel panel1;
     }
 }

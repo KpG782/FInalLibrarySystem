@@ -17,11 +17,13 @@ namespace FInalLibrarySystem
 {
     public partial class frmLogin : Form
     {
+
+        public Point mouseLocation;
+
         private BorrowerList borrowerList = new BorrowerList();
 
         private Stopwatch loginTimer;
         private int loggedInUserId; // Add a variable to store the logged-in user ID
-        public Point mouseLocation;
         //set global object
         MainPage mainPage = new MainPage();
 
@@ -355,6 +357,21 @@ namespace FInalLibrarySystem
         private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void mouse_Move(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
+        }
+
+        private void mouse_Down(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
         }
     }
 }
