@@ -257,7 +257,7 @@ namespace FInalLibrarySystem
                     // Additional logic for displaying other book information
                     // For example, you might set labels or other controls with book details
                     bk10lbl1.Text = book.Title;
-                    bk10lbl2.Text = book.ISBN;
+                    bk10lbl4.Text = book.ISBN;
                     bk10lbl3.Text = book.Category;
                     bk10lbl4.Text = book.Author;
                     bk10lbl5.Text = book.Copyright.ToString();
@@ -280,7 +280,7 @@ namespace FInalLibrarySystem
                     bk7lbl2.Text = book.ISBN;
                     bk7lbl3.Text = book.Category;
                     bk7lbl4.Text = book.Author;
-                    bk7lbl5.Text = book.Copyright.ToString();
+                    bk7lbl7.Text = book.Copyright.ToString();
                     bk7lbl6.Text = book.Publisher;
                     bk7lbl7.Text = book.Status;
                     bk7lbl8.Text = book.Description;

@@ -33,13 +33,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lnkLblSign = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chkShow = new System.Windows.Forms.CheckBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -96,29 +96,6 @@
             this.panel2.Size = new System.Drawing.Size(531, 591);
             this.panel2.TabIndex = 14;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(900, 3);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 22);
-            this.guna2ControlBox2.TabIndex = 22;
-            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(947, 3);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 22);
-            this.guna2ControlBox1.TabIndex = 21;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // txtEmail
             // 
@@ -233,6 +210,29 @@
             this.chkShow.UseVisualStyleBackColor = false;
             this.chkShow.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(900, 3);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 22);
+            this.guna2ControlBox2.TabIndex = 22;
+            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(947, 3);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 22);
+            this.guna2ControlBox1.TabIndex = 21;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
             // guna2ContextMenuStrip1
             // 
             this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -267,11 +267,11 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::FInalLibrarySystem.Properties.Resources.giphy;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 27);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(484, 591);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(483, 564);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 17;
             this.guna2PictureBox1.TabStop = false;
