@@ -73,7 +73,7 @@
             this.lnkLblSign.LinkColor = System.Drawing.Color.DimGray;
             this.lnkLblSign.Location = new System.Drawing.Point(173, 477);
             this.lnkLblSign.Name = "lnkLblSign";
-            this.lnkLblSign.Size = new System.Drawing.Size(207, 15);
+            this.lnkLblSign.Size = new System.Drawing.Size(259, 20);
             this.lnkLblSign.TabIndex = 9;
             this.lnkLblSign.TabStop = true;
             this.lnkLblSign.Text = "Don\'t Have an Account Yet? Sign Up";
@@ -269,9 +269,9 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(483, 564);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(483, 591);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 17;
             this.guna2PictureBox1.TabStop = false;
@@ -293,12 +293,12 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(995, 591);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox3);
             this.DoubleBuffered = true;

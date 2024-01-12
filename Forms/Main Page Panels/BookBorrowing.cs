@@ -129,38 +129,6 @@ namespace FInalLibrarySystem
             }
         }
 
-        private void lblUserName_Click(object sender, EventArgs e)
-        {
-            // Handle label click if needed
-        }
-
-        private void dtpBorrow_ValueChanged(object sender, EventArgs e)
-        {
-            // Handle DateTimePicker value changed if needed
-        }
-        private void btnBorrow_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
-        private void PrimaryPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private byte[] ImageToByteArray(Image image)
-        {
-            if (image == null)
-                return null;
-
-            using (MemoryStream ms = new MemoryStream())
-            {
-                // Convert the Image to a byte array without using Image.Save
-                image.Save(ms, image.RawFormat);
-                return ms.ToArray();
-            }
-        }
-
         private void DisplayReturnedBooks()
         {
             // Assuming dgvShow is the DataGridView control where you want to display the books
@@ -174,19 +142,6 @@ namespace FInalLibrarySystem
             {
                 dgvShow.Rows.Add(book.Title, book.ISBN, book.Category, book.Author, book.Status,  book.Copyright);
             }
-        }
-
-
-
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbPicture_Click(object sender, EventArgs e)
-        {
-            // Handle PictureBox click if needed
         }
 
         private void dgvShow_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -203,11 +158,6 @@ namespace FInalLibrarySystem
                 lblBookTitle.Text = selectedTitle;
                 lblAuthorName.Text = selectedAuthor;
             }
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnBorrow_Click_1(object sender, EventArgs e)

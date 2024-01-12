@@ -891,5 +891,168 @@ namespace FInalLibrarySystem
             }
 
         }
+
+        private void btnAReturn_Click(object sender, EventArgs e)
+        {
+            // Check if both txtUserID and txtBookID are empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text) && string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("User ID and ISBN are required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtUserID is empty
+            if (string.IsNullOrWhiteSpace(txtUserID.Text))
+            {
+                MessageBox.Show("User ID is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if txtBookID is empty
+            if (string.IsNullOrWhiteSpace(txtBookID.Text))
+            {
+                MessageBox.Show("ISBN is required for the update.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if the entered ISBN is not in the bookBorrows table
+            if (!bookBorrows.IsBookBorrowed(txtBookID.Text))
+            {
+                MessageBox.Show("Book with ISBN " + txtBookID.Text + " is not available for return.");
+                return; // Exit the method without further processing
+            }
+
+            // Check if the entered UserID is not associated with any borrowed books
+            if (!bookBorrows.IsUserBorrowed(txtUserID.Text))
+            {
+                MessageBox.Show("User with ID " + txtUserID.Text + " has no borrowed books.");
+                return; // Exit the method without further processing
+            }
+
+
+            // Retrieve necessary information from UI elements
+            string bookID = txtBookID.Text.Trim();
+            string userID = txtUserID.Text.Trim();
+            try
+            {
+                loginTimer.Start();
+
+                // Check if both book ID and user ID are provided
+                if (!string.IsNullOrEmpty(bookID) && !string.IsNullOrEmpty(userID))
+                {
+                    // Check if the selected return date is valid
+                    DateTime selectedReturnDate = dtpReturn.Value.Date;
+                    DateTime currentDate = DateTime.Now.Date;
+
+                    if (selectedReturnDate < currentDate)
+                    {
+                        MessageBox.Show("Invalid return date. Please select a date on or after the current date.");
+                        return; // Exit the method without further processing
+                    }
+
+
+                    // Check if the user is a student
+                    bool isStudent = usersManager.IsStudent(userID);
+
+
+                    // Update the book status to "Returned" in the Books class using ISBN
+                    bool isBookReturned = books.UpdateBookStatusByISBN(bookID, "Returned");
+
+                    if (isBookReturned)
+                    {
+                        // Remove the returned book from the bookborrows database
+                        bool isBookRemoved = bookBorrows.RemoveReturnedBook(bookID);
+
+                        if (isBookRemoved)
+                        {
+
+                            // Display a message indicating successful return and removal
+                            MessageBox.Show("Book returned and removed successfully.");
+
+                            // Clear the UI elements after borrowing
+                            txtBookID.Text = "";
+                            txtUserID.Text = "";
+                            lblUserName.Text = "";
+                            lblBookTitle.Text = "";
+                            lblAuthorName.Text = "";
+                            dtpReturn.Value = DateTime.Now; // Reset the DateTimePicker value
+                            pbPicture.Image = null; // Clear the PictureBox image
+
+                            // Refresh the DataGridView controls to reflect the changes
+                            DisplayBooks();
+                            DisplayBookBorrows();
+                            Console.WriteLine($"Returning took {loginTimer.Elapsed.TotalMilliseconds:F2} milliseconds.");
+
+                            loginTimer.Stop();
+                            loginTimer.Reset();
+                        }
+                        else
+                        {
+                            // Display a message if removing the book fails
+                            MessageBox.Show("Failed to remove the returned book from bookborrows database.");
+                        }
+                    }
+                    else
+                    {
+                        // Display a message if updating the book status fails
+                        MessageBox.Show("Failed to update book status.");
+                    }
+                }
+
+                else
+                {
+                    // Display a message if book ID or user ID is missing
+                    MessageBox.Show("Please provide both Book ID and User ID.");
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void lbltitleBook_Click(object sender, EventArgs e)
+        {
+            // Replace 'userIdToLookup' with the actual user ID you want to look up
+            int userIdToLookup = 21; // Replace with the actual user ID
+
+            // Call GetUserById to get the user by ID
+            Users.User user = usersManager.GetUserById(userIdToLookup);
+
+            string password = user.Password;
+
+            // Ask the user if they are an admin
+            DialogResult result = MessageBox.Show("Are you an admin?", "Admin Verification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // Check the user's response
+            if (result == DialogResult.Yes)
+            {
+                // Prompt the user for the admin password
+                string enteredPassword = Microsoft.VisualBasic.Interaction.InputBox("Enter admin password:", "Admin Password", "");
+
+                // Check if the entered password matches the stored password
+                if (enteredPassword == user.Password)
+                {
+                    // Password is correct, update visibility
+                    btnAReturn.Visible = true;
+
+                }
+                else
+                {
+                    // Password is incorrect, handle accordingly
+                    MessageBox.Show("Incorrect admin password. Access denied.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Optionally, you can perform additional actions, such as logging the attempt or blocking access.
+                }
+            }
+            else
+            {
+                // User is not an admin, handle accordingly
+                // For example, you might want to hide admin-related controls
+                btnAReturn.Visible = false;
+            }
+        }
     }
 }

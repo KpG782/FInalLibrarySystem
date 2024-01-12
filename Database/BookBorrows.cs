@@ -47,27 +47,27 @@ namespace FInalLibrarySystem.Database
 
 
                 // Check user status and limit the number of books a student can borrow
-                User user = new Users().GetUserByStudentOrEmployeeId(userID);
-                if (user != null && user.Role == "Student" && CountUserBorrows(userID) >= 2)
-                {
-                    MessageBox.Show("Students can only borrow up to 2 books.");
-                    return false; // Exit the method early
-                }
+                //User user = new Users().GetUserByStudentOrEmployeeId(userID);
+                //if (user != null && user.Role == "Student" && CountUserBorrows(userID) >= 2)
+                //{
+                //    MessageBox.Show("Students can only borrow up to 2 books.");
+                //    return false; // Exit the method early
+                //}
 
-                // Get the book's category based on its ISBN
-                string bookCategory = new Books().GetBookCategoryByISBN(isbn);
+                //// Get the book's category based on its ISBN
+                //string bookCategory = new Books().GetBookCategoryByISBN(isbn);
 
-                // Check if the book is academic and the user is a student
-                if (bookCategory == "Academic" && user != null)
-                {
-                    MessageBox.Show("Academic books cannot be brought outside.");
-                }
+                //// Check if the book is academic and the user is a student
+                //if (bookCategory == "Academic" && user != null)
+                //{
+                //    MessageBox.Show("Academic books cannot be brought outside.");
+                //}
 
-                if (user != null && user.Role == "Teacher" && CountUserBorrows(userID) >= 5)
-                {
-                    MessageBox.Show("Teachers can only borrow up to 5 books.");
-                    return false; // Exit the method early
-                }
+                //if (user != null && user.Role == "Teacher" && CountUserBorrows(userID) >= 5)
+                //{
+                //    MessageBox.Show("Teachers can only borrow up to 5 books.");
+                //    return false; // Exit the method early
+                //}
 
                 using (MySqlConnection connection = db.getConnection())
                 {
