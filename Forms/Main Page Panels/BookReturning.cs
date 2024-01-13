@@ -36,6 +36,7 @@ namespace FInalLibrarySystem
             // Hide the pnlReceipt when the form loads
             pnlReceipt.Visible = false;
             pnlPlay1.Visible = false;
+            btnAReturn.Visible = false;
 
         }
 

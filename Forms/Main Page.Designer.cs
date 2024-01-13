@@ -57,10 +57,9 @@
             this.BookReservationLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookReservationLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookReservationLink.LinkColor = System.Drawing.Color.White;
-            this.BookReservationLink.Location = new System.Drawing.Point(11, 448);
-            this.BookReservationLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BookReservationLink.Location = new System.Drawing.Point(15, 551);
             this.BookReservationLink.Name = "BookReservationLink";
-            this.BookReservationLink.Size = new System.Drawing.Size(201, 52);
+            this.BookReservationLink.Size = new System.Drawing.Size(268, 64);
             this.BookReservationLink.TabIndex = 22;
             this.BookReservationLink.TabStop = true;
             this.BookReservationLink.Text = "Book Reservation";
@@ -75,10 +74,9 @@
             this.BookReturningLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookReturningLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookReturningLink.LinkColor = System.Drawing.Color.White;
-            this.BookReturningLink.Location = new System.Drawing.Point(11, 517);
-            this.BookReturningLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BookReturningLink.Location = new System.Drawing.Point(15, 636);
             this.BookReturningLink.Name = "BookReturningLink";
-            this.BookReturningLink.Size = new System.Drawing.Size(186, 52);
+            this.BookReturningLink.Size = new System.Drawing.Size(248, 64);
             this.BookReturningLink.TabIndex = 21;
             this.BookReturningLink.TabStop = true;
             this.BookReturningLink.Text = "Book Returning";
@@ -93,10 +91,9 @@
             this.BookBorrowingLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookBorrowingLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookBorrowingLink.LinkColor = System.Drawing.Color.White;
-            this.BookBorrowingLink.Location = new System.Drawing.Point(11, 387);
-            this.BookBorrowingLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BookBorrowingLink.Location = new System.Drawing.Point(15, 476);
             this.BookBorrowingLink.Name = "BookBorrowingLink";
-            this.BookBorrowingLink.Size = new System.Drawing.Size(186, 52);
+            this.BookBorrowingLink.Size = new System.Drawing.Size(248, 64);
             this.BookBorrowingLink.TabIndex = 20;
             this.BookBorrowingLink.TabStop = true;
             this.BookBorrowingLink.Text = "Book Borrowing";
@@ -111,10 +108,9 @@
             this.BorrowerListLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrowerListLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BorrowerListLink.LinkColor = System.Drawing.Color.White;
-            this.BorrowerListLink.Location = new System.Drawing.Point(11, 327);
-            this.BorrowerListLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BorrowerListLink.Location = new System.Drawing.Point(15, 402);
             this.BorrowerListLink.Name = "BorrowerListLink";
-            this.BorrowerListLink.Size = new System.Drawing.Size(166, 52);
+            this.BorrowerListLink.Size = new System.Drawing.Size(221, 64);
             this.BorrowerListLink.TabIndex = 19;
             this.BorrowerListLink.TabStop = true;
             this.BorrowerListLink.Text = "Borrower List";
@@ -129,10 +125,9 @@
             this.BookListLink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BookListLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.BookListLink.LinkColor = System.Drawing.Color.White;
-            this.BookListLink.Location = new System.Drawing.Point(11, 262);
-            this.BookListLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BookListLink.Location = new System.Drawing.Point(15, 322);
             this.BookListLink.Name = "BookListLink";
-            this.BookListLink.Size = new System.Drawing.Size(132, 52);
+            this.BookListLink.Size = new System.Drawing.Size(176, 64);
             this.BookListLink.TabIndex = 18;
             this.BookListLink.TabStop = true;
             this.BookListLink.Text = "Book List";
@@ -142,10 +137,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FInalLibrarySystem.Properties.Resources.logo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 60);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(261, 138);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -155,10 +150,10 @@
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.FillColor = System.Drawing.Color.Black;
             this.closeButton.IconColor = System.Drawing.Color.White;
-            this.closeButton.Location = new System.Drawing.Point(1349, 2);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.closeButton.Location = new System.Drawing.Point(1799, 2);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(48, 29);
+            this.closeButton.Size = new System.Drawing.Size(64, 36);
             this.closeButton.TabIndex = 34;
             this.closeButton.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
@@ -170,10 +165,9 @@
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnDashboard.LinkColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(11, 196);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnDashboard.Location = new System.Drawing.Point(15, 241);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(142, 52);
+            this.btnDashboard.Size = new System.Drawing.Size(189, 64);
             this.btnDashboard.TabIndex = 37;
             this.btnDashboard.TabStop = true;
             this.btnDashboard.Text = "Dashboard";
@@ -185,8 +179,9 @@
             this.panel1.Controls.Add(this.closeButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1400, 33);
+            this.panel1.Size = new System.Drawing.Size(1867, 41);
             this.panel1.TabIndex = 38;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse_Down);
@@ -195,57 +190,57 @@
             // profile1
             // 
             this.profile1.BackColor = System.Drawing.Color.White;
-            this.profile1.Location = new System.Drawing.Point(214, 7);
-            this.profile1.Margin = new System.Windows.Forms.Padding(2);
+            this.profile1.Location = new System.Drawing.Point(285, 9);
+            this.profile1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.profile1.Name = "profile1";
-            this.profile1.Size = new System.Drawing.Size(1184, 890);
+            this.profile1.Size = new System.Drawing.Size(1579, 1095);
             this.profile1.TabIndex = 26;
             this.profile1.Load += new System.EventHandler(this.profile1_Load_1);
             // 
             // bookList1
             // 
             this.bookList1.BackColor = System.Drawing.Color.White;
-            this.bookList1.Location = new System.Drawing.Point(213, 11);
-            this.bookList1.Margin = new System.Windows.Forms.Padding(2);
+            this.bookList1.Location = new System.Drawing.Point(284, 14);
+            this.bookList1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookList1.Name = "bookList1";
-            this.bookList1.Size = new System.Drawing.Size(1184, 890);
+            this.bookList1.Size = new System.Drawing.Size(1579, 1095);
             this.bookList1.TabIndex = 27;
             this.bookList1.Load += new System.EventHandler(this.bookList1_Load);
             // 
             // bookReturning1
             // 
             this.bookReturning1.BackColor = System.Drawing.Color.White;
-            this.bookReturning1.Location = new System.Drawing.Point(213, 11);
-            this.bookReturning1.Margin = new System.Windows.Forms.Padding(2);
+            this.bookReturning1.Location = new System.Drawing.Point(284, 14);
+            this.bookReturning1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookReturning1.Name = "bookReturning1";
-            this.bookReturning1.Size = new System.Drawing.Size(1184, 890);
+            this.bookReturning1.Size = new System.Drawing.Size(1579, 1095);
             this.bookReturning1.TabIndex = 35;
             // 
             // bookBorrowing1
             // 
             this.bookBorrowing1.BackColor = System.Drawing.Color.White;
-            this.bookBorrowing1.Location = new System.Drawing.Point(213, 11);
-            this.bookBorrowing1.Margin = new System.Windows.Forms.Padding(2);
+            this.bookBorrowing1.Location = new System.Drawing.Point(284, 14);
+            this.bookBorrowing1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookBorrowing1.Name = "bookBorrowing1";
-            this.bookBorrowing1.Size = new System.Drawing.Size(1184, 890);
+            this.bookBorrowing1.Size = new System.Drawing.Size(1579, 1095);
             this.bookBorrowing1.TabIndex = 29;
             // 
             // borrowerList1
             // 
             this.borrowerList1.BackColor = System.Drawing.Color.White;
-            this.borrowerList1.Location = new System.Drawing.Point(213, 11);
-            this.borrowerList1.Margin = new System.Windows.Forms.Padding(2);
+            this.borrowerList1.Location = new System.Drawing.Point(284, 14);
+            this.borrowerList1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.borrowerList1.Name = "borrowerList1";
-            this.borrowerList1.Size = new System.Drawing.Size(1184, 890);
+            this.borrowerList1.Size = new System.Drawing.Size(1579, 1095);
             this.borrowerList1.TabIndex = 28;
             // 
             // bookReservation2
             // 
             this.bookReservation2.BackColor = System.Drawing.Color.White;
-            this.bookReservation2.Location = new System.Drawing.Point(213, 11);
-            this.bookReservation2.Margin = new System.Windows.Forms.Padding(2);
+            this.bookReservation2.Location = new System.Drawing.Point(284, 14);
+            this.bookReservation2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookReservation2.Name = "bookReservation2";
-            this.bookReservation2.Size = new System.Drawing.Size(1184, 890);
+            this.bookReservation2.Size = new System.Drawing.Size(1579, 1095);
             this.bookReservation2.TabIndex = 36;
             // 
             // bookReservation1
@@ -259,10 +254,10 @@
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1400, 900);
+            this.ClientSize = new System.Drawing.Size(1867, 1108);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.pictureBox1);
@@ -271,15 +266,15 @@
             this.Controls.Add(this.BookBorrowingLink);
             this.Controls.Add(this.BorrowerListLink);
             this.Controls.Add(this.BookListLink);
-            this.Controls.Add(this.profile1);
-            this.Controls.Add(this.bookList1);
             this.Controls.Add(this.bookReturning1);
             this.Controls.Add(this.bookBorrowing1);
             this.Controls.Add(this.borrowerList1);
             this.Controls.Add(this.bookReservation2);
+            this.Controls.Add(this.profile1);
+            this.Controls.Add(this.bookList1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
